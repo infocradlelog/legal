@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CradleLog - Yasal Belgeler</title>
+    <style>
+        /* Modern CSS Reset & Typography */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --warning-bg: #fff3cd;
+            --warning-border: #ffc107;
+            --danger-bg: #fee2e2;
+            --danger-border: #ef4444;
+            --danger-text: #b91c1c;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        /* Sticky Header */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+        
+        /* Navigation */
+        nav { display: flex; gap: 10px; flex-wrap: wrap; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.15);
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        nav a:hover { background-color: var(--accent-color); }
+        nav a.active { background-color: var(--accent-color); font-weight: bold; }
+
+        /* Content Sections */
+        section {
+            scroll-margin-top: 80px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+        h2 { color: var(--primary-color); font-size: 1.8rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
+        h3 { color: #34495e; font-size: 1.2rem; margin-top: 1.5rem; font-weight: 600; }
+        ul, ol { margin-bottom: 1rem; padding-left: 20px; }
+        li { margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; }
+
+        /* Warning Boxes */
+        .warning-box {
+            background-color: var(--warning-bg);
+            border-left: 5px solid var(--warning-border);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .medical-warning {
+            background-color: var(--danger-bg);
+            border: 2px solid var(--danger-border);
+            color: var(--danger-text);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .medical-warning strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            header .header-content { flex-direction: column; gap: 10px; text-align: center; }
+            nav { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>CradleLog Yasal</h1>
+            <nav>
+                <a href="tr.html" class="active">🇹🇷 TR</a>
+                <a href="en.html">🇪🇺 EN</a>
+                <a href="br.html">🇧🇷 BR</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- GİZLİLİK POLİTİKASI -->
+        <section id="privacy">
+            <h2>1. Gizlilik Politikası</h2>
+            <p><strong>Son Güncelleme:</strong> Ocak 2026</p>
+
+            <h3>1.1 Mimari: Yerel-Öncelikli (Local-First) ve Sıfır Bilgi</h3>
+            <p>CradleLog, gizlilik odaklı tasarlanmış bir uygulamadır. "Yerel-Öncelikli" mimariye sadık kalıyoruz. Bunun anlamı şudur:</p>
+            <ul>
+                <li><strong>Sağlık Verileri:</strong> Bebek profilleri, beslenme kayıtları, uyku verileri ve fotoğraflar <strong>SADECE</strong> sizin yerel cihazınızdaki şifrelenmiş SQLite veritabanında saklanır.</li>
+                <li><strong>Şifreleme:</strong> Endüstri standardı <strong>AES-256</strong> şifreleme kullanıyoruz. Kurulum sırasında cihazınızda rastgele bir 32-baytlık anahtar oluşturulur. Biz (geliştirici) bu anahtara sahip değiliz ve verilerinize erişemeyiz.</li>
+            </ul>
+
+            <h3>1.2 Üçüncü Tarafların Rolü</h3>
+            <p>Sadece teknik işlevsellik için sınırlı sayıda üçüncü taraf hizmeti kullanıyoruz. <strong>Bu hizmetlere asla sağlık verisi gönderilmez.</strong></p>
+            <ul>
+                <li><strong>Supabase:</strong> YALNIZCA yasal kanıt amaçlı özetlenmiş (hashed) Rıza Kayıtlarını ve Referans Sistemi meta verilerini (anonim kimlikler) saklamak için kullanılır. Asla sağlık verisi depolamaz.</li>
+                <li><strong>Telemetri & Crashlytics:</strong> Uygulama kararlılığını artırmak için anonim teknik veriler (çökme raporları, özellik kullanım istatistikleri) topluyoruz. Bu veriler kişisel bilgi (PII) içermez. Ayarlardan kapatabilirsiniz.</li>
+                <li><strong>AdMob:</strong> Ücretsiz kullanıcılar için sadece <strong>Kişiselleştirilmemiş Reklamlar</strong> sunuyoruz. Bu reklamlar kullanıcı takibine değil, içeriğe dayalıdır.</li>
+            </ul>
+
+            <h3>1.3 QR Senkronizasyon ve Veri Transferi</h3>
+            <p>"QR Sync" özelliği, Bluetooth (BLE) kullanarak cihazlar arasında veri aktarımı sağlar. Bu işlem, geçici anahtarlar kullanılarak Uçtan Uca Şifreleme (E2EE) ile yapılır. Veriler sunucuya uğramadan, doğrudan cihazdan cihaza aktarılır.</p>
+            <div class="warning-box">
+                <strong>⚠️ Güvenlik Uyarısı:</strong> Şifreleme kullanmamıza rağmen, kamusal alanlar risk oluşturabilir. QR kodunun fiziksel güvenliğini sağlamak ve senkronizasyon sırasında bağlantıyı kimsenin izlemediğinden emin olmak tamamen sizin sorumluluğunuzdadır. Kalabalık ve güvensiz alanlarda senkronizasyon yapmayınız.
+            </div>
+        </section>
+
+        <!-- KULLANIM KOŞULLARI (EULA) -->
+        <section id="terms">
+            <h2>2. Kullanım Koşulları (EULA)</h2>
+            
+            <!-- KRİTİK TIBBİ UYARI -->
+            <div class="medical-warning">
+                <strong>⚠️ TIBBİ FERAGATNAME</strong>
+                Bu uygulama bir TIBBİ CİHAZ DEĞİLDİR. Doktor tavsiyesi, tıbbi teşhis veya tedavi sağlamaz. Sadece bir veri kaydetme aracıdır.
+                <br><br>
+                <strong>Önemli:</strong> Uygulama içindeki renk kodları (Yeşil/Sarı/Kırmızı) ve grafikler sadece organizasyonel amaçlıdır. Bunlar tıbbi bir aciliyet sıralaması (triyaj), teşhis veya "güvenli/tehlikeli" belirlemesi anlamına <strong>GELMEZ</strong>. Tıbbi kararlar için daima bir doktora danışın. Acil durumlarda derhal acil servisi (112) arayın.
+            </div>
+
+            <h3>2.1 Yaş Sınırlaması</h3>
+            <p>Bu uygulama <strong>18 yaş ve üzeri</strong> yetişkinler (ebeveynler/vasiler) tarafından kullanılmak üzere tasarlanmıştır.</p>
+
+            <!-- KRİTİK VERİ KAYBI UYARISI -->
+            <h3>2.2 Veri Kaybı ve Kullanıcı Sorumluluğu</h3>
+            <div class="warning-box">
+                <p><strong>Verilerinizle ilgili aşağıdaki riskleri kabul edersiniz:</strong></p>
+                <ul>
+                    <li><strong>Cihaz Bağımlılığı:</strong> Veriler yerel olarak saklanır. Cihazınız kaybolur, bozulur veya sıfırlanırsa verileriniz <strong>KALICI OLARAK KAYBOLUR</strong>.</li>
+                    <li><strong>Şifreleme Anahtarı:</strong> Uygulama silinirse veya sistem güvenli depolama alanını temizlerse, şifreleme anahtarı silinebilir ve veritabanı erişilemez hale gelir.</li>
+                    <li><strong>Kurtarma Yoktur:</strong> Hizmet sağlayıcı (biz), kaybedilen verileri veya anahtarları kurtaramaz.</li>
+                    <li><strong>Yükümlülüğünüz:</strong> "CSV Dışa Aktar" özelliğini kullanarak verilerinizi düzenli olarak yedeklemek tamamen sizin sorumluluğunuzdadır.</li>
+                </ul>
+            </div>
+
+            <h3>2.3 Sorumluluğun Sınırlandırılması</h3>
+            <p>Yürürlükteki yasaların izin verdiği azami ölçüde:</p>
+            <ul>
+                <li><strong>Yazılım Hataları:</strong> Uygulama "OLDUĞU GİBİ" (AS IS) sunulmaktadır. Yazılım hataları, aksaklıklar veya çökmelerden kaynaklanan veri kayıplarından sorumlu değiliz.</li>
+                <li><strong>Maddi Sınır (Premium):</strong> Toplam sorumluluğumuz, <strong>Tek Seferlik Premium Lisans</strong> için ödenen tutarın en fazla <strong>iki (2) katı</strong> ile sınırlıdır.</li>
+                <li><strong>Maddi Sınır (Ücretsiz):</strong> Toplam sorumluluğumuz, güncel Premium Lisans fiyatı veya <strong>1000 TL</strong> (hangisi düşükse) ile sınırlıdır.</li>
+            </ul>
+
+            <h3>2.4 Referans Sistemi Kuralları</h3>
+            <p>Dolandırıcılığı önlemek amacıyla ödüller aşağıdaki katı kurallara tabidir:</p>
+            <ul>
+                <li><strong>Aktif Kullanıcı Tanımı:</strong> Referans olunan kişi; uygulamayı yükleyip ilk hafta içinde en az <strong>6 gün</strong> kullanmalı ve günde en az <strong>4 kayıt</strong> girmelidir.</li>
+                <li><strong>Doğrulama:</strong> Ödüller, 7 günlük doğrulama süresi başarıyla tamamlandıktan sonra açılır.</li>
+                <li><strong>İptal:</strong> Sahte hesap veya bot aktivitesi tespit edilirse ödülleri iptal etme hakkımız saklıdır.</li>
+            </ul>
+        </section>
+
+        <!-- TÜRKİYE KVKK BÖLÜMÜ -->
+        <section id="kvkk">
+            <h2>3. KVKK Aydınlatma Metni</h2>
+            
+            <div class="warning-box">
+                <strong>⚠️ ÖZEL NİTELİKLİ VERİ UYARISI</strong>
+                <br>
+                Uygulamaya girdiğiniz emzirme, uyku, tuvalet ve aşı gibi veriler, 6698 sayılı KVKK Madde 6 kapsamında <strong>"Özel Nitelikli Kişisel Veri"</strong> (Sağlık Verisi) statüsündedir.
+                <br><br>
+                Bu verilerin cihazınızda işlenmesi için <strong>AÇIK RIZANIZ</strong> gerekmektedir. Uygulamayı indirip kullanarak, verilerinizin sadece kendi cihazınızda (yerel olarak) işlenmesine rıza göstermiş sayılırsınız.
+            </div>
+
+            <h3>3.1 Veri Sorumlusu ve Yöntem</h3>
+            <p>Verileriniz, yalnızca sizin kontrolünüzdeki cihazda saklanır. Veri sorumlusu sıfatıyla biz, şifreleme anahtarına sahip olmadığımızdan verilerinizin içeriğini (sağlık detaylarını) göremeyiz, işleyemeyiz veya üçüncü taraflara aktaramayız.</p>
+
+            <h3>3.2 KVKK Madde 11 Kapsamındaki Haklarınız</h3>
+            <p>Kanun kapsamında aşağıdaki haklara sahipsiniz:</p>
+            <ul>
+                <li><strong>Silme Hakkı:</strong> Uygulamayı cihazınızdan kaldırarak veya ayarlar menüsündeki "Tüm Verileri Sil" seçeneğini kullanarak verilerinizi kalıcı olarak yok edebilirsiniz.</li>
+                <li><strong>Veri Taşıma:</strong> Verilerinizi CSV formatında dışa aktararak başka bir platforma taşıma hakkına sahipsiniz.</li>
+                <li><strong>Rızayı Geri Çekme:</strong> Uygulamayı silerek açık rızanızı dilediğiniz zaman geri çekebilirsiniz.</li>
+            </ul>
+
+            <h3>3.3 İletişim</h3>
+            <p>KVKK kapsamındaki sorularınız veya teknik destek talepleriniz için bize ulaşabilirsiniz.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 CradleLog. Tüm Hakları Saklıdır.</p>
+            <p>İletişim: <a href="mailto:support@cradlelog.com">support@cradlelog.com</a></p>
+        </footer>
+
+    </main>
+</body>
+</html>

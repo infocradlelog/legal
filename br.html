@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CradleLog - Documentos Legais</title>
+    <style>
+        /* Modern CSS Reset & Typography */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --warning-bg: #fff3cd;
+            --warning-border: #ffc107;
+            --danger-bg: #fee2e2;
+            --danger-border: #ef4444;
+            --danger-text: #b91c1c;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        /* Sticky Header */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+        
+        /* Navigation */
+        nav { display: flex; gap: 10px; flex-wrap: wrap; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.15);
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        nav a:hover { background-color: var(--accent-color); }
+        nav a.active { background-color: var(--accent-color); font-weight: bold; }
+
+        /* Content Sections */
+        section {
+            scroll-margin-top: 80px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+        h2 { color: var(--primary-color); font-size: 1.8rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
+        h3 { color: #34495e; font-size: 1.2rem; margin-top: 1.5rem; font-weight: 600; }
+        ul, ol { margin-bottom: 1rem; padding-left: 20px; }
+        li { margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; }
+
+        /* Warning Boxes */
+        .warning-box {
+            background-color: var(--warning-bg);
+            border-left: 5px solid var(--warning-border);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .medical-warning {
+            background-color: var(--danger-bg);
+            border: 2px solid var(--danger-border);
+            color: var(--danger-text);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .medical-warning strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            header .header-content { flex-direction: column; gap: 10px; text-align: center; }
+            nav { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>CradleLog Legal</h1>
+            <nav>
+                <a href="tr.html">🇹🇷 TR</a>
+                <a href="en.html">🇪🇺 🇺🇸 Global</a>
+                <a href="br.html" class="active">🇧🇷 🇵🇹 BR/PT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- PRIVACY POLICY SECTION -->
+        <section id="privacy">
+            <h2>1. Política de Privacidade</h2>
+            <p><strong>Última atualização:</strong> Janeiro de 2026</p>
+            <p>Esta política aplica-se a utilizadores no Brasil (LGPD) e Portugal/UE (GDPR).</p>
+
+            <h3>1.1 Arquitetura: Local-Primeiro (Local-First) e Conhecimento Zero</h3>
+            <p>O CradleLog foi projetado com a privacidade como recurso principal. Aderimos a uma arquitetura "Local-First". Isso significa:</p>
+            <ul>
+                <li><strong>Dados de Saúde:</strong> Todos os perfis de bebês, registros de alimentação, sono e fotos são armazenados <strong>APENAS</strong> no seu dispositivo local em um banco de dados SQLite criptografado.</li>
+                <li><strong>Sem Sincronização na Nuvem:</strong> Não enviamos seus dados de saúde para nossos servidores. Portanto, não podemos vender, ler ou compartilhar suas informações pessoais de saúde porque não as possuímos.</li>
+                <li><strong>Criptografia:</strong> Usamos criptografia padrão da indústria <strong>AES-256</strong>. Uma chave aleatória é gerada no seu dispositivo durante a instalação. Nós (o desenvolvedor) não possuímos essa chave e não podemos acessar seus dados.</li>
+            </ul>
+
+            <h3>1.2 Serviços de Terceiros</h3>
+            <p>Utilizamos serviços de terceiros limitados estritamente para funcionalidade técnica. <strong>Nenhum dado de saúde é enviado para esses serviços.</strong></p>
+            <ul>
+                <li><strong>Supabase:</strong> Usado <strong>APENAS</strong> para armazenar Logs de Consentimento (hash) para prova legal e metadados anônimos do Sistema de Indicação. <strong>NUNCA</strong> armazena dados de saúde.</li>
+                <li><strong>Telemetria e Crashlytics:</strong> Coletamos dados técnicos anônimos (falhas do aplicativo, bugs) para melhorar a estabilidade do aplicativo.</li>
+                <li><strong>AdMob (Publicidade):</strong> Para usuários gratuitos, exibimos anúncios. Solicitamos <strong>Anúncios Não Personalizados</strong> onde possível, mas a AdMob pode usar identificadores de dispositivo para prevenção de fraudes.</li>
+            </ul>
+
+            <h3>1.3 Sincronização QR e Transferência de Dados</h3>
+            <p>O recurso "QR Sync" permite transferir dados entre dispositivos usando Bluetooth (BLE). Este processo utiliza Criptografia de Ponta a Ponta (E2EE) com chaves efêmeras (temporárias). Os dados são descriptografados localmente, recriptografados para transferência e, em seguida, eliminados da memória imediatamente. Não facilitamos essa transferência via servidores em nuvem.</p>
+            <div class="warning-box">
+                <strong>⚠️ Aviso de Segurança:</strong> Usamos criptografia estritamente para transferência. No entanto, ambientes públicos apresentam riscos. Você é o único responsável por garantir a segurança física do código QR e garantir que terceiros não interceptem a conexão Bluetooth durante o processo de sincronização. Não sincronize em espaços públicos lotados.
+            </div>
+        </section>
+
+        <!-- TERMS OF USE (EULA) SECTION -->
+        <section id="terms">
+            <h2>2. Termos de Uso (EULA)</h2>
+            
+            <!-- CRITICAL MEDICAL DISCLAIMER -->
+            <div class="medical-warning">
+                <strong>⚠️ ISENÇÃO DE RESPONSABILIDADE MÉDICA</strong>
+                Este aplicativo NÃO é um dispositivo médico. Ele não fornece aconselhamento médico, diagnóstico ou tratamento. É apenas uma ferramenta de registro de dados.
+                <br><br>
+                <strong>Importante:</strong> Os códigos de cores (Verde/Amarelo/Vermelho) e gráficos dentro do aplicativo são apenas para fins organizacionais. Eles <strong>NÃO</strong> constituem triagem médica, diagnóstico ou uma determinação de "seguro/inseguro". Consulte sempre um médico para decisões médicas. Em caso de emergência, ligue imediatamente para os serviços de emergência (112 na Europa / 192 no Brasil).
+            </div>
+
+            <h3>2.1 Isenção de Responsabilidade por Perda de Dados</h3>
+            <div class="warning-box">
+                <p><strong>Você reconhece e aceita os seguintes riscos em relação aos seus dados:</strong></p>
+                <ul>
+                    <li><strong>Dependência do Dispositivo:</strong> Os dados são armazenados localmente. Se o seu dispositivo for perdido, danificado ou restaurado para as configurações de fábrica, seus dados serão <strong>PERMANENTEMENTE PERDIDOS</strong>.</li>
+                    <li><strong>Sem Recuperação:</strong> O Provedor de Serviço não pode recuperar dados perdidos ou chaves de criptografia.</li>
+                    <li><strong>Sua Responsabilidade:</strong> É sua exclusiva responsabilidade usar o recurso "Exportar para CSV" regularmente para fazer backup dos seus dados.</li>
+                </ul>
+            </div>
+
+            <h3>2.2 Limitação de Responsabilidade Financeira</h3>
+            <p>Na extensão máxima permitida pela lei aplicável:</p>
+            <ul>
+                <li><strong>Bugs de Software:</strong> O Provedor não é responsável por perda de dados ou erros causados por bugs de software. O aplicativo é fornecido "COMO ESTÁ" (AS IS).</li>
+                <li><strong>Limite Financeiro (Usuários Premium):</strong> Nossa responsabilidade total é limitada a <strong>duas vezes (2x)</strong> o valor pago pela <strong>Licença Premium Vitalícia</strong>.</li>
+                <li><strong>Limite Financeiro (Usuários Gratuitos):</strong> Nossa responsabilidade total é limitada ao equivalente ao preço atual da <strong>Licença Premium Vitalícia</strong> OU <strong>$50 USD</strong> (o que for menor).</li>
+            </ul>
+
+            <h3>2.3 Regras do Sistema de Indicação (Referral)</h3>
+            <p>Utilizamos um sistema de indicação anônimo baseado em hash. Para evitar fraudes e abusos, as recompensas são concedidas estritamente sob as seguintes condições:</p>
+            <ul>
+                <li><strong>Definição de Usuário Ativo:</strong> Um usuário indicado é considerado "Ativo" apenas se:
+                    <ol>
+                        <li>Instalar e usar o aplicativo por pelo menos <strong>6 dias</strong> na primeira semana (período de 7 dias).</li>
+                        <li>Fizer pelo menos <strong>4 registros (logs)</strong> por dia durante esses 6 dias.</li>
+                        <li>Mantiver o aplicativo instalado por um período subsequente de <strong>verificação de 7 dias</strong>.</li>
+                    </ol>
+                </li>
+                <li><strong>Concessão de Recompensa:</strong> As recompensas são desbloqueadas apenas após o período de verificação ser concluído com sucesso.</li>
+                <li><strong>Revogação:</strong> Reservamo-nos o direito de revogar recompensas se contas falsas ou atividade de bots forem detectadas.</li>
+            </ul>
+        </section>
+
+        <!-- BRAZIL LGPD SECTION -->
+        <section id="brazil-lgpd">
+            <h2>3. 🇧🇷 Brasil - LGPD (Lei Geral de Proteção de Dados)</h2>
+            <p>Para usuários no Brasil, cumprimos a Lei nº 13.709/2018 (LGPD). Como seus dados são armazenados localmente ("Local-First"), você mantém controle total sobre suas informações pessoais.</p>
+
+            <h3>3.1 Base Legal para Processamento</h3>
+            <p>Processamos seus dados de saúde com base no seu <strong>Consentimento</strong> (Artigo 7, I da LGPD), que você fornece ao aceitar explicitamente estes termos e usar o Aplicativo.</p>
+
+            <h3>3.2 Seus Direitos (Artigo 18)</h3>
+            <p>De acordo com o Artigo 18 da LGPD, você tem direito a:</p>
+            <ul>
+                <li><strong>Confirmação e Acesso:</strong> Confirmar a existência de tratamento e acessar seus dados (disponíveis diretamente na tela do seu dispositivo).</li>
+                <li><strong>Correção:</strong> Corrigir dados incompletos, inexatos ou desatualizados.</li>
+                <li><strong>Anonimização/Bloqueio/Eliminação:</strong> Solicitar a eliminação de dados desnecessários (excluindo o Aplicativo).</li>
+                <li><strong>Portabilidade:</strong> Transferir seus dados para outro fornecedor (via nosso recurso "Exportar CSV").</li>
+                <li><strong>Revogação do Consentimento:</strong> Você pode revogar o consentimento a qualquer momento desinstalando o Aplicativo, o que exclui permanentemente todos os dados locais.</li>
+            </ul>
+        </section>
+
+        <!-- PORTUGAL & EU GDPR SECTION -->
+        <section id="eu-gdpr">
+            <h2>4. 🇵🇹 Portugal & União Europeia - GDPR</h2>
+            <p>Para utilizadores em Portugal e na União Europeia, baseamo-nos no <strong>Consentimento Explícito</strong> (Art. 9 do GDPR) para processar dados de saúde localmente no seu dispositivo.</p>
+            <ul>
+                <li><strong>Minimização de Dados:</strong> Não transferimos os seus dados de saúde para a nuvem.</li>
+                <li><strong>Direito ao Apagamento ('Direito a ser Esquecido'):</strong> Desinstalar a aplicação apaga permanentemente todos os dados.</li>
+                <li><strong>Portabilidade dos Dados:</strong> Pode exportar os seus dados em formato CSV a qualquer momento.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 CradleLog. Todos os Direitos Reservados.</p>
+            <p>Contato: <a href="mailto:support@cradlelog.com">support@cradlelog.com</a></p>
+        </footer>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CradleLog - Legal Documents</title>
+    <style>
+        /* Modern CSS Reset & Typography */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --warning-bg: #fff3cd;
+            --warning-border: #ffc107;
+            --danger-bg: #fee2e2;
+            --danger-border: #ef4444;
+            --danger-text: #b91c1c;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        /* Sticky Header */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+        
+        /* Navigation */
+        nav { display: flex; gap: 10px; flex-wrap: wrap; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.15);
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        nav a:hover { background-color: var(--accent-color); }
+        nav a.active { background-color: var(--accent-color); font-weight: bold; }
+
+        /* Content Sections */
+        section {
+            scroll-margin-top: 80px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+        h2 { color: var(--primary-color); font-size: 1.8rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
+        h3 { color: #34495e; font-size: 1.2rem; margin-top: 1.5rem; font-weight: 600; }
+        ul, ol { margin-bottom: 1rem; padding-left: 20px; }
+        li { margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; }
+
+        /* Warning Boxes */
+        .warning-box {
+            background-color: var(--warning-bg);
+            border-left: 5px solid var(--warning-border);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .medical-warning {
+            background-color: var(--danger-bg);
+            border: 2px solid var(--danger-border);
+            color: var(--danger-text);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .medical-warning strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            header .header-content { flex-direction: column; gap: 10px; text-align: center; }
+            nav { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>CradleLog Legal</h1>
+            <nav>
+                <a href="tr.html">🇹🇷 TR</a>
+                <a href="en.html" class="active">🇪🇺 🇺🇸 Global</a>
+                <a href="br.html">🇧🇷 BR</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- PRIVACY POLICY SECTION -->
+        <section id="privacy">
+            <h2>1. Privacy Policy</h2>
+            <p><strong>Last Updated:</strong> January 2026</p>
+            <p>This Privacy Policy applies to users worldwide, with specific addendums for users in the European Union (GDPR) and the United States (California CCPA/CPRA & COPPA).</p>
+
+            <h3>1.1 Architecture: Local-First & Zero-Knowledge</h3>
+            <p>CradleLog is designed with privacy as its core feature. We adhere to a "Local-First" architecture:</p>
+            <ul>
+                <li><strong>Health Data:</strong> All baby profiles, feeding logs, sleep records, and photos are stored <strong>ONLY</strong> on your local device in an encrypted SQLite database.</li>
+                <li><strong>No Cloud Sync of Health Data:</strong> We do not upload your health data to our servers. Therefore, we cannot sell, read, or share your personal health information because we do not possess it.</li>
+                <li><strong>Encryption:</strong> We use industry-standard <strong>AES-256</strong> encryption. The key is generated on your device and never sent to us.</li>
+            </ul>
+
+            <h3>1.2 Third-Party Services</h3>
+            <p>We use limited third-party services strictly for technical functionality:</p>
+            <ul>
+                <li><strong>Supabase:</strong> Used <strong>ONLY</strong> for storing hashed Consent Logs (for legal proof) and anonymous Referral System metadata. It <strong>NEVER</strong> stores health data.</li>
+                <li><strong>Google Firebase / Crashlytics:</strong> Collects anonymous technical data (app crashes, bugs) to improve app stability.</li>
+                <li><strong>Google AdMob:</strong> For free users, we serve Ads. We request <strong>Non-Personalized Ads</strong> where possible, but AdMob may use device identifiers (Advertising ID) for frequency capping and fraud prevention.</li>
+            </ul>
+
+            <h3>1.3 QR Sync & Data Transfer</h3>
+            <p>The "QR Sync" feature allows transferring data between devices using Bluetooth (BLE). This process uses End-to-End Encryption with ephemeral (temporary) keys. Data is decrypted locally, re-encrypted for transfer, and then purged from memory immediately. We do not facilitate this transfer via cloud servers.</p>
+            <div class="warning-box">
+                <strong>⚠️ Security Warning:</strong> We use encryption strictly for transfer. However, public environments pose risks. You are solely responsible for ensuring the physical security of the QR code and ensuring no third parties intercept the Bluetooth connection during the sync process. Do not sync in crowded public spaces.
+            </div>
+        </section>
+
+        <!-- US SPECIFIC REGULATIONS -->
+        <section id="us-regulations">
+            <h2>2. United States Privacy Rights</h2>
+
+            <div class="warning-box">
+                <strong>🇺🇸 Notice for US Residents</strong>
+                <br>
+                Compliance with COPPA (Children's Privacy) and CCPA/CPRA (California Consumer Privacy Act).
+            </div>
+
+            <h3>2.1 COPPA (Children's Online Privacy Protection Act)</h3>
+            <p>CradleLog is a tool intended for use by <strong>parents and guardians</strong> (Adults), not children.</p>
+            <ul>
+                <li><strong>No Collection from Children:</strong> We do not knowingly collect personal information directly from children under the age of 13. The data regarding your baby is entered by you (the parent) and stays on your device.</li>
+                <li><strong>Parental Control:</strong> Since the data resides locally on your device, you maintain full control over your child's information at all times.</li>
+            </ul>
+
+            <h3>2.2 California Residents (CCPA & CPRA)</h3>
+            <p>If you are a resident of California, the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA) provide you with specific rights:</p>
+            
+            <h4>A. Categories of Data Collected</h4>
+            <p>We do NOT collect or store "Sensitive Personal Information" (Health Data) on our servers. However, through our third-party partners (Google AdMob), the following technical data may be processed:</p>
+            <ul>
+                <li><strong>Identifiers:</strong> Internet Protocol (IP) address, Advertising ID (IDFA/AAID).</li>
+                <li><strong>Internet Activity:</strong> Interaction with advertisements and app crash logs.</li>
+            </ul>
+
+            <h4>B. Your Rights</h4>
+            <ul>
+                <li><strong>Right to Know & Access:</strong> You have the right to request details about the data we collect. Since we are "Local-First," all the data we have is already on your device screen.</li>
+                <li><strong>Right to Delete:</strong> You can delete all your data by simply uninstalling the App. We do not have a server-side backup to delete.</li>
+                <li><strong>Right to Opt-Out of "Sale" or "Sharing":</strong> Under CCPA, showing ads can be considered "selling/sharing" data. You can opt-out by purchasing the <strong>Premium Version</strong> (which removes ads and tracking) or by enabling "Limit Ad Tracking" in your device settings.</li>
+                <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+            </ul>
+        </section>
+
+        <!-- EU GDPR SECTION -->
+        <section id="eu-gdpr">
+            <h2>3. European Union - GDPR</h2>
+            <p>For users in the EEA/UK, we rely on <strong>Explicit Consent</strong> to process data locally on your device.</p>
+            <ul>
+                <li><strong>Data Minimization:</strong> We do not transfer your health data to the cloud.</li>
+                <li><strong>Right to Erasure ('Right to be Forgotten'):</strong> Uninstalling the app permanently erases all data.</li>
+                <li><strong>Data Portability:</strong> You can use the "Export to CSV" feature to retrieve your data in a machine-readable format.</li>
+            </ul>
+        </section>
+
+        <!-- TERMS OF USE (EULA) SECTION -->
+        <section id="terms">
+            <h2>4. Terms of Use (EULA)</h2>
+            
+            <!-- CRITICAL MEDICAL DISCLAIMER -->
+            <div class="medical-warning">
+                <strong>⚠️ MEDICAL DISCLAIMER</strong>
+                This application is NOT a medical device. It does not provide medical advice, diagnosis, or treatment. It is a data logging tool only. 
+                <br><br>
+                <strong>Important:</strong> Color codes (Green/Yellow/Red) and charts within the app are for organizational purposes only. They do <strong>NOT</strong> constitute medical triage, diagnosis, or a "safe/unsafe" determination. Always consult a doctor for medical decisions. In case of emergency, call emergency services immediately.
+            </div>
+
+            <h3>4.1 Data Loss Disclaimer</h3>
+            <div class="warning-box">
+                <p><strong>You acknowledge and accept the following risks regarding your data:</strong></p>
+                <ul>
+                    <li><strong>Device Dependency:</strong> Data is stored locally. If your device is lost, damaged, or factory reset, your data is <strong>PERMANENTLY LOST</strong>.</li>
+                    <li><strong>No Recovery:</strong> The Service Provider cannot recover lost data or encryption keys.</li>
+                    <li><strong>Backup Responsibility:</strong> It is your sole responsibility to use the "Export to CSV" feature regularly to backup your data.</li>
+                </ul>
+            </div>
+
+            <h3>4.2 Limitation of Liability</h3>
+            <p>To the maximum extent permitted by applicable law:</p>
+            <ul>
+                <li><strong>Software Bugs:</strong> The Provider is not liable for data loss or errors caused by software bugs. The app is provided "AS IS".</li>
+                <li><strong>Financial Cap (Premium Users):</strong> Our total liability is limited to <strong>two times (2x)</strong> the amount paid for the <strong>One-Time Premium License</strong>.</li>
+                <li><strong>Financial Cap (Free Users):</strong> Our total liability is limited to the equivalent of the current <strong>One-Time Premium License Price</strong> OR <strong>$50 USD</strong> (whichever is lower).</li>
+            </ul>
+
+            <h3>4.3 Referral System Rules</h3>
+            <p>We utilize a hash-based, anonymous referral system. To prevent fraud and abuse, rewards are granted strictly under the following conditions:</p>
+            <ul>
+                <li><strong>Active User Definition:</strong> A referred user is considered "Active" only if they:
+                    <ol>
+                        <li>Install and use the app for at least <strong>6 days</strong> within the first week (7-day period).</li>
+                        <li>Make at least <strong>4 log entries</strong> per day during those 6 days.</li>
+                        <li>Retain the app installed for a subsequent <strong>7-day verification period</strong>.</li>
+                    </ol>
+                </li>
+                <li><strong>Reward Granting:</strong> Rewards are unlocked only after the verification period is successfully completed.</li>
+                <li><strong>Revocation:</strong> We reserve the right to revoke rewards if fake accounts or bot activity is detected.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 CradleLog. All Rights Reserved.</p>
+            <p>Contact: <a href="mailto:support@cradlelog.com">support@cradlelog.com</a></p>
+        </footer>
+
+    </main>
+</body>
+</html>

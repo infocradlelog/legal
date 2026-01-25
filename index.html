@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CradleLog Legal Documents</title>
+    <style>
+        body { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f5f5f7; color: #333; text-align: center; }
+        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 400px; width: 90%; }
+        h1 { font-size: 1.2rem; margin-bottom: 1rem; color: #2c3e50; }
+        .loader { border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; margin: 0 auto 1rem auto; }
+        ul { list-style: none; padding: 0; margin-top: 1.5rem; text-align: left; }
+        li { margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        a { text-decoration: none; color: #007aff; font-weight: 500; display: block; }
+        a:hover { text-decoration: underline; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+    <script>
+        function redirect() {
+            // Kullanıcının tarayıcı dilini al (örn: "tr-TR", "pt-PT", "pt-BR" veya "en-US")
+            var lang = navigator.language || navigator.userLanguage; 
+            lang = lang.toLowerCase();
+
+            // Konsola yazdıralım (Test için)
+            console.log("Detected Language: " + lang);
+
+            // 1. TÜRKÇE KONTROLÜ
+            if (lang.includes('tr')) {
+                window.location.replace("tr.html");
+            } 
+            // 2. PORTEKİZCE KONTROLÜ (Hem Brezilya hem Portekiz)
+            // 'pt' ifadesi hem 'pt-br' hem de 'pt-pt' içinde geçtiği için ikisini de yakalar.
+            else if (lang.includes('pt')) {
+                window.location.replace("br.html");
+            } 
+            // 3. VARSAYILAN (Diğer herkes İngilizceye - Global)
+            else {
+                window.location.replace("en.html");
+            }
+        }
+
+        // Sayfa yüklenince çalıştır
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <h1>Yönlendiriliyorsunuz...<br><small>Redirecting...</small></h1>
+        
+        <p style="font-size: 0.9rem; color: #666;">If you are not redirected automatically, please select your region:</p>
+        
+        <ul>
+            <li><a href="tr.html">🇹🇷 Türkiye (KVKK)</a></li>
+            <li><a href="en.html">🇪🇺 🇺🇸 Global / EU (English)</a></li>
+            <li><a href="br.html">🇧🇷 🇵🇹 Brasil & Portugal (LGPD/GDPR)</a></li>
+        </ul>
+    </div>
+</body>
+</html>
