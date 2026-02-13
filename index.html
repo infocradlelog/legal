@@ -3,603 +3,652 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CradleLog - Gizlilik Politikası ve Kullanım Koşulları</title>
+    <title>CradleLog – Yasal Metinler (Tam Koruma Versiyonu)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f5f7;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            padding: 2rem 1rem;
+        }
+        .document {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 3rem 2.5rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: #000;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1d1d1f;
+            border-left: 6px solid #0077b6;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #2c3e50;
+        }
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-style: normal;
+        }
+        h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        p, li, .table-caption, .legal-note {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            text-align: justify;
+        }
+        strong {
+            font-weight: 700;
+            color: #000;
+        }
+        em {
+            font-style: italic;
+            color: #2c3e50;
+        }
+        hr {
+            margin: 2rem 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: 700;
+            text-align: left;
+            padding: 12px 10px;
+            border: 1px solid #aaa;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #aaa;
+            vertical-align: top;
+        }
+        .critical-warning {
+            background-color: #fff3cd;
+            border-left: 6px solid #ff9800;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .critical-warning strong {
+            color: #b45f06;
+        }
+        .info-block {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0077b6;
+            padding: 1rem 1.5rem;
+            margin: 1.2rem 0;
+            font-style: normal;
+        }
+        .highlight-box {
+            background: #fcf8e7;
+            border: 1px solid #f1c40f;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .small-note {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .advertisement-label {
+            background: #e1f5fe;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .list-symbol {
+            font-weight: 600;
+            margin-right: 0.3rem;
+        }
+        .contact-block {
+            background: #f1f3f4;
+            padding: 1.2rem 1.8rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+        .version-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: #f5f5f5;
+            padding: 1rem 1.5rem;
+            border-radius: 30px;
+            margin: 1rem 0 2rem;
+            font-size: 0.95rem;
+        }
+        .version-info p {
+            margin-bottom: 0;
+        }
+        /* madde işaretleri için */
+        ul ul {
+            margin-left: 1.5rem;
+        }
+        .no-margin {
+            margin: 0;
+        }
+    </style>
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333;">
-
-<h1 style="color: #1a1a1a; font-size: 24px; margin-bottom: 8px;">CradleLog – Türkiye Yasal Metinleri</h1>
-<p style="color: #666; font-size: 14px; margin-bottom: 24px;">
-    <strong>Son Güncelleme:</strong> Ocak 2026<br>
-    <strong>Versiyon:</strong> 2.0.0 - Kapsamlı Savunma Versiyonu<br>
-    <strong>Hazırlayan:</strong> Savunma Avukatı Perspektifiyle Müvekkil Koruma Odaklı
-</p>
-
-<hr style="border: none; border-top: 1px solid #ddd; margin: 24px 0;">
-
-<h2 style="color: #d32f2f; font-size: 20px; margin-top: 32px;">BELGENİN AMACI VE KAPSAMI</h2>
-<p>Bu belge, CradleLog uygulamasının Türkiye Cumhuriyeti sınırları içerisinde sunulmasına ilişkin <strong style="color: #1976d2;">Gizlilik Politikası</strong>, <strong style="color: #1976d2;">Kullanım Koşulları (EULA)</strong> ve <strong style="color: #1976d2;">KVKK Aydınlatma Metni</strong>ni içermektedir.</p>
-
-<p><strong style="color: #d32f2f;">Hukuki Dayanak:</strong></p>
-<ul>
-<li>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</li>
-<li>6502 sayılı Tüketicinin Korunması Hakkında Kanun (TKHK)</li>
-<li>6098 sayılı Türk Borçlar Kanunu (TBK)</li>
-<li>İlgili tüm tüzük ve yönetmelikler</li>
-</ul>
-
-<p><strong style="color: #d32f2f;">Belgenin Bağlayıcılığı:</strong><br>
-Kullanıcı, uygulamayı indirerek, yükleyerek veya kullanmaya başlayarak bu belgedeki tüm hükümleri okuduğunu, anladığını ve kabul ettiğini beyan ve taahhüt eder.</p>
-
-<hr style="border: none; border-top: 1px solid #ddd; margin: 24px 0;">
-
-<h2 style="color: #d32f2f; font-size: 20px; margin-top: 32px;">1. GİZLİLİK POLİTİKASI</h2>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.1 Mimari Yaklaşım: Yerel-Öncelikli (Local-First) ve Zero-Knowledge</h3>
-
-<p>CradleLog, gizlilik ve veri minimizasyonu ilkeleri esas alınarak tasarlanmış <strong style="background-color: #fff3e0; padding: 2px 4px; border-radius: 3px;">yerel-öncelikli (local-first)</strong> bir uygulamadır. Uygulamanın temel mimarisi gereği:</p>
-
-<ul>
-<li>Bebek profilleri, sağlık kayıtları, beslenme, uyku, aşı, fotoğraf ve benzeri tüm içerikler <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">yalnızca kullanıcının kendi cihazında</strong> saklanır</li>
-<li>Bu veriler, cihaz üzerinde endüstri standardı <strong style="color: #2e7d32; background-color: #e8f5e9; padding: 2px 4px; border-radius: 3px;">AES-256</strong> algoritması ile şifrelenir</li>
-<li>Şifreleme anahtarı, uygulamanın ilk kurulumu sırasında cihaz üzerinde rastgele oluşturulan <strong style="color: #1976d2;">32 baytlık</strong> bir anahtardır</li>
-<li>CradleLog, bu anahtara hiçbir şekilde erişemez, anahtarı saklamaz, yedeklemez veya geri kazanamaz</li>
-</ul>
-
-<h4 style="color: #d32f2f; background-color: #ffebee; padding: 12px; border-left: 4px solid #d32f2f; margin: 16px 0;">KRİTİK UYARI: ŞİFRELEME ANAHTARI VE VERİ GÜVENLİĞİ</h4>
-
-<p>Şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmaktadır. CradleLog, bu anahtarı <strong style="color: #d32f2f; text-decoration: underline;">BİLMEMEKTE</strong> ve bu anahtara <strong style="color: #d32f2f; text-decoration: underline;">ERİŞEMEMEKTE</strong>DİR.</p>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">Aşağıdaki durumlarda verileriniz KALICI OLARAK KAYBOLABİLİR ve kurtarılamaz:</strong></p>
-
-<ul style="background-color: #fafafa; padding: 16px; border-radius: 8px;">
-<li>Cihazınızı kaybetmeniz veya çalınması</li>
-<li>Uygulamayı silip yeniden yüklemeniz</li>
-<li>Cihazınızın formatlanması veya sıfırlanması</li>
-<li>İşletim sistemi güncellemesi sırasında veri bozulması</li>
-<li>Şifreleme anahtarının bozulması veya kaybolması</li>
-<li>Cihazınızın donanım arızası (bellek bozulması, depolama hatası)</li>
-<li>Hafıza temizleme uygulamalarının kullanılması</li>
-</ul>
-
-<p><strong style="color: #d32f2f;">CradleLog bu durumlardan SORUMLU DEĞİLDİR çünkü:</strong></p>
-
-<ol>
-<li>Şifreleme anahtarını bilmemektedir</li>
-<li>Verilerinize teknik olarak erişememektedir</li>
-<li>Kurtarma işlemi teknik olarak <strong style="color: #d32f2f;">MÜMKÜN DEĞİLDİR</strong></li>
-<li>Veriler tamamen cihazınızın güvenliğine bağlıdır</li>
-</ol>
-
-<h4 style="color: #f57c00; background-color: #fff3e0; padding: 12px; border-left: 4px solid #f57c00; margin: 16px 0;">ZORUNLU KULLANICI SORUMLULUĞU:</h4>
-
-<p>Kullanıcı, verilerinin güvenliğinden ve yedeğinden <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">TAMAMEN SORUMLUDUR</strong>. Bu sorumluluk kapsamında:</p>
-
-<ul>
-<li>Düzenli olarak (haftada en az 1 kez) yedek almalıdır</li>
-<li>Yedekleri güvenli bir yerde saklamalıdır</li>
-<li>Cihaz değişikliği öncesi mutlaka yedek almalıdır</li>
-<li>Uygulama güncellemesi öncesi mutlaka yedek almalıdır</li>
-<li>Cihaz güvenliğini sağlamalıdır (ekran kilidi, güvenli şifre vb.)</li>
-</ul>
-
-<p style="background-color: #e3f2fd; padding: 12px; border-radius: 8px; color: #1976d2; font-style: italic;">
-    Not: Bu sözleşmenin yürürlükte olduğu uygulama sürümünde, cihazlar arası veri aktarımı, senkronizasyon, QR kod veya Bluetooth (BLE) tabanlı herhangi bir veri transferi özelliği BULUNMAMAKTADIR.
-</p>
-
-<p style="background-color: #e3f2fd; padding: 12px; border-radius: 8px; color: #1976d2; font-style: italic;">
-    Bu tür özellikler, ileride eklenmesi halinde ayrı bir sürüm güncellemesi ve güncellenmiş hukuki metinler ile kullanıcılara sunulacaktır.
-</p>
-
-<p>Bu uyarıları dikkate almayan ve düzenli yedek almayan kullanıcının veri kaybı yaşaması durumunda CradleLog hiçbir sorumluluk kabul etmez.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.2 Sunucu Tarafında Tutulan Veriler</h3>
-
-<p>CradleLog tarafından merkezi sunucularda <strong style="background-color: #fff3e0; padding: 2px 4px; border-radius: 3px;">yalnızca</strong> aşağıdaki veriler saklanmaktadır:</p>
-
-<ul>
-<li>Uygulama ilk başlatıldığında oluşturulan <strong style="color: #2e7d32;">Consent ID (UUIDv4)</strong> değerinin kriptografik olarak özetlenmiş (hashed - SHA-256) hali</li>
-<li>Uygulama ilk başlatıldığında oluşturulan <strong style="color: #2e7d32;">Referral ID (UUIDv4)</strong> değerinin kriptografik olarak özetlenmiş (hashed - SHA-256) hali</li>
-<li>Açık rızanın verildiği tarih ve saat bilgisi (timestamp)</li>
-<li>Kullanıcının onayladığı hukuki metnin versiyon bilgisi ve metin özeti (hash)</li>
-</ul>
-
-<p><strong style="color: #d32f2f;">Bu veriler:</strong></p>
-<ul>
-<li>Tek başına kimliği belirli veya belirlenebilir bir gerçek kişiye ulaşmaya elverişli <strong style="color: #d32f2f;">DEĞİLDİR</strong></li>
-<li>Geri dönüşümsüz (irreversible) hash algoritması ile şifrelenmiştir</li>
-<li>Pseudonymize (takma isimlendirilmiş) veri niteliğindedir</li>
-</ul>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.3 Veri Sorumluluğunun Hukuki Niteliği</h3>
-
-<p>CradleLog, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki şekilde veri sorumlusu sıfatını taşımaktadır:</p>
-
-<h4 style="color: #1976d2; background-color: #e3f2fd; padding: 8px 12px; border-radius: 4px;">a) Rıza Kayıtları ve Referans Sistemi Bakımından (SINIRLI VERİ SORUMLUSU):</h4>
-
-<ul>
-<li>Consent ID ve Referral ID'lerin hash'lenmiş halleri</li>
-<li>Rıza verme tarih/saati</li>
-<li>Hukuki metin versiyonları</li>
-</ul>
-
-<p>Bu veriler bakımından CradleLog <strong style="color: #1976d2;">sınırlı kapsamda veri sorumlusudur</strong>.</p>
-
-<h4 style="color: #d32f2f; background-color: #ffebee; padding: 8px 12px; border-radius: 4px;">b) Sağlık Verileri Bakımından (VERİ SORUMLUSU DEĞİLDİR):</h4>
-
-<p>CradleLog, kullanıcının cihazında yerel olarak saklanan sağlık verileri bakımından KVKK kapsamında veri sorumlusu veya veri işleyen statüsünde <strong style="color: #d32f2f; text-decoration: underline; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">DEĞİLDİR</strong>.</p>
-
-<p><strong style="color: #1976d2;">Gerekçe:</strong></p>
-
-<ol>
-<li><strong>Teknik Erişim Yokluğu:</strong> Bu veriler kullanıcının cihazında AES-256 şifrelemesiyle saklanmakta olup, CradleLog bu verilerin içeriğine teknik olarak <strong style="color: #d32f2f;">ERİŞEMEZ</strong>.</li>
-<li><strong>Şifreleme Anahtarı Kontrolü:</strong> 32 baytlık şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmakta olup, CradleLog bu anahtarı <strong style="color: #d32f2f;">BİLMEMEKTE</strong> ve bu anahtara hiçbir şekilde <strong style="color: #d32f2f;">ERİŞEMEMEKTE</strong>DİR.</li>
-<li><strong>Veri İşleme Amacı ve Vasıtasının Belirlenmesi:</strong> Bu veriler, kullanıcının belirlediği amaçlarla (bebek bakım takibi), kullanıcının kontrolünde işlenmektedir. CradleLog, sadece teknik altyapıyı (uygulama yazılımı, şifreleme kütüphanesi) sağlamaktadır.</li>
-<li><strong>Kullanıcının Veri Sorumlusu Sıfatı:</strong> Kullanıcı, kendi cihazında saklanan ve yalnızca kendisinin erişebildiği bu veriler bakımından <strong style="color: #1976d2;">"kişisel veri sorumlusu"</strong> sıfatını haizdir.</li>
-</ol>
-
-<h4 style="color: #f57c00; background-color: #fff3e0; padding: 8px 12px; border-radius: 4px;">ANCAK CradleLog, Teknik Altyapı Sağlayıcı Olarak:</h4>
-
-<p>CradleLog, bu verilerin işlenmesine olanak sağlayan teknik altyapıyı sağladığından, KVKK m.3 kapsamında <strong style="color: #f57c00;">teknik altyapı sağlayıcı</strong> sıfatıyla aşağıdaki yükümlülükleri taşır:</p>
-
-<ul>
-<li>Güvenli işleme ortamı sağlama (AES-256 şifreleme standardı, OWASP güvenlik standartları)</li>
-<li>Kullanıcıyı aydınlatma (KVKK m.10)</li>
-<li>Teknik düzeyde veri güvenliği önlemleri alma (KVKK m.12)</li>
-<li>Kullanıcıyı veri kaybı riskleri konusunda uyarma</li>
-</ul>
-
-<h4 style="color: #1976d2; background-color: #e3f2fd; padding: 8px 12px; border-radius: 4px;">Veri İçeriği Üzerinde Tasarruf Hakkı:</h4>
-
-<p>CradleLog, sağlık verilerinin <strong style="color: #d32f2f;">içeriğine erişemediğinden</strong>, bu veriler bakımında KVKK m.11 kapsamındaki bazı haklar (örneğin verilerin düzeltilmesi, silinmesi, üçüncü kişilere aktarıldıysa bilgilendirilme) doğrudan CradleLog'a yöneltilemez.</p>
-
-<p>Bu haklar, verilerin bulunduğu cihazın sahibi ve verilere tek başına erişim yetkisine sahip olan <strong style="color: #1976d2;">kullanıcı tarafından</strong> doğrudan kullanılabilir. Kullanıcı, uygulamayı kullanarak kendi verilerini görüntüleyebilir, düzeltebilir, silebilir veya dışa aktarabilir.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.4 Veri Sorumluluğunun Sınırları</h3>
-
-<p>CradleLog, uygulama içerisinde kullanıcı tarafından girilen sağlık verilerinin içeriğine erişemez, bu verileri merkezi bir sunucuda depolamaz ve bu veriler üzerinde herhangi bir tasarrufta bulunmaz.</p>
-
-<p>Bu nedenle CradleLog'un veri sorumluluğu yalnızca aşağıdaki faaliyetlerle sınırlıdır:</p>
-
-<ul>
-<li>Rıza kayıtlarının hukuki ispat yükümlülüğü kapsamında tutulması (hash'lenmiş Consent ID, timestamp, metin hash'i)</li>
-<li>Referans sisteminin teknik olarak çalıştırılması ve cihazlar arası hak ediş doğrulamalarının yapılması (hash'lenmiş Referral ID eşleşmeleri)</li>
-<li>Reklam gösterimi için gerekli olan cihaz kimlik verilerinin işlenmesi (sadece ücretsiz kullanıcılar için)</li>
-</ul>
-
-<p>Kullanıcının yerel cihazında saklanan sağlık verileri, bebek profilleri, fotoğraflar, notlar ve benzeri tüm içerikler bakımından CradleLog, 6698 sayılı KVKK kapsamında <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">veri sorumlusu veya veri işleyen sıfatına sahip değildir</strong>.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.5 Üçüncü Taraf Hizmetler</h3>
-
-<h4 style="color: #1976d2;">1.5.1 Supabase (Veri Depolama Altyapısı)</h4>
-
-<p><strong style="color: #1976d2;">Amaç:</strong> Yalnızca hash'lenmiş rıza kayıtları ve referans sistemi meta verilerinin saklanması</p>
-
-<p><strong style="color: #1976d2;">Aktarılan Veriler:</strong></p>
-<ul>
-<li>Hash'lenmiş Consent ID (UUIDv4 - SHA-256)</li>
-<li>Hash'lenmiş Referral ID (UUIDv4 - SHA-256)</li>
-<li>Rıza verme timestamp'i</li>
-<li>Hukuki metin versiyonu ve hash'i</li>
-</ul>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">AKTARILMAYAN VERİLER:</strong></p>
-<ul>
-<li>Sağlık verileri</li>
-<li>Bebek profil bilgileri</li>
-<li>Kullanıcı kimlik bilgileri</li>
-<li>Fotoğraflar, notlar, kayıtlar</li>
-</ul>
-
-<p><strong style="color: #1976d2;">Hukuki Dayanak:</strong> Meşru menfaat (KVKK m.5/2-f) - Hukuki ispat yükümlülüğü</p>
-
-<h4 style="color: #f57c00;">1.5.2 Reklam Hizmetleri (Google AdMob)</h4>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">Kapsam:</strong> YALNIZCA ücretsiz sürüm kullanıcıları</p>
-
-<p><strong style="color: #1976d2;">Reklam Türü ve İçeriği:</strong></p>
-<p>Uygulama, Google AdMob altyapısını kullanmaktadır. Uygulamanın hedef kitlesi yetişkinler (ebeveynler) olmakla birlikte, uygulamanın hassas doğası gereği reklam içerikleri "G" (General Audience - Genel İzleyici) seviyesinde filtrelenmektedir.</p>
-
-<p>Kullanıcıya gösterilecek reklamlar; kullanıcının cihazındaki reklam kimliği (IDFA/GAID) baz alınarak sunulabilir. Ancak kesinlikle uygulama içine girilen bebek sağlık verileri, isimler veya notlar reklam hedeflemesi amacıyla kullanılmaz ve reklam sağlayıcılarla paylaşılmaz.</p>
-
-<p><strong style="color: #1976d2;">İşlenen Veriler:</strong></p>
-<ul>
-<li><strong style="color: #1976d2;">iOS cihazlarda:</strong> IDFA (Identifier for Advertisers) - Apple tarafından cihaza atanan reklam kimliği</li>
-<li><strong style="color: #1976d2;">Android cihazlarda:</strong> GAID (Google Advertising ID) - Google tarafından cihaza atanan reklam kimliği</li>
-</ul>
-
-<p><strong style="color: #1976d2;">Veri Sorumlusu:</strong> Bu veriler bakımından veri sorumlusu <strong style="color: #d32f2f;">Google LLC</strong>'dir. CradleLog, sadece aracılık eden teknik platform sağlayıcısıdır.</p>
-
-<p><strong style="color: #1976d2;">İşleme Amacı:</strong></p>
-<ul>
-<li>Kişiselleştirilmemiş reklam gösterimi</li>
-<li>Reklam frekans kontrolü (aynı reklamın tekrar gösterilmemesi)</li>
-<li>Reklam performans ölçümü (anonim istatistikler)</li>
-</ul>
-
-<p><strong style="color: #1976d2;">Veri Aktarım Yeri:</strong> Amerika Birleşik Devletleri (Google LLC sunucuları)</p>
-
-<p><strong style="color: #1976d2;">Kullanıcı Hakları:</strong></p>
-<p>Kullanıcı, reklam kimliğini kontrol etme haklarına sahiptir:</p>
-<ul>
-<li><strong>iOS:</strong> Ayarlar > Gizlilik ve Güvenlik > Apple Advertising > Reklam Tanımlayıcısını Sıfırla</li>
-<li><strong>Android:</strong> Ayarlar > Google > Reklamlar > Reklam Kimliğini Sıfırla</li>
-</ul>
-
-<h4 style="color: #d32f2f; background-color: #ffebee; padding: 12px; border-left: 4px solid #d32f2f; margin: 16px 0;">AÇIK RIZA GEREKLİLİĞİ</h4>
-
-<p>Reklam gösterimi için KVKK md. 5 gereği <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">açık rızanız gerekmektedir</strong>. Bu rıza:</p>
-<ul>
-<li>İlk açılışta bu belgeyi okuyarak bilgilendirilirsiniz</li>
-<li>2. gün sonunda (ve en az 8 kayıt girdikten sonra) <strong style="color: #d32f2f;">AYRI</strong> bir consent dialog ile alınır</li>
-<li>Dialog, aşağıdaki seçenekleri sunar:
-<ul>
-<li>Reklamlarla devam et (ücretsiz)</li>
-<li>Premium satın al (reklamsız)</li>
-<li>Uygulamayı bırak</li>
-</ul>
-</li>
-</ul>
-
-<p><strong style="color: #2e7d32; background-color: #e8f5e9; padding: 4px 8px; border-radius: 3px;">Rıza vermek ZORUNLU DEĞİLDİR.</strong> Premium sürümü satın alarak veya uygulamayı bırakarak reklamsız kullanabilir veya uygulamayı kullanmamayı tercih edebilirsiniz.</p>
-
-<p><strong style="color: #1976d2;">Premium Kullanıcılar:</strong> Premium kullanıcılara hiçbir reklam gösterilmez ve reklam kimliği işlenmez.</p>
-
-<h4 style="color: #1976d2;">1.5.3 Telemetri ve Çökme Raporları</h4>
-
-<p>CradleLog, uygulamanın kararlılığını ve performansını iyileştirmek amacıyla, kullanıcı deneyimini etkilemeyen ve kişisel veri içermeyen anonim çökme raporlarını (crash reports) toplar. Bu hizmet, Google LLC tarafından sunulan Firebase Crashlytics altyapısı kullanılarak gerçekleştirilir.</p>
-
-<p><strong style="color: #1976d2;">Toplanan Veriler (Anonim ve Teknik Nitelikte):</strong></p>
-<ul>
-<li>Çökme Bilgileri: Çökme anındaki teknik detaylar (hatanın oluştuğu kod satırı, cihaz belleği durumu, iş parçacığı bilgisi vb.)</li>
-<li>Cihaz Bilgileri (Anonim): Cihaz modeli, işletim sistemi versiyonu, dil ve bölge ayarları, pil seviyesi, boş depolama alanı gibi isimsizleştirilmiş teknik bilgiler</li>
-<li>Uygulama Bilgileri: Uygulamanın sürüm numarası ve kurulu olduğu paket adı</li>
-</ul>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">TOPLANMAYAN / İŞLENMEYEN VERİLER:</strong></p>
-<ul>
-<li>Kullanıcı kimliği (isim, e-posta, telefon)</li>
-<li>Kullanıcı tarafından girilen herhangi bir içerik (bebek profilleri, sağlık kayıtları, notlar, fotoğraflar)</li>
-<li>Konum verileri</li>
-<li>Cihaz reklam kimliği (IDFA/GAID) veya benzeri tanımlayıcılar</li>
-</ul>
-
-<p><strong style="color: #1976d2;">Veri Sorumlusu ve İşleme Amacı:</strong></p>
-<p>Veri Sorumlusu: Toplanan bu anonim teknik veriler bakımından, veri işleme faaliyetinin asıl amacını ve vasıtasını belirleyen taraf CradleLog'dur.</p>
-<p>İşleme Amacı: Uygulamadaki hataları tespit etmek, önceliklendirmek ve düzeltmek; kararlılığı ve performansı artırmak; böylece tüm kullanıcılar için daha iyi bir deneyim sunmak.</p>
-<p>Hukuki Dayanak: KVKK Md. 5/2-f uyarınca meşru menfaat. Veri işleme, veri sorumlusunun (CradleLog) teknik iyileştirme yapma menfaati ile kullanıcının stabil bir uygulama kullanma menfaati arasında dengelenmiştir ve temel hak ve özgürlüklere zarar vermemektedir.</p>
-
-<p><strong style="color: #1976d2;">Veri İşleyen ve Aktarım:</strong></p>
-<p>Veri İşleyen: Crash raporlarının teknik altyapısı Google LLC tarafından sağlanmaktadır. Google, bu hizmet kapsamında CradleLog adına veri işleyen sıfatıyla hareket etmektedir.</p>
-<p>Veri Aktarımı: Toplanan anonim teknik veriler, işleme amacına uygun olarak Amerika Birleşik Devletleri'nde bulunan Google sunucularına aktarılabilir. Bu aktarım, KVKK ve ilgili mevzuata uygun şekilde gerçekleştirilmektedir.</p>
-<p>Güvenlik: Google, veri işleyen olarak endüstri standartlarında güvenlik önlemleri uygulamayı taahhüt etmektedir.</p>
-
-<p><strong style="color: #1976d2;">Kullanıcı Kontrolü:</strong></p>
-<p>Kullanıcı, uygulamanın ayarlar bölümünden "Çökme Raporları Gönder" veya benzeri bir seçenek üzerinden bu anonim veri toplama işlemini tamamen devre dışı bırakabilir. Bu işlem devre dışı bırakıldığında, cihazdan hiçbir çökme raporu toplanmayacak ve gönderilmeyecektir.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">1.6 Çocuk Verileri ve Yasal Temsilcilik</h3>
-
-<h4 style="color: #1976d2;">1.6.1 Hedef Kitle ve Kullanım Amacı (COPPA/GDPR-K Beyanı)</h4>
-
-<p>CradleLog, içerik olarak bebek bakımını konu almakla birlikte; hedef kitlesi ve fiili kullanıcıları bakımından "Çocuğa Yönelik (Child-Directed)" bir uygulama <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">DEĞİLDİR</strong>. Uygulama, münhasıran 18 yaş ve üzeri ebeveynlerin/vasilerin kullanımı için tasarlanmış bir ebeveyn asistanı aracıdır.</p>
-<p>Uygulama, çocuklar tarafından kullanılmak üzere tasarlanmamıştır ve çocukların cihazla doğrudan etkileşime girmesi öngörülmemektedir. Bu nedenle reklam ve veri işleme politikaları "Genel İzleyici (Yetişkin)" standartlarına göre belirlenmiştir.</p>
-
-<p style="background-color: #fff3e0; padding: 12px; border-left: 4px solid #f57c00; margin: 16px 0;">
-    <strong style="color: #f57c00;">Cihaz Güvenliği Uyarısı:</strong><br>
-    Uygulama, ebeveynlere yöneliktir ve hassas veriler içerir. Çocuğunuzun cihazı kullanması durumunda verilerin yanlışlıkla silinmesini veya değiştirilmesini önlemek amacıyla, cihazınızın ekran kilidi özelliklerini kullanmanız ve uygulamayı çocukların erişimine açık bırakmamanız önemle tavsiye edilir.
-</p>
-
-<h4 style="color: #1976d2;">1.6.2 Yasal Temsilcilik Beyanı</h4>
-
-<p>Kullanıcı, uygulamayı kullanarak aşağıdaki hususları <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">KABUL ve BEYAN</strong> eder:</p>
-<ul>
-<li>18 yaşından büyük olduğunu</li>
-<li><strong style="color: #d32f2f;">Uygulamada ekleyeceği bebek veya bebeklerin</strong> yasal temsilcisi (anne, baba veya yasal vasi) sıfatıyla hareket ettiğini</li>
-<li>Çocuğa/çocuklara ait özel nitelikli kişisel verileri (sağlık verileri) işleme yetkisine sahip olduğunu</li>
-<li>Bu verileri işlemek için gerekli yasal dayanağa sahip olduğunu</li>
-</ul>
-
-<h4 style="color: #1976d2;">1.6.3 Reklam İçerik Güvenliği</h4>
-
-<p>Uygulama yetişkinlere yönelik olsa da, bir bebek bakım aracı olması sebebiyle gösterilen reklamların "Aile Güvenliği" standartlarına uyması taahhüt edilir.</p>
-<p>Bu kapsamda CradleLog:</p>
-<ul>
-<li>Reklam içerik derecelendirmesini teknik olarak "G" (General Audience) seviyesinde sınırlar.</li>
-<li>Kumar, cinsellik, şiddet, alkol ve benzeri hassas kategorilerdeki reklamların gösterimini teknik filtrelerle engeller.</li>
-<li>Uygulama içine girilen çocuk verilerini (sağlık, boy, kilo vb.) reklam hedeflemesi için <strong style="color: #d32f2f; text-decoration: underline;">ASLA</strong> kullanmaz. Hedefleme sadece yetişkin kullanıcının (ebeveynin) anonim reklam kimliği üzerinden, genel ilgi alanlarına göre yapılabilir.</li>
-</ul>
-
-<hr style="border: none; border-top: 2px solid #d32f2f; margin: 32px 0;">
-
-<h2 style="color: #d32f2f; font-size: 22px; margin-top: 32px;">2. KULLANIM KOŞULLARI (EULA - SON KULLANICI LİSANS SÖZLEŞMESİ)</h2>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">2.1 Tıbbi Feragatname ve Uygulamanın Niteliği</h3>
-
-<h4 style="color: #d32f2f; background-color: #ffebee; padding: 12px; border-left: 4px solid #d32f2f; margin: 16px 0;">2.1.1 Ürün Tanımı</h4>
-
-<p>CradleLog, <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">tıbbi cihaz, tanı aracı veya tedavi yöntemi DEĞİLDİR</strong>. Uygulama, ebeveynlerin bebek bakım süreçlerini organize etmelerine yardımcı olan bir <strong style="color: #1976d2; background-color: #e3f2fd; padding: 2px 4px; border-radius: 3px;">kayıt tutma, organizasyon ve hatırlatma aracıdır</strong>.</p>
-
-<p>CradleLog:</p>
-<ul>
-<li>Tıbbi teşhis koymaz</li>
-<li>Hastalık tanısı yapmaz</li>
-<li>Tedavi önerisi sunmaz</li>
-<li>Reçete veya ilaç önerisi vermez</li>
-<li>Sağlık durumu değerlendirmesi yapmaz</li>
-<li>Tıbbi acil durum tespiti yapmaz</li>
-</ul>
-
-<h4 style="color: #f57c00;">2.1.2 Tıbbi Kararlar ve Profesyonel Destek</h4>
-
-<p>Bebek sağlığına, gelişimine, beslenmesine ve bakımına ilişkin <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">TÜM KARARLAR</strong> mutlaka <strong style="color: #1976d2; background-color: #e3f2fd; padding: 2px 4px; border-radius: 3px;">lisanslı sağlık profesyonelleri</strong> (pediatrist, çocuk doktoru, diyetisyen, aile hekimi vb.) tarafından alınmalıdır.</p>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">KULLANICI KABUL EDER Kİ:</strong></p>
-<ul>
-<li>Uygulamada yer alan bilgiler genel nitelikte bilgilendirme amaçlıdır</li>
-<li>Bu bilgiler tıbbi tavsiye yerine geçmez</li>
-<li>Sağlık ile ilgili her türlü karar öncesinde mutlaka hekim görüşü alınmalıdır</li>
-<li>Acil durumlarda (yüksek ateş, solunum problemi, beslenme reddi vb.) uygulama kullanılmayacak, doğrudan sağlık kuruluşuna başvurulacaktır</li>
-</ul>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">2.2 Güncelleme, Veri Kaybı ve Uyumsuzluk Riskleri</h3>
-
-<h4 style="color: #1976d2;">2.2.1 Güncelleme Politikası</h4>
-
-<p>Uygulama güncellemeleri, güvenlik, performans iyileştirmeleri ve işlevsel geliştirmeler amacıyla yayınlanmaktadır.</p>
-<p>CradleLog, güncellemelerin mevcut verilerle uyumlu şekilde çalışması için uygulamanın niteliği, teknik kapasitesi ve sunulduğu kullanım koşulları çerçevesinde <strong style="color: #1976d2;">makul ölçüde teknik özen</strong> göstermekle yükümlüdür.</p>
-
-<h4 style="color: #d32f2f; background-color: #ffebee; padding: 12px; border-left: 4px solid #d32f2f; margin: 16px 0;">2.2.2 Güncelleme Öncesi ZORUNLU Yedekleme</h4>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">KRİTİK UYARI - ZORUNLU İŞLEM:</strong></p>
-
-<p>Kullanıcı, <strong style="color: #d32f2f; text-decoration: underline; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">HER UYGULAMA GÜNCELLEMESİ ÖNCESİNDE MUTLAKA YEDEK ALMAKLA YÜKÜMLÜDÜR</strong>.</p>
-
-<p><strong style="color: #d32f2f;">Yedekleme Yapılmaması Durumunda:</strong></p>
-<ul style="background-color: #fafafa; padding: 16px; border-radius: 8px;">
-<li>Güncelleme sonrası veriler kaybolabilir</li>
-<li>Veri tabanı uyumsuzluğu oluşabilir</li>
-<li>Şifreleme anahtarı bozulabilir</li>
-<li>Veriler kurtarılamaz hale gelebilir</li>
-</ul>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">CradleLog, güncelleme öncesi yedek alınmaması nedeniyle oluşan veri kayıplarından SORUMLU DEĞİLDİR.</strong></p>
-
-<p>Yerel cihazda tutulan verilerin; işletim sistemi kısıtları, cihaz donanımı, üçüncü taraf yazılımlar, kullanıcı tarafından yedek alınmaması veya öngörülemeyen teknik hatalar nedeniyle zarar görmesi veya kaybolması mümkündür.</p>
-<p>Bu tür durumlarda CradleLog, makul teknik özenin gösterilmiş olması kaydıyla, veri kaybından sorumlu tutulamaz.</p>
-<p>CradleLog'un kasıtlı davranışı veya ağır kusuru hâllerinde doğabilecek sorumluluklar bu hükmün kapsamı dışındadır.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">2.3 Veri Kaybı ve Yedekleme Sorumluluğu</h3>
-
-<p>Tüm veriler yalnızca kullanıcının cihazında saklandığından, düzenli yedek alınması kullanıcının sorumluluğundadır.</p>
-
-<p><strong style="color: #1976d2;">Uygulama içi yedekleme sistemi:</strong></p>
-<ul>
-<li>Ayarlar ilk kez açıldığında yedekleme bilgilendirme dialogu gösterilir</li>
-<li>7 günde bir "Yedek Al" hatırlatma dialogu gösterilir</li>
-<li>Dialog'dan tek tıkla yedek alma imkanı sunulur</li>
-</ul>
-
-<p>Kullanıcı bu hatırlatmalara rağmen yedek almaz ise, veri kaybı riski tamamen kullanıcının sorumluluğundadır.</p>
-
-<h3 style="color: #d32f2f; font-size: 17px; margin-top: 24px;">2.4 SORUMLULUK SINIRLAMASI VE MADDİ TAZMİNAT TAVANI</h3>
-
-<h4 style="color: #1976d2; background-color: #e3f2fd; padding: 12px; border-left: 4px solid #1976d2; margin: 16px 0;">2.4.1 ÜCRETSİZ SÜRÜM SORUMLULUĞU (Bağış Sözleşmesi - TBK md. 285)</h4>
-
-<p><strong style="color: #1976d2;">Hukuki Nitelik:</strong></p>
-<p>Ücretsiz sürüm, kullanıcıya karşılıksız sunulan bir hizmettir ve <strong style="color: #1976d2; background-color: #e3f2fd; padding: 2px 4px; border-radius: 3px;">bağış sözleşmesi</strong> (TBK md. 285-295) hükümlerine tabidir.</p>
-
-<p><strong style="color: #1976d2;">Sorumluluk Rejimi:</strong></p>
-<p>Bağış sözleşmelerinde, bağışlayan (CradleLog) yalnızca <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">kasıt ve ağır kusur</strong> hallerinde sorumludur. Basit kusur (hafif ihmal) hallerinde hiçbir sorumluluk kabul edilmez.</p>
-
-<p>Ücretsiz sürüm, kullanıcıya karşılıksız sunulan bir hizmettir (bağış). Bu kapsamda CradleLog:</p>
-<ul>
-<li>Yalnızca <strong style="color: #d32f2f;">KASIT</strong> ve <strong style="color: #d32f2f;">AĞIR KUSUR</strong> hallerinde sorumludur</li>
-<li>Basit kusur (hafif ihmal) hallerinde hiçbir sorumluluk kabul etmez</li>
-<li>Yazılım hataları, çökmeler, veri kayıpları nedeniyle tazminat ödemez</li>
-</ul>
-
-<p>Kullanıcı, ücretsiz hizmetin "olduğu gibi" (as-is) sunulduğunu kabul eder.</p>
-
-<h4 style="color: #f57c00; background-color: #fff3e0; padding: 12px; border-left: 4px solid #f57c00; margin: 16px 0;">2.4.2 PREMIUM SÜRÜM SORUMLULUĞU (Sınırlı Sorumluluk)</h4>
-
-<p>CradleLog, premium kullanıcılar bakımından:</p>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">SORUMLULUK TAVANI:</strong></p>
-<p>Ödenen premium bedel (tek seferlik satın alma tutarı) sorumluluk tavanını oluşturur. Örnek: 299 TL ödenmiş ise, azami tazminat 299 TL'dir.</p>
-
-<p><strong style="color: #2e7d32; background-color: #e8f5e9; padding: 4px 8px; border-radius: 3px;">SORUMLU OLDUĞUMUZ HALLER:</strong></p>
-<ul>
-<li>Kasıt ve ağır kusur</li>
-<li>Öngörülebilir, doğrudan, maddi zararlar</li>
-</ul>
-
-<p><strong style="color: #d32f2f; background-color: #ffebee; padding: 4px 8px; border-radius: 3px;">SORUMLU OLMADIĞIMIZ HALLER:</strong></p>
-<ul>
-<li>Dolaylı zararlar (iş kaybı, kar mahrumiyeti, manevi zarar)</li>
-<li>Kullanıcının yedek almaması nedeniyle veri kaybı</li>
-<li>Cihaz kaybı, çalınma, bozulma nedeniyle veri kaybı</li>
-<li>Güncelleme öncesi yedek alınmaması nedeniyle veri kayıpları</li>
-<li>Sağlık kararlarının yanlışlığından doğan zararlar (uygulama tıbbi cihaz değildir, hekim tavsiyesi yerine geçmez)</li>
-<li>Üçüncü kişi hizmetlerindeki aksaklıklar (Google Play, App Store, AdMob vb.)</li>
-</ul>
-
-<p><strong style="color: #1976d2;">KULLANICI SORUMLULUKLARI:</strong></p>
-<ul>
-<li>Düzenli yedek almak</li>
-<li>Güncelleme öncesi yedek almak</li>
-<li>Cihaz güvenliğini sağlamak</li>
-</ul>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">2.5 CAYMA HAKKI İSTİSNASI (Dijital İçerik)</h3>
-
-<p><strong style="color: #f57c00; background-color: #fff3e0; padding: 4px 8px; border-radius: 3px;">ÖNEMLİ BİLGİLENDİRME:</strong></p>
-<p>CradleLog Premium sürümü, elektronik ortamda anında ifa edilen gayrimaddi bir hizmettir.</p>
-<p>6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği'nin 15/ğ maddesi uyarınca; "Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallara ilişkin sözleşmeler" cayma hakkının istisnası kapsamındadır.</p>
-<p>Kullanıcı, Premium hizmeti satın alarak hizmetin ifasının anında başladığını ve bu nedenle 14 günlük cayma (iade) hakkını kaybettiğini peşinen kabul ve beyan eder. İade talepleri, satın alımın yapıldığı platformun (Apple App Store veya Google Play Store) kendi iade politikalarına tabidir ve CradleLog'un bu platformların iade kararlarına müdahale yetkisi bulunmamaktadır.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">2.6 REFERRAL SİSTEMİ ŞARTLARI VE SINIRLAMALARI</h3>
-
-<h4 style="color: #1976d2;">2.6.1 PROMOSYON NİTELİĞİ:</h4>
-<p>Referral sistemi, zorunlu bir hak değil, ihtiyari bir promosyondur. CradleLog, sistemin kurallarını değiştirme/durdurma hakkını saklı tutar.</p>
-
-<h4 style="color: #f57c00;">2.6.2 TEKNİK SINIRLAMALAR (Zero-Knowledge Mimarisi):</h4>
-<ul>
-<li>Sistem tamamen otomatiktir</li>
-<li>CradleLog, kullanıcının kriterleri sağlayıp sağlamadığını <strong style="color: #d32f2f; text-decoration: underline;">MANUEL OLARAK DOĞRULAYAMAZ</strong> (teknik olarak mümkün değildir)</li>
-<li>Ödül verilmemesi durumunda CradleLog'un sorumluluğu <strong style="color: #d32f2f;">YOKTUR</strong></li>
-</ul>
-
-<h4 style="color: #1976d2;">2.6.3 HEDİYE PREMIUM SINIRLAMASI:</h4>
-<ul>
-<li>Satın alınan premium: Cihaz değişikliğinde korunur (App Store/Play)</li>
-<li>Hediye premium: <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">YALNIZCA</strong> mevcut cihazda geçerlidir</li>
-<li>Sebep: Teknik mimari (zero-knowledge), kullanıcı doğrulama imkanı yok</li>
-</ul>
-
-<h4 style="color: #1976d2;">2.6.4 ÖDÜL ŞARTLARI:</h4>
-<p>Davet edilen ilk 7 günün 6 günü giriş yapmalı ve her gün için 4'er kayıt olmalı. Bu şart sağlandıktan sonra 7 gün bekleme süresi vardır uygulamanın silinmesine karşı tedbir olarak.</p>
-<ul>
-<li>Kriterler sağlanmazsa ödül verilmez</li>
-</ul>
-
-<p>Kullanıcı, bu sistemin "hak" değil "hediye" niteliğinde olduğunu, teknik kısıtlamalar nedeniyle ödülün her zaman garanti edilmediğini <strong style="color: #d32f2f; background-color: #ffebee; padding: 2px 4px; border-radius: 3px;">KABUL EDER</strong>.</p>
-
-<hr style="border: none; border-top: 2px solid #d32f2f; margin: 32px 0;">
-
-<h2 style="color: #d32f2f; font-size: 22px; margin-top: 32px;">3. KVKK AYDINLATMA METNİ VE AÇIK RIZA</h2>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.1 Açık Rıza Metni (Özel Nitelikli Veriler)</h3>
-
-<p>Kullanıcı, uygulamayı kullanmaya başlamadan önce aşağıdaki açık rızayı vermelidir:</p>
-
-<p style="background-color: #e3f2fd; padding: 16px; border-left: 4px solid #1976d2; border-radius: 4px; font-style: italic; color: #1976d2;">
-    <strong>18 yaşından büyük olduğumu, uygulamada ekleyeceğim bebek veya bebeklerin yasal temsilcisi sıfatıyla hareket ettiğimi, bebeğime/bebeklerime ait sağlık verilerinin (beslenme, uyku, aşı, gelişim takibi vb.) ve diğer özel nitelikli kişisel verilerin, yalnızca kendi cihazımda AES-256 şifreleme standardıyla saklanmak üzere işlenmesini, CradleLog'un bu verilere erişemeyeceğini bildiğimi ve açıkça kabul ediyorum.</strong>
-</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.2 Reklam Gösterimi İçin Açık Rıza</h3>
-
-<p>Ücretsiz sürümde Google AdMob aracılığıyla kişiselleştirilmemiş reklamlar gösterilmektedir. Bu kapsamda:</p>
-<ul>
-<li>iOS cihazlarda: IDFA (Identifier for Advertisers)</li>
-<li>Android cihazlarda: GAID (Google Advertising ID)</li>
-</ul>
-
-<p>işlenmektedir. Bu veriler CradleLog tarafından değil, Google LLC tarafından işlenmekte olup, veri sorumlusu Google'dır. İşleme amacı: reklam gösterimi ve frekans kontrolü. Veri aktarımı: ABD (Google sunucuları).</p>
-
-<p>Kullanıcı, ayarlardan reklam kimliğini sıfırlama veya kişiselleştirmeyi devre dışı bırakma hakkına sahiptir.</p>
-
-<p>Ayrıca, uygulamanın kararlılığını artırmak amacıyla anonim çökme raporları (Google Firebase Crashlytics) toplanmaktadır. Bu veri işlemenin hukuki dayanağı meşru menfaattir ve ayarlardan devre dışı bırakılabilir.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.3 KVKK Kapsamında İşlenen Kişisel Veri</h3>
-
-<p>CradleLog tarafından merkezi sunucuda işlenen tek kişisel veri, kullanıcının <strong style="color: #1976d2; background-color: #e3f2fd; padding: 2px 4px; border-radius: 3px;">Consent ID</strong> değeridir.</p>
-
-<p>Bu değer:</p>
-<ul>
-<li>Uygulama ilk açıldığında otomatik oluşturulur (UUID v4)</li>
-<li>Rıza kayıtlarını izlemek için kullanılır</li>
-<li>Sunucuda hash'lenmiş hali saklanır</li>
-<li>Kullanıcı, Ayarlar > Kimlik Bilgim bölümünden görüntüleyebilir</li>
-</ul>
-
-<p>Bu değer dışında hiçbir kişisel veri (ad, e-posta, telefon vb.) işlenmez veya saklanmaz.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.4 KVKK Madde 11 Kapsamındaki Haklar</h3>
-
-<p>Kullanıcı, KVKK m.11 kapsamındaki haklarını, cihazındaki veriler üzerinde doğrudan kullanabilir.</p>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.5 Kişisel Veri İşlemenin Hukuki Sebepleri</h3>
-
-<p>CradleLog, kişisel verilerinizi 6698 sayılı Kanun'un 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanarak işlemektedir:</p>
-
-<table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; margin: 16px 0;">
-<tr style="background-color: #1976d2; color: white;">
-<th style="padding: 12px; text-align: left;">Veri Kategorisi</th>
-<th style="padding: 12px; text-align: left;">İşleme Amacı</th>
-<th style="padding: 12px; text-align: left;">Hukuki Sebep (Dayanak)</th>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #d32f2f;">Sağlık ve Bebek Bilgileri</strong> (Cihazınızda Şifreli)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Bebek bakım takibinin yapılması</td>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #d32f2f;">Açık Rıza</strong> (KVKK Md. 6/2)</td>
-</tr>
-<tr style="background-color: #f5f5f5;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Consent ID &amp; Loglar</strong> (Sunucuda)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Hukuki güvenliğin sağlanması ve ispat yükümlülüğü</td>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Hukuki Yükümlülük</strong> (KVKK Md. 5/2-ç) ve <strong style="color: #1976d2;">Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f)</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Referral ID</strong> (Sunucuda)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Referans sisteminin işletilmesi</td>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Sözleşmenin İfası</strong> (KVKK Md. 5/2-c)</td>
-</tr>
-<tr style="background-color: #f5f5f5;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #f57c00;">Reklam Kimliği (IDFA/GAID)</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Reklam gösterimi (Ücretsiz sürüm)</td>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #f57c00;">Açık Rıza</strong> (KVKK Md. 5/1)</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Çökme Raporları</strong> (Anonim)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Uygulama iyileştirme</td>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong style="color: #1976d2;">Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f)</td>
-</tr>
-</table>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">3.6 Veri Silme ve Unutulma Hakkı (Hesap Silme)</h3>
-
-<p>CradleLog, "Local-First" mimarisi nedeniyle verilerinizin %99'una sahip değildir.</p>
-
-<p><strong style="color: #1976d2;">Yerel Verilerin Silinmesi:</strong> Uygulamayı cihazınızdan kaldırdığınızda, cihazınızda şifreli olarak tutulan tüm sağlık ve bebek verileri kalıcı olarak ve geri döndürülemez şekilde imha edilir.</p>
-
-<p><strong style="color: #1976d2;">Sunucu Kayıtlarının Silinmesi:</strong> Sunucularımızda tutulan Hash'lenmiş Consent ID ve Referral ID kayıtlarınızın silinmesini talep etmek için; uygulama içerisindeki "Ayarlar > Kimlik Bilgim" kısmındaki ID numaranızı kopyalayarak infocradlelog@gmail.com adresine "Veri Silme Talebi" konulu bir e-posta atmanız yeterlidir. Talebiniz 30 gün içinde işleme alınır ve yasal saklama süreleri (varsa) haricindeki verileriniz anonimleştirilir veya imha edilir.</p>
-
-<hr style="border: none; border-top: 2px solid #d32f2f; margin: 32px 0;">
-
-<h2 style="color: #d32f2f; font-size: 22px; margin-top: 32px;">4. KAPANIŞ HÜKÜMLERİ</h2>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">4.1 Uyuşmazlık Çözümü ve Yetkili Mahkeme</h3>
-
-<p>Bu sözleşmeden doğan uyuşmazlıklarda:</p>
-<ul>
-<li><strong style="color: #1976d2;">Tüketici Kullanıcılar:</strong> Tüketici Hakem Heyetleri ve Tüketici Mahkemeleri yetkilidir.</li>
-<li><strong style="color: #1976d2;">Ticari Kullanıcılar:</strong> Tekirdağ Mahkemeleri ve İcra Daireleri münhasıran yetkilidir.</li>
-</ul>
-
-<h3 style="color: #1976d2; font-size: 17px; margin-top: 24px;">4.2 Yürürlük ve Değişiklik Hakkı</h3>
-
-<p>Bu sözleşme, kullanıcının uygulamayı ilk kez kullanmaya başladığı anda yürürlüğe girer.</p>
-<p>CradleLog, bu sözleşmeyi değiştirme hakkını saklı tutar. Değişiklikler, uygulama içinde bildirilir.</p>
-
-<hr style="border: none; border-top: 1px solid #ddd; margin: 32px 0;">
-
-<h2 style="color: #1976d2; font-size: 20px; margin-top: 32px;">İletişim ve Şirket Bilgileri</h2>
-
-<p><strong style="color: #1976d2;">Ticari Unvan:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim</p>
-
-<p><strong style="color: #1976d2;">Adres:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Türkiye</p>
-
-<p><strong style="color: #1976d2;">Vergi No:</strong> 5670114825 (Çorlu Vergi Dairesi)</p>
-
-<p><strong style="color: #1976d2;">E-posta:</strong> infocradlelog@gmail.com</p>
-
-<p><strong style="color: #1976d2;">Web Sitesi:</strong> www.cebirproje.com</p>
-
-<h3 style="color: #f57c00; font-size: 16px; margin-top: 24px;">Tüketici Şikayet ve Hakem Heyeti Başvurusu İçin:</h3>
-<p>Tüketici sorunlarına ilişkin şikayetleriniz için https://www.tüketicihakemheyeti.gov.tr adresini kullanabilir veya bulunduğunuz ildeki Tüketici Hakem Heyeti'ne başvurabilirsiniz.</p>
-
-<hr style="border: none; border-top: 1px solid #ddd; margin: 32px 0;">
-
-<p style="text-align: center; color: #666; font-size: 14px;">
-    <strong>© 2026 CradleLog - Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim<br>
-    Tüm Hakları Saklıdır.</strong>
-</p>
-
-<p style="background-color: #e3f2fd; padding: 16px; border-radius: 8px; text-align: center; color: #1976d2; font-size: 13px;">
-    <strong>Bu belge, 6698 sayılı Kişisel Verilerin Korunması Kanunu, 6502 sayılı Tüketicinin Korunması Hakkında Kanun, 6098 sayılı Türk Borçlar Kanunu ve ilgili mevzuat uyarınca hazırlanmıştır.</strong>
-</p>
-
-<p style="text-align: center; color: #d32f2f; font-size: 14px; margin-top: 16px;">
-    <strong>Kullanıcı, uygulamayı kullanarak bu metinleri okuduğunu, anladığını ve kabul ettiğini beyan eder.</strong>
-</p>
-
+<body>
+<div class="document">
+
+    <!-- BAŞLIK -->
+    <h1>CradleLog – Türkiye Yasal Metinleri (TAM HUKUKİ KORUMA VERSİYONU)</h1>
+
+    <!-- VERSİYON BİLGİLERİ -->
+    <div class="version-info">
+        <p><strong>Son Güncelleme:</strong> Şubat 2026</p>
+        <p><strong>Versiyon:</strong> 3.0.0 - Açık Rıza Uyumu</p>
+        <p><strong>Hazırlayan:</strong> Savunma Avukatı Perspektifiyle Müvekkil Koruma Odaklı</p>
+    </div>
+
+    <hr>
+
+    <!-- BELGENİN AMACI VE KAPSAMI -->
+    <h2>BELGENİN AMACI VE KAPSAMI</h2>
+    <p>Bu belge, CradleLog uygulamasının Türkiye Cumhuriyeti sınırları içerisinde sunulmasına ilişkin <strong>Gizlilik Politikası</strong>, <strong>Kullanım Koşulları (EULA)</strong> ve <strong>KVKK Aydınlatma Metni</strong>ni içermektedir.</p>
+    <p><strong>Hukuki Dayanak:</strong></p>
+    <ul>
+        <li>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</li>
+        <li>6502 sayılı Tüketicinin Korunması Hakkında Kanun (TKHK)</li>
+        <li>6098 sayılı Türk Borçlar Kanunu (TBK)</li>
+        <li>İlgili tüm tüzük ve yönetmelikler</li>
+    </ul>
+    <p><strong>Belgenin Bağlayıcılığı:</strong><br>
+    Kullanıcı, uygulamayı indirerek, yükleyerek veya kullanmaya başlayarak bu belgedeki tüm hükümleri okuduğunu, anladığını ve kabul ettiğini beyan ve taahhüt eder.</p>
+
+    <hr>
+
+    <!-- 1. GİZLİLİK POLİTİKASI -->
+    <h2>1. GİZLİLİK POLİTİKASI</h2>
+
+    <h3>1.1 Mimari Yaklaşım: Yerel-Öncelikli (Local-First) ve Zero-Knowledge</h3>
+    <p>CradleLog, gizlilik ve veri minimizasyonu ilkeleri esas alınarak tasarlanmış <strong>yerel-öncelikli (local-first)</strong> bir uygulamadır. Uygulamanın temel mimarisi gereği:</p>
+    <ul>
+        <li>Bebek profilleri, sağlık kayıtları, beslenme, uyku, aşı, fotoğraf ve benzeri tüm içerikler <strong>yalnızca kullanıcının kendi cihazında</strong> saklanır</li>
+        <li>Bu veriler, cihaz üzerinde endüstri standardı <strong>AES-256</strong> algoritması ile şifrelenir</li>
+        <li>Şifreleme anahtarı, uygulamanın ilk kurulumu sırasında cihaz üzerinde rastgele oluşturulan <strong>32 baytlık</strong> bir anahtardır</li>
+        <li>CradleLog, bu anahtara hiçbir şekilde erişemez, anahtarı saklamaz, yedeklemez veya geri kazanamaz</li>
+    </ul>
+
+    <div class="critical-warning">
+        <p><strong>KRİTİK UYARI: ŞİFRELEME ANAHTARI VE VERİ GÜVENLİĞİ</strong></p>
+        <p>Şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmaktadır. CradleLog, bu anahtarı <strong>BİLMEMEKTE</strong> ve bu anahtara <strong>ERİŞEMEMEKTEDİR</strong>.</p>
+        <p><strong>Aşağıdaki durumlarda verileriniz KALICI OLARAK KAYBOLABİLİR ve kurtarılamaz:</strong></p>
+        <ul>
+            <li>Cihazınızı kaybetmeniz veya çalınması</li>
+            <li>Uygulamayı silip yeniden yüklemeniz</li>
+            <li>Cihazınızın formatlanması veya sıfırlanması</li>
+            <li>İşletim sistemi güncellemesi sırasında veri bozulması</li>
+            <li>Şifreleme anahtarının bozulması veya kaybolması</li>
+            <li>Cihazınızın donanım arızası (bellek bozulması, depolama hatası)</li>
+            <li>Hafıza temizleme uygulamalarının kullanılması</li>
+        </ul>
+        <p><strong>CradleLog bu durumlardan SORUMLU DEĞİLDİR çünkü:</strong></p>
+        <ol>
+            <li>Şifreleme anahtarını bilmemektedir</li>
+            <li>Verilerinize teknik olarak erişememektedir</li>
+            <li>Kurtarma işlemi teknik olarak MÜMKÜN DEĞİLDİR</li>
+            <li>Veriler tamamen cihazınızın güvenliğine bağlıdır</li>
+        </ol>
+        <p><strong>ZORUNLU KULLANICI SORUMLULUĞU:</strong></p>
+        <p>Kullanıcı, verilerinin güvenliğinden ve yedeğinden <strong>TAMAMEN SORUMLUDUR</strong>. Bu sorumluluk kapsamında:</p>
+        <ul>
+            <li>Düzenli olarak (haftada en az 1 kez) yedek almalıdır</li>
+            <li>Yedekleri güvenli bir yerde saklamalıdır</li>
+            <li>Cihaz değişikliği öncesi mutlaka yedek almalıdır</li>
+            <li>Uygulama güncellemesi öncesi mutlaka yedek almalıdır</li>
+            <li>Cihaz güvenliğini sağlamalıdır (ekran kilidi, güvenli şifre vb.)</li>
+        </ul>
+        <p><em>* Not: Bu sözleşmenin yürürlükte olduğu uygulama sürümünde,<br>
+        * cihazlar arası veri aktarımı, senkronizasyon, QR kod veya<br>
+        * Bluetooth (BLE) tabanlı herhangi bir veri transferi özelliği<br>
+        * BULUNMAMAKTADIR.</em></p>
+        <p><em>* Bu tür özellikler, ileride eklenmesi halinde ayrı bir<br>
+        * sürüm güncellemesi ve güncellenmiş hukuki metinler ile<br>
+        * kullanıcılara sunulacaktır.</em></p>
+        <p>Bu uyarıları dikkate almayan ve düzenli yedek almayan kullanıcının veri kaybı yaşaması durumunda CradleLog hiçbir sorumluluk kabul etmez.</p>
+    </div>
+
+    <h3>1.2 Sunucu Tarafında Tutulan Veriler</h3>
+    <p>CradleLog tarafından merkezi sunucularda <strong>yalnızca</strong> aşağıdaki veriler saklanmaktadır:</p>
+    <ul>
+        <li>Uygulama ilk başlatıldığında oluşturulan <strong>Consent ID (UUIDv4)</strong> değerinin kriptografik olarak özetlenmiş (hashed - SHA-256) hali</li>
+        <li>Uygulama ilk başlatıldığında oluşturulan <strong>Referral ID (UUIDv4)</strong> değerinin kriptografik olarak özetlenmiş (hashed - SHA-256) hali</li>
+        <li>Açık rızanın verildiği tarih ve saat bilgisi (timestamp)</li>
+        <li>Kullanıcının onayladığı hukuki metnin versiyon bilgisi ve metin özeti (hash)</li>
+    </ul>
+    <p><strong>Bu veriler:</strong></p>
+    <ul>
+        <li>Doğrudan kimlik bilgisi içermez; tek başına ad, soyad, e-posta veya telefon gibi kimlik verilerini ifşa etmez</li>
+        <li>Geri dönüşümsüz (irreversible) hash algoritması ile türetilmiş teknik tanımlayıcılardır</li>
+        <li>Takma adlaştırılmış (pseudonymized) veri niteliğindedir ve ilgili mevzuat kapsamında kişisel veri olarak değerlendirilir</li>
+        <li>Hash'leme tek başına anonimleştirme değildir; ilgili kayıtların ek bilgilerle bir kullanıcıya bağlanabilmesi mümkün olduğu sürece bu veriler anonim veri değil, kişisel veri olarak ele alınır</li>
+    </ul>
+
+    <h3>1.3 Veri Sorumluluğunun Hukuki Niteliği</h3>
+    <p>CradleLog, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki şekilde veri sorumlusu sıfatını taşımaktadır:</p>
+    <p><strong>a) Rıza Kayıtları ve Referans Sistemi Bakımından (SINIRLI VERİ SORUMLUSU):</strong></p>
+    <ul>
+        <li>Consent ID ve Referral ID'lerin hash'lenmiş halleri</li>
+        <li>Rıza verme tarih/saati</li>
+        <li>Hukuki metin versiyonları</li>
+    </ul>
+    <p>Bu veriler bakımından CradleLog <strong>sınırlı kapsamda veri sorumlusudur</strong>.</p>
+    <p><strong>b) Sağlık Verileri Bakımından (VERİ SORUMLUSU DEĞİLDİR):</strong></p>
+    <p>CradleLog, kullanıcının cihazında yerel olarak saklanan sağlık verileri bakımından KVKK kapsamında veri sorumlusu veya veri işleyen statüsünde <strong>DEĞİLDİR</strong>.</p>
+    <p><strong>Gerekçe:</strong></p>
+    <ol>
+        <li><strong>Teknik Erişim Yokluğu:</strong> Bu veriler kullanıcının cihazında AES-256 şifrelemesiyle saklanmakta olup, CradleLog bu verilerin içeriğine teknik olarak ERİŞEMEZ.</li>
+        <li><strong>Şifreleme Anahtarı Kontrolü:</strong> 32 baytlık şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmakta olup, CradleLog bu anahtarı BİLMEMEKTE ve bu anahtara hiçbir şekilde ERİŞEMEMEKTEDİR.</li>
+        <li><strong>Veri İşleme Amacı ve Vasıtasının Belirlenmesi:</strong> Bu veriler, kullanıcının belirlediği amaçlarla (bebek bakım takibi), kullanıcının kontrolünde işlenmektedir. CradleLog, sadece teknik altyapıyı (uygulama yazılımı, şifreleme kütüphanesi) sağlamaktadır.</li>
+        <li><strong>Kullanıcının Veri Sorumlusu Sıfatı:</strong> Kullanıcı, kendi cihazında saklanan ve yalnızca kendisinin erişebildiği bu veriler bakımından <strong>"kişisel veri sorumlusu"</strong> sıfatını haizdir.</li>
+    </ol>
+    <p><strong>ANCAK CradleLog, Teknik Altyapı Sağlayıcı Olarak:</strong></p>
+    <p>CradleLog, bu verilerin işlenmesine olanak sağlayan teknik altyapıyı sağladığından, KVKK m.3 kapsamında <strong>teknik altyapı sağlayıcı</strong> sıfatıyla aşağıdaki yükümlülükleri taşır:</p>
+    <ul>
+        <li>Güvenli işleme ortamı sağlama (AES-256 şifreleme standardı, OWASP güvenlik standartları)</li>
+        <li>Kullanıcıyı aydınlatma (KVKK m.10)</li>
+        <li>Teknik düzeyde veri güvenliği önlemleri alma (KVKK m.12)</li>
+        <li>Kullanıcıyı veri kaybı riskleri konusunda uyarma</li>
+    </ul>
+    <p><strong>Veri İçeriği Üzerinde Tasarruf Hakkı:</strong></p>
+    <p>CradleLog, sağlık verilerinin <strong>içeriğine erişemediğinden</strong>, bu veriler bakımından KVKK m.11 kapsamındaki bazı haklar (örneğin verilerin düzeltilmesi, silinmesi, üçüncü kişilere aktarıldıysa bilgilendirilme) doğrudan CradleLog'a yöneltilemez.</p>
+    <p>Bu haklar, verilerin bulunduğu cihazın sahibi ve verilere tek başına erişim yetkisine sahip olan <strong>kullanıcı tarafından</strong> doğrudan kullanılabilir. Kullanıcı, uygulamayı kullanarak kendi verilerini görüntüleyebilir, düzeltebilir, silebilir veya dışa aktarabilir.</p>
+
+    <h3>1.4 Veri Sorumluluğunun Sınırları</h3>
+    <p>CradleLog, uygulama içerisinde kullanıcı tarafından girilen sağlık verilerinin içeriğine erişemez, bu verileri merkezi bir sunucuda depolamaz ve bu veriler üzerinde herhangi bir tasarrufta bulunmaz.</p>
+    <p>Bu nedenle CradleLog'un veri sorumluluğu yalnızca aşağıdaki faaliyetlerle sınırlıdır:</p>
+    <ul>
+        <li>Rıza kayıtlarının hukuki ispat yükümlülüğü kapsamında tutulması (hash'lenmiş Consent ID, timestamp, metin hash'i)</li>
+        <li>Referans sisteminin teknik olarak çalıştırılması ve cihazlar arası hak ediş doğrulamalarının yapılması (hash'lenmiş Referral ID eşleşmeleri)</li>
+        <li>Reklam gösterimi için gerekli olan cihaz kimlik verilerinin işlenmesi (sadece ücretsiz kullanıcılar için)</li>
+    </ul>
+    <p>Kullanıcının yerel cihazında saklanan sağlık verileri, bebek profilleri, fotoğraflar, notlar ve benzeri tüm içerikler bakımından CradleLog, 6698 sayılı KVKK kapsamında <strong>veri sorumlusu veya veri işleyen sıfatına sahip değildir</strong>.</p>
+
+    <h3>1.5 Üçüncü Taraf Hizmetler</h3>
+    <h4>1.5.1 Supabase (Veri Depolama Altyapısı)</h4>
+    <p><strong>Amaç:</strong> Yalnızca hash'lenmiş rıza kayıtları ve referans sistemi meta verilerinin saklanması</p>
+    <p><strong>Aktarılan Veriler:</strong></p>
+    <ul>
+        <li>Hash'lenmiş Consent ID (UUIDv4 - SHA-256)</li>
+        <li>Hash'lenmiş Referral ID (UUIDv4 - SHA-256)</li>
+        <li>Rıza verme timestamp'i</li>
+        <li>Hukuki metin versiyonu ve hash'i</li>
+    </ul>
+    <p><strong>AKTARILMAYAN VERİLER:</strong></p>
+    <ul>
+        <li>Sağlık verileri</li>
+        <li>Bebek profil bilgileri</li>
+        <li>Kullanıcı kimlik bilgileri</li>
+        <li>Fotoğraflar, notlar, kayıtlar</li>
+    </ul>
+    <p><strong>Hukuki Dayanak:</strong><br>
+    * Rıza kayıtları bakımından: <strong>Hukuki Yükümlülük</strong> (KVKK m.5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK m.5/2-f)<br>
+    * Referans sistemi meta verileri bakımından: <strong>Sözleşmenin Kurulması veya İfası İçin Gerekli Olma</strong> (KVKK m.5/2-c)</p>
+
+    <h4>1.5.2 Reklam Hizmetleri (Google AdMob)</h4>
+    <p><strong>Kapsam:</strong> YALNIZCA ücretsiz sürüm kullanıcıları</p>
+    <p><strong>Reklam Türü ve İçeriği:</strong> Uygulama, Google AdMob altyapısını kullanmaktadır. Uygulamanın hedef kitlesi yetişkinler (ebeveynler) olmakla birlikte, uygulamanın hassas doğası gereği reklam içerikleri "G" (General Audience - Genel İzleyici) seviyesinde filtrelenmektedir. Kullanıcıya gösterilecek reklamlar; kullanıcının cihazındaki reklam kimliği (IDFA/GAID) baz alınarak sunulabilir. Ancak kesinlikle uygulama içine girilen bebek sağlık verileri, isimler veya notlar reklam hedeflemesi amacıyla kullanılmaz ve reklam sağlayıcılarla paylaşılmaz.</p>
+    <p><strong>İşlenen Veriler:</strong></p>
+    <ul>
+        <li><strong>iOS cihazlarda:</strong> IDFA (Identifier for Advertisers) - Apple tarafından cihaza atanan reklam kimliği</li>
+        <li><strong>Android cihazlarda:</strong> GAID (Google Advertising ID) - Google tarafından cihaza atanan reklam kimliği</li>
+    </ul>
+    <p><strong>Veri Sorumlusu:</strong> Bu veriler bakımından veri sorumlusu <strong>Google LLC</strong>'dir. CradleLog, sadece aracılık eden teknik platform sağlayıcısıdır.</p>
+    <p><strong>İşleme Amacı:</strong></p>
+    <ul>
+        <li>Kişiselleştirilmemiş reklam gösterimi</li>
+        <li>Reklam frekans kontrolü (aynı reklamın tekrar gösterilmemesi)</li>
+        <li>Reklam performans ölçümü (anonim istatistikler)</li>
+    </ul>
+    <p><strong>Veri Aktarım Yeri:</strong> Amerika Birleşik Devletleri (Google LLC sunucuları)</p>
+    <p><strong>Kullanıcı Hakları:</strong></p>
+    <p>Kullanıcı, reklam kimliğini kontrol etme haklarına sahiptir:</p>
+    <ul>
+        <li><strong>iOS:</strong> Ayarlar > Gizlilik ve Güvenlik > Apple Advertising > Reklam Tanımlayıcısını Sıfırla</li>
+        <li><strong>Android:</strong> Ayarlar > Google > Reklamlar > Reklam Kimliğini Sıfırla</li>
+    </ul>
+    <div class="highlight-box">
+        <p><strong>AÇIK RIZA GEREKLİLİĞİ: ← YENİ BÖLÜM!</strong></p>
+        <p>Reklam gösterimi için KVKK md. 5 gereği açık rızanız gerekmektedir. Bu rıza:</p>
+        <ul>
+            <li>İlk açılışta bu belgeyi okuyarak bilgilendirilirsiniz</li>
+            <li>2. gün sonunda (ve en az 8 kayıt girdikten sonra) AYRI bir consent dialog ile alınır</li>
+            <li>Dialog, aşağıdaki seçenekleri sunar:
+                <ul>
+                    <li>Reklamlarla devam et (ücretsiz)</li>
+                    <li>Premium satın al (reklamsız)</li>
+                    <li>Uygulamayı bırak</li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>Rıza vermek ZORUNLU DEĞİLDİR.</strong> Premium sürümü satın alarak veya uygulamayı bırakarak reklamsız kullanabilir veya uygulamayı kullanmamayı tercih edebilirsiniz.</p>
+        <p><strong>Premium Kullanıcılar:</strong> Premium kullanıcılara hiçbir reklam gösterilmez ve reklam kimliği işlenmez.</p>
+    </div>
+
+    <h4>1.5.3 Telemetri, Çökme Raporları ve Kullanım Analitiği</h4>
+    <p>CradleLog, uygulamanın kararlılığını ve performansını iyileştirmek amacıyla, yalnızca <strong>kullanıcının açık rızası</strong> ile anonim çökme raporları (Firebase Crashlytics) ve kullanım analitiği verileri (Firebase Analytics) toplar. Bu seçenekler <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir.</p>
+    <p><strong>Toplanan Veriler (Anonim ve Teknik Nitelikte):</strong></p>
+    <ul>
+        <li>Çökme Bilgileri: Çökme anındaki teknik detaylar (hatanın oluştuğu kod satırı, cihaz belleği durumu, iş parçacığı bilgisi vb.).</li>
+        <li>Cihaz Bilgileri (Anonim): Cihaz modeli, işletim sistemi versiyonu, dil ve bölge ayarları, pil seviyesi, boş depolama alanı gibi isimsizleştirilmiş teknik bilgiler.</li>
+        <li>Uygulama Bilgileri: Uygulamanın sürüm numarası ve kurulu olduğu paket adı.</li>
+        <li>Kullanım Analitiği: Uygulama açılışları, ekran görüntüleme sayıları ve temel etkileşim ölçümleri (ör. buton tıklamaları).</li>
+    </ul>
+    <p><strong>TOPLANMAYAN / İŞLENMEYEN VERİLER:</strong></p>
+    <ul>
+        <li>Kullanıcı kimliği (isim, e-posta, telefon).</li>
+        <li>Kullanıcı tarafından girilen herhangi bir içerik (bebek profilleri, sağlık kayıtları, notlar, fotoğraflar).</li>
+        <li>Konum verileri.</li>
+        <li>Cihaz reklam kimliği (IDFA/GAID) veya benzeri tanımlayıcılar.</li>
+    </ul>
+    <p><strong>Veri Sorumlusu ve İşleme Amacı:</strong></p>
+    <ul>
+        <li><strong>Veri Sorumlusu:</strong> Toplanan bu anonim teknik veriler bakımından, veri işleme faaliyetinin asıl amacını ve vasıtasını belirleyen taraf CradleLog'dur.</li>
+        <li><strong>İşleme Amacı:</strong> Uygulamadaki hataları tespit etmek, önceliklendirmek ve düzeltmek; kararlılığı ve performansı artırmak; böylece tüm kullanıcılar için daha iyi bir deneyim sunmak.</li>
+        <li><strong>Hukuki Dayanak:</strong> KVKK Md. 5/1 uyarınca <strong>açık rıza</strong>.</li>
+    </ul>
+    <p><strong>Veri İşleyen ve Aktarım:</strong></p>
+    <ul>
+        <li><strong>Veri İşleyen:</strong> Crash raporlarının teknik altyapısı Google LLC tarafından sağlanmaktadır. Google, bu hizmet kapsamında CradleLog adına veri işleyen sıfatıyla hareket etmektedir.</li>
+        <li><strong>Veri Aktarımı:</strong> Toplanan anonim teknik veriler, işleme amacına uygun olarak Amerika Birleşik Devletleri'nde bulunan Google sunucularına aktarılabilir. Bu aktarım, KVKK ve ilgili mevzuata uygun şekilde gerçekleştirilmektedir.</li>
+        <li><strong>Güvenlik:</strong> Google, veri işleyen olarak endüstri standartlarında güvenlik önlemleri uygulamayı taahhüt etmektedir.</li>
+    </ul>
+    <p><strong>Kullanıcı Kontrolü:</strong> Kullanıcı, uygulamanın ayarlar bölümünden Crashlytics ve Analytics seçeneklerini dilediği zaman kapatabilir. Bu seçenekler kapalı olduğunda cihazdan hiçbir çökme raporu veya kullanım analitiği verisi toplanmaz ve gönderilmez.</p>
+
+    <h3>1.6 Çocuk Verileri ve Yasal Temsilcilik</h3>
+    <h4>1.6.1 Hedef Kitle ve Kullanım Amacı (COPPA/GDPR-K Beyanı)</h4>
+    <p>CradleLog, içerik olarak bebek bakımını konu almakla birlikte; hedef kitlesi ve fiili kullanıcıları bakımından "Çocuğa Yönelik (Child-Directed)" bir uygulama DEĞİLDİR. Uygulama, münhasıran 18 yaş ve üzeri ebeveynlerin/vasilerin kullanımı için tasarlanmış bir ebeveyn asistanı aracıdır. Uygulama, çocuklar tarafından kullanılmak üzere tasarlanmamıştır ve çocukların cihazla doğrudan etkileşime girmesi öngörülmemektedir. Bu nedenle reklam ve veri işleme politikaları "Genel İzleyici (Yetişkin)" standartlarına göre belirlenmiştir.</p>
+    <p><strong>Cihaz Güvenliği Uyarısı:</strong> Uygulama, ebeveynlere yöneliktir ve hassas veriler içerir. Çocuğunuzun cihazı kullanması durumunda verilerin yanlışlıkla silinmesini veya değiştirilmesini önlemek amacıyla, cihazınızın ekran kilidi özelliklerini kullanmanız ve uygulamayı çocukların erişimine açık bırakmamanız önemle tavsiye edilir.</p>
+
+    <h4>1.6.2 Yasal Temsilcilik Beyanı</h4>
+    <p>Kullanıcı, uygulamayı kullanarak aşağıdaki hususları KABUL ve BEYAN eder:</p>
+    <ul>
+        <li>18 yaşından büyük olduğunu</li>
+        <li><strong>Uygulamada ekleyeceği bebek veya bebeklerin</strong> yasal temsilcisi (anne, baba veya yasal vasi) sıfatıyla hareket ettiğini</li>
+        <li>Çocuğa/çocuklara ait özel nitelikli kişisel verileri (sağlık verileri) işleme yetkisine sahip olduğunu</li>
+        <li>Bu verileri işlemek için gerekli yasal dayanağa sahip olduğunu</li>
+    </ul>
+
+    <h4>1.6.3 Reklam İçerik Güvenliği</h4>
+    <p>Uygulama yetişkinlere yönelik olsa da, bir bebek bakım aracı olması sebebiyle gösterilen reklamların "Aile Güvenliği" standartlarına uyması taahhüt edilir. Bu kapsamda CradleLog:</p>
+    <ul>
+        <li>Reklam içerik derecelendirmesini teknik olarak "G" (General Audience) seviyesinde sınırlar.</li>
+        <li>Kumar, cinsellik, şiddet, alkol ve benzeri hassas kategorilerdeki reklamların gösterimini teknik filtrelerle engeller.</li>
+        <li>Uygulama içine girilen çocuk verilerini (sağlık, boy, kilo vb.) reklam hedeflemesi için ASLA kullanmaz. Hedefleme sadece yetişkin kullanıcının (ebeveynin) anonim reklam kimliği üzerinden, genel ilgi alanlarına göre yapılabilir.</li>
+    </ul>
+
+    <hr>
+
+    <h2>2. KULLANIM KOŞULLARI (EULA - SON KULLANICI LİSANS SÖZLEŞMESİ)</h2>
+
+    <h3>2.1 Tıbbi Feragatname ve Uygulamanın Niteliği</h3>
+    <h4>2.1.1 Ürün Tanımı</h4>
+    <p>CradleLog, <strong>tıbbi cihaz, tanı aracı veya tedavi yöntemi DEĞİLDİR</strong>. Uygulama, ebeveynlerin bebek bakım süreçlerini organize etmelerine yardımcı olan bir <strong>kayıt tutma, organizasyon ve hatırlatma aracıdır</strong>.</p>
+    <p>CradleLog:</p>
+    <ul>
+        <li>Tıbbi teşhis koymaz</li>
+        <li>Hastalık tanısı yapmaz</li>
+        <li>Tedavi önerisi sunmaz</li>
+        <li>Reçete veya ilaç önerisi vermez</li>
+        <li>Sağlık durumu değerlendirmesi yapmaz</li>
+        <li>Tıbbi acil durum tespiti yapmaz</li>
+    </ul>
+
+    <h4>2.1.2 Tıbbi Kararlar ve Profesyonel Destek</h4>
+    <p>Bebek sağlığına, gelişimine, beslenmesine ve bakımına ilişkin <strong>TÜM KARARLAR</strong> mutlaka <strong>lisanslı sağlık profesyonelleri</strong> (pediatrist, çocuk doktoru, diyetisyen, aile hekimi vb.) tarafından alınmalıdır.</p>
+    <p><strong>KULLANICI KABUL EDER Kİ:</strong></p>
+    <ul>
+        <li>Uygulamada yer alan bilgiler genel nitelikte bilgilendirme amaçlıdır</li>
+        <li>Bu bilgiler tıbbi tavsiye yerine geçmez</li>
+        <li>Sağlık ile ilgili her türlü karar öncesinde mutlaka hekim görüşü alınmalıdır</li>
+        <li>Acil durumlarda (yüksek ateş, solunum problemi, beslenme reddi vb.) uygulama kullanılmayacak, doğrudan sağlık kuruluşuna başvurulacaktır</li>
+    </ul>
+
+    <h3>2.2 Güncelleme, Veri Kaybı ve Uyumsuzluk Riskleri</h3>
+    <h4>2.2.1 Güncelleme Politikası</h4>
+    <p>Uygulama güncellemeleri, güvenlik, performans iyileştirmeleri ve işlevsel geliştirmeler amacıyla yayınlanmaktadır.</p>
+    <p>CradleLog, güncellemelerin mevcut verilerle uyumlu şekilde çalışması için uygulamanın niteliği, teknik kapasitesi ve sunulduğu kullanım koşulları çerçevesinde <strong>makul ölçüde teknik özen</strong> göstermekle yükümlüdür.</p>
+
+    <h4>2.2.2 Güncelleme Öncesi ZORUNLU Yedekleme</h4>
+    <div class="critical-warning">
+        <p><strong>KRİTİK UYARI - ZORUNLU İŞLEM:</strong></p>
+        <p>Kullanıcı, <strong>HER UYGULAMA GÜNCELLEMESİ ÖNCESİNDE MUTLAKA YEDEK ALMAKLA YÜKÜMLÜDÜR</strong>.</p>
+        <p><strong>Yedekleme Yapılmaması Durumunda:</strong></p>
+        <ul>
+            <li>Güncelleme sonrası veriler kaybolabilir</li>
+            <li>Veri tabanı uyumsuzluğu oluşabilir</li>
+            <li>Şifreleme anahtarı bozulabilir</li>
+            <li>Veriler kurtarılamaz hale gelebilir</li>
+        </ul>
+        <p><strong>CradleLog, güncelleme öncesi yedek alınmaması nedeniyle oluşan veri kayıplarından SORUMLU DEĞİLDİR.</strong></p>
+    </div>
+    <p>Yerel cihazda tutulan verilerin; işletim sistemi kısıtları, cihaz donanımı, üçüncü taraf yazılımlar, kullanıcı tarafından yedek alınmaması veya öngörülemeyen teknik hatalar nedeniyle zarar görmesi veya kaybolması mümkündür.</p>
+    <p>Bu tür durumlarda CradleLog, makul teknik özenin gösterilmiş olması kaydıyla, veri kaybından sorumlu tutulamaz.</p>
+    <p>CradleLog'un kasıtlı davranışı veya ağır kusuru hâllerinde doğabilecek sorumluluklar bu hükmün kapsamı dışındadır.</p>
+
+    <h3>2.3 Veri Kaybı ve Yedekleme Sorumluluğu</h3>
+    <p>Tüm veriler yalnızca kullanıcının cihazında saklandığından, düzenli yedek alınması kullanıcının sorumluluğundadır.</p>
+    <p><strong>Uygulama içi yedekleme sistemi:</strong></p>
+    <ul>
+        <li>Ayarlar ilk kez açıldığında yedekleme bilgilendirme dialogu gösterilir</li>
+        <li>7 günde bir "Yedek Al" hatırlatma dialogu gösterilir</li>
+        <li>Dialog'dan tek tıkla yedek alma imkanı sunulur</li>
+    </ul>
+    <p>Kullanıcı bu hatırlatmalara rağmen yedek almaz ise, veri kaybı riski tamamen kullanıcının sorumluluğundadır.</p>
+
+    <h3>2.4 SORUMLULUK SINIRLAMASI VE MADDİ TAZMİNAT TAVANI</h3>
+    <h4>2.4.1 ÜCRETSİZ SÜRÜM SORUMLULUĞU (Bağış Sözleşmesi - TBK md. 285)</h4>
+    <p><strong>Hukuki Nitelik:</strong></p>
+    <p>Ücretsiz sürüm, kullanıcıya karşılıksız sunulan bir hizmettir ve <strong>bağış sözleşmesi</strong> (TBK md. 285-295) hükümlerine tabidir.</p>
+    <p><strong>Sorumluluk Rejimi:</strong></p>
+    <p>Bağış sözleşmelerinde, bağışlayan (CradleLog) yalnızca <strong>kasıt ve ağır kusur</strong> hallerinde sorumludur. Basit kusur (hafif ihmal) hallerinde hiçbir sorumluluk kabul edilmez.</p>
+    <p>Ücretsiz sürüm, kullanıcıya karşılıksız sunulan bir hizmettir (bağış). Bu kapsamda CradleLog:</p>
+    <p>✓ Yalnızca KASIT ve AĞIR KUSUR hallerinde sorumludur<br>
+    ✗ Basit kusur (hafif ihmal) hallerinde hiçbir sorumluluk kabul etmez<br>
+    ✗ Yazılım hataları, çökmeler, veri kayıpları nedeniyle tazminat ödemez</p>
+    <p>Kullanıcı, ücretsiz hizmetin "olduğu gibi" (as-is) sunulduğunu kabul eder.</p>
+
+    <h4>2.4.2 PREMIUM SÜRÜM SORUMLULUĞU (Sınırlı Sorumluluk)</h4>
+    <p>CradleLog, premium kullanıcılar bakımından:</p>
+    <p><strong>SORUMLULUK TAVANI:</strong></p>
+    <p>Ödenen premium bedel (tek seferlik satın alma tutarı) sorumluluk tavanını oluşturur. Örnek: 299 TL ödenmiş ise, azami tazminat 299 TL'dir.</p>
+    <p><strong>SORUMLU OLDUĞUMUZ HALLER:</strong><br>
+    ✓ Kasıt ve ağır kusur<br>
+    ✓ Öngörülebilir, doğrudan, maddi zararlar</p>
+    <p><strong>SORUMLU OLMADIĞIMIZ HALLER:</strong><br>
+    ✗ Dolaylı zararlar (iş kaybı, kar mahrumiyeti, manevi zarar)<br>
+    ✗ Kullanıcının yedek almaması nedeniyle veri kaybı<br>
+    ✗ Cihaz kaybı, çalınma, bozulma nedeniyle veri kaybı<br>
+    ✗ Güncelleme öncesi yedek alınmaması nedeniyle veri kayıpları<br>
+    ✗ Sağlık kararlarının yanlışlığından doğan zararlar (uygulama tıbbi cihaz değildir, hekim tavsiyesi yerine geçmez)<br>
+    ✗ Üçüncü kişi hizmetlerindeki aksaklıklar (Google Play, App Store, AdMob vb.)</p>
+    <p><strong>KULLANICI SORUMLULUKLARI:</strong></p>
+    <ul>
+        <li>Düzenli yedek almak</li>
+        <li>Güncelleme öncesi yedek almak</li>
+        <li>Cihaz güvenliğini sağlamak</li>
+    </ul>
+
+    <h3>2.5 CAYMA HAKKI İSTİSNASI (Dijital İçerik)</h3>
+    <p><strong>ÖNEMLİ BİLGİLENDİRME:</strong><br>
+    CradleLog Premium sürümü, elektronik ortamda anında ifa edilen gayrimaddi bir hizmettir.<br>
+    6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği'nin 15/ğ maddesi uyarınca; "Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallara ilişkin sözleşmeler" cayma hakkının istisnası kapsamındadır.<br>
+    Kullanıcı, Premium hizmeti satın alarak hizmetin ifasının anında başladığını ve bu nedenle 14 günlük cayma (iade) hakkını kaybettiğini peşinen kabul ve beyan eder. İade talepleri, satın alımın yapıldığı platformun (Apple App Store veya Google Play Store) kendi iade politikalarına tabidir ve CradleLog'un bu platformların iade kararlarına müdahale yetkisi bulunmamaktadır.</p>
+
+    <h3>2.6 REFERRAL SİSTEMİ ŞARTLARI VE SINIRLAMALARI</h3>
+    <h4>2.6.1 PROMOSYON NİTELİĞİ:</h4>
+    <p>Referral sistemi, zorunlu bir hak değil, ihtiyari bir promosyondur. CradleLog, sistemin kurallarını değiştirme/durdurma hakkını saklı tutar.</p>
+    <h4>2.6.2 TEKNİK SINIRLAMALAR (Zero-Knowledge Mimarisi):</h4>
+    <p>• Sistem tamamen otomatiktir<br>
+    • CradleLog, kullanıcının kriterleri sağlayıp sağlamadığını MANUEL OLARAK DOĞRULAYAMAZ (teknik olarak mümkün değildir)<br>
+    • Ödül verilmemesi durumunda CradleLog'un sorumluluğu YOKTUR</p>
+    <h4>2.6.3 HEDİYE PREMIUM SINIRLAMASI:</h4>
+    <p>• Satın alınan premium: Cihaz değişikliğinde korunur (App Store/Play)<br>
+    • Hediye premium: YALNIZCA mevcut cihazda geçerlidir<br>
+    • Sebep: Teknik mimari (zero-knowledge), kullanıcı doğrulama imkanı yok</p>
+    <h4>2.6.4 ÖDÜL ŞARTLARI:</h4>
+    <p>Davet edilen ilk 7 günün 6 günü giriş yapmalı ve her gün için 4'er kayıt olmalı. Bu şart sağlandıktan sonra 7 gün bekleme süresi vardır uygulamanın silinmesine karşı tedbir olarak.</p>
+    <p>• Kriterler sağlanmazsa ödül verilmez</p>
+    <p>Kullanıcı, bu sistemin "hak" değil "hediye" niteliğinde olduğunu, teknik kısıtlamalar nedeniyle ödülün her zaman garanti edilmediğini KABUL EDER.</p>
+
+    <hr>
+
+    <h2>3. KVKK AYDINLATMA METNİ VE AÇIK RIZA</h2>
+
+    <h3>3.1 Açık Rıza Metni (Özel Nitelikli Veriler)</h3>
+    <p>Kullanıcı, uygulamayı kullanmaya başlamadan önce aşağıdaki açık rızayı vermelidir:</p>
+    <div class="info-block">
+        <p><strong>18 yaşından büyük olduğumu, uygulamada ekleyeceğim bebek veya bebeklerin yasal temsilcisi sıfatıyla hareket ettiğimi, bebeğime/bebeklerime ait sağlık verilerinin (beslenme, uyku, aşı, gelişim takibi vb.) ve diğer özel nitelikli kişisel verilerin, yalnızca kendi cihazımda AES-256 şifreleme standardıyla saklanmak üzere işlenmesini, CradleLog'un bu verilere erişemeyeceğini bildiğimi ve açıkça kabul ediyorum.</strong></p>
+    </div>
+
+    <h3>3.2 Reklam Gösterimi İçin Açık Rıza</h3>
+    <p>Ücretsiz sürümde Google AdMob aracılığıyla kişiselleştirilmemiş reklamlar gösterilmektedir. Bu kapsamda:</p>
+    <ul>
+        <li>iOS cihazlarda: IDFA (Identifier for Advertisers)</li>
+        <li>Android cihazlarda: GAID (Google Advertising ID)</li>
+    </ul>
+    <p>işlenmektedir. Bu veriler CradleLog tarafından değil, Google LLC tarafından işlenmekte olup, veri sorumlusu Google'dır. İşleme amacı: reklam gösterimi ve frekans kontrolü. Veri aktarımı: ABD (Google sunucuları).</p>
+    <p>Kullanıcı, ayarlardan reklam kimliğini sıfırlama veya kişiselleştirmeyi devre dışı bırakma hakkına sahiptir.</p>
+    <p>Ayrıca, uygulamanın kararlılığını artırmak amacıyla anonim çökme raporları (Google Firebase Crashlytics) <strong>yalnızca açık rıza verilirse</strong> toplanır. Bu seçenek <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir ve ayarlardan her zaman kapatılabilir.</p>
+    <p>Uygulamanın kullanımını ve performansını ölçmek için Google Firebase Analytics <strong>yalnızca açık rıza verilirse</strong> kullanılmaktadır. Bu kapsamda uygulama içi etkileşimler (ekran görüntüleme, oturum, uygulama açma gibi teknik olaylar), cihaz ve işletim sistemi bilgileri ve uygulama örnek kimliği (app-instance identifier) işlenebilir. Varsayılan SDK davranışları reklam kimliği (IDFA/GAID) toplamaya elverişli olsa da, CradleLog uygulamasında Analytics için reklam kimliği toplama kapalıdır ve kişiselleştirilmiş reklam sinyalleri kullanılmaz. Kullanıcı, Ayarlar ekranından Analytics ve Crashlytics kullanımını devre dışı bırakabilir.</p>
+    <p>Crashlytics ve Analytics kapsamında kullanıcıdan isim, e-posta, telefon veya bebek/sağlık içerikleri talep edilmez; uygulama bu tür verilerin gönderilmesini engellemek üzere tasarlanmıştır.</p>
+
+    <h3>3.3 KVKK Kapsamında İşlenen Kişisel Veri</h3>
+    <p>CradleLog tarafından merkezi sunucuda işlenen kişisel veri kategorileri, kullanıcıya ait teknik tanımlayıcıların takma adlaştırılmış (pseudonymized) halleriyle sınırlıdır.</p>
+    <p>Bu kapsamda:</p>
+    <ul>
+        <li>Uygulama ilk açıldığında oluşturulan <strong>Consent ID (UUID v4)</strong> değeri, rıza kayıtlarının izlenmesi amacıyla kullanılır ve sunucuda yalnızca hash'lenmiş hali saklanır</li>
+        <li>Referans sistemi için oluşturulan <strong>Referral ID (UUID v4)</strong> değeri, referans sisteminin işletilmesi amacıyla kullanılır ve sunucuda yalnızca hash'lenmiş/türetilmiş hali saklanır</li>
+        <li>Bu tanımlayıcılara bağlı rıza zaman damgaları ile hukuki metin sürüm/hash kayıtları işlenir</li>
+        <li>Kullanıcı, Ayarlar > Kimlik Bilgim bölümünden ilgili kimlik değerlerini görüntüleyebilir</li>
+        <li>Bu nedenle söz konusu teknik tanımlayıcılar, doğrudan kimlik bilgisi içermese dahi takma adlaştırılmış kişisel veri olarak değerlendirilir</li>
+    </ul>
+    <p>CradleLog’un kendi merkezi sunucularında bu kategoriler dışında hiçbir kişisel veri (ad, e-posta, telefon vb.) işlenmez veya saklanmaz.</p>
+    <p>Bununla birlikte, <strong>yalnızca açık rıza verilmesi halinde</strong> Firebase Analytics ve Firebase Crashlytics altyapıları kapsamında Google LLC’ye otomatik olarak aktarılabilen <strong>sınırlı teknik veri kategorileri</strong> aşağıdaki gibidir:</p>
+    <ul>
+        <li>Uygulama örnek kimliği (app-instance identifier)</li>
+        <li>Crashlytics installation UUID ve Firebase installations ID (FID)</li>
+        <li>Oturum sayısı/süresi, uygulama açılışları ve ekran görüntüleme gibi kullanım ölçümleri</li>
+        <li>Cihaz modeli, işletim sistemi adı ve sürümü, dil/bölge</li>
+        <li>Uygulama sürümü ve paket/bundle bilgisi</li>
+        <li>Çökme anına ilişkin stack trace ve ilgili uygulama durumu/cihaz meta verileri</li>
+        <li>Çökme zamanı (timestamp)</li>
+    </ul>
+    <p>Bu teknik veriler, CradleLog tarafından kullanıcı kimliğiyle ilişkilendirilmez ve herhangi bir kullanıcı profili oluşturulmaz.</p>
+
+    <h3>3.4 KVKK Madde 11 Kapsamındaki Haklar</h3>
+    <p>Kullanıcı, KVKK m.11 kapsamındaki haklarını, cihazındaki veriler üzerinde doğrudan kullanabilir.</p>
+
+    <h3>3.5 Kişisel Veri İşlemenin Hukuki Sebepleri</h3>
+    <p>CradleLog, kişisel verilerinizi 6698 sayılı Kanun’un 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanarak işlemektedir:</p>
+    <table>
+        <thead>
+            <tr><th>Veri Kategorisi</th><th>İşleme Amacı</th><th>Hukuki Sebep (Dayanak)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Sağlık ve Bebek Bilgileri</strong> (Cihazınızda Şifreli)</td><td>Bebek bakım takibinin yapılması</td><td><strong>Açık Rıza</strong> (KVKK Md. 6/2)</td></tr>
+            <tr><td><strong>Consent ID & Loglar</strong> (Sunucuda)</td><td>Hukuki güvenliğin sağlanması ve ispat yükümlülüğü</td><td><strong>Hukuki Yükümlülük</strong> (KVKK Md. 5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f)</td></tr>
+            <tr><td><strong>Referral ID</strong> (Sunucuda)</td><td>Referans sisteminin işletilmesi</td><td><strong>Sözleşmenin İfası</strong> (KVKK Md. 5/2-c)</td></tr>
+            <tr><td><strong>Reklam Kimliği (IDFA/GAID)</strong></td><td>Reklam gösterimi (Ücretsiz sürüm)</td><td><strong>Açık Rıza</strong> (KVKK Md. 5/1)</td></tr>
+            <tr><td><strong>Kullanım Analitiği</strong> (Firebase Analytics)</td><td>Uygulama kullanımını ve performansı ölçme</td><td><strong>Açık Rıza</strong> (KVKK Md. 5/1)</td></tr>
+            <tr><td><strong>Çökme Raporları</strong> (Firebase Crashlytics)</td><td>Uygulama iyileştirme ve hata analizi</td><td><strong>Açık Rıza</strong> (KVKK Md. 5/1)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3.6 Veri Silme ve Unutulma Hakkı (Hesap Silme)</h3>
+    <p>CradleLog, "Local-First" mimarisi nedeniyle verilerinizin %99'una sahip değildir.<br>
+    Yerel Verilerin Silinmesi: Uygulamayı cihazınızdan kaldırdığınızda, cihazınızda şifreli olarak tutulan tüm sağlık ve bebek verileri kalıcı olarak ve geri döndürülemez şekilde imha edilir.<br>
+    Sunucu Kayıtlarının Silinmesi: Sunucularımızda tutulan Hash'lenmiş Consent ID ve Referral ID kayıtlarınızın silinmesini talep etmek için; uygulama içerisindeki "Ayarlar > Kimlik Bilgim" kısmındaki ID numaranızı kopyalayarak infocradlelog@gmail.com adresine "Veri Silme Talebi" konulu bir e-posta atmanız yeterlidir. Talebiniz 30 gün içinde işleme alınır ve yasal saklama süreleri (varsa) haricindeki verileriniz anonimleştirilir veya imha edilir.</p>
+
+    <hr>
+
+    <h2>4. KAPANIŞ HÜKÜMLERİ</h2>
+
+    <h3>4.1 Uyuşmazlık Çözümü ve Yetkili Mahkeme</h3>
+    <p>Bu sözleşmeden doğan uyuşmazlıklarda:</p>
+    <ul>
+        <li><strong>Tüketici Kullanıcılar:</strong> Tüketici Hakem Heyetleri ve Tüketici Mahkemeleri yetkilidir.</li>
+        <li><strong>Ticari Kullanıcılar:</strong> Tekirdağ Mahkemeleri ve İcra Daireleri münhasıran yetkilidir.</li>
+    </ul>
+
+    <h3>4.2 Yürürlük ve Değişiklik Hakkı</h3>
+    <p>Bu sözleşme, kullanıcının uygulamayı ilk kez kullanmaya başladığı anda yürürlüğe girer.</p>
+    <p>CradleLog, bu sözleşmeyi değiştirme hakkını saklı tutar. Değişiklikler, uygulama içinde bildirilir.</p>
+
+    <hr>
+
+    <!-- İLETİŞİM VE ŞİRKET BİLGİLERİ -->
+    <div class="contact-block">
+        <p><strong>İletişim ve Şirket Bilgileri:</strong></p>
+        <p><strong>Ticari Unvan:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim</p>
+        <p><strong>Adres:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Türkiye</p>
+        <p><strong>Vergi No:</strong> 5670114825 (Çorlu Vergi Dairesi)</p>
+        <p><strong>E-posta:</strong> infocradlelog@gmail.com</p>
+        <p><strong>Web Sitesi:</strong> www.cebirproje.com</p>
+        <p><strong>Tüketici Şikayet ve Hakem Heyeti Başvurusu İçin:</strong><br>
+        Tüketici sorunlarına ilişkin şikayetleriniz için https://www.tüketicihakemheyeti.gov.tr adresini kullanabilir veya bulunduğunuz ildeki Tüketici Hakem Heyeti’ne başvurabilirsiniz.</p>
+    </div>
+
+    <hr>
+
+    <p style="text-align: center;">© 2026 CradleLog - Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim<br>
+    <strong>Tüm Hakları Saklıdır.</strong></p>
+
+    <p><strong>Bu belge, 6698 sayılı Kişisel Verilerin Korunması Kanunu, 6502 sayılı Tüketicinin Korunması Hakkında Kanun, 6098 sayılı Türk Borçlar Kanunu ve ilgili mevzuat uyarınca hazırlanmıştır.</strong></p>
+
+    <p><strong>Kullanıcı, uygulamayı kullanarak bu metinleri okuduğunu, anladığını ve kabul ettiğini beyan eder.</strong></p>
+
+</div>
 </body>
 </html>
