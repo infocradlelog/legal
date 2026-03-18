@@ -1,129 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CradleLog - Documentos Legais</title>
-    <style>
-        /* Modern CSS Reset & Typography */
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --bg-color: #f9f9f9;
-            --text-color: #333;
-            --warning-bg: #fff3cd;
-            --warning-border: #ffc107;
-            --danger-bg: #fee2e2;
-            --danger-border: #ef4444;
-            --danger-text: #b91c1c;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            scroll-behavior: smooth;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px 30px;
-            background-color: #fff;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        }
-        
-        /* Sticky Header */
-        header {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header .header-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        header h1 { margin: 0; font-size: 1.2rem; font-weight: 600; }
-        
-        /* Navigation */
-        nav { display: flex; gap: 10px; flex-wrap: wrap; }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 12px;
-            border-radius: 20px;
-            background-color: rgba(255,255,255,0.15);
-            font-size: 0.85rem;
-            transition: background 0.2s;
-        }
-        nav a:hover { background-color: var(--accent-color); }
-        nav a.active { background-color: var(--accent-color); font-weight: bold; }
-
-        /* Content Sections */
-        section {
-            scroll-margin-top: 80px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 3rem;
-            margin-bottom: 3rem;
-        }
-        h2 { color: var(--primary-color); font-size: 1.8rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
-        h3 { color: #34495e; font-size: 1.2rem; margin-top: 1.5rem; font-weight: 600; }
-        ul, ol { margin-bottom: 1rem; padding-left: 20px; }
-        li { margin-bottom: 0.5rem; }
-        p { margin-bottom: 1rem; }
-
-        /* Warning Boxes */
-        .warning-box {
-            background-color: var(--warning-bg);
-            border-left: 5px solid var(--warning-border);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-        .medical-warning {
-            background-color: var(--danger-bg);
-            border: 2px solid var(--danger-border);
-            color: var(--danger-text);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-            font-weight: 500;
-            text-align: left;
-        }
-        .medical-warning strong {
-            display: block;
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 3rem;
-            padding: 2rem 0;
-            background-color: #f1f1f1;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        @media (max-width: 600px) {
-            .container { padding: 15px; }
-            header .header-content { flex-direction: column; gap: 10px; text-align: center; }
-            nav { justify-content: center; }
-        }
-    </style>
+    <title>CradleLog – Global Master Privacy Policy & Terms of Service (EULA) - Brasil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -131,124 +12,280 @@
         <div class="header-content">
             <h1>CradleLog Legal</h1>
             <nav>
+                <a href="global.html">🌐 Global/USA 🇺🇸</a>
                 <a href="tr.html">🇹🇷 TR</a>
-                <a href="en.html">🇪🇺 🇺🇸 Global</a>
-                <a href="br.html" class="active">🇧🇷 🇵🇹 BR/PT</a>
+                <a href="eu.html">🇪🇺 EU-EN</a>
+                <a href="id.html">🇮🇩 ID</a>
+                <a href="pt.html">🇵🇹 PT</a>
+                <a href="br.html" class="active">🇧🇷 BR</a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <div class="container">
         
-        <!-- PRIVACY POLICY SECTION -->
-        <section id="privacy">
-            <h2>1. Política de Privacidade</h2>
-            <p><strong>Última atualização:</strong> Janeiro de 2026</p>
-            <p>Esta política aplica-se a utilizadores no Brasil (LGPD) e Portugal/UE (GDPR).</p>
-
-            <h3>1.1 Arquitetura: Local-Primeiro (Local-First) e Conhecimento Zero</h3>
-            <p>O CradleLog foi projetado com a privacidade como recurso principal. Aderimos a uma arquitetura "Local-First". Isso significa:</p>
-            <ul>
-                <li><strong>Dados de Saúde:</strong> Todos os perfis de bebês, registros de alimentação, sono e fotos são armazenados <strong>APENAS</strong> no seu dispositivo local em um banco de dados SQLite criptografado.</li>
-                <li><strong>Sem Sincronização na Nuvem:</strong> Não enviamos seus dados de saúde para nossos servidores. Portanto, não podemos vender, ler ou compartilhar suas informações pessoais de saúde porque não as possuímos.</li>
-                <li><strong>Criptografia:</strong> Usamos criptografia padrão da indústria <strong>AES-256</strong>. Uma chave aleatória é gerada no seu dispositivo durante a instalação. Nós (o desenvolvedor) não possuímos essa chave e não podemos acessar seus dados.</li>
-            </ul>
-
-            <h3>1.2 Serviços de Terceiros</h3>
-            <p>Utilizamos serviços de terceiros limitados estritamente para funcionalidade técnica. <strong>Nenhum dado de saúde é enviado para esses serviços.</strong></p>
-            <ul>
-                <li><strong>Supabase:</strong> Usado <strong>APENAS</strong> para armazenar Logs de Consentimento (hash) para prova legal e metadados anônimos do Sistema de Indicação. <strong>NUNCA</strong> armazena dados de saúde.</li>
-                <li><strong>Telemetria e Crashlytics:</strong> Coletamos dados técnicos anônimos (falhas do aplicativo, bugs) para melhorar a estabilidade do aplicativo.</li>
-                <li><strong>AdMob (Publicidade):</strong> Para usuários gratuitos, exibimos anúncios. Solicitamos <strong>Anúncios Não Personalizados</strong> onde possível, mas a AdMob pode usar identificadores de dispositivo para prevenção de fraudes.</li>
-            </ul>
-
-            <h3>1.3 Sincronização QR e Transferência de Dados</h3>
-            <p>O recurso "QR Sync" permite transferir dados entre dispositivos usando Bluetooth (BLE). Este processo utiliza Criptografia de Ponta a Ponta (E2EE) com chaves efêmeras (temporárias). Os dados são descriptografados localmente, recriptografados para transferência e, em seguida, eliminados da memória imediatamente. Não facilitamos essa transferência via servidores em nuvem.</p>
-            <div class="warning-box">
-                <strong>⚠️ Aviso de Segurança:</strong> Usamos criptografia estritamente para transferência. No entanto, ambientes públicos apresentam riscos. Você é o único responsável por garantir a segurança física do código QR e garantir que terceiros não interceptem a conexão Bluetooth durante o processo de sincronização. Não sincronize em espaços públicos lotados.
-            </div>
-        </section>
-
-        <!-- TERMS OF USE (EULA) SECTION -->
-        <section id="terms">
-            <h2>2. Termos de Uso (EULA)</h2>
+        <section>
+            <h2>CradleLog – Política de Privacidade Global e Termos de Serviço (EULA)</h2>
+            <p><strong>Última Atualização:</strong> Março de 2026<br>
+            <strong>Versão:</strong> 5.0.0 - Conformidade Global & Escudo de Privacidade (Brasil)</p>
             
-            <!-- CRITICAL MEDICAL DISCLAIMER -->
+            <hr>
+
+            <h3>OBJETIVO E ESCOPO DO DOCUMENTO</h3>
+            <p>Este documento engloba a <strong>Política de Privacidade</strong>, o <strong>Contrato de Licença de Usuário Final (EULA)</strong> e os <strong>Avisos de Privacidade Globais</strong> para a prestação do aplicativo CradleLog no Brasil e em todo o mundo.</p>
+
+            <p><strong>Arcabouço Legal (O Escudo Global):</strong></p>
+            <ul>
+                <li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brasil)</li>
+                <li>Código de Defesa do Consumidor (CDC - Brasil)</li>
+                <li>Marco Civil da Internet (MCI - Brasil)</li>
+                <li>Estatuto da Criança e do Adolescente (ECA - Brasil)</li>
+                <li>General Data Protection Regulation (GDPR - UE/UK)</li>
+                <li>California Consumer Privacy Act (CCPA) & California Privacy Rights Act (CPRA)</li>
+            </ul>
+
+            <p><strong>Natureza Vinculante do Documento:</strong><br>
+            Ao baixar, instalar ou começar a usar o aplicativo, você declara e atesta que leu, compreendeu e aceitou todas as disposições deste documento. O uso contínuo do aplicativo constitui a aceitação destes termos.</p>
+
+            <p><strong>Idioma do Contrato & Compreensão:</strong><br>
+            O aplicativo e seus termos legais abrangentes são fornecidos principalmente em Português. Ao optar por usar o aplicativo e aceitar estes termos, você declara e garante expressamente que possui conhecimento suficiente da língua portuguesa para compreender o funcionamento básico do aplicativo, os resumos legais fornecidos e os riscos legais associados. Usuários que não possuem proficiência linguística suficiente para entender estes termos não devem aceitar este contrato e devem abster-se de usar o aplicativo.</p>
+        </section>
+
+        <section>
+            <h2>1. POLÍTICA DE PRIVACIDADE GLOBAL</h2>
+
+            <h3>1.1 Abordagem Arquitetônica: Local-First & Zero-Knowledge (Conformidade com a LGPD e MCI)</h3>
+            <p>CradleLog é um aplicativo <strong>local-first</strong> construído com base nos princípios de privacy by design (privacidade desde a concepção) e minimização de dados. Em conformidade com a LGPD (Lei nº 13.709/2018) e o Marco Civil da Internet, declaramos explicitamente como nossa arquitetura opera:</p>
+            <ul>
+                <li>Todos os perfis de bebê, registros de saúde, alimentação, sono, registros de vacinação, fotos e conteúdos semelhantes são armazenados <strong>APENAS no seu dispositivo pessoal</strong>.</li>
+                <li>Esses dados são criptografados no dispositivo usando o algoritmo <strong>AES-256</strong>, padrão da indústria.</li>
+                <li>A chave de criptografia é uma chave de <strong>32 bytes</strong> gerada aleatoriamente e criada exclusivamente no seu dispositivo durante a configuração inicial do aplicativo.</li>
+                <li><strong>Arquitetura Zero-Knowledge (Conhecimento Zero):</strong> A CradleLog NÃO PODE acessar essa chave, NÃO a armazena, NÃO PODE fazer backup dela e NÃO PODE recuperá-la.</li>
+            </ul>
+
             <div class="medical-warning">
-                <strong>⚠️ ISENÇÃO DE RESPONSABILIDADE MÉDICA</strong>
-                Este aplicativo NÃO é um dispositivo médico. Ele não fornece aconselhamento médico, diagnóstico ou tratamento. É apenas uma ferramenta de registro de dados.
-                <br><br>
-                <strong>Importante:</strong> Os códigos de cores (Verde/Amarelo/Vermelho) e gráficos dentro do aplicativo são apenas para fins organizacionais. Eles <strong>NÃO</strong> constituem triagem médica, diagnóstico ou uma determinação de "seguro/inseguro". Consulte sempre um médico para decisões médicas. Em caso de emergência, ligue imediatamente para os serviços de emergência (112 na Europa / 192 no Brasil).
-            </div>
-
-            <h3>2.1 Isenção de Responsabilidade por Perda de Dados</h3>
-            <div class="warning-box">
-                <p><strong>Você reconhece e aceita os seguintes riscos em relação aos seus dados:</strong></p>
+                <strong>AVISO CRÍTICO: CHAVE DE CRIPTOGRAFIA E SEGURANÇA DE DADOS</strong>
+                <p>Como a chave de criptografia é gerada e mantida estritamente offline no seu dispositivo, a CradleLog <strong>NÃO CONHECE</strong> e <strong>TECNICAMENTE NÃO PODE ACESSAR</strong> essa chave.</p>
+                <p><strong>Seus dados PODEM SER PERDIDOS PERMANENTEMENTE nas seguintes situações:</strong></p>
                 <ul>
-                    <li><strong>Dependência do Dispositivo:</strong> Os dados são armazenados localmente. Se o seu dispositivo for perdido, danificado ou restaurado para as configurações de fábrica, seus dados serão <strong>PERMANENTEMENTE PERDIDOS</strong>.</li>
-                    <li><strong>Sem Recuperação:</strong> O Provedor de Serviço não pode recuperar dados perdidos ou chaves de criptografia.</li>
-                    <li><strong>Sua Responsabilidade:</strong> É sua exclusiva responsabilidade usar o recurso "Exportar para CSV" regularmente para fazer backup dos seus dados.</li>
+                    <li>Perder ou ter o seu dispositivo roubado.</li>
+                    <li>Excluir e reinstalar o aplicativo sem um backup.</li>
+                    <li>Formatar ou restaurar o dispositivo para os padrões de fábrica.</li>
+                    <li>Falha no sistema operacional ou no hardware (corrupção de memória, erro de armazenamento).</li>
+                    <li>Uso de aplicativos agressivos de limpeza de memória ou otimizadores de bateria.</li>
                 </ul>
+                <p><strong>Recurso de Recuperação Avançada:</strong><br>
+                Nosso aplicativo tenta reparar bancos de dados locais corrompidos (SQLite) usando ferramentas integradas no próprio dispositivo. No entanto, em casos de perda do dispositivo, formatação permanente ou falhas graves de hardware, a recuperação de dados é tecnicamente IMPOSSÍVEL.</p>
+                <p><strong>A CradleLog NÃO PODE recuperar seus dados de um servidor central sob nenhuma circunstância e NÃO É RESPONSÁVEL pela perda de dados porque:</strong></p>
+                <ol>
+                    <li>Por design, o aplicativo NÃO envia seus dados de saúde para um servidor; ele os mantém exclusivamente no seu telefone.</li>
+                    <li>Nós NÃO CONHECEMOS e somos tecnicamente INCAPAZES de acessar a chave de criptografia.</li>
+                    <li>Não existe absolutamente NENHUM <em>backdoor</em> (porta dos fundos) no sistema.</li>
+                    <li>Seus dados dependem inteiramente da segurança e integridade do seu dispositivo.</li>
+                </ol>
             </div>
 
-            <h3>2.2 Limitação de Responsabilidade Financeira</h3>
-            <p>Na extensão máxima permitida pela lei aplicável:</p>
+            <div class="warning-box">
+                <h4>RESPONSABILIDADE OBRIGATÓRIA DO USUÁRIO PELOS BACKUPS (Art. 14, § 3º, II do CDC - Culpa Exclusiva do Consumidor):</h4>
+                <p>O Usuário é <strong>INTEIRAMENTE RESPONSÁVEL</strong> pela segurança e backup dos seus dados. Como usuário, você deve:</p>
+                <ul>
+                    <li>Fazer backups regulares (pelo menos uma vez por semana).</li>
+                    <li>Armazenar backups em um local seguro, fora do dispositivo, quando possível.</li>
+                    <li>Sempre fazer um backup antes de trocar de dispositivo.</li>
+                    <li>Sempre fazer um backup antes de atualizar o aplicativo no seu dispositivo.</li>
+                    <li>Garantir a segurança do dispositivo (bloqueio de tela, biometria, senha de tela segura, etc.).</li>
+                </ul>
+                <p><em>(Nota: Recursos como sincronização entre dispositivos, backups automáticos em nuvem ou compartilhamento familiar estão atualmente desativados. Seus dados permanecem completamente isolados e offline.)</em></p>
+            </div>
+
+            <p>Considerando a natureza técnica "Zero-Knowledge" do aplicativo e a arquitetura 100% offline dos dados de saúde, a CradleLog isenta-se de qualquer responsabilidade ou dano material, moral ou extracontratual pela perda de dados sofrida por usuários que ignoram estes avisos vitais de segurança e falham em realizar backups regulares, configurando-se fato exclusivo do usuário.</p>
+
+            <h3>1.2 Dados Processados no Lado do Servidor</h3>
+            <p>No CradleLog, os contratos legais básicos <strong>OBRIGATÓRIOS para acessar o aplicativo (por exemplo, EULA, Política de Privacidade) são incorporados como arquivos internos (assets)</strong>. Seu consentimento para esses acordos fundamentais <strong>NUNCA É ENVIADO aos nossos servidores</strong>; é verificado e armazenado 100% localmente (offline) no seu dispositivo.</p>
+            
+            <p>A CradleLog <strong>apenas</strong> processa registros técnicos em servidores centralizados (Supabase) para fins de prova de consentimento opcional:</p>
+            <p><strong>A. Registros de Consentimento Opcionais:</strong></p>
             <ul>
-                <li><strong>Bugs de Software:</strong> O Provedor não é responsável por perda de dados ou erros causados por bugs de software. O aplicativo é fornecido "COMO ESTÁ" (AS IS).</li>
-                <li><strong>Limite Financeiro (Usuários Premium):</strong> Nossa responsabilidade total é limitada a <strong>duas vezes (2x)</strong> o valor pago pela <strong>Licença Premium Vitalícia</strong>.</li>
-                <li><strong>Limite Financeiro (Usuários Gratuitos):</strong> Nossa responsabilidade total é limitada ao equivalente ao preço atual da <strong>Licença Premium Vitalícia</strong> OU <strong>$50 USD</strong> (o que for menor).</li>
+                <li>Hash SHA-256 de um ID de Consentimento do Dispositivo (<code>local_uuid_hash</code>)</li>
+                <li>ID de registro único para cada evento de consentimento (<code>consent_id</code>)</li>
+                <li>Tipo de evento de consentimento (<code>consent_type</code> - ex: <code>AD_ALLOWED</code>, <code>CRASHLYTICS_ALLOWED</code>)</li>
+                <li>Hash de conteúdo do texto de consentimento relacionado (<code>consent_text_hash</code>)</li>
+                <li>Versão do aplicativo (<code>app_version</code>)</li>
+                <li>Carimbo de data/hora do servidor (<code>created_at</code>)</li>
+            </ul>
+            <p>Embora não revelem diretamente sua identidade para nós nestes termos técnicos, tratamos esses dados transacionais como Dados Pessoais de forma restrita sob as regulamentações em vigor para máxima conformidade.</p>
+
+            <h3>1.3 Situação Legal do Tratamento de Dados (Controlador vs. Provedor)</h3>
+            <p>A CradleLog opera sob as seguintes funções legais relativas ao processamento de dados (Mapeamento LGPD):</p>
+            
+            <h4>A. Com relação aos Dados de Saúde (NÃO SOMOS CONTROLADORES DE DADOS):</h4>
+            <p>A CradleLog atua estritamente como "Provedora de Infraestrutura Técnica" e <strong>NÃO</strong> é legalmente "Controladora" ou "Operadora" de Dados (sob a LGPD) no que diz respeito aos dados de saúde, informações alimentares e registros sensíveis do bebê inseridos pelo usuário no aplicativo.</p>
+            
+            <p><strong>Justificativa para esta Postura Legal:</strong></p>
+            <ol>
+                <li><strong>Ausência de Acesso Técnico:</strong> Estes dados são armazenados localmente e criptografados (AES-256). A CradleLog NÃO PODE acessar o conteúdo ou a chave de forma alguma.</li>
+                <li><strong>Controle da Chave de Criptografia:</strong> A chave de criptografia fica armazenada de forma segura e inatingível no dispositivo do usuário. É impossível à equipe técnica da CradleLog descriptografar a base SQLite.</li>
+                <li><strong>Decisão sobre Finalidade e Meios:</strong> Estes dados são processados para finalidades exclusivamente decididas pelo usuário (acompanhamento dos cuidados com o bebê) sob controle do usuário. A CradleLog atua meramente como licitante de uma ferramenta, como a "caneta" e o "papel", sendo o usuário o titular e Controlador daquele ativo de saúde inserido offline.</li>
+                <li><strong>O Usuário como Controlador de Dados Pessoais do Bebê/Criança:</strong> O Usuário, de posse de seu dispositivo móvel, é o único Controlador com capacidade fática e técnica de interagir com aqueles dados ali guardados no app CradleLog.</li>
+            </ol>
+            
+            <p><strong>Nossas Responsabilidades Técnicas Adicionais:</strong><br>
+            Mesmo não sendo Controladores, fornecemos o ambiente técnico em nível de hardware, empregando criptografia de alto padrão militar (AES-256) com forte alerta de que sem o acesso à senha ou ao aparelho, as informações restam invioláveis e incomunicáveis.</p>
+            
+            <p><strong>Direitos do Titular (LGPD) Relativos aos seus Dados (Criptografados) do Bebê:</strong><br>
+            Como temos conhecimento <em>absolutamente zero</em> e nenhum acesso logado a quaisquer detalhes criptografados do que ocorre no dispositivo das mães e pais (Zero-Knowledge), direitos LGPD (como portabilidade, retificação, bloqueio e eliminação relativas aos registros da criança) recaem integralmente em sua posse e uso: Devem ser executados exclusivamente <em>por você</em>, dentro das telas do aplicativo (botões de deletar bebê, zerar banco de dados ou corrigir dados) no próprio telefone, dispensando intervenção de servidores externos.</p>
+
+            <h4>B. Com relação aos Logs de Consentimento (LIMITADOS) (NÓS SOMOS CONTROLADORES):</h4>
+            <p>No que diz respeito àqueles registros técnicos enviados ao nosso servidor para Prova de Concordância do App, a CradleLog <strong>atua como Controladora de Dados</strong>. Determinamos a finalidade (assegura prova de consentimento LGPD) e como os processamos.</p>
+
+            <h3>1.4 Serviços de Terceiros & Transferências Internacionais</h3>
+            
+            <h4>1.4.1 Supabase (Infraestrutura de Armazenamento Backend)</h4>
+            <ul>
+                <li><strong>Objetivo:</strong> Armazenar os logs/opções anônimas sobre publicidade ou analíticos, se emitidos para consentimento.</li>
+                <li><strong>Localização do Servidor:</strong> Região da UE (Europa Ocidental, preferencialmente EU-West-3 ou AWS Frankfurt/Irlanda dependendo das alocações).</li>
+                <li><strong>Dados Transferidos:</strong> Logs com Hash (<code>local_uuid_hash</code>) da opção publicitária/consentimentos. <strong>NÃO SÃO TRANSFERIDOS DADOS DE SAÚDE, CARTOES DE CRÉDITO OU NOMES DO BEBÊ.</strong></li>
+                <li><strong>Base Legal:</strong> Obrigação Legal ou Regulatória (LGPD, art. 7º, II).</li>
+            </ul>
+            <p>A transferência internacional se viabiliza por obediência ou às decisões de adequação emitidas pela Autoridade Nacional (ANPD) ou às Cláusulas Padrão ou Normas Corporativas Globais previstas no artigo 33 da Lei Geral de Proteção de Dados (LGPD). Operador do Tratamento: <em>Supabase Inc.</em></p>
+
+            <h4>1.4.2 Serviços de Publicidade Externa (Google AdMob)</h4>
+            <ul>
+                <li><strong>Escopo:</strong> APENAS para os usuários utilizando o Aplicativo Gratuito (Versão Free).</li>
+                <li><strong>Identificadores Pessoais de Anúncios Usados:</strong> IDFA (Apples Identifier for Advertisers) ou AAID/GAID (Google Advertising ID) quando aplicável.</li>
+                <li><strong>Responsável:</strong> Google LLC e Apple operam de forma isolada e autônoma na entrega desses resultados via Software Development Kit (SDK).</li>
             </ul>
 
-            <h3>2.3 Regras do Sistema de Indicação (Referral)</h3>
-            <p>Utilizamos um sistema de indicação anônimo baseado em hash. Para evitar fraudes e abusos, as recompensas são concedidas estritamente sob as seguintes condições:</p>
+            <p><strong>ESTRUTURA PUBLICITÁRIA DE DUAS CAMADAS (LEI BRASILEIRA):</strong></p>
+            <p><strong>1. Camada Um: A Contrapartida na Visualização de Anúncios (Condição Contratual)</strong><br>
+            De acordo com os termos firmados para este acesso Freemium, a CradleLog detém a premissa de que prover o acesso "sem pagamentos diretos monetários no cartão" exige a observação de propaganda online. Isso repousa sobre a <em>Execução Contratual do EULA</em>. Para extinguir essa necessidade e não ter mais injeções de SDKs de Monetização Ativos, vocẽ adquire a "Licença Premium" vitalícia ou por tempo definido.</p>
+
+            <p><strong>2. Camada Dois: A Questão da Personalização e do "Opt-in" Obrigatório (Privacidade)</strong><br>
+            Embora servir anúncios possa não carecer de autorização para mera "exibição contextual", a forma de como <em>direcionar</em> publicidade com base nos seus hábitos na web demanda escolha clara e desimpedida, respeitando o princípio do Consentimento e Transparência:</p>
             <ul>
-                <li><strong>Definição de Usuário Ativo:</strong> Um usuário indicado é considerado "Ativo" apenas se:
-                    <ol>
-                        <li>Instalar e usar o aplicativo por pelo menos <strong>6 dias</strong> na primeira semana (período de 7 dias).</li>
-                        <li>Fizer pelo menos <strong>4 registros (logs)</strong> por dia durante esses 6 dias.</li>
-                        <li>Mantiver o aplicativo instalado por um período subsequente de <strong>verificação de 7 dias</strong>.</li>
-                    </ol>
-                </li>
-                <li><strong>Concessão de Recompensa:</strong> As recompensas são desbloqueadas apenas após o período de verificação ser concluído com sucesso.</li>
-                <li><strong>Revogação:</strong> Reservamo-nos o direito de revogar recompensas se contas falsas ou atividade de bots forem detectadas.</li>
+                <li>Para que anúncios segmentados por preferência através de rastreamento IDFA/GAID existam em territórios fiscalizados ativamente pelas políticas globais de privacidade (como o Brasil regido pela LGPD), nosso aplicativo serve por base a adoção da UMP (Plataforma de Mensagens para Usuários do Google, no Padrão TCF V2.2 ou políticas atualizadas de adequação Google). Você é questionado na abertura e tem livre escolha entre Anúncios Rastreados vs Não-Personalizados (NPA) sem que seu direito ao App seja tolhido.</li>
+                <li>Em caso de recusa, o padrão de publicidade será NPA (Non-Personalized Ads - Propagandas Aleatórias/Contextuais Desistentes de Perfilamento Comportamental). Isso <em>em nenhuma hipótese</em> remove as Propagandas, apenas impossibilita e inibe as tags e cruzamentos dos seus dados pelo Google (neste SDK restrito de ads da CradleLog) para montar uma matriz de publicidade direcionada a você.</li>
+            </ul>
+            <p><em>Nota Relevante: O SDK de publicidade AdMob opera em ambiente sandbox no aplicativo. Dados sensíveis do App (Cores de Fases, Horas de Bebida, Doenças Inseridas) NUNCA SÃO ACESSADOS PELO GOOGLE, tampouco compartilhados; o banco local relacional SQLite nunca se entrelaça aos SDK de Anúncios de Third-Parties.</em></p>
+
+            <h4>1.4.2.1 Anúncios Premiados (Rewarded Ads - Opcional e a Critério do Usuário)</h4>
+            <p>Como um complemento da versão Gratuita que auxilia em gastos de APIs essenciais à fluidez, introduz-se a publicidade em modalidade "Rewarded Ad" (Anúncio de Recompensa, opt-in voluntário dos usuários Free) em lugar dos clássicos banners de rodapé para desbloquear benefícios momentâneos.</p>
+            
+            <p><strong>Quando São Ofertados:</strong></p>
+            <ul>
+                <li><strong>Acesso Prolongado ao Player de Canções de Ninar em Segundo Plano:</strong> O usuário Free deverá engajar voluntariamente em uma peça de Video Recompensado do UMP para liberar uma faixa temporal da trava de background (até o máximo fixado pela interface, de forma acumulativa) possibilitando audição fluída de ninar off-screen momentaneamente.</li>
+                <li><strong>Emissão de Relatório Clínico Ampliado em 14 dias:</strong> Usuários grátis necessitam engajar de forma deliberada no Anúncio Assistido com Premio ao requerer esse report via app, trocando seu tempo/atenção no AdMob por esta liberação pontual da compilação em formato viável (CSV ou simular, por ação isolada).</li>
+            </ul>
+
+            <p><strong>As Exceções ao Mecanismo Noturno e Tolerância:</strong><br>
+            Por tratarem-se de atos explícitos de "Eu Aceito Ver Publicidade por Este Prêmio" e estarem isentos dos impactos abruptos que irritam pais na calada da noite, a modalidade <em>Rewarded Ads não obedece filtros passivos como carência de registro, threshold the volume diário ou banimentos madrugadores.</em> Só são disparados ao tocar deliberadamente sobre sua requisição visual confirmada. Exige também conexão robusta da provedora Mobile Local ou WI-FI. Pessoas imbuídas ou chateadas com tal dinâmica têm plena faculdade e facilidade contratual para atualizar rumo à Licença Premium de acesso perene irrestrito.</p>
+
+            <p>O SDK de Anúncios de Recompensa respeitará o status geral de Consentimento de Personalização de Ads (Personalizado vs Não Personalizado / TCF Google UMP) definido pelo próprio assinante na central geral de Cookies ou tela LGPD do Google Admob já comentada. Nenhuma informação privativa da Criança ou Registros trafega às Demandas e "Bidding Ad Exchanges" na geração, chamada ou prestação da publicidade com prêmio.</p>
+
+            <h4>1.4.3 Telemetria (Análises, Traços de Bugs, Crash Reports)</h4>
+            <p>CradleLog invoca Google Firebase Crashlytics e Firebase Analytics essencialmente para mensurar tráfegos não-identificados (A/B testing, telas de funil mais visitadas, estabilidades pós-versões lançadas e depuração massiva) mediante o <strong>Consentimento Livre, Expresso, Informado e Inequívoco</strong> ofertado por você nas configurações, como ditame basilar da LGPD (Art. 5º).</p>
+            <ul>
+                <li><strong>Dados Recolhidos com Consentimento:</strong> Modelos de aparelhos, IDs Aleatórios Resetáveis, Relatórios Cárnicos da Tela Fechada Súbita, Versões Atuais. NÃO enviamos os relatórios diários biométricos do lactente nestas conexões de rede analítica. As opções de Perfil Comportamental Analytics para Segmentos de Venda encontram-se bloqueadas preventivamente nas interfaces operacionais de projeto Firebase da própria provedora.</li>
+            </ul>
+
+            <h4>1.4.4 Gerenciamento de Assinaturas Premium (RevenueCat)</h4>
+            <ul>
+                <li><strong>Objetivo:</strong> Gerenciar compras no aplicativo de forma segura e sincronizá-las com as lojas.</li>
+                <li><strong>Operador:</strong> RevenueCat Inc.</li>
+                <li><strong>Dados Transferidos:</strong> Recibos anônimos da loja e ID de usuário no aplicativo. NÃO são transferidos dados de cartão ou nome.</li>
+                <li><strong>Base Legal:</strong> Execução de Contrato (LGPD, art. 7º, V).</li>
             </ul>
         </section>
 
-        <!-- BRAZIL LGPD SECTION -->
-        <section id="brazil-lgpd">
-            <h2>3. 🇧🇷 Brasil - LGPD (Lei Geral de Proteção de Dados)</h2>
-            <p>Para usuários no Brasil, cumprimos a Lei nº 13.709/2018 (LGPD). Como seus dados são armazenados localmente ("Local-First"), você mantém controle total sobre suas informações pessoais.</p>
+        <section>
+            <h2>2. DISPOSIÇÕES ESPECÍFICAS DA LEI BRASILEIRA (LGPD E PROTEÇÃO INFANTIL)</h2>
 
-            <h3>3.1 Base Legal para Processamento</h3>
-            <p>Processamos seus dados de saúde com base no seu <strong>Consentimento</strong> (Artigo 7, I da LGPD), que você fornece ao aceitar explicitamente estes termos e usar o Aplicativo.</p>
+            <h3>2.1 Uso por Crianças e o Consentimento Tácito (ECA & LGPD)</h3>
+            <p><strong>Direcionamento a Pais, Tutores ou Guardiões:</strong><br>
+            Apesar da temática sobre alimentação, sono e diário infantil de recém-nascidos do aplicativo requerer inserção de informações pessoais relativas a bebês e crianças com faixa etária imatura mental sob prisma da lei, <em>O CradleLog destina-se, opera tecnicamente as informações, transaciona e vende exclusivamente seus dados e interfaces a sujeitos Plenamente e Civilmente Capazes (Acima dos 18 anos ou de Maioridade Legal por emancipação).</em></p>
 
-            <h3>3.2 Seus Direitos (Artigo 18)</h3>
-            <p>De acordo com o Artigo 18 da LGPD, você tem direito a:</p>
+            <p>A LGPD (Art. 14, P.1º) preceitua vigorosamente o controle e as condicionantes imperiosas e explícitas para manejo da personalidade sensível da Criança e do Adolescente na web. Pela arquitetura isolada do banco e como não remetemos fluxos destes inputs infanto-juvenis à Nuvem Central do aplicativo (Zero-Knowledge):<br>
+            Ao pressionar "Entendi", iniciar o app, logar registros da Criança e aceitar esse acordo vinculativo, você <strong>PROMETE E ASSUME FORO PLENO (Garantido Legalmente) sob responsabilidades cíveis e criminais cabíveis que você é O ÚNICO TUTOR LEGAL DAQUETA CRIANÇA ESPECIFICADA OU AO MENOS UM PAI/MÃE OU PORTADOR COM PLENOS PODERES OUTORGATIVOS CAPACITADO PARA EXERCER ESSE ENCARGO JURIDICAMENTE SOB ESTES REGISTROS ISOLADOS DA CADEIA PESSOAL DAQUELE ANJO CIVIL SOB SUA ASSISTÊNCIA NO PAÍS BRASIL (ECA E LGPD ART.14 § 1).</strong> O aplicativo deve, também, sob sua gestão domiciliar em telas trancáveis de posse paterna ativadas (senhas, TouchIds de Sistemas Operacionais, restrições locais para aplicativos de crianças no modo sandbox, dentre demais métodos não operados pelo distribuidor). Esta plataforma abusa das máximas blindagens contratuais disponíveis ante qualquer infortúnio alheio causado por dolo/desídia na não vigilância efetiva em seu próprio dispositivo mobile atrelado em ambiente fechado.</p>
+
+            <h3>2.2 Exclusão Completa e O Papel do Controlador "Zero"</h3>
             <ul>
-                <li><strong>Confirmação e Acesso:</strong> Confirmar a existência de tratamento e acessar seus dados (disponíveis diretamente na tela do seu dispositivo).</li>
-                <li><strong>Correção:</strong> Corrigir dados incompletos, inexatos ou desatualizados.</li>
-                <li><strong>Anonimização/Bloqueio/Eliminação:</strong> Solicitar a eliminação de dados desnecessários (excluindo o Aplicativo).</li>
-                <li><strong>Portabilidade:</strong> Transferir seus dados para outro fornecedor (via nosso recurso "Exportar CSV").</li>
-                <li><strong>Revogação do Consentimento:</strong> Você pode revogar o consentimento a qualquer momento desinstalando o Aplicativo, o que exclui permanentemente todos os dados locais.</li>
+                <li><strong>Exclusão Direta na Unidade Mobile Local:</strong> Na eventualidade em que você resolva que dados gravados do menor, histórico de medições corporais, registros fotolocalizados de galeria da câmara requerem Extinção Completa; devido a este ser um Software Fechado e Isolado Zero-Knowledge sem a Nuvem conectada, a eliminação integral de tudo que ali persiste encontra caminho definitivo mediante a Remoção e Desinstalação da interface Mobile a partir de configurações/apagamento natural local da Memória do Dispositivo de forma simples, corriqueira e trivial e de posse irretratável sobre a pasta protegida gerada pelo SQLite criptografada (Android/data - AppFiles). Tudo é pulverizado, sem espelhos da Empresa ou qualquer rastro de terceiros que nos ligam e de que formos provedores desse "software branco isolado" provido aos nossos assistidos Brasileiros.</li>
+                <li><strong>Processos em Cloud para Supabase (Cancelamentos e Esquecimentos Referentes e Assinaturas):</strong> Tendo ressalvada a hipótese de Exclusão Física no Celular do Banco Sensível Master, resta apagar quaisquer reminescências, metadados associativos a IPs transacionáveis em nossos servidores Supabase de Confirmação. Neste caso, encaminhe-nos em infocradlelog@gmail.com ou nos meios indicados listados, declarando os IDs únicos colados do ambiente de menu (Identidade ID) com base no seu estrito Direito LGPD Ao Esquecimento. Suas linhas com as assinaturas pseudônimas serão truncadas nas varreduras técnicas periódicas massivas e automáticas na nuvem até sua extinção contundente até 30 Dias ou outro interstício regulatório menor vigente.</li>
+            </ul>
+
+            <div class="medical-warning">
+                <strong>2.3 Avisos Específicos sobre Dispositivos Médicos (CDC / ANVISA)</strong>
+                <p>A Plataforma e a licença dos dados visam a organização doméstica unicamente, orientada como diário administrativo prático temporal-causal e memorial logístico auxiliar e contínuo.<br>
+                Não representa de modo incabível "Telemedicina Regulatória ou Equipamentos e Ativos Médicos Fiscais da ANVISA" sob o escopo brasileiro ou correlatos normativos (Diagnóstico, Teleperícia ou Emissão Sanitária Curativa de Receituário Autômomo) uma vez que sua modelagem digital restringe-se a salvar variáveis temporizadas simples (Horas de Mamada, Delineação Diária). Quaisquer interpretações anômalas resultantes de leituras no CradleLog sobre saúde e que substituam idas emergenciais de bebês febris ou apnéicos (Síndromes Agudas/Cronicas ou Patologistas da Fase Láctea/Crescente e Relatadas Sem Assistência da Comunidade Clínica Humana Profissional Competente Externa OBRIGATÓRIA e recomendada massivamente nas consultas obstétricas) e eventuais complicações, imputam total Exagero Irrazoável de Confiabilidade Humano-Digital e isentam sumariamente qualquer provedora mobile dessas repercussões de desídia de responsáveis.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. TERMOS DE SERVIÇO (EULA) E REGRAS DE MERCADO (CDC)</h2>
+
+            <h3>3.1 Limitação de Garantias</h3>
+            <p>A aplicação é cedida aos portadores Brasileiros na exata condição técnica fática momentânea em que ela opera nas arquiteturas de lojas base do respectivo hardware Apple e/ou Google ("As Is" / "No estado") considerando-se atualizações compulsórias da App Store que são injetadas sem o parecer ou dolo do distribuidor independente da CradleLog, estando a provisão da base gratuita subordinada rigorosamente às flutuações e viabilidades da operabilidade tecnológica de seu Smartphone particular e à vida temporal estocástica de mídias de memória ou das restrições nativas sistêmicas imprevisíveis (Force-Kills da bateria de seu Android Customizado; RAM-Wipes agressivos da sua provedora). Se deparando com restrições e entraves sistêmicos sem correção imediata pelo CradleLog para a gratuidade fluída, sua licença e consentimento em continuar dependendo fundamentalmente e confiavelmente sob exclusividade local com estes fluxos digitais são atitudes voluntatórias isentas à provisão garantida ininterrupta, por livre faculdade natural tecnológica.</p>
+
+            <p><strong>Danos Diretos em Licença Premium Paga (Mücbir Sebep Técnico):</strong> Em virtude da natureza fundamentada na arquitetura <em>Zero Knowledge</em> e <em>Offline</em>, a operação da CradleLog não envolve o armazenamento de dados do usuário em nossos servidores. Qualquer perda de dados decorrente de falhas no dispositivo, corrupção do banco local (SQLite) ou ações do sistema operacional configura-se como uma impossibilidade técnica de recuperação gerada no ecossistema do próprio usuário, caracterizando motivo de força maior (Força Maior Técnica) não imputável à desenvolvedora. Havendo defeito irremediável comprovado e com dolo culposo exclusivo do código do aplicativo que destrua a base operatória premium, a responsabilidade mitigatória da empresa limita-se restritamente aos danos materiais diretos consistentes no reembolso do valor exato desembolsado na compra da licença Premium via Google Play ou Apple App Store ao usuário Brasileiro, não havendo responsabilidade por danos morais ou lucros cessantes decorrentes do desaparecimento de dados mantidos fora de nosso controle.</p>
+
+            <div class="warning-box">
+                <h4>3.2 Alertas Essenciais de Uso de Bateria, Notificações e O.S. (Sistema Operacional)</h4>
+                <p>Dadas as peculiaridades arquitetônicas locais, as diretrizes de funcionamento temporal relativas a Disparos Acústicos, Despertadores Ativados, "Notificações do Sistema" configurados por parâmetros de rotina ou agendas programadas para o seu filho não ocorrem disparadas através de Nuvens Exógenas em Push (Push-Notification remotos). São integralmente escalonadas como "Agendas Sistêmicas Fechadas (Alarmes Locais e WorkManagers / Handlers Locais)". Como atenuantes limitadores tecnológicos das funções centrais desse aplicativo em ambiente Brasileiro perenemente suscetível a mudanças dos Sistemas:</p>
+                <ol>
+                    <li>Dispositivos (Ex: Marcas Asiaticas Adotadas Massivamente, versões defasadas IOs) praticam "Kill-Switches de Economia de Energia, Focus Mode inibitório ou Supressores Severos (Do-No-Disturb mode) em Aplicativos no Background", suprimindo ativações de alarmes sob critérios herméticos desconhecidos de mercado impostos à nossa programação independente do Gradle.</li>
+                    <li>Extermínios na aba de Recentes (Swipe do Usuário fechando violentamente na gaveta do Menu O.S) esvaziam totalmente as rotas e ganchos programados nas camadas nativas sem tempo de restauração pelos serviços independentes.</li>
+                    <li>Dessa forma, a responsabilidade para assegurar com dupla redundância o lembrete fático por medicações em Horas Vitais Exatas descamba unicamente à atenção irrevogável, autônoma, dupla do pai que inseriu a regra, pois exime-se CradleLog de reparações/consequências advindos estritamente do Sistema Operacional Calado do usuário final nas dependências físicas relapsas por erro ou incompatibilidade sistêmica.</li>
+                </ol>
+            </div>
+
+            <h3>3.3 Direito de Arrependimento e Natureza do "Digital Content" (Art. 49, CDC)</h3>
+            <p>Os consumidores detêm os direitos estipulados no Código de Defesa do Consumidor (CDC) brasileiro, incluindo o Direito de Arrependimento de 7 dias (Art. 49) aplicável a compras realizadas fora do estabelecimento comercial (Comércio Eletrônico). No que tange às assinaturas e licenças Premium (Compras In-App):</p>
+            <ul>
+                <li><strong>Delegação e Procedimento de Reembolso/Arrependimento:</strong> Informamos que a CradleLog não processa pagamentos diretos, nem armazena ou gerencia informações de cartão de crédito. As transações financeiras e a entrega imediata da licença digital são realizadas e faturadas de forma exclusiva e integral pelas plataformas da Apple App Store e Google Play Store. Dessa forma, para exercer o direito de arrependimento (7 dias) e/ou solicitar reembolsos, o consumidor deverá interagir diretamente com os mecanismos oficiais de devolução fornecidos pela respectiva plataforma de compra (solicitando suporte pelo seu ID Oficial Apple ou no painel de sua conta Google Play). A CradleLog respeita a legislação brasileira e atua em conformidade com as regras dessas lojas garantindo que não criará obstáculos para tais processos viabilizados pelas mesmas.</li>
             </ul>
         </section>
 
-        <!-- PORTUGAL & EU GDPR SECTION -->
-        <section id="eu-gdpr">
-            <h2>4. 🇵🇹 Portugal & União Europeia - GDPR</h2>
-            <p>Para utilizadores em Portugal e na União Europeia, baseamo-nos no <strong>Consentimento Explícito</strong> (Art. 9 do GDPR) para processar dados de saúde localmente no seu dispositivo.</p>
+        <section>
+            <h2>4. CONDIÇÕES DIVERSAS E FINAIS</h2>
+
+            <h3>4.1 Foro e Legislação Aplicável</h3>
+            <p>Em respeito absoluto às normas consumeristas do Brasil (CDC) aplicáveis aos usuários estabelecidos neste país, informamos que:</p>
             <ul>
-                <li><strong>Minimização de Dados:</strong> Não transferimos os seus dados de saúde para a nuvem.</li>
-                <li><strong>Direito ao Apagamento ('Direito a ser Esquecido'):</strong> Desinstalar a aplicação apaga permanentemente todos os dados.</li>
-                <li><strong>Portabilidade dos Dados:</strong> Pode exportar os seus dados em formato CSV a qualquer momento.</li>
+                <li><strong>Mediação e Resolução Amigável de Disputas:</strong> Valorizamos nossos usuários e, em caso de eventuais problemas, conflitos ou demandas jurídicas de natureza de consumo, <strong>encorajamos veementemente</strong> que os titulares façam o registro de suas reclamações por meio de plataformas oficiais de resolução alternativa de litígios, tais como a plataforma <strong>Consumidor.gov.br</strong> (quando aplicável e listada) ou reportando sua situação junto aos órgãos de proteção (PROCON) regionais antes de ingressar com ações judiciais plenas. Buscamos comungar de boa fé processual e amigável.</li>
+                <li><strong>Foro Judicial:</strong> Esgotadas as tratativas conciliatórias, quaisquer controvérsias judiciais relativas a esta EULA, à Política de Privacidade, ou às licenças Premium serão processadas sob a Legislação da República Federativa do Brasil. Fica assegurado ao Consumidor Brasileiro o direito de intentar eventuais ações no Foro de seu domicílio ou via atuação dos Juizados Especiais Cíveis (JEC), prerrogativas locais garantidas pela legislação. Afasta-se peremptoriamente a obrigatoriedade de arbitragem nos EUA ou renúncia a ações de classe (Class Action Waiver) constantes em versões de nossa política global.</li>
             </ul>
+
+            <h3>4.2 Alteração de Política, Vigência e Desligamento</h3>
+            <ul>
+                <li>O Aplicativo detém a premissa irrevogável, conforme a natureza digital do ramo, de alterar o esqueleto e aditar normas de Privacidade ou EULA no trâmite contínuo de versões supervenientes sem aviso prévio. Nesses eventos restritos em que os vetores e impactos centrais e severos de uso da vida privativa se alterem e sejam lançados como mandatórios nas Lojas, efetuaremos trava do acesso temporário impondo Aceitação Voluntária Necessária do Novo Banner nos parâmetros atualizados (Triggering a new mandatory required consent screen para aderência das mutações periciais obrigatórias e transparentes para continuar). A recusa acarreta apenas a impossibilidade de manter usufruindo a provisão de forma compatível e sincronizada.</li>
+                <li>A interrupção de Prestação do Aplicativo ao Brasil é também de sua livre prerrogativa do empreendedor titular independente e dos mercados mundiais flutuantes do App-Store de acordo com as disponibilidades financeiras locais inviáveis temporais à provisão livre e manutenção operacional sem custo compulsório continuado permanente de nossa plataforma (As-is Service).</li>
+            </ul>
+
+            <p><strong>Mudança de Região/Jurisdição e Novo Consentimento (LGPD Art. 7º, I; Marco Civil da Internet Art. 7º, VII):</strong> A cada abertura do aplicativo, o sistema detecta automaticamente a jurisdição legal do usuário com base no endereço IP e no idioma do dispositivo. Caso o dispositivo do usuário ingresse em uma jurisdição legal diferente da anterior (por exemplo, do Brasil para o Espaço Econômico Europeu ou para outra região com legislação distinta), ou caso o documento legal aplicável à região atual tenha sido atualizado de forma a divergir do texto previamente aceito, o aplicativo apresentará o documento legal vigente para a nova jurisdição e exigirá uma nova manifestação de consentimento livre, informado e inequívoco, nos termos do Art. 7º, I, da LGPD e do Art. 7º, VII, do Marco Civil da Internet. O acesso ao aplicativo fica condicionado à aceitação dos termos aplicáveis à jurisdição atual do usuário. Os registros de consentimento anteriores mantêm sua validade e continuam armazenados de forma cifrada no dispositivo; o novo consentimento gera um registro adicional, sem invalidar os anteriores.</p>
+
+            <h3>4.3 Divisibilidade Contratual (Separabilidade)</h3>
+            <p>Se uma ou mais imposições estipuladas nesta Licença ou Políticas forem validadas na corte do seu domicílio Brasileiro ou autoridade cível/julgadora local como legalmente impossíveis, ineficazes ou defesas pelo código de modo abusivo nos aspectos mais draconianos expostos acima, sua ineficácia restringe-se única e isoladamente à limitação fracionada invalidada pelos magistrados à luz e restrições legais impostas e locais. Tal invalidade setorial da minuta em debate NUNCA, NUNCA e EM HIPÓTESE NENHUMA atingirá a contaminação sistêmica formal do restante protetivo, persistindo todo o vigor global robusto do Limite de Danos de Escala Monetária Premium, os Direitos Restritivos O.S limitando-os severamente, bem como todos as renúncias de Natureza Médica Fatiadas no bojo documental integral.</p>
         </section>
 
-        <footer>
-            <p>&copy; 2026 CradleLog. Todos os Direitos Reservados.</p>
-            <p>Contato: <a href="mailto:support@cradlelog.com">support@cradlelog.com</a></p>
-        </footer>
+        <section>
+            <h3>Informações de Contato do Gestor Global:</h3>
+            <p><strong>Nome da Empresa / Mantenedor Oficial:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje e Bilişim<br>
+            <strong>Endereço de Gestão (Jurisdição Principal da Empresa):</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Turquia<br>
+            <strong>Identificação Tributária Legal:</strong> 5670114825 (Çorlu Tax Office)<br>
+            <strong>Email Principal de Acionamento e Deletamento:</strong> infocradlelog@gmail.com<br>
+            <strong>Portal de Informação Técnica Secundário:</strong> www.cebirproje.com</p>
 
-    </main>
+            <p>© 2026 CradleLog - Nuran Kocaoğlu / Cebir Mühendislik Proje e Bilişim.<br>
+            <strong>Todos os Direitos de Distribuição e Propriedade Intelectual (Copyright) Reservados.</strong></p>
+
+            <p class="highlight-text">Ao pressionar o botão de Concordância e começar a utilizar de modo ininterrupto a plataforma e seus painéis internos do Aplicativo, O Usuário e/ou Responsável Legal Brasileiro declara plenamente sob todas as penas de lei, fáticas e literais, que leu cautelosamente, assimilou toda a restrição do conhecimento-zero, os limites drásticos impostos do sistema operacional sem prejuízo do dolo, as renúncias estendidas protetivas corporativas, e que se encontra lúcido e inteiramente convicto dos reflexos obrigacionais desta adesão em concordância plena aos textos retro referidos integralmente como Contrato Final (Master EULA / Políticas e Privacidade BR Version).</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>CradleLog &copy; 2026. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
