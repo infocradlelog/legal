@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CradleLog – Global Master Privacy Policy & Terms of Service (EULA)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>CradleLog Legal</h1>
+            <nav>
+                <a href="global.html">🌐 Global/USA 🇺🇸</a>
+                <a href="tr.html">🇹🇷 TR</a>
+                <a href="eu.html">🇪🇺 EU-EN</a>
+                <a class="active">🇮🇩 ID</a>
+                <a href="br.html">🇧🇷 BR</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div style="text-align: center;">
+            <h2>CradleLog – Kebijakan Privasi Global & Syarat Penggunaan (EULA) Khusus Indonesia</h2>
+            <p><strong>Pembaruan Terakhir:</strong> Maret 2026<br>
+            <strong>Versi:</strong> 5.0.0 - Kepatuhan Hukum Indonesia & PDP</p>
+        </div>
+        
+        <hr>
+
+        <h3>TUJUAN DAN RUANG LINGKUP DOKUMEN</h3>
+        <p>Dokumen ini mencakup <strong>Kebijakan Privasi</strong>, <strong>Perjanjian Lisensi Pengguna Akhir (EULA)</strong>, dan <strong>Pemberitahuan Privasi</strong> untuk penyediaan aplikasi CradleLog di wilayah Republik Indonesia.</p>
+
+        <p><strong>Landasan Hukum:</strong></p>
+        <ul>
+            <li>Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)</li>
+            <li>Undang-Undang No. 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE) beserta perubahannya</li>
+            <li>Undang-Undang No. 8 Tahun 1999 tentang Perlindungan Konsumen (UU PK)</li>
+            <li>Undang-Undang No. 17 Tahun 2023 tentang Kesehatan</li>
+            <li>Peraturan perundang-undangan terkait lainnya di Indonesia</li>
+        </ul>
+
+        <p><strong>Sifat Mengikat dari Dokumen:</strong><br>
+        Dengan mengunduh, menginstal, atau mulai menggunakan aplikasi, Anda secara tegas menyatakan dan menjamin bahwa Anda telah membaca, memahami, dan menyetujui seluruh ketentuan dalam dokumen ini sesuai dengan Pasal 1320 Kitab Undang-Undang Hukum Perdata (KUHPerdata) tentang syarat sahnya perjanjian.</p>
+
+        <hr>
+
+        <h2>1. KEBIJAKAN PRIVASI</h2>
+
+        <h3>1.1 Pendekatan Arsitektur: Mengutamakan Lokal (Local-First) & Tanpa Pengetahuan (Zero-Knowledge)</h3>
+        <p>CradleLog adalah aplikasi <strong>mengutamakan lokal (local-first)</strong> yang dibangun berdasarkan prinsip privasi sejak desain (privacy by design) dan minimisasi data. Sesuai dengan prinsip-prinsip pelindungan data dalam UU PDP, kami menyatakan secara tegas cara kerja arsitektur kami:</p>
+        
+        <ul>
+            <li>Semua profil bayi, catatan kesehatan, pemberian makan, tidur, catatan vaksinasi, foto, dan konten serupa disimpan <strong>HANYA di perangkat pribadi Anda</strong>.</li>
+            <li>Data ini dienkripsi di perangkat menggunakan algoritma standar industri <strong>AES-256</strong>.</li>
+            <li>Kunci enkripsi adalah kunci <strong>32-bita</strong> yang dibuat secara acak dan eksklusif di perangkat Anda selama pengaturan awal aplikasi.</li>
+            <li><strong>Arsitektur Tanpa Pengetahuan (Zero-Knowledge):</strong> CradleLog TIDAK DAPAT mengakses kunci ini, TIDAK menyimpannya, TIDAK DAPAT mencadangkannya (backup), dan TIDAK DAPAT memulihkannya (recover).</li>
+        </ul>
+
+        <div class="medical-warning">
+            <strong>PERINGATAN KRITIS: KUNCI ENKRIPSI DAN KEAMANAN DATA</strong>
+            <p>Karena kunci enkripsi dibuat dan disimpan semata-mata di perangkat Anda, CradleLog <strong>TIDAK MENGETAHUI</strong> dan <strong>SECARA TEKNIS TIDAK DAPAT MENGAKSES</strong> kunci tersebut.</p>
+            <p><strong>Data Anda DAPAT HILANG SECARA PERMANEN dalam situasi berikut:</strong></p>
+            <ul>
+                <li>Kehilangan atau pencurian perangkat Anda.</li>
+                <li>Menghapus dan menginstal ulang aplikasi tanpa cadangan (backup).</li>
+                <li>Melakukan format ulang (factory-reset) pada perangkat Anda.</li>
+                <li>Kegagalan sistem operasi atau perangkat keras (kerusakan memori, kesalahan penyimpanan).</li>
+                <li>Penggunaan aplikasi pembersih memori agresif.</li>
+            </ul>
+        </div>
+
+        <p><strong>Fitur Pemulihan Tingkat Lanjut (Advanced Recovery):</strong><br>
+        Aplikasi kami mencoba memperbaiki basis data lokal (SQLite) yang rusak menggunakan alat bawaan pada perangkat. Namun, dalam kasus kehilangan perangkat, format permanen, atau kerusakan perangkat keras yang parah, pemulihan data secara teknis MUSTAHIL dilakukan.</p>
+
+        <p><strong>CradleLog TIDAK DAPAT memulihkan data Anda dari server pusat dalam keadaan apa pun dan TIDAK BERTANGGUNG JAWAB atas kehilangan data karena:</strong></p>
+        <ol>
+            <li>Berdasarkan desain, aplikasi TIDAK mengirimkan data kesehatan Anda ke server; data tetap berada di ponsel Anda.</li>
+            <li>Kami TIDAK MENGETAHUI dan secara teknis TIDAK MAMPU mengakses kunci enkripsi.</li>
+            <li>Sama sekali TIDAK ADA pintu belakang (backdoor) ke sistem.</li>
+            <li>Data Anda sepenuhnya bergantung pada keamanan perangkat yang Anda gunakan.</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>TANGGUNG JAWAB PENGGUNA MUTLAK UNTUK PENCADANGAN (BACKUP):</strong>
+            <p>Sesuai dengan kesadaran pelindungan data pribadi, Pengguna <strong>SEPENUHNYA BERTANGGUNG JAWAB</strong> atas keamanan dan pencadangan data mereka. Sebagai pengguna, Anda wajib:</p>
+            <ul>
+                <li>Membuat cadangan secara rutin (minimal seminggu sekali).</li>
+                <li>Menyimpan cadangan di lokasi yang aman.</li>
+                <li>Selalu membuat cadangan sebelum mengganti perangkat.</li>
+                <li>Selalu membuat cadangan sebelum memperbarui (update) aplikasi.</li>
+                <li>Memastikan keamanan perangkat (kunci layar, sandi yang aman, dll.).</li>
+            </ul>
+            <p>Pengguna yang mengabaikan peringatan ini dan tidak melakukan pencadangan rutin menanggung risiko kehilangan data, dan CradleLog tidak menerima kewajiban atau tanggung jawab apa pun atas kehilangan tersebut.</p>
+        </div>
+
+        <h3>1.2 Data yang Diproses di Sisi Server (Server-Side)</h3>
+        <p>Di CradleLog, perjanjian hukum dasar yang <strong>WAJIB disetujui untuk mengakses aplikasi (misalnya, EULA, Kebijakan Privasi) disematkan sebagai file internal (assets)</strong>. Persetujuan Anda terhadap perjanjian dasar ini <strong>TIDAK PERNAH DIKIRIM ke server kami</strong>; sepenuhnya divalidasi dan disimpan 100% secara lokal (offline) di perangkat Anda.</p>
+        
+        <p>CradleLog <strong>hanya</strong> memproses catatan teknis pada server terpusat (Supabase) untuk bukti persetujuan opsional:</p>
+        
+        <p><strong>A. Catatan Persetujuan (Consent) Opsional:</strong></p>
+        <ul>
+            <li>Hash SHA-256 dari ID Persetujuan Perangkat (<code>local_uuid_hash</code>)</li>
+            <li>ID catatan unik untuk setiap aktivitas persetujuan (<code>consent_id</code>)</li>
+            <li>Jenis aktivitas persetujuan (<code>consent_type</code> - mis. <code>AD_ALLOWED</code>, <code>CRASHLYTICS_ALLOWED</code>)</li>
+            <li>Hash konten dari teks persetujuan terkait (<code>consent_text_hash</code>)</li>
+            <li>Versi aplikasi (<code>app_version</code>)</li>
+            <li>Stempel waktu server (<code>created_at</code>)</li>
+        </ul>
+        <p>Berdasarkan definisi UU PDP, data rekaman teknis pseudonim (nama samaran) ini diproses dengan pelindungan maksimal.</p>
+
+        <h3>1.3 Kedudukan Hukum Tanggung Jawab Data (Pengendali vs Penyedia Infrastruktur)</h3>
+        <p>CradleLog beroperasi di bawah peran hukum berikut terkait pemrosesan data, mengacu pada UU PDP:</p>
+
+        <p><strong>A. Mengenai Data Kesehatan (KAMI BUKAN PENGENDALI DATA KESEHATAN):</strong></p>
+        <p>CradleLog bertindak semata-mata sebagai "Penyedia Infrastruktur Teknis" dan <strong>BUKAN</strong> "Pengendali Data Pribadi" atas data kesehatan yang disimpan secara lokal di perangkat pengguna.</p>
+        <ol>
+            <li><strong>Tidak Ada Akses Teknis:</strong> Data ini disimpan di perangkat pengguna dengan enkripsi AES-256. CradleLog SECARA TEKNIS TIDAK DAPAT mengakses isi data ini.</li>
+            <li><strong>Pengguna sebagai Pengendali Fisik/Utama:</strong> Anda, sebagai pemilik perangkat yang memiliki dan mengamankan kunci enkripsi tersebut, adalah pihak penentu tujuan dan pengendali penuh atas data pribadi di perangkat Anda sendiri.</li>
+        </ol>
+
+        <p><strong>B. Mengenai Persetujuan Opsional (PENGENDALI DATA TERBATAS):</strong></p>
+        <p>CradleLog bertindak sebagai Pengendali Data Pribadi yang kewenangannya sangat terbatas secara eksklusif mengenai rekam jejak persetujuan pseudonim (log) untuk kewajiban hukum.</p>
+
+        <h3>1.4 Layanan Pihak Ketiga & Transfer Data Lintas Batas Negara</h3>
+
+        <h4>1.4.1 Supabase (Infrastruktur Penyimpanan Data)</h4>
+        <p><strong>Tujuan:</strong> Menyimpan catatan persetujuan opsional demi kepatuhan hukum.<br>
+        <strong>Lokasi Server:</strong> EU-West-3 (Paris, Prancis).<br>
+        <strong>Data yang Ditransfer:</strong> Hash kriptografi untuk log persetujuan. <strong>TIDAK ADA DATA KESEHATAN, DATA KARTU KREDIT, ATAU NAMA YANG DITRANSFER.</strong><br>
+        <strong>Dasar Hukum (Pasal 56 UU PDP):</strong> Transfer data ke luar negeri dilindungi dengan mekanisme pemrosesan standar melalui Perjanjian Pemrosesan Data (DPA)/Standard Contractual Clauses (SCCs) yang menjamin pelindungan data yang memadai dan setara atau lebih tinggi dari UU PDP.</p>
+
+        <h4>1.4.2 Layanan Iklan (Google AdMob)</h4>
+        <p><strong>Cakupan:</strong> HANYA untuk pengguna Versi Gratis.<br>
+        <strong>Pengenal Pengiklan:</strong> Apple IDFA atau Google GAID.<br>
+        <strong>Pengendali Data:</strong> Google LLC.</p>
+
+        <p><strong>KERANGKA KERJA IKLAN BERDASARKAN UU PDP:</strong><br>
+        Penayangan iklan dalam versi gratis merupakan pemenuhan syarat kelangsungan layanan (prestasi kontrak EULA). Sesuai dengan UU PDP yang mewajibkan Persetujuan Eksplisit untuk pemrosesan data pribadi demi kepentingan pemasaran langsung:</p>
+        <ol>
+            <li>Sebagai standar keamanan dan kepatuhan (Privacy by Default), CradleLog memastikan penayangan <strong>Iklan Tidak Dipersonalisasi (Non-Personalized Ads - NPA) sebagai pengaturan asali (default)</strong> di Indonesia. Dalam mode ini, pengenal iklan perangkat Anda (IDFA/GAID) tidak diproses untuk menyesuaikan preferensi iklan Anda.</li>
+            <li>CradleLog dapat, namun tidak selalu di setiap skenario, meminta persetujuan melalui formulir (contoh: Google UMP). Apabila persetujuan diberikan untuk mengaktifkan iklan personalisasi (Personalized Ads), pemrosesan GAID/IDFA oleh Google dilakukan atas dasar persetujuan dari Subjek Data. Anda selalu berhak menarik persetujuan tersebut melalui panel Pengaturan di perangkat Anda untuk kembali ke mode NPA.</li>
+        </ol>
+        <p><em>(Klausa Penting: Data bayi/kesehatan sama sekali tidak pernah diakses atau dikirimkan ke jaringan iklan apa pun).</em></p>
+
+        <h4>1.4.2.1 Iklan Berhadiah (Opsional, Diinisiasi Pengguna)</h4>
+        <p>Selain iklan banner standar, CradleLog menawarkan <strong>iklan berhadiah (rewarded ads)</strong> yang dapat ditonton secara sukarela oleh pengguna Versi Gratis sebagai imbalan atas fitur-fitur tertentu dalam aplikasi. Iklan ini sepenuhnya opsional dan tidak pernah ditampilkan secara otomatis.</p>
+
+        <p><strong>Fitur yang Menggunakan Iklan Berhadiah:</strong></p>
+        <ul>
+            <li><strong>Pemutaran Latar Belakang Lagu Pengantar Tidur:</strong> Pengguna gratis dapat menonton iklan berhadiah untuk sementara waktu mengaktifkan pemutaran audio di latar belakang dalam pemutar lagu pengantar tidur bawaan aplikasi (maksimal 60 menit per sesi, dapat diakumulasi).</li>
+            <li><strong>Ekspor Laporan 14 Hari:</strong> Pengguna gratis dapat menonton satu iklan berhadiah untuk mengekspor laporan statistik terperinci 14 hari mereka satu kali.</li>
+        </ul>
+
+        <p><strong>Kondisi Aktivasi:</strong><br>
+        Berbeda dengan iklan standar, iklan berhadiah <strong>TIDAK tunduk pada masa tunggu 7 hari, ambang batas 8 catatan, atau filter waktu malam.</strong> Hanya dua syarat berikut yang harus dipenuhi:</p>
+        <ol>
+            <li>Terdapat persetujuan iklan yang valid (jika berlaku di wilayah Anda).</li>
+            <li>Koneksi internet aktif.</li>
+        </ol>
+
+        <p><strong>Sepenuhnya Opsional:</strong><br>
+        Menonton iklan berhadiah tidak pernah diwajibkan. Pengguna yang tidak ingin melihat iklan dapat membeli versi Premium untuk mengakses fitur-fitur ini tanpa iklan, atau memilih untuk tidak menggunakan fitur tersebut.</p>
+
+        <p><strong>Pemrosesan Data dan Personalisasi:</strong><br>
+        Iklan berhadiah bergantung pada <strong>keputusan persetujuan yang sama</strong> dengan iklan banner standar. Di wilayah di mana Google UMP berlaku (seperti Eropa dan beberapa negara bagian AS), iklan dapat <strong>dipersonalisasi atau tidak dipersonalisasi</strong> berdasarkan pilihan Anda pada formulir persetujuan UMP—SDK Google membuat keputusan penargetan berdasarkan string persetujuan IAB TCF. Di luar wilayah yang diatur secara ketat tersebut (termasuk Indonesia), aplikasi secara <strong>wajib menerapkan mode Tidak Dipersonalisasi (NPA)</strong> terlepas dari tindakan pengguna. Dalam keadaan apa pun, <strong>data kesehatan bayi TIDAK PERNAH dibagikan kepada jaringan iklan</strong> atau digunakan untuk penargetan iklan apa pun.</p>
+
+        <h4>1.4.3 Telemetri, Laporan Kerusakan (Crash), dan Analitik</h4>
+        <p>Laporan kerusakan anonim dan metrik penggunaan (via Firebase Crashlytics & Analytics) HANYA diaktifkan jika Pengguna memberikan <strong>persetujuan (consent) afirmatif secara eksplisit</strong> (Opt-In).<br>
+        Pilihan ini opsional dan dapat dicabut/dinonaktifkan kapan saja dari Pengaturan.</p>
+
+        <h4>1.4.4 Manajemen Langganan Premium (RevenueCat)</h4>
+        <p><strong>Tujuan:</strong> Mengelola pembelian dalam aplikasi dan langganan secara aman, dan menyinkronkannya dengan toko aplikasi.<br>
+        <strong>Pemroses Data:</strong> RevenueCat Inc.<br>
+        <strong>Data yang Diproses:</strong> Tanda terima dari platform secara anonim dan App User ID anonim. TIDAK ADA nama atau kartu kredit. Pembayaran diproses oleh Apple/Google; RevenueCat hanya memastikan status langganan.<br>
+        <strong>Dasar Hukum (Pasal 56 UU PDP):</strong> Pelaksanaan kontrak. Transfer dilindungi dengan standar yang setara atau lebih tinggi dari perlindungan UU PDP.</p>
+
+        <h3>1.5 Privasi Anak (Pasal 25 UU PDP)</h3>
+        <p>CradleLog <strong>dirancang secara khusus dan ditujukan bagi pengguna yang merupakan orang dewasa (orang tua atau wali sah berumur 18 tahun ke atas).</strong><br>
+        Aplikasi ini bukan "Aplikasi Anak" (Child-directed app). Karena konten aplikasi ini merekam Data Pribadi Spesifik (kesehatan) seorang Bayi/Anak, Pasal 25 UU PDP mensyaratkan persetujuan Orang Tua/Wali Sah.<br>
+        Dengan menyetujui perjanjian ini dan menggunakan aplikasi, Anda secara hukum menyatakan dan menjamin bahwa Anda bertindak sebagai Orang Tua / Wali yang sah dari bayi tersebut dan memberikan persetujuan sepenuhnya atas pencatatan data tersebut di perangkat lokal yang aman milik Anda sendiri.</p>
+
+        <hr>
+
+        <h2>2. HAK-HAK SUBJEK DATA PRIBADI (Berdasarkan UU PDP No. 27/2022)</h2>
+        <p>Sesuai hak-hak yang diatur oleh UU PDP, terkait status <em>Zero-Knowledge</em> kami:</p>
+        <ul>
+            <li><strong>Hak Mengakses, Menunda Pemrosesan, Memperbarui (Pasal 5-7):</strong> Oleh karena kami tidak dapat membaca/mengakses data Anda, permintaan untuk membaca atau memperbaiki Data Kesehatan harap Anda lakukan secara mandiri di dalam aplikasi pada perangkat Anda.</li>
+            <li><strong>Hak Menghapus / Pemusnahan (Pasal 8 - Right to Erasure):</strong>
+                <ul>
+                    <li><strong>Data Lokal:</strong> Menghapus paksa (Uninstalling) aplikasi dari telepon akan secara permanen memusnahkan database SQLite yang terenkripsi beserta salinan lokal Anda.</li>
+                    <li><strong>Data Log Server (Riza/Consent Records):</strong> Anda memiliki hak agar data rekam jejak consent dihapus. Cara mengirim permohonan: Buka "Pengaturan > Identitas Saya", salin UUID "Consent ID" Anda. Kirimkan via surel/email ke <code>infocradlelog@gmail.com</code> dengan subjek "Permintaan Penghapusan Data Sesuai UU PDP". Kami akan menghapus log server tersebut maksimal dalam waktu 30 hari kalender, atau lebih cepat jika dimungkinkan.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>3. PERJANJIAN LISENSI PENGGUNA AKHIR (EULA / SYARAT PENGGUNAAN)</h2>
+
+        <h3>3.1 Penafian Tanggung Jawab Medis</h3>
+        <div class="medical-warning">
+            <strong>BUKAN ALAT KESEHATAN ATAU MEDIS.</strong>
+            <p>CradleLog adalah alat pencatatan untuk membantu administrasi perawatan bayi. CradleLog <strong>BUKANLAH</strong> perangkat medis. Aplikasi ini tidak didaftarkan secara fungsi klinis kepada Badan POM atau Kementerian Kesehatan (Kemenkes) Republik Indonesia.</p>
+            <p><strong>PENGGUNA PAHAM DAN MENYETUJUI SECARA MUTLAK BAHWA:</strong><br>
+            Terkait pertumbuhan medis, gizi, penanganan demam/sakit, atau apa pun yang bersifat medis darurat (emergency), Pengguna TIDAK AKAN mendasarkan penanganannya dari aplikasi ini. Seluruh keputusan media wajib dilakukan melalui rujukan dan konsultasi ke dokter atau tenaga medis yang memiliki Surat Tanda Registrasi (STR) sah.</p>
+        </div>
+
+        <h3>3.2 Risiko Pembaruan (Update) dan Wajib Cadangkan (Mandatory Backup)</h3>
+        <div class="warning-box">
+            <p>CradleLog melakukan pembaruan (update) aplikasi via App Store/Play Store untuk alasan keamanan dan pengembangan fitur.</p>
+            <p><strong>ANDA DIWAJIBKAN UNTUK MENCADANGKAN (BACKUP) DATA SETIAP KALI SEBELUM MENEKAN TOMBOL "UPDATE" ATAU "PERBARUI".</strong></p>
+            <p>Pemindahan basis data ke kerangka struktur versi baru menyimpan risiko teknis akibat keberagaman jenis ponsel. CradleLog <strong>TIDAK BERTANGGUNG JAWAB</strong> atas hilangnya data yang diakibatkan kelalaian pengguna untuk tidak memastikan ketersediaan cadangan/backup eksternal sebelum melakukan instalasi update.</p>
+        </div>
+
+        <h3>3.3 Penafian Jaminan dan Batasan Tanggung Jawab Hukum (Klausula Baku Eksonerasi)</h3>
+        <p>Memperhatikan pengaturan pada KUHPerdata dan pembatasan yang disyaratkan oleh UU Perlindungan Konsumen No. 8/1999:</p>
+        <p><strong>PENOLAKAN JAMINAN:</strong> SEJAUH YANG DIIZINKAN OLEH HUKUM YANG BERLAKU DI INDONESIA, APLIKASI INI DIBERIKAN ATAS DASAR "SEBAGAIMANA ADANYA" (AS IS). KAMI SECARA TEGAS MENOLAK SEMUA BENTUK JAMINAN SECARA TERSIRAT MAUPUN TERSURAT, TERMASUK PENGKONDISIAN APLIKASI KAMI SELALU BEBAS DARI BUG 100% ATAU KEGAGALAN MEMORI PONSEL YANG DAPAT MEMICU HILANGNYA DATA.</p>
+        <ul>
+            <li><strong>Pengguna Versi Gratis:</strong> Menyepakati bahwa layanan bebas biaya diberikan atas model kompensatoris. Kecuali untuk tindakan kesengajaan murni (dolus) atau kelalaian yang teramat berat, sejauh yang diizinkan hukum, CradleLog sepenuhnya dibebaskan dari kewajiban ganti rugi apa pun dari kerugian pihak pengguna maupun pihak ketiga.</li>
+            <li><strong>Pengguna Premium:</strong> Sejauh yang diizinkan oleh hukum yang berlaku di Indonesia, kewajiban maksimum/nilai pertanggungan CradleLog (secara kumulatif) atas semua klaim, sengketa, tuntutan pertanggungjawaban ganti rugi nyata (terlepas dari asal mula peristiwanya) akan <strong>DIBATASI SEBANYAK-BANYAKNYA SEBESAR JUMLAH TERAKHIR YANG ANDA BAYARKAN DEMI MENDAPATKAN STATUS PREMIUM PERANGKAT LUNAK INI</strong>. Kami tidak bertanggung jawab atas kerugian imateril, kerugian tak langsung (consequential damages), kehilangan waktu, tekanan psikologis akibat hilangnya catatan yang dirasa penting bagi pengguna namun dihiraukan pencadangannya (lack of backup) oleh pengguna itu sendiri.</li>
+        </ul>
+
+        <h3>3.4 Pengecualian Hak Rekonvensi Pembayaran (Produk Konten Digital)</h3>
+        <p>Pembelian CradleLog Premium adalah layanan yang diserahkan dan langsung aktif secara instan pada platform media digital tidak berwujud. Atas asas tersebut, Anda dengan sadar secara eksplisit mengonfirmasi bahwa eksekusi pemenuhan hak langsung diberikan. Dengan demikian, segala bentuk permintaan pengembalian dana penuh (Refund) sepenuhnya mengikuti persyaratan/syarat teknis yang ada dan menjadi wewenang penuh pihak platform toko aplikasi (<em>Apple App Store</em> / <em>Google Play Store</em>), bukan pada CradleLog. Sejalan dengan aturan perlindungan konsumen global maupun lokal, kami secara mutlak menghormati sistem verifikasi <em>refund</em> yang berpusat dan dilakukan sepihak oleh Apple/Google itu sendiri.</p>
+
+        <h3>3.5 Pemberitahuan Perangkat dan Keterbatasan Sistem Operasi (OS)</h3>
+        <p>Fungsi alarm dan pengingat dari CradleLog tunduk pada batasan Sistem Operasi lokal (Apple iOS atau Google Android) perangkat Anda. Aplikasi ini tidak menggunakan server jarak jauh untuk pemberitahuan <em>push notification</em> (Status Offline/Local-First), melainkan melakukan penjadwalan pemberitahuan (<em>local notification scheduling</em>) langsung di dalam perangkat.</p>
+        <p>Sebagai Pengguna, Anda secara sadar memahami dan <strong>menyetujui fakta teknis berikut</strong>:</p>
+        <ol>
+            <li>Manajemen baterai OS (<em>Doze Mode/Low Power Mode</em>), Mode Fokus (<em>Do Not Disturb</em>), atau tindakan pengguna yang <strong>menutup paksa aplikasi dari latar belakang (kill-state/swipe up)</strong> dapat memblokir atau menunda OS dalam memicu alarm agar berbunyi.</li>
+            <li>Penundaan teknis semacam itu atau pemblokiran peringatan oleh OS sepenuhnya berada di luar kendali atau tanggung jawab hukum CradleLog.</li>
+            <li>Menjadi hal yang mutlak bahwa pengingat kritis (seperti pengukuran demam atau pemberian obat medis) tidak boleh hanya disandarkan pada keandalan instrumen aplikasi elektronik (Merujuk kembali ke Pasal 3.1 Penafian Tanggung Jawab Medis).</li>
+        </ol>
+
+        <hr>
+
+        <h2>4. KETENTUAN PENUTUP DAN YURISDIKSI</h2>
+
+        <h3>4.1 Hukum yang Berlaku dan Arbitrase / Resolusi Sengketa</h3>
+        <p>Ketentuan Layanan dan Kebijakan Privasi ini dibuat, ditafsirkan, dan diatur berdasarkan sistem kerangka <strong>Hukum Republik Indonesia</strong>.<br>
+        Segala sengketa, kontroversi, atau tuntutan yang muncul akan coba diselesaikan secepatnya secara damai (musyawarah) selama tenggang waktu 30 (tiga puluh) hari kalender.<br>
+        Jika upaya perdamaian tidak membuahkan hasil, <strong>berdasarkan persetujuan mengikat di klausul ini</strong>, kedua belah pihak memilih penyelesaian hukum secara eksklusif melalui <strong>Badan Arbitrase Nasional Indonesia (BANI)</strong> atau mekanisme <strong>Penyelesaian Sengketa Daring (Online Dispute Resolution / ODR)</strong> khusus untuk tuntutan bernilai kecil (di bawah ekuivalen $10,000 USD). Arbitrase akan dilakukan murni berdasarkan pengajuan dokumen tertulis untuk menekan biaya hukum dari kedua belah pihak. Pihak Pengguna (sebagai Konsumen) dengan ini secara sadar melepaskan instrumen Penuntutan Perwakilan Kelompok Hukum Sama (Class Action Waiver), dan hak membawa sengketa ke pengadilan negeri umum atau yurisdiksi asing mana pun, guna mereduksi eskalasi kerugian biaya hukum di kedua belah pihak.</p>
+
+        <h3>4.2 Mulai Berlakunya Kesepakatan Lintas Negara</h3>
+        <p>Dokumen kesepakatan lisensi dan perjanjian mengikat hukum ini sah mengikat seketika setelah Pengguna menyelesaikan langkah centang/persetujuan yang berada di dalam antarmuka UI aplikasi CradleLog. Revisi (Amandemen) terhadap kerangka persyaratan baru mungkin akan dilakukan di masa depan tanpa pemberitahuan pra-aktif menyeluruh dan langsung menempel sesuai pembaruan rilis App Store/Google Play dan akan tertinggal sebagai prasyarat bagi Anda untuk bisa membuka akses UI setelah di-update.</p>
+        <p><strong>Perubahan Wilayah/Yurisdiksi dan Persetujuan Ulang (UU PDP Pasal 9; UU ITE Pasal 26):</strong> Setiap kali aplikasi dibuka, sistem secara otomatis mendeteksi yurisdiksi hukum pengguna berdasarkan alamat IP dan bahasa perangkat. Apabila perangkat pengguna berpindah ke yurisdiksi hukum yang berbeda dari sebelumnya (misalnya, dari Indonesia ke Kawasan Ekonomi Eropa atau negara lain dengan peraturan perlindungan data yang berbeda), atau apabila dokumen hukum yang berlaku untuk wilayah pengguna saat ini telah diperbarui sehingga berbeda dari teks yang sebelumnya telah disetujui, aplikasi akan menampilkan dokumen hukum yang berlaku untuk yurisdiksi baru tersebut dan meminta <strong>persetujuan baru yang eksplisit, bebas, dan terinformasi</strong> sesuai dengan Pasal 9 UU PDP No. 27 Tahun 2022 dan Pasal 26 UU ITE. Pengguna tidak dapat mengakses aplikasi tanpa menerima ketentuan yang berlaku untuk yurisdiksi saat ini. Catatan persetujuan sebelumnya tetap valid dan terus tersimpan dalam bentuk terenkripsi di perangkat; persetujuan ulang menghasilkan catatan tambahan tanpa membatalkan catatan persetujuan sebelumnya.</p>
+
+        <h3>4.3 Keterpisahan (Severability)</h3>
+        <p>Apabila terdapat sebagian satu atau beberapa klausula dalam rangkaian kesepakatan Perjanjian (EULA) yang berdasarkan undang-undang nasional dirasa cacat atau dinyatakan dibatalkan demi hukum (oleh Peradilan), hal sekecil itu sama sekali <strong>TIDAK MENGHAPUS</strong> atau meleburkan integritas keseluruhan keberlakuan (the remainder enforces in validity). Perlindungan penafian (Disclaimer) jaminan/eksonerasi dan model proteksi aset perusahaan pengembang tetap berlaku secara berlanjut seumur hidup (survive termination/perpetuity).</p>
+
+        <hr>
+
+        <p><strong>Identitas Resmi & Informasi Kontak Usaha:</strong></p>
+        <ul>
+            <li><strong>Nama Usaha:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim</li>
+            <li><strong>Alamat Register Pokok:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Republik Turki (Turkey)</li>
+            <li><strong>Tanda Identitas Perpajakan Regional:</strong> 5670114825 (Kantor Pajak Çorlu / Çorlu Vergi Dairesi)</li>
+            <li><strong>Alamat Surat Elektronik Pribadi Representatif Hukum:</strong> infocradlelog@gmail.com</li>
+            <li><strong>Laman Jaringan Informasi Usaha Global:</strong> www.cebirproje.com</li>
+        </ul>
+
+        <p>© 2026 CradleLog - Nuran Kocaoğlu / Cebir Mühendislik Proje dan Layanan IT.<br>
+        <strong>Seluruh dan Semua Modifikasi Hak Cipta Kekayaan Intelektual Dilindungi Secara Global (All Rights Reserved).</strong></p>
+
+        <p>Dokumen resmi ini sengaja disintesiskan se-komprehensif mungkin sebagai manifestasi nyata itikad baik Pengembang kepada standar tinggi perundang-undangan di Republik Indonesia, yang menaungi pelindungan secara kuat atas Perlindungan Konsumen dan juga Perlindungan Data Pribadi secara holistik.</p>
+
+        <p class="highlight-text"><strong>DENGAN MULAI MENGELOLA KEGIATAN LOG PADA APLIKASI INI, PENGGUNA TERAFIRMASI DAN SECARA TEGAS MENYATAKAN TELAH MEMBACA DENGAN SEKSAMA, MEMAHAMI SEMUA INTISARI, DAN SECARA SUKARELA MENYETUJUI SELURUH TEKS DALAM PERJANJIAN HUKUM INI TANPA PAKSAAN DARI PIHAK / INDIVIDU MANAPUN.</strong></p>
+
+    </div>
+
+    <footer>
+        <p>CradleLog &copy; 2026. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
