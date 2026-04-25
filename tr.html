@@ -4,704 +4,926 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cradly – Türkiye Yasal Metinleri</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Tablo Okunabilirliği İçin Ekstra Temel Stiller (Mevcut CSS'i bozmadan) */
-        table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f1f1f1; color: var(--primary-color); }
+        /* Temel CSS Ayarları */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        
+        /* Başlık Stilleri */
+        h1 {
+            color: #2c3e50;
+            font-size: 2em;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 1.5em;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+        h3 {
+            color: #16a085;
+            font-size: 1.25em;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+        h4 {
+            color: #34495e;
+            font-size: 1.1em;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraf ve Metin Stilleri */
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        strong, b {
+            font-weight: 700;
+            color: #000000;
+        }
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #c0392b;
+            font-size: 0.95em;
+        }
+
+        /* Liste Stilleri */
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Alıntı/Uyarı Stilleri */
+        blockquote {
+            border-left: 5px solid #e74c3c;
+            background-color: #fdf2f0;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        blockquote strong {
+            color: #c0392b;
+        }
+
+        /* Çizgi Stili */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* Tablo Stilleri */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) {
+            background-color: #fbfcfa;
+        }
+
+        /* Link Stilleri */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <h1>Cradly Legal</h1>
-            <nav>
-                <a href="global.html">🌐 Global/USA 🇺🇸</a>
-                <a class="active">🇹🇷 TR</a>
-                <a href="eu.html">🇪🇺 EU-EN</a>
-                <a href="id.html">🇮🇩 ID</a>
-                <a href="br.html">🇧🇷 BR</a>
-            </nav>
-        </div>
-    </header>
+<div class="container">
 
-    <div class="container">
-        
-        <h2>Cradly – Türkiye Yasal Metinleri</h2>
-        <p><strong>Son Güncelleme:</strong> Mart 2026<br>
-        <strong>Versiyon:</strong> 5.1.0 - Açık Rıza Uyumu</p>
-        
-        <hr>
+    <h1>Cradly – Türkiye Yasal Metinleri (TAM HUKUKİ KORUMA VERSİYONU)</h1>
 
-        <section id="amac-ve-kapsam">
-            <h3>BELGENİN AMACI VE KAPSAMI</h3>
-            <p>Bu belge, Cradly uygulamasının Türkiye Cumhuriyeti sınırları içerisinde sunulmasına ilişkin <strong>Gizlilik Politikası</strong>, <strong>Kullanım Koşulları (EULA)</strong> ve <strong>KVKK Aydınlatma Metni</strong>ni içermektedir.</p>
-            
-            <p><strong>Hukuki Dayanak:</strong></p>
-            <ul>
-                <li>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</li>
-                <li>6502 sayılı Tüketicinin Korunması Hakkında Kanun (TKHK)</li>
-                <li>6098 sayılı Türk Borçlar Kanunu (TBK)</li>
-                <li>İlgili tüm tüzük ve yönetmelikler</li>
-            </ul>
-            
-            <p><strong>Belgenin Bağlayıcılığı:</strong><br>
-            Kullanıcı, uygulamayı indirerek, yükleyerek veya kullanmaya başlayarak bu belgedeki tüm hükümleri okuduğunu, anladığını ve kabul ettiğini beyan ve taahhüt eder.</p>
-        </section>
+    <p><strong>Son Güncelleme:</strong> Nisan 2026<br>
+    <strong>Versiyon:</strong> 6.0.0 - Açık Rıza Uyumu</p>
 
-        <hr>
-        <a id="privacy"></a>
-        <section id="gizlilik-politikasi">
-            <h2>1. GİZLİLİK POLİTİKASI</h2>
+    <hr>
 
-            <h3>1.1 Mimari Yaklaşım: Yerel-Öncelikli (Local-First) ve Zero-Knowledge</h3>
-            <p>Cradly, gizlilik ve veri minimizasyonu ilkeleri esas alınarak tasarlanmış <strong>yerel-öncelikli (local-first)</strong> bir uygulamadır. Uygulamanın temel mimarisi gereği:</p>
-            <ul>
-                <li>Bebek profilleri, sağlık kayıtları, beslenme, uyku, aşı, fotoğraf ve benzeri tüm içerikler <strong>yalnızca kullanıcının kendi cihazında</strong> saklanır</li>
-                <li>Bu veriler, cihaz üzerinde endüstri standardı <strong>AES-256</strong> algoritması ile şifrelenir</li>
-                <li>Şifreleme anahtarı, uygulamanın ilk kurulumu sırasında cihaz üzerinde rastgele oluşturulan <strong>32 baytlık</strong> bir anahtardır</li>
-                <li>Cradly, bu anahtara hiçbir şekilde erişemez, anahtarı saklamaz, yedeklemez veya geri kazanamaz</li>
-            </ul>
+    <h2>BELGENİN AMACI VE KAPSAMI</h2>
 
-            <div class="warning-box">
-                <h4>KRİTİK UYARI: ŞİFRELEME ANAHTARI VE VERİ GÜVENLİĞİ</h4>
-                <p>Şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmaktadır. Cradly, bu anahtarı <strong>BİLMEMEKTE</strong> ve bu anahtara <strong>ERİŞEMEMEKTEDİR</strong>.</p>
-                
-                <p><strong>Aşağıdaki durumlarda verileriniz KALICI OLARAK KAYBOLABİLİR:</strong></p>
-                <ul>
-                    <li>Cihazınızı kaybetmeniz veya çalınması</li>
-                    <li>Uygulamayı silip yeniden yüklemeniz</li>
-                    <li>Cihazınızın formatlanması veya sıfırlanması</li>
-                    <li>İşletim sistemi veya donanım arızası (bellek bozulması, depolama hatası)</li>
-                    <li>Hafıza temizleme uygulamalarının kullanılması</li>
-                </ul>
+    <p>Bu belge, Cradly uygulamasının Türkiye Cumhuriyeti sınırları içerisinde sunulmasına ilişkin <strong>Gizlilik Politikası</strong>, <strong>Kullanım Koşulları (EULA)</strong> ve <strong>KVKK Aydınlatma Metni</strong>ni içermektedir.</p>
 
-                <p><strong>Gelişmiş Veritabanı Kurtarma (Advanced Recovery) Özelliğimiz:</strong><br>
-                Uygulamamız, yerel veritabanı (SQLite) hasar gördüğünde veya kısmi bozulmalar yaşandığında cihaz içerisinde çalışan araçlarla bozuk veritabanlarını onarmayı dener. Ancak cihazın kaybolması, tamamen formatlanması veya donanımsal olarak çökmesi gibi durumlarda verileri kurtarmak teknik olarak İMKANSIZDIR.</p>
+    <p><strong>Hukuki Dayanak:</strong></p>
+    <ul>
+        <li>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</li>
+        <li>6502 sayılı Tüketicinin Korunması Hakkında Kanun (TKHK)</li>
+        <li>6098 sayılı Türk Borçlar Kanunu (TBK)</li>
+        <li>İlgili tüm tüzük ve yönetmelikler</li>
+    </ul>
 
-                <p><strong>Cradly hiçbir şartta verilerinizi merkezden (sunucudan) KURTARAMAZ ve veri kaybı durumlarından SORUMLU DEĞİLDİR çünkü:</strong></p>
-                <ol>
-                    <li>Uygulama verilerinizi MİMARİSİ GEREĞİ aslen sunucuya GÖNDERMEZ, telefonda tutar.</li>
-                    <li>Şifreleme anahtarını BİLMEMEKTEDİR ve teknik olarak ERİŞEMEMEKTEDİR.</li>
-                    <li>Sistemin teknik olarak hiçbir arka kapısı (backdoor) yoktur.</li>
-                    <li>Veriler tamamen cihazınızın güvenliğine bağlıdır.</li>
-                </ol>
+    <p><strong>Belgenin Bağlayıcılığı:</strong><br>
+    Kullanıcı, uygulamayı indirerek, yükleyerek veya kullanmaya başlayarak bu belgedeki tüm hükümleri okuduğunu, anladığını ve kabul ettiğini beyan ve taahhüt eder.</p>
 
-                <h4>ZORUNLU KULLANICI SORUMLULUĞU:</h4>
-                <p>Kullanıcı, verilerinin güvenliğinden ve yedeğinden <strong>TAMAMEN SORUMLUDUR</strong>. Bu sorumluluk kapsamında:</p>
-                <ul>
-                    <li>Düzenli olarak (haftada en az 1 kez) yedek almalıdır</li>
-                    <li>Yedekleri güvenli bir yerde saklamalıdır</li>
-                    <li>Cihaz değişikliği öncesi mutlaka yedek almalıdır</li>
-                    <li>Uygulama güncellemesi öncesi mutlaka yedek almalıdır</li>
-                    <li>Cihaz güvenliğini sağlamalıdır (ekran kilidi, güvenli şifre vb.)</li>
-                </ul>
-                
-                <p><em>Not: Uygulamamızın güvenlik ve Zero-Knowledge mimarisi gereği; cihazlar arası veri aktarımı, bulut senkronizasyonu, QR kod veya Bluetooth (BLE) tabanlı "Aile Paylaşımı" ve muadili veri senkronizasyonu özellikleri ŞU ANKİ SÜRÜMDE AKTİF DEĞİLDİR (hiçbir veri toplanmaz/aktarılmaz). Verileriniz tamamen izole ve çevrimdışı (offline) olarak yalnızca cihazınızda kalır. Gelecek sürümler için veritabanı altyapısı hazır tutulsa da bu sistemler şu an kapalıdır.</em></p>
-                <p>Bu uyarıları dikkate almayan ve düzenli yedek almayan kullanıcının veri kaybı yaşaması durumunda Cradly hiçbir sorumluluk kabul etmez.</p>
-            </div>
+    <hr>
 
-            <h3>1.2 Sunucu Tarafında Tutulan Veriler</h3>
-            <p>Cradly uygulamasında, <strong>Kullanım Koşulları (EULA) ve Gizlilik Politikası gibi uygulamaya giriş yapmak için ZORUNLU OLAN temel yasal sözleşmeler dosyalar halinde uygulamanın içine entegre edilmiştir (gömülü varlıklar/assets). Bu zorunlu onay bilgileri (imply consent) hiçbir şekilde sunucumuza GÖNDERİLMEZ</strong>, sadece %100 yerel, cihaz içinde (offline) tutulur ve doğrulanır.</p>
+    <a id="privacy"></a>
+    <h2>1. GİZLİLİK POLİTİKASI</h2>
 
-            <p>Cradly tarafından merkezi sunucularda (Supabase) <strong>yalnızca</strong> opsiyonel rıza ispatı için gerekli teknik kayıtlar işlenir:</p>
-            
-            <p><strong>A. Opsiyonel Rıza (Consent) Kayıtları:</strong></p>
-            <ul>
-                <li>Cihaz için üretilmiş <strong>Consent ID (UUIDv4)</strong> değerinin SHA-256 özeti (<code>local_uuid_hash</code>)</li>
-                <li>Her rıza olayı için tekil kayıt kimliği (<code>consent_id</code>)</li>
-                <li>Rıza olay türü (<code>consent_type</code> - ör. <code>AD_ALLOWED</code>, <code>CRASHLYTICS_ALLOWED</code>, <code>ANALYTICS_DISABLED</code>)</li>
-                <li>İlgili rıza metninin içerik özeti (<code>consent_text_hash</code>)</li>
-                <li>Uygulama sürüm bilgisi (<code>app_version</code>)</li>
-                <li>Sunucu kayıt zamanı (<code>created_at</code> timestamp)</li>
-            </ul>
+    <h3>1.1 Mimari Yaklaşım: Yerel-Öncelikli (Local-First) ve Zero-Knowledge</h3>
 
-            <p><strong>Bu kayıtlar:</strong></p>
-            <ul>
-                <li>Doğrudan kimlik bilgisi içermez (kredi kartı, ad, soyad vb. taşımaz); tek başına ad, soyad, e-posta veya telefon gibi kimlik verilerini ifşa etmez</li>
-                <li>Geri dönüşümsüz (irreversible) hash algoritması ile türetilmiş teknik tanımlayıcılardır</li>
-                <li>Takma adlaştırılmış (pseudonymized) veri niteliğindedir ve ilgili mevzuat kapsamında genel bir hukuki koruma kalkanı amacıyla kişisel veri olarak değerlendirilir</li>
-                <li>Hash'leme tek başına anonimleştirme değildir; ilgili kayıtların ek bilgilerle bir kullanıcıya bağlanabilmesi mümkün olduğu sürece bu veriler anonim veri değil, kişisel veri olarak ele alınır</li>
-            </ul>
+    <p>Cradly, gizlilik ve veri minimizasyonu ilkeleri esas alınarak tasarlanmış <strong>yerel-öncelikli (local-first)</strong> bir uygulamadır. Uygulamanın temel mimarisi gereği:</p>
 
-            <h3>1.3 Veri Sorumluluğunun Hukuki Niteliği</h3>
-            <p>Cradly, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki şekilde veri sorumlusu sıfatını taşımaktadır:</p>
-
-            <p><strong>a) İsteğe Bağlı Rıza Kayıtları Bakımından (SINIRLI VERİ SORUMLUSU):</strong></p>
-            <ul>
-                <li>Opsiyonel rıza kayıtlarına ilişkin takma adlaştırılmış teknik loglar (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>)</li>
-                <li>(Zorunlu hizmet sözleşmelerinin onayı cihaz içinde kaldığından Cradly bu lokal eylemlerden ötürü veri toplayan taraf değildir.)</li>
-            </ul>
-            <p>Bu veriler bakımından Cradly <strong>sınırlı kapsamda veri sorumlusudur</strong>.</p>
-
-            <p><strong>b) Sağlık Verileri Bakımından:</strong></p>
-            <p>Kullanıcının cihazında şifrelenmiş sağlık verilerine hiçbir teknik erişimimiz bulunmadığından, bu verilerin içeriği bakımından fiili bir veri işleyen veya merkezi veri sorumlusu kapasitesinde hareket etmiyoruz. İşleme araçları yazılım tarafından sağlansa da veri kontrolü münhasıran kullanıcıdadır.</p>
-
-            <p><strong>Gerekçe:</strong></p>
+    <ul>
+        <li><strong>Çift Katmanlı Yerel Depolama Mimarisi:</strong> Optimum cihaz performansı sağlarken mutlak yerel gizliliği korumak için, verileriniz iki güvenli yerel katmana ayrılmıştır:
             <ol>
-                <li><strong>Teknik Erişim Yokluğu:</strong> Bu veriler kullanıcının cihazında AES-256 şifrelemesiyle saklanmakta olup, Cradly bu verilerin içeriğine teknik olarak ERİŞEMEZ.</li>
-                <li><strong>Şifreleme Anahtarı Kontrolü:</strong> 32 baytlık şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmakta olup, Cradly bu anahtarı BİLMEMEKTE ve bu anahtara hiçbir şekilde ERİŞEMEMEKTEDİR.</li>
-                <li><strong>Veri İşleme Amacı ve Vasıtasının Belirlenmesi:</strong> Bu veriler, kullanıcının belirlediği amaçlarla (bebek bakım takibi), kullanıcının kontrolünde işlenmektedir. Cradly, sadece teknik altyapıyı (uygulama yazılımı, şifreleme kütüphanesi) sağlamaktadır.</li>
-                <li><strong>Kullanıcının Veri Sorumlusu Sıfatı:</strong> Kullanıcı, kendi cihazında saklanan ve yalnızca kendisinin erişebildiği bu veriler bakımından <strong>"kişisel veri sorumlusu"</strong> sıfatını haizdir.</li>
+                <li><strong>Metin ve Sağlık Verileri (AES-256):</strong> Tüm yapılandırılmış veriler (bebek profilleri, uyku/beslenme kayıtları, alerji notları, günlükler) yerel bir SQLite veritabanı içinde <strong>AES-256</strong> algoritması kullanılarak şifrelenir. 32 baytlık şifreleme anahtarı yalnızca cihazınızın güvenli depolama alanında (keystore) üretilir ve saklanır (Zero-Knowledge).</li>
+                <li><strong>Medya Dosyaları (App Sandbox):</strong> Büyük medya dosyalarının veritabanı içinde şifrelenmesi ciddi cihaz performans kayıplarına ve pil tüketimine neden olduğundan, fotoğraf ve videolarınız veritabanı <strong>dışında</strong>, İşletim Sisteminin izole edilmiş "App Sandbox (Özel Kilitli Uygulama Alanı)" içinde saklanır. Bu medya dosyaları ASLA telefonunuzun açık galerisine kaydedilmez ve doğrudan cihazınızın yerel Tam Disk Şifrelemesi (Full Disk Encryption - FDE) korumasına tabidir.</li>
+                <li><strong>Cihaz Düzeyinde (On-Device) Medya İşleme:</strong> Uygulama içerisinde sunulan gelişmiş fotoğraf ve video düzenleme özellikleri (örneğin oran bazlı kırpma, döndürme, arka plan bulanıklaştırma, çıkartma ekleme vb.) <strong>%100 oranında cihazınızın işlemcisinde (çevrimdışı) gerçekleştirilir</strong>. Cradly, özel medya dosyalarınızı düzenleme amacıyla hiçbir harici yapay zeka (AI) veya bulut sunucusuna YÜKLEMEZ.</li>
+                <li><strong>İşletim Sistemi (OS) Bulut Yedekleme Feragatnamesi:</strong> Cradly, medya dosyalarınızı yerel App Sandbox (Kilitli Alan) içerisinde izole etse de; cihazınızın genel yedekleme ayarlarının bir sonucu olarak işletim sisteminiz (örneğin Apple iCloud veya Google Drive) bu alanı otomatik olarak kendi bulut sunucularına yedeklemeye çalışabilir. İşletim sisteminizin Sandbox dosyalarını iCloud veya Google Drive gibi platformlara yüklemesi durumunda gizliliğiniz üzerinde Cradly'nin hiçbir kontrolü ve sorumluluğu yoktur.</li>
+                <li><strong>Cihaz Depolama Kapasitesi ve Kayıpsız Medya Protokolü:</strong> Katı bir Yerel-Öncelikli (Local-First) uygulama olarak, Premium özellikler kapsamında sunulan yüksek çözünürlüklü fotoğraflar ve 'sıkıştırılmamış' (kayıpsız) video kayıtları da dahil olmak üzere tüm medyalar doğrudan cihazınızın fiziksel depolama alanına (güvenli App Sandbox içerisine) yazılır. Cradly bulut sunucularla çalışmaz ve bu nedenle sunucu taraflı yapay veri kotaları uygulamaz. Kullanıcı, yüksek çözünürlüklü ve sıkıştırılmamış medya dosyalarının oluşturulmasının önemli ölçüde fiziksel diske ihtiyaç duyduğunu ve cihazın kalan yerel belleğini hızla tüketebileceğini peşinen kabul eder.</li>
             </ol>
+        </li>
+    </ul>
 
-            <p><strong>ANCAK Cradly, Teknik Altyapı Sağlayıcı Olarak:</strong><br>
-            Cradly, bu verilerin işlenmesine olanak sağlayan teknik altyapıyı sağladığından, KVKK m.3 kapsamında <strong>teknik altyapı sağlayıcı</strong> sıfatıyla aşağıdaki yükümlülükleri taşır:</p>
-            <ul>
-                <li>Güvenli işleme ortamı sağlama (AES-256 şifreleme standardı, OWASP güvenlik standartları)</li>
-                <li>Kullanıcıyı aydınlatma (KVKK m.10)</li>
-                <li>Teknik düzeyde veri güvenliği önlemleri alma (KVKK m.12)</li>
-                <li>Kullanıcıyı veri kaybı riskleri konusunda uyarma</li>
-            </ul>
-
-            <p><strong>Veri İçeriği Üzerinde Tasarruf Hakkı:</strong><br>
-            Cradly, sağlık verilerinin <strong>içeriğine erişemediğinden</strong>, bu veriler bakımından KVKK m.11 kapsamındaki bazı haklar (örneğin verilerin düzeltilmesi, silinmesi, üçüncü kişilere aktarıldıysa bilgilendirilme) doğrudan Cradly'a yöneltilemez.<br>
-            Bu haklar, verilerin bulunduğu cihazın sahibi ve verilere tek başına erişim yetkisine sahip olan <strong>kullanıcı tarafından</strong> doğrudan kullanılabilir. Kullanıcı, uygulamayı kullanarak kendi verilerini görüntüleyebilir, düzeltebilir, silebilir veya dışa aktarabilir.</p>
-
-            <div class="warning-box">
-                <h4>⚠️ KVKK Kurul Kararlarına İlişkin İhtiyat Beyanı</h4>
-                <p>Veri sorumlusu statüsüne ilişkin yukarıdaki değerlendirme, yerel şifreli yazılım araç sağlayıcıları bakımından henüz yerleşik bir KVKK Kurul kararının bulunmadığı ve aktif hukuki yoruma açık olan mevcut durumda Cradly'un benimsediği tutumu yansıtmaktadır. Söz konusu alan, KVKK Kurulu'nun kararları ve akademik görüşlerle gelişmeye devam etmektedir. Kişisel Verileri Koruma Kurulu'nun bu konuda farklı bir değerlendirme benimsemesi veya uygulamayı bağlayan bir karar vermesi halinde, Cradly gerekli uyum adımlarını derhal atmayı, uygulanabilir tüm yasal yükümlülükleri yerine getirmeyi ve kullanıcıları zamanında bilgilendirmeyi taahhüt eder.</p>
-            </div>
-
-            <h3>1.4 Veri Sorumluluğunun Sınırları</h3>
-            <p>Cradly, uygulama içerisinde kullanıcı tarafından girilen sağlık verilerinin içeriğine erişemez, bu verileri merkezi bir sunucuda depolamaz ve bu veriler üzerinde herhangi bir tasarrufta bulunmaz.</p>
-            <p>Bu nedenle Cradly'un veri sorumluluğu yalnızca aşağıdaki faaliyetlerle sınırlıdır:</p>
-            <ul>
-                <li>İsteğe bağlı (opsiyonel) rıza kayıtlarının KVKK uyum ispatı kapsamında tutulması (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>)</li>
-                <li>Reklam gösterimi için gerekli olan cihaz kimlik verilerinin işlenmesi, bu kapsamdaki muvafakatlerin GDPR ve benzeri yasal çerçevelerle Google UMP (veya karşılığı) üzerinden yönetimi (sadece ücretsiz kullanıcılar için).</li>
-            </ul>
-            <p><strong>(Kullanım Şartları ve Gizlilik Politikası gibi uygulamayı kullanmak için gerekli temel, zorunlu (hard-gate) metinlerin onay bilgisi sunucuya GÖNDERİLMEZ, uygulamanın içerisine gömülü (embedded assets) metinler üzerinden cihazda <code>%100 yerel (offline)</code> olarak tutulur.)</strong></p>
-            <p>Kullanıcının yerel cihazında saklanan sağlık verileri, bebek profilleri, fotoğraflar, notlar ve benzeri tüm içerikler bakımından Cradly, 6698 sayılı KVKK kapsamında <strong>veri sorumlusu veya veri işleyen sıfatına sahip değildir</strong>.</p>
-
-            <h3>1.5 Üçüncü Taraf Hizmetler</h3>
-
-            <h4>1.5.1 Supabase (Veri Depolama Altyapısı)</h4>
-            <p><strong>Amaç:</strong> Yalnızca isteğe bağlı (opsiyonel) rıza kayıtlarının (Analytics, Crashlytics vb.) onay seçimlerinin saklanması. Giriş için zorunlu (hard-gate) olan Gizlilik Politikası ve Kullanımı Koşulu beyanlarının onayları Supabase'e GÖNDERİLMEZ.</p>
-            <p><strong>Sunucu Lokasyonu:</strong> Supabase proje bölgesi Avrupa Birliği içinde <strong>eu-west-3 (Paris, Fransa)</strong> olarak yapılandırılmıştır. Bununla birlikte, hizmetin teknik işletimi kapsamında Supabase'in yetkili alt işleyenleri tarafından sınırlı veri işleme faaliyetleri farklı ülkelerde gerçekleşebilir. Bu nedenle yurt dışı veri aktarımı, KVKK'nın güncel 9. maddesi kapsamında uygun aktarım mekanizması ve sözleşmesel güvencelerle yürütülür.</p>
-            
-            <p><strong>Aktarılan Veriler:</strong></p>
-            <ul>
-                <li><strong>Rıza işlemleri için:</strong> <code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code> (sunucu zaman damgası)</li>
-            </ul>
-
-            <p><strong>AKTARILMAYAN VERİLER:</strong></p>
-            <ul>
-                <li>Sağlık verileri</li>
-                <li>Bebek profil bilgileri</li>
-                <li>Kredi kartı bilgileri, İsim-Soyisim veya benzeri doğrudan kimlik bilgileri</li>
-                <li>Fotoğraflar, notlar, kayıtlar</li>
-            </ul>
-
-            <p><strong>Hukuki Dayanak:</strong></p>
-            <ul>
-                <li>Opsiyonel rıza kayıtlarının işlenmesi bakımından: <strong>Hukuki Yükümlülük</strong> (KVKK m.5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK m.5/2-f)</li>
-                <li>Yurt dışına aktarım bakımından: <strong>KVKK m.9 kapsamında Standart Veri Koruma Sözleşmesi (SDKK)</strong> — Supabase Inc. ile akdedilen ve Supabase'in AB veri merkezi (eu-west-3, Paris/Fransa) genelindeki veri işleme şartlarını kapsayan Veri İşleme Sözleşmesi (DPA), KVKK Kurulu tarafından öngörülen SDKK kapsamındaki güvenceleri içermektedir. Supabase'in yetkili alt işleyenlerinin AB dışında da sınırlı ölçüde veri işleyebileceği gözetilerek bu sözleşmesel güvenceler tüm aktarım zincirini kapsamaktadır.</li>
-                <li>Supabase ile yürürlükteki Veri İşleme Sözleşmesi (DPA) kapsamında teknik ve idari güvenlik tedbirleri uygulanır</li>
-                <li><strong>DPA imzalandı, tarih: 28.02.2026.</strong></li>
-                <li>Uyum arşiv kaydı: <code>assets/legal/compliance/Supabase_User_DPA.pdf</code></li>
-            </ul>
-
-            <h4>1.5.2 Reklam Hizmetleri (Google AdMob)</h4>
-            <p><strong>Kapsam:</strong> YALNIZCA ücretsiz sürüm kullanıcıları</p>
-            <p><strong>Reklam Türü ve İçeriği:</strong> Uygulama, Google AdMob altyapısını kullanmaktadır. Uygulamanın hedef kitlesi yetişkinler (ebeveynler) olmakla birlikte, uygulamanın hassas doğası gereği reklam içerikleri "G" (General Audience - Genel İzleyici) seviyesinde filtrelenmektedir. Kullanıcıya gösterilecek reklamlar; kullanıcının cihazındaki reklam kimliği (IDFA/GAID) baz alınarak sunulabilir. Ancak kesinlikle uygulama içine girilen bebek sağlık verileri, isimler veya notlar reklam hedeflemesi amacıyla kullanılmaz ve reklam sağlayıcılarla paylaşılmaz.</p>
-            
-            <p><strong>İşlenen Veriler:</strong></p>
-            <ul>
-                <li><strong>iOS cihazlarda:</strong> IDFA (Identifier for Advertisers) - Apple tarafından cihaza atanan reklam kimliği</li>
-                <li><strong>Android cihazlarda:</strong> GAID (Google Advertising ID) - Google tarafından cihaza atanan reklam kimliği</li>
-            </ul>
-
-            <p><strong>Veri Sorumlusu:</strong> Bu veriler bakımından veri sorumlusu <strong>Google LLC</strong>'dir. Cradly, sadece aracılık eden teknik platform sağlayıcısıdır.</p>
-            
-            <p><strong>İşleme Amacı:</strong></p>
-            <ul>
-                <li>Bulunduğunuz bölgeye ve gizlilik tercihlerinize bağlı olarak kişiselleştirilmiş veya kişiselleştirilmemiş reklam gösterimi</li>
-                <li>Reklam frekans kontrolü (aynı reklamın tekrar gösterilmemesi)</li>
-                <li>Reklam performans ölçümü (anonim istatistikler)</li>
-            </ul>
-
-            <p><strong>Veri Aktarım Yeri ve Hukuki Dayanak (KVKK m.9):</strong> 
-            1 Haziran 2024 tarihinde değişen KVKK Madde 9 hükümleri gereği, veriler uygun güvence niteliği taşıyan ve Kişisel Verileri Koruma Kurulu tarafından kabul edilen <strong>Standart Veri Koruma Sözleşmesi (SCC - Standard Contractual Clauses)</strong> doğrultusunda Amerika Birleşik Devletleri'ne (Google LLC sunucuları) aktarılmaktadır.</p>
-
-            <p><strong>Google AdMob DPA/Terimler Bilgilendirmesi:</strong><br>
-            Google AdMob bakımından veri işleme şartları ve yurt dışı aktarımı, Google'ın çevrimiçi hizmet şartları ve hesap kullanım sürecinde otomatik kabul modeliyle yürürlüğe giren Standart Veri Koruma Sözleşmesi (SCC) taahhütlerine dayanmaktadır; Supabase'deki gibi ayrı karşı-imzalı bir DPA akışı bulunmayabilir. Resmi Google metni: https://privacy.google.com/businesses/processorterms/ (güncel yönlendirme: https://business.safety.google/adsprocessorterms/)</p>
-
-            <p><strong>Kullanıcı Hakları:</strong><br>
-            Kullanıcı, reklam kimliğini kontrol etme haklarına sahiptir:</p>
-            <ul>
-                <li><strong>iOS:</strong> Ayarlar > Gizlilik ve Güvenlik > Apple Advertising > Reklam Tanımlayıcısını Sıfırla</li>
-                <li><strong>Android:</strong> Ayarlar > Google > Reklamlar > Reklam Kimliğini Sıfırla</li>
-            </ul>
-
-            <p><strong>REKLAM GÖSTERİMİNİN HUKUKİ DAYANAĞI — İKİ AYRI KATMAN:</strong><br>
-            Reklam gösterimine ilişkin hukuki çerçeve iki ayrı katmandan oluşmaktadır:</p>
-
-            <p><strong>1. KATMAN — Reklam Gösterimi (Sözleşme Şartı)</strong><br>
-            Ücretsiz sürümde reklam gösterimi, kullanıcının Kullanım Koşulları'nı (EULA) kabul etmesiyle birlikte yürürlüğe giren <strong>freemium hizmet modelinin ayrılmaz bir parçasıdır</strong>. Reklam desteği, uygulamanın kullanıcısından doğrudan ücret almaksızın sunulabilmesinin finansal dayanağıdır.</p>
-            <ul>
-                <li>Reklam gösterimi, açık rızaya değil, <strong>Kullanım Koşulları sözleşmesine</strong> (TBK m.26, KVKK m.5/2-e kapsamında sözleşmenin ifası) dayanır.</li>
-                <li>Bu uygulama, Spotify, YouTube ve diğer reklam destekli ücretsiz uygulamalarla aynı freemium modelini kullanmaktadır: ücretsiz erişim karşılığında reklam gösterimi sözleşme şartıdır.</li>
-                <li>Uygulamaya ilk girdiğiniz <strong>7 gün boyunca ve en az 8 kayıt girene kadar</strong> size "Sıfır Reklam" deneyimi sunularak uygulamayı test etme imkânı tanınır.</li>
-                <li>Reklam modülü yalnızca şu koşulların birlikte sağlanması halinde aktifleşir: 7 gün geçmiş olmalı, en az 8 timeline kaydı bulunmalı ve gece saati filtresi karşılanmış olmalıdır.</li>
-                <li><strong>Reklam gösterimini tamamen kaldırmak için</strong> Premium sürümü satın alabilirsiniz.</li>
-            </ul>
-
-            <p><strong>2. KATMAN — Reklam Kişiselleştirme ve Bölgesel Konum (NPA Modu)</strong><br>
-            Gösterilen reklamların <em>kişiselleştirilmiş</em> olup olmayacağı, uygulamanın çalıştırıldığı coğrafi bölgeye göre farklılık gösterir:</p>
-            
-            <p><strong>A. Türkiye ve Düzenlenmemiş Diğer Bölgeler (Varsayılan NPA):</strong><br>
-            Türkiye (ve Google UMP zorunluluğu bulunmayan benzeri bölgeler) kapsamındaki kullanıcılar için Cradly, reklam kimliğinizi (IDFA/GAID) işlemeyen <strong>Kişiselleştirilmemiş Reklam (NPA - Non-Personalized Ads)</strong> modunu varsayılan ve değiştirilemez bir standart olarak uygular. Kişisel reklam tanımlayıcılarınız analiz edilmediği ve reklam hedeflemesi yapılmadığı için, bu bölgelerde kullanıcılara herhangi bir reklam rıza (Consent) ekranı <strong>GÖSTERİLMEZ</strong>. Bu özellik sözleşmesel bir freemium şartı olarak tamamen anonim ve bağlamsal çalışır.</p>
-
-            <p><strong>B. AEA (Avrupa Ekonomik Alanı), Birleşik Krallık ve Düzenlenmiş Diğer Bölgeler:</strong><br>
-            Kullanıcı tercih formlarının dayatıldığı bu bölgelerde, kişiselleştirme isteğinizi belirtmeniz için Google UMP onay ekranı gösterilir. Bu menüde verdiğiniz rıza kararı (kabul/ret), cihazınıza atanmış takma adlaştırılmış (pseudonymized) <strong>Consent ID (UUID)</strong> ile şifrelenerek kayıt altına alınır ve reddedilirse NPA olarak devam eder.</p>
-
-            <p><strong>Kişiselleştirme Rızasını Geri Çekme (Sadece Düzenlenmiş Bölgeler):</strong><br>
-            Eğer cihazınız rıza diyaloğunun kullanıldığı düzenlenmiş bir bölgedeyse ve kişiselleştirilmiş reklamlara izin verdiyseniz, rızanızı <strong>Ayarlar > Gizlilik Tercihleri</strong> altından her zaman geri çekebilirsiniz. Rızanızı geri çektiğinizde uygulama NPA moduna geçer. (Türkiye gibi NPA'nın standart olduğu bölgelerde reklamlar başından beri kişiselleştirilmemiş olarak gösterildiği için bu menü reklam çalışma yapısını etkilemez).</p>
-
-            <p><strong>Kullanıcı Seçenekleri Özeti:</strong></p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Seçenek</th>
-                        <th>Reklamlar</th>
-                        <th>IDFA/GAID İşleme</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>(Avrupa/UMP vb) Kişiselleştirilmiş İzin</td>
-                        <td>Gösterilir (kişiselleştirilmiş)</td>
-                        <td>Evet</td>
-                    </tr>
-                    <tr>
-                        <td>Türkiye/Diğer (Varsayılan NPA)</td>
-                        <td>Gösterilir (anonim/bağlamsal)</td>
-                        <td>Hayır</td>
-                    </tr>
-                    <tr>
-                        <td>Premium Satın Al</td>
-                        <td>Gösterilmez</td>
-                        <td>Hayır</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Premium Kullanıcılar:</strong> Premium kullanıcılara hiçbir reklam gösterilmez ve reklam kimliği işlenmez.</p>
-
-            <h4>1.5.2.1 Ödüllü Reklamlar (İsteğe Bağlı, Kullanıcı Tarafından Başlatılan)</h4>
-            <p>Standart banner reklamlara ek olarak Cradly, ücretsiz sürüm kullanıcılarının uygulama içi belirli özelliklere karşılık olarak <strong>gönüllü olarak izleyebileceği ödüllü reklamlar (rewarded ads)</strong> sunmaktadır. Bu reklamlar tamamen isteğe bağlıdır ve hiçbir zaman otomatik olarak gösterilmez.</p>
-            
-            <p><strong>Ödüllü Reklamların Kullanıldığı Özellikler:</strong></p>
-            <ul>
-                <li><strong>Ninni Arka Plan Oynatma:</strong> Ücretsiz kullanıcılar, uygulamanın dahili ninni oynatıcısında arka planda ses çalmayı geçici olarak açmak için bir ödüllü reklam izleyebilir (seans başına en fazla 60 dakika, biriktirilebilir).</li>
-                <li><strong>14 Günlük Rapor Dışa Aktarma:</strong> Ücretsiz kullanıcılar, 14 günlük detaylı istatistik raporunu tek seferlik dışa aktarmak için bir ödüllü reklam izleyebilir.</li>
-            </ul>
-
-            <p><strong>Aktivasyon Koşulları:</strong><br>
-            Standart reklamların aksine, ödüllü reklamlar <strong>7 günlük bekleme süresine, 8 kayıt eşiğine ve gece saati filtresine tabi DEĞİLDİR.</strong> Yalnızca aşağıdaki iki koşulun karşılanması yeterlidir:<br>
-            1. Geçerli reklam rızasının (consent) mevcut olması<br>
-            2. Aktif bir internet bağlantısının bulunması</p>
-
-            <p><strong>Tamamen İsteğe Bağlı:</strong><br>
-            Ödüllü reklam izlemek hiçbir zaman zorunlu değildir. Reklam izlemek istemeyen kullanıcılar bu özelliklere reklamsız erişmek için Premium sürümü satın alabilir ya da söz konusu özellikleri kullanmamayı tercih edebilirler.</p>
-
-            <p><strong>İşlenen Veriler ve Kişiselleştirme:</strong> Ödüllü reklamlar, standart banner reklamlarla <strong>aynı rıza kararını</strong> kullanır. Google UMP'nin uygulandığı bölgelerde (AEA, Birleşik Krallık, ABD'nin düzenlenmiş eyaletleri), kullanıcının UMP onay formunda verdiği tercihe göre reklamlar <strong>kişiselleştirilmiş veya kişiselleştirilmemiş</strong> olabilir — Google'ın SDK'sı, hedefleme karını IABTCF onay dizesine (consent string) göre verir. Bu düzenlenmiş bölgeler dışında ise uygulama, kullanıcının eylemine bakılmaksızın <strong>kişiselleştirilmemiş (NPA) modu zorunlu olarak</strong> uygular. Hiçbir durumda, <strong>bebeğe ait sağlık verileri reklam ağlarıyla paylaşılmaz</strong> ve herhangi bir reklam hedeflemesinde kullanılmaz.</p>
-
-            <h4>1.5.3 Telemetri, Çökme Raporları ve Kullanım Analitiği</h4>
-            <p>Cradly, uygulamanın kararlılığını ve performansını iyileştirmek amacıyla, yalnızca <strong>kullanıcının açık rızası</strong> ile anonim çökme raporları (Firebase Crashlytics) ve kullanım analitiği verileri (Firebase Analytics) toplar. Bu seçenekler <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir.</p>
-
-            <p><strong>Toplanan Veriler (Anonim ve Teknik Nitelikte):</strong></p>
-            <ul>
-                <li>Çökme Bilgileri: Çökme anındaki teknik detaylar (hatanın oluştuğu kod satırı, cihaz belleği durumu, iş parçacığı bilgisi vb.).</li>
-                <li>Cihaz Bilgileri (Anonim): Cihaz modeli, işletim sistemi versiyonu, dil ve bölge ayarları, pil seviyesi, boş depolama alanı gibi isimsizleştirilmiş teknik bilgiler.</li>
-                <li>Uygulama Bilgileri: Uygulamanın sürüm numarası ve kurulu olduğu paket adı.</li>
-                <li>Kullanım Analitiği: Uygulama açılışları, ekran görüntüleme sayıları ve temel etkileşim ölçümleri (ör. buton tıklamaları).</li>
-            </ul>
-
-            <p><strong>TOPLANMAYAN / İŞLENMEYEN VERİLER:</strong></p>
-            <ul>
-                <li>Kullanıcı kimliği (isim, e-posta, telefon).</li>
-                <li>Kullanıcı tarafından girilen herhangi bir içerik (bebek profilleri, sağlık kayıtları, notlar, fotoğraflar).</li>
-                <li>Konum verileri.</li>
-                <li>Cihaz reklam kimliği (IDFA/GAID) veya benzeri tanımlayıcılar.</li>
-            </ul>
-
-            <p><strong>Veri Sorumlusu ve İşleme Amacı:</strong><br>
-            Veri Sorumlusu: Toplanan bu anonim teknik veriler bakımından, veri işleme faaliyetinin asıl amacını ve vasıtasını belirleyen taraf Cradly'dur.<br>
-            İşleme Amacı: Uygulamadaki hataları tespit etmek, önceliklendirmek ve düzeltmek; kararlılığı ve performansı artırmak; böylece tüm kullanıcılar için daha iyi bir deneyim sunmak.<br>
-            Hukuki Dayanak: İşleme bakımından KVKK Md. 5/1 uyarınca <strong>açık rıza</strong>; yurt dışına aktarım bakımından KVKK Md. 9 kapsamında uygun aktarım mekanizması.</p>
-
-            <p><strong>Veri İşleyen ve Aktarım:</strong><br>
-            Veri İşleyen: Crash raporlarının teknik altyapısı Google LLC tarafından sağlanmaktadır. Google, bu hizmet kapsamında Cradly adına veri işleyen sıfatıyla hareket etmektedir.<br>
-            Veri Aktarımı: Toplanan anonim teknik veriler, işleme amacına uygun olarak Amerika Birleşik Devletleri'nde bulunan Google sunucularına aktarılabilir. Bu aktarım, KVKK m.9 kapsamında uygun aktarım mekanizması ve sözleşmesel güvenceler çerçevesinde yürütülür.<br>
-            Güvenlik: Google, veri işleyen olarak endüstri standartlarında güvenlik önlemleri uygulamayı taahhüt etmektedir. Firebase/Google tarafında yürürlükteki veri işleme sözleşmeleri (DPA) esas alınır. Firebase hizmetlerinde DPA hükümleri, Google/Firebase sözleşme seti içinde hesap oluşturma/kullanım sürecinde otomatik kabul modeliyle yürürlüğe girebilir; Supabase'deki gibi ayrı karşı-imzalı DPA akışı bulunmayabilir. Resmi Firebase DPA metni: https://firebase.google.com/terms/data-processing-terms</p>
-
-            <p><strong>Kullanıcı Kontrolü:</strong><br>
-            Kullanıcı, uygulamanın ayarlar bölümünden Crashlytics ve Analytics seçeneklerini dilediği zaman kapatabilir. Bu seçenekler kapalı olduğunda cihazdan hiçbir çökme raporu veya kullanım analitiği verisi toplanmaz ve gönderilmez.</p>
-
-            <h4>1.5.4 Premium Abonelik Yönetimi (RevenueCat)</h4>
-            <p><strong>Kapsam:</strong> YALNIZCA Premium sürüm kullanıcıları veya satın alma işlemini başlatanlar.</p>
-            <p><strong>Amaç:</strong> Uygulama içi satın alımların ve aboneliklerin güvenli bir şekilde yönetilmesi, uygulama mağazaları (Apple App Store ve Google Play Store) ile senkronize edilmesi.</p>
-            <p><strong>İşleyen Taraf:</strong> RevenueCat Inc.</p>
-            <p><strong>İşlenen Veriler:</strong> Satın alma işlemlerine ait anonim platform faturaları ve uygulama tarafından atanan anonim Kullanıcı ID'si (App User ID). Bu veriler arasında doğrudan adınız, e-posta adresiniz veya kredi kartı numaranız <strong>BULUNMAZ</strong>. Tüm ödeme işlemleri Apple veya Google tarafından kendi güvenli sistemlerinde yapılır; Cradly ve RevenueCat yalnızca bu işlemin başarılı olup olmadığı bilgisini anonim token'lar üzerinden doğrular.</p>
-            <p><strong>Hukuki Dayanak:</strong> Sözleşmenin İfası (KVKK m.5/2-c) ve sahteciliği önlemek adına Veri Sorumlusunun Meşru Menfaati (KVKK m.5/2-f) kapsamında işlenir. Yurt dışı aktarımı bakımından RevenueCat ile uygulanabilir standart veri koruma sözleşmeleri geçerlidir.</p>
-
-            <h3>1.6 Çocuk Verileri ve Yasal Temsilcilik</h3>
-
-            <h4>1.6.1 Hedef Kitle ve Kullanım Amacı (COPPA/GDPR-K Beyanı)</h4>
-            <p>Cradly, içerik olarak bebek bakımını konu almakla birlikte; hedef kitlesi ve fiili kullanıcıları bakımından "Çocuğa Yönelik (Child-Directed)" bir uygulama DEĞİLDİR. Uygulama, münhasıran 18 yaş ve üzeri ebeveynlerin/vasilerin kullanımı için tasarlanmış bir ebeveyn asistanı aracıdır.<br>
-            Uygulama, çocuklar tarafından kullanılmak üzere tasarlanmamıştır ve çocukların cihazla doğrudan etkileşime girmesi öngörülmemektedir. Bu nedenle reklam ve veri işleme politikaları "Genel İzleyici (Yetişkin)" standartlarına göre belirlenmiştir.</p>
-
-            <div class="warning-box">
-                <p><strong>Cihaz Güvenliği Uyarısı:</strong><br>
-                Uygulama, ebeveynlere yöneliktir ve hassas veriler içerir. Çocuğunuzun cihazı kullanması durumunda verilerin yanlışlıkla silinmesini veya değiştirilmesini önlemek amacıyla, cihazınızın ekran kilidi özelliklerini kullanmanız ve uygulamayı çocukların erişimine açık bırakmamanız önemle tavsiye edilir.</p>
-            </div>
-
-            <h4>1.6.2 Yasal Temsilcilik Beyanı</h4>
-            <p>Kullanıcı, uygulamayı kullanarak aşağıdaki hususları KABUL ve BEYAN eder:</p>
-            <ul>
-                <li>18 yaşından büyük olduğunu</li>
-                <li><strong>Uygulamada ekleyeceği bebek veya bebeklerin</strong> yasal temsilcisi (anne, baba veya yasal vasi) sıfatıyla hareket ettiğini</li>
-                <li>Çocuğa/çocuklara ait özel nitelikli kişisel verileri (sağlık verileri) işleme yetkisine sahip olduğunu</li>
-                <li>Bu verileri işlemek için gerekli yasal dayanağa sahip olduğunu</li>
-            </ul>
-
-            <h4>1.6.3 Reklam İçerik Güvenliği</h4>
-            <p>Uygulama yetişkinlere yönelik olsa da, bir bebek bakım aracı olması sebebiyle gösterilen reklamların "Aile Güvenliği" standartlarına uyması taahhüt edilir.<br>
-            Bu kapsamda Cradly:</p>
-            <ul>
-                <li>Reklam içerik derecelendirmesini teknik olarak "G" (General Audience) seviyesinde sınırlar.</li>
-                <li>Kumar, cinsellik, şiddet, alkol ve benzeri hassas kategorilerdeki reklamların gösterimini teknik filtrelerle engeller.</li>
-                <li>Uygulama içine girilen çocuk verilerini (sağlık, boy, kilo vb.) reklam hedeflemesi için ASLA kullanmaz. Hedefleme sadece yetişkin kullanıcının (ebeveynin) anonim reklam kimliği üzerinden, genel ilgi alanlarına göre yapılabilir</li>
-            </ul>
-        </section>
-
-        <hr>
-        <a id="terms"></a>
-        <section id="kullanim-kosullari">
-            <h2>2. KULLANIM KOŞULLARI (EULA - SON KULLANICI LİSANS SÖZLEŞMESİ)</h2>
-
-            <div class="medical-warning">
-                <strong>2.1 Tıbbi Feragatname ve Uygulamanın Niteliği</strong>
-                
-                <h4>2.1.1 Ürün Tanımı</h4>
-                <p>Cradly, <strong>tıbbi cihaz, tanı aracı veya tedavi yöntemi DEĞİLDİR</strong>. Uygulama, ebeveynlerin bebek bakım süreçlerini organize etmelerine yardımcı olan bir <strong>kayıt tutma, organizasyon ve hatırlatma aracıdır</strong>.</p>
-                
-                <p>Cradly:</p>
-                <ul>
-                    <li>Tıbbi teşhis koymaz</li>
-                    <li>Hastalık tanısı yapmaz</li>
-                    <li>Tedavi önerisi sunmaz</li>
-                    <li>Reçete veya ilaç önerisi vermez</li>
-                    <li>Sağlık durumu değerlendirmesi yapmaz</li>
-                    <li>Tıbbi acil durum tespiti yapmaz</li>
-                </ul>
-
-                <h4>2.1.2 Tıbbi Kararlar ve Profesyonel Destek</h4>
-                <p>Bebek sağlığına, gelişimine, beslenmesine ve bakımına ilişkin <strong>TÜM KARARLAR</strong> mutlaka <strong>lisanslı sağlık profesyonelleri</strong> (pediatrist, çocuk doktoru, diyetisyen, aile hekimi vb.) tarafından alınmalıdır.</p>
-
-                <p><strong>KULLANICI KABUL EDER Kİ:</strong></p>
-                <ul>
-                    <li>Uygulamada yer alan bilgiler genel nitelikte bilgilendirme amaçlıdır</li>
-                    <li>Bu bilgiler tıbbi tavsiye yerine geçmez</li>
-                    <li>Sağlık ile ilgili her türlü karar öncesinde mutlaka hekim görüşü alınmalıdır</li>
-                    <li>Acil durumlarda (yüksek ateş, solunum problemi, beslenme reddi vb.) uygulama kullanılmayacak, doğrudan sağlık kuruluşuna başvurulacaktır</li>
-                </ul>
-            </div>
-
-            <h3>2.2 Güncelleme, Veri Kaybı ve Uyumsuzluk Riskleri</h3>
-
-            <h4>2.2.1 Güncelleme Politikası</h4>
-            <p>Uygulama güncellemeleri, güvenlik, performans iyileştirmeleri ve işlevsel geliştirmeler amacıyla yayınlanmaktadır.<br>
-            Cradly, güncellemelerin mevcut verilerle uyumlu şekilde çalışması için uygulamanın niteliği, teknik kapasitesi ve sunulduğu kullanım koşulları çerçevesinde <strong>makul ölçüde teknik özen</strong> göstermekle yükümlüdür.</p>
-
-            <div class="warning-box">
-                <h4>2.2.2 Güncelleme Öncesi ZORUNLU Yedekleme</h4>
-                <p><strong>KRİTİK UYARI - ZORUNLU İŞLEM:</strong></p>
-                <p>Kullanıcı, <strong>HER UYGULAMA GÜNCELLEMESİ ÖNCESİNDE MUTLAKA YEDEK ALMAKLA YÜKÜMLÜDÜR</strong>.</p>
-                
-                <p><strong>Yedekleme Yapılmaması Durumunda:</strong></p>
-                <ul>
-                    <li>Güncelleme sonrası veriler kaybolabilir</li>
-                    <li>Veri tabanı uyumsuzluğu oluşabilir</li>
-                    <li>Şifreleme anahtarı bozulabilir</li>
-                    <li>Veriler kurtarılamaz hale gelebilir</li>
-                </ul>
-
-                <p><strong>Cradly, güncelleme öncesi yedek alınmaması nedeniyle oluşan veri kayıplarından SORUMLU DEĞİLDİR.</strong></p>
-                <p>Yerel cihazda tutulan verilerin; işletim sistemi kısıtları, cihaz donanımı, üçüncü taraf yazılımlar, kullanıcı tarafından yedek alınmaması veya öngörülemeyen teknik hatalar nedeniyle zarar görmesi veya kaybolması mümkündür.<br>
-                Bu tür durumlarda Cradly, makul teknik özenin gösterilmiş olması kaydıyla, veri kaybından sorumlu tutulamaz.<br>
-                Cradly'un kasıtlı davranışı veya ağır kusuru hâllerinde doğabilecek sorumluluklar bu hükmün kapsamı dışındadır.</p>
-            </div>
-
-            <h3>2.3 Veri Kaybı ve Yedekleme Sorumluluğu</h3>
-            <p>Tüm veriler yalnızca kullanıcının cihazında saklandığından, düzenli yedek alınması kullanıcının sorumluluğundadır.</p>
-            <p><strong>Uygulama içi yedekleme sistemi:</strong></p>
-            <ul>
-                <li>Ayarlar ilk kez açıldığında yedekleme bilgilendirme dialogu gösterilir</li>
-                <li>7 günde bir "Yedek Al" hatırlatma dialogu gösterilir</li>
-                <li>Dialog'dan tek tıkla yedek alma imkanı sunulur</li>
-            </ul>
-            <p>Kullanıcı bu hatırlatmalara rağmen yedek almaz ise, veri kaybı riski tamamen kullanıcının sorumluluğundadır.</p>
-
-            <h3>2.4 GARANTİLERİN REDDİ, SORUMLULUK SINIRLAMASI VE MADDİ TAZMİNAT TAVANI</h3>
-            <p><strong>GARANTİLERİN REDDİ (ZIMNİ GARANTİLERDEN MUAFİYET):</strong><br>
-            <strong>UYGULAMA "OLDUĞU GİBİ" VE "MEVCUT OLDUĞU ŞEKLİYLE" SUNULMAKTADIR. UYGULANABİLİR KANUNLARIN İZİN VERDİĞİ EN GENİŞ ÖLÇÜDE, Cradly; TİCARİ ELVERİŞLİLİK (MERCHANTABILITY), BELİRLİ BİR AMACA UYGUNLUK (FITNESS FOR A PARTICULAR PURPOSE) VE İHLAL ETMEME GİBİ ZIMNİ GARANTİLER DAHİL OLMAK ÜZERE AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERMEMEKTEDİR. UYGULAMANIN KESİNTİSİZ ÇALIŞACAĞI, YAZILIM HATASI (BUG) İÇERMEYECEĞİ VEYA CİHAZ GÜVENİLİRLİĞİNİN VERİ KAYBINI KESİN OLARAK ENGELLEYECEĞİ GARANTİ EDİLMEZ.</strong></p>
-
-            <h4>2.4.1 ÜCRETSİZ SÜRÜM SORUMLULUĞU (Reklam Destekli Bedelsiz Hizmet Modeli)</h4>
-            <p><strong>Hukuki Nitelik:</strong><br>
-            Ücretsiz sürüm, kullanıcıya doğrudan parasal bedel talep edilmeksizin sunulan bir yazılım hizmetidir. Hizmetin sürdürülebilirliği, yalnızca ücretsiz sürüm kullanıcılarına yönelik reklam gösterimi (Google AdMob) aracılığıyla sağlanmaktadır. Bu yapı itibarıyla söz konusu hizmet, <strong>reklam destekli bedelsiz (freemium) bir hizmet modeli</strong> niteliğindedir; kullanıcıdan doğrudan ücret alınmamakla birlikte dolaylı ticari bir ilişki mevcuttur.</p>
-
-            <p><strong>Sorumluluk Rejimi:</strong><br>
-            Hizmetin doğrudan parasal bedel alınmaksızın "olduğu gibi" (as-is) sunulması ve kullanıcının bu hizmeti ücretsiz kullandığı gözetilerek, TBK m.26 (sözleşme özgürlüğü) ve m.115 (sorumluluktan önceden muafiyet sınırları) çerçevesinde aşağıdaki sorumluluk sınırlaması taraflarca karşılıklı olarak kabul edilmiştir:</p>
-            
-            <p>Bu kapsamda Cradly:</p>
-            <ul>
-                <li>✓ <strong>Kasıt ve ağır kusur</strong> hallerinde her koşulda sorumludur</li>
-                <li>✗ <strong>Basit kusur (hafif ihmal)</strong> hallerinde, doğrudan ve öngörülebilir somut bir zarara yol açmadığı sürece sorumluluk kabul etmez</li>
-                <li>✗ Yazılım hataları, çökmeler veya üçüncü taraf altyapıdan kaynaklanan veri kayıpları nedeniyle tazminat ödemez</li>
-                <li>✗ Kullanıcının yedek almama ya da güncelleme öncesi yedek almama tercihinden doğan kayıplar için tazminat ödemez</li>
-            </ul>
-
-            <p><strong>TBK m.115 Saklı Tutulan Sorumluluklar:</strong> Bedensel bütünlük zararları ile kasıt veya ağır kusurdan doğan her türlü zarar için önceden sorumluluktan muafiyet beyanı geçersizdir; bu haller her koşulda sorumluluk kapsamındadır.</p>
-            <p>Kullanıcı, ücretsiz hizmetin doğrudan ücret alınmaksızın, reklam geliriyle sürdürülebilir kılınan bir model kapsamında "olduğu gibi" sunulduğunu ve bu nedenle sorumluluk kapsamının işbu şartlarla sınırlandırıldığını kabul eder.</p>
-
-            <h4>2.4.2 PREMIUM SÜRÜM SORUMLULUĞU (Sınırlı Sorumluluk)</h4>
-            <p>Cradly, premium kullanıcılar bakımından:</p>
-            <p><strong>SORUMLULUK TAVANI:</strong><br>
-            Ödenen premium bedel (tek seferlik satın alma tutarı) sorumluluk tavanını oluşturur. Örnek: 299 TL ödenmiş ise, azami tazminat 299 TL'dir.</p>
-
-            <p><strong>SORUMLU OLDUĞUMUZ HALLER:</strong></p>
-            <ul>
-                <li>✓ Kasıt ve ağır kusur</li>
-                <li>✓ Öngörülebilir, doğrudan, maddi zararlar</li>
-            </ul>
-
-            <p><strong>SORUMLU OLMADIĞIMIZ HALLER:</strong></p>
-            <ul>
-                <li>✗ Dolaylı zararlar (iş kaybı, kar mahrumiyeti, manevi zarar)</li>
-                <li>✗ Kullanıcının yedek almaması nedeniyle veri kaybı</li>
-                <li>✗ Cihaz kaybı, çalınma, bozulma nedeniyle veri kaybı</li>
-                <li>✗ Güncelleme öncesi yedek alınmaması nedeniyle veri kayıpları</li>
-                <li>✗ Sağlık kararlarının yanlışlığından doğan zararlar (uygulama tıbbi cihaz değildir, hekim tavsiyesi yerine geçmez)</li>
-                <li>✗ Üçüncü kişi hizmetlerindeki aksaklıklar (Google Play, App Store, AdMob vb.)</li>
-            </ul>
-
-            <p><strong>KULLANICI SORUMLULUKLARI:</strong></p>
-            <ul>
-                <li>Düzenli yedek almak</li>
-                <li>Güncelleme öncesi yedek almak</li>
-                <li>Cihaz güvenliğini sağlamak</li>
-            </ul>
-
-            <h4>2.4.3 Esaslı Sözleşme Yükümlülükleri (Cardinal Duties) İstisnası</h4>
-            <p>Bu sorumluluk sınırlaması, sözleşmenin esaslı yükümlülüklerinin (uygulamanın temel işlevleri) basit ihmal yoluyla ihlali durumunda, öngörülebilir ve tipik zararlar için geçerli değildir.</p>
-
-            <div class="warning-box">
-                <h3>2.5 CAYMA HAKKI İSTİSNASI (Dijital İçerik)</h3>
-                <p><strong>ÖNEMLİ BİLGİLENDİRME:</strong></p>
-                <p>Cradly Premium sürümü, elektronik ortamda anında ifa edilen gayrimaddi bir hizmettir.<br>
-                6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği'nin 15/ğ maddesi uyarınca; "Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallara ilişkin sözleşmeler" cayma hakkının istisnası kapsamındadır.<br>
-                Kullanıcı, Premium hizmeti satın alarak hizmetin ifasının anında başladığını ve bu nedenle 14 günlük cayma (iade) hakkını kaybettiğini peşinen kabul ve beyan eder. İade talepleri, satın alımın yapıldığı platformun (Apple App Store veya Google Play Store) kendi iade politikalarına tabidir ve Cradly'un bu platformların iade kararlarına müdahale yetkisi bulunmamaktadır.</p>
-            </div>
-
-            <h3>2.6 Cihaz Bildirimleri ve İşletim Sistemi Kısıtlamaları (Bildirim/Alarm Feragatnamesi)</h3>
-            <p>Cradly'un alarm ve hatırlatıcı işlevleri cihazın yerel İşletim Sistemi (Apple iOS veya Google Android) kısıtlamalarına tabidir. Cradly, anlık bildirim (push notification) için uzak bir sunucu kullanmaz (Offline/Local-First), bildirimlerin ve alarmların cihaz üzerinde zamanlanması (local notification scheduling) mantığıyla çalışır.</p>
-            <p>Kullanıcı olarak şu teknik gerçekleri <strong>kabul ve beyan edersiniz</strong>:</p>
-            <ol>
-                <li>İşletim sisteminin pil tasarrufu (Doze Mode), odak odak modu (DND) veya kullanıcı tarafından <strong>uygulamanın arka plandan tamamen kapatılması (kill-state)</strong> halinde işletim sistemi alarmın çalmasını engelleyebilir veya kısıtlayabilir.</li>
-                <li>Bu tür teknik gecikmeler veya işletim sisteminin alarmı durdurması Cradly'un kontrolü veya sorumluluğu altında değildir.</li>
-                <li>Kritik hatırlatmaların (örneğin ilaç veya ateş takibi katsayıları) sadece uygulamaya veya elektronik bir cihaza güvenilerek bırakılmaması esastır (Bkz. Madde 2.1 Tıbbi Feragatname).</li>
-            </ol>
-        </section>
-
-        <hr>
-
-        <section id="kvkk-aydinlatma">
-            <h2>3. KVKK AYDINLATMA METNİ VE AÇIK RIZA</h2>
-
-            <h3>3.1 Açık Rıza Metni (Özel Nitelikli Veriler)</h3>
-            <p>Kullanıcı, uygulamayı kullanmaya başlamadan önce aşağıdaki açık rızayı vermelidir:</p>
-            <p><strong>18 yaşından büyük olduğumu, uygulamada ekleyeceğim bebek veya bebeklerin yasal temsilcisi sıfatıyla hareket ettiğimi, bebeğime/bebeklerime ait sağlık verilerinin (beslenme, uyku, aşı, gelişim takibi vb.) ve diğer özel nitelikli kişisel verilerin, yalnızca kendi cihazımda AES-256 şifreleme standardıyla saklanmak üzere işlenmesini, Cradly'un bu verilere erişemeyeceğini bildiğimi ve açıkça kabul ediyorum.</strong></p>
-
-            <h3>3.2 Reklam Gösterimi ve Kişiselleştirme Süreçleri</h3>
-            <p>Ücretsiz sürümde Google AdMob aracılığıyla reklamlar gösterilmektedir. Türkiye ve Google UMP (User Messaging Platform) zorunluluğu bulunmayan diğer bölgelerdeki kullanıcılar için Cradly, reklam kimliklerinizi (IDFA/GAID) işlemeyen ve kişiselleştirme yapmayan "Kişiselleştirilmemiş Reklam (NPA)" modunu standart olarak uygular.</p>
-            <p>Bu nedenle, uygulamanın çalıştırıldığı bu bölgelerde reklam gösterimi için <strong>herhangi bir açık rıza (consent) alınmaz veya talep edilmez.</strong> Reklam gösterimi işlemi, ücretsiz uygulamanın finansal sürdürülebilirliğini sağlamak amacıyla tamamen "Kullanım Koşulları (EULA) Sözleşmesinin İfası" kapsamında yürütülür (Bkz. Madde 1.5.2). Reklam kimlikleriniz (IDFA/GAID) kişiselleştirme amacıyla işlenmediği için, kullanıcı özelinde bir veri aktarımı veya hedefleme faaliyeti gerçekleşmez.</p>
-            <p><em>(Yalnızca Avrupa Ekonomik Alanı [EEA], Birleşik Krallık [UK] veya ilgili düzenlemeye tabi ABD eyaletleri gibi aktif onay toplanmasının dayatıldığı bölgelerdeki kullanıcılar için uygulamanın yerleşik Google UMP sistemi devreye girer. Bu kullanıcılardan IDFA/GAID işlenmesi suretiyle kişiselleştirilmiş reklam onayı talep edilebilir ve bu veriler Google LLC tarafından işlenebilir. Kullanıcı, dilediği zaman ayarlar üzerinden bu izni geri çekerek NPA moduna dönebilir.)</em></p>
-            <p>Ayrıca, uygulamanın kararlılığını artırmak amacıyla anonim çökme raporları (Google Firebase Crashlytics) <strong>yalnızca açık rıza verilirse</strong> toplanır. Bu seçenek <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir ve ayarlardan her zaman kapatılabilir.</p>
-            <p>Uygulamanın kullanımını ve performansını ölçmek için Google Firebase Analytics <strong>yalnızca açık rıza verilirse</strong> kullanılmaktadır. Bu kapsamda uygulama içi etkileşimler (ekran görüntüleme, oturum, uygulama açma gibi teknik olaylar), cihaz ve işletim sistemi bilgileri ve uygulama örnek kimliği (app-instance identifier) işlenebilir. Varsayılan SDK davranışları reklam kimliği (IDFA/GAID) toplamaya elverişli olsa da, Cradly uygulamasında Analytics için reklam kimliği toplama kapalıdır ve kişiselleştirilmiş reklam sinyalleri kullanılmaz. Kullanıcı, Ayarlar ekranından Analytics ve Crashlytics kullanımını devre dışı bırakabilir.</p>
-            <p>Crashlytics ve Analytics kapsamında kullanıcıdan isim, e-posta, telefon veya bebek/sağlık içerikleri talep edilmez; uygulama bu tür verilerin gönderilmesini engellemek üzere tasarlanmıştır.</p>
-
-            <h3>3.3 KVKK Kapsamında İşlenen Kişisel Veri</h3>
-            <p>Cradly tarafından merkezi sunucuda (Supabase) işlenen kişisel veri kategorileri, YALNIZCA KULLANICININ OPSİYONEL İZİNLERİNE AİT teknik tanımlayıcıların takma adlaştırılmış (pseudonymized) hallerinden ibarettir.</p>
-            <p>Bu kapsamda:</p>
-            <ul>
-                <li><strong>Zorunlu Onaylar Yereldir:</strong> Uygulamaya giriş yapmak için mecbur kılınan (hard-gate) yerel Gizlilik Politikası ve Kullanıcı Sözleşmesi onaylarından DOĞAN HİÇBİR VERİ SUNUCUYA İLETİLMEZ. Metinler uygulama içine (assets) güvenle gömülmüştür.</li>
-                <li><strong>Rıza Logları:</strong> Opsiyonel izinlerin ispatı amacıyla Supabase tarafında yalnızca şu teknik alanlar işlenir: <code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>.</li>
-                <li>Kullanıcının tercih yönü (izin/ret), ayrı kimlik verisi yerine <code>consent_type</code> olay türü üzerinden loglanır.</li>
-                <li>Kullanıcı, Ayarlar > Kimlik Bilgim bölümünden bu Consent ID değerini görüntüleyebilir.</li>
-                <li>Bu teknik tanımlayıcılar, ad-soyad gibi doğrudan kimlik bilgisi içermese dahi hukuken takma adlaştırılmış (pseudonymized) kişisel veri sayılır.</li>
-            </ul>
-            <p>Cradly’un kendi merkezi sunucularında bu kategoriler dışında hiçbir kişisel veri (ad, e-posta, telefon vb.) işlenmez veya saklanmaz.</p>
-            <p>Bununla birlikte, <strong>yalnızca açık rıza verilmesi halinde</strong> Firebase Analytics ve Firebase Crashlytics altyapıları kapsamında Google LLC’ye otomatik olarak aktarılabilen <strong>sınırlı teknik veri kategorileri</strong> aşağıdaki gibidir:</p>
-            <ul>
-                <li>Uygulama örnek kimliği (app-instance identifier)</li>
-                <li>Crashlytics installation UUID ve Firebase installations ID (FID)</li>
-                <li>Oturum sayısı/süresi, uygulama açılışları ve ekran görüntüleme gibi kullanım ölçümleri</li>
-                <li>Cihaz modeli, işletim sistemi adı ve sürümü, dil/bölge</li>
-                <li>Uygulama sürümü ve paket/bundle bilgisi</li>
-                <li>Çökme anına ilişkin stack trace ve ilgili uygulama durumu/cihaz meta verileri</li>
-                <li>Çökme zamanı (timestamp)</li>
-            </ul>
-            <p>Bu teknik veriler, Cradly tarafından kullanıcı kimliğiyle ilişkilendirilmez ve herhangi bir kullanıcı profili oluşturulmaz.</p>
-
-            <h3>3.4 KVKK Madde 11 Kapsamındaki Haklar</h3>
-            <p>Kullanıcı, KVKK m.11 kapsamındaki haklarını hem cihazındaki yerel veriler hem de Cradly tarafından sunucuda tutulan opsiyonel rıza logları bakımından kullanabilir. Sunucu tarafı başvuruları, aşağıdaki veri silme prosedürü kapsamında değerlendirilir.</p>
-
-            <h3>3.5 Kişisel Veri İşlemenin Hukuki Sebepleri</h3>
-            <p>Cradly, kişisel verilerinizi 6698 sayılı Kanun’un 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanarak işlemektedir:</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Veri Kategorisi</th>
-                        <th>İşleme Amacı</th>
-                        <th>Hukuki Sebep (Dayanak)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Sağlık ve Bebek Bilgileri</strong> (Cihazınızda Şifreli)</td>
-                        <td>Bebek bakım takibinin yapılması</td>
-                        <td><strong>Açık Rıza</strong> (KVKK Md. 6/2)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Opsiyonel Rıza Logları</strong> (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, vb.)</td>
-                        <td>Opsiyonel onayların ispat yükümlülüğü</td>
-                        <td><strong>Hukuki Yükümlülük</strong> (KVKK Md. 5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Premium Abonelik Yönetimi - RevenueCat</strong> (Anonim fatura ve App User ID)</td>
-                        <td>Premium üyelik kaydının doğrulanması ve abonelik yönetimi</td>
-                        <td><strong>Sözleşmenin İfası</strong> (KVKK Md. 5/2-c) ve sahteciliği önlemek adına <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Reklam Gösterimi — NPA Modu</strong> (Reklam kimliği işlenmez; bağlamsal/anonim reklam)</td>
-                        <td>Ücretsiz sürümde reklam destekli hizmet sunumu — freemium sözleşme edimi</td>
-                        <td><strong>Sözleşmenin İfası</strong> (KVKK Md. 5/2-e) — IDFA/GAID işlenmediğinden açık rıza gerekmez</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Reklam Kimliği (IDFA/GAID) — Kişiselleştirilmiş Mod</strong> (Yalnızca kullanıcı onaylarsa)</td>
-                        <td>Kişiselleştirilmiş reklam gösterimi ve frekans kontrolü</td>
-                        <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması — rıza her zaman geri çekilebilir; geri çekilmesi halinde NPA moduna geçilir</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Kullanım Analitiği</strong> (Firebase Analytics)</td>
-                        <td>Uygulama kullanımını ve performansı ölçme</td>
-                        <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Çökme Raporları</strong> (Firebase Crashlytics)</td>
-                        <td>Uygulama iyileştirme ve hata analizi</td>
-                        <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>3.6 Veri Silme ve Unutulma Hakkı (Hesap Silme)</h3>
-            <p>Cradly, "Local-First" mimarisi nedeniyle verilerinizin %99'una sahip değildir.<br>
-            Yerel Verilerin Silinmesi: Uygulamayı cihazınızdan kaldırdığınızda, cihazınızda şifreli olarak tutulan tüm sağlık ve bebek verileri kalıcı olarak ve geri döndürülemez şekilde imha edilir.<br>
-            Sunucu Kayıtlarının Silinmesi/Anonimleştirilmesi: Sunucularımızda tutulan opsiyonel rıza loglarının silinmesini talep etmek için; uygulama içerisindeki "Ayarlar > Kimlik Bilgim" kısmındaki Consent ID numaranızı kopyalayarak infocradlelog@gmail.com adresine "Veri Silme Talebi" konulu bir e-posta atmanız yeterlidir.</p>
-            
-            <p>Sunucu tarafı eşleştirme ve işlem adımları:</p>
-            <ol>
-                <li>Kullanıcının ilettiği Consent ID (UUID), sunucu kayıt formatıyla eşleştirmek için SHA-256 ile özetlenir (<code>local_uuid_hash</code>).</li>
-                <li>Yalnızca yetkili yönetici erişimiyle, bu hash değeri üzerinden ilgili kayıtlar bulunur.</li>
-                <li>Yasal saklama zorunluluğu bulunmayan kayıtlar silinir; saklama zorunluluğu bulunan kayıtlar erişimden izole edilerek anonimleştirilir ve süre sonunda imha edilir.</li>
-            </ol>
-            
-            <p>Talebiniz en geç 30 gün içinde işleme alınır.</p>
-            <p>Önemli Not: Sunucu tarafında tutulan opsiyonel rıza logları için otomatik/döngüsel silme sistemi bulunmamaktadır. Silme veya anonimleştirme işlemi, kullanıcının <code>infocradlelog@gmail.com</code> adresine Consent ID bilgisini içeren talebi üzerine başlatılır. Yasal saklama zorunluluğu bulunan kayıtlar ise ilgili süre sonuna kadar saklanır ve süre sonunda imha edilir.</p>
-        </section>
-
-        <hr>
-
-        <section id="kapanis-hukumleri">
-            <h2>4. KAPANIŞ HÜKÜMLERİ</h2>
-
-            <h3>4.1 Uyuşmazlık Çözümü ve Yetkili Mahkeme</h3>
-            <p>İşbu Kullanım Koşulları ve Gizlilik Politikası, kanunlar ihtilafı kuralları dikkate alınmaksızın Türkiye Cumhuriyeti hukukuna tabi olacak ve bu hukuka göre yorumlanacaktır.</p>
-            <p>Tüketici hukukundan doğan emredici yetki kuralları saklı kalmak kaydıyla, bu belgeden doğan veya bununla bağlantılı tüm uyuşmazlıklarda İstanbul (Türkiye) mahkemeleri ve icra daireleri münhasıran yetkilidir.</p>
-
-            <h3>4.2 Yürürlük ve Değişiklik Hakkı</h3>
-            <p>Bu sözleşme, kullanıcının uygulama içi onay akışını tamamladığı anda yürürlüğe girer.</p>
-            
-            <p><strong>Değişiklik Prosedürü:</strong></p>
-            <p>Cradly, işbu sözleşmede değişiklik yapma hakkını saklı tutar. Değişiklikler aşağıdaki usule göre kullanıcıya iletilir:</p>
-            <ol>
-                <li><strong>Güncelleme Aracılığıyla Bildirim:</strong> Sözleşme değişiklikleri, Apple App Store veya Google Play Store üzerinden yayımlanan uygulama güncellemesine eklenir ve ilgili sürüm notlarında belirtilir.</li>
-                <li><strong>Uygulama İçi Otomatik Kontrol ve Onay Mekanizması:</strong> Kullanıcı uygulamayı güncellediğinde veya bir sonraki açılışta, uygulama sözleşme sürümünü otomatik olarak kontrol eder. <strong>KVKK kapsamında açık rızayı etkileyen değişiklikler</strong> (örneğin yeni bir veri kategorisinin eklenmesi, işleme amacının genişletilmesi) söz konusu olduğunda, kullanıcıdan yeni bir onay alınmadan uygulamaya erişim sağlanamaz. Kullanıcı güncellenen koşulları kabul etmez ise uygulamayı cihazından kaldırabilir.</li>
-            </ol>
-            <p>2a. <strong>Bölge veya Ülke Değişikliğinde Yeniden Onay (KVKK m.5/1):</strong> Uygulama her açılışta kullanıcının bulunduğu coğrafi bölgeyi ve cihaz dilini otomatik olarak tespit eder. Kullanıcının cihazı farklı bir hukuki bölgeye geçmişse (örneğin Türkiye'den Avrupa Ekonomik Alanı'na ya da başka bir ülkeye) veya bulunulan bölge için geçerli yasal metin güncellenmiş ve bu metin artık kullanıcının önceden onayladığı metinden farklılaşmışsa, uygulama ilgili bölgenin yürürlükteki yasal metnini ekrana getirir ve KVKK m.5/1 uyarınca <strong>yeni bir açık rıza</strong> alır. Kullanıcı, söz konusu yeni metin kapsamında onayını vermeden uygulamaya erişim sağlanamaz. Önceki onay kaydı geçerliliğini korur; her iki kayıt da cihazda şifreli biçimde saklanmaya devam eder.</p>
-            <ol start="3">
-                <li><strong>Teknik ve Redaksiyonel Değişiklikler:</strong> Kullanıcının haklarını esastan etkilemeyen teknik, idari veya redaksiyonel düzeltmeler için yeniden onay alınmaksızın bilgi ekranıyla duyuru yapılabilir.</li>
-            </ol>
-            <p><strong>Önemli Not:</strong> Uygulamada merkezi push-notification (anlık bildirim) altyapısı bulunmadığından tüm bildirimler, kullanıcının uygulamayı açması sırasında gerçekleştirilir. Uygulamayı uzun süre açmayan kullanıcılar, sözleşme değişikliklerinden bir sonraki uygulamayı açışlarında haberdar edilir.</p>
-
-            <h3>4.3 Bölünebilirlik (Kısmi Hükümsüzlük)</h3>
-            <p>İşbu Sözleşmenin herhangi bir hükmünün uygulanabilir yasalara göre geçersiz veya uygulanamaz bulunması halinde, bu durum Sözleşmenin tamamının geçersizliği sonucunu doğurmaz. Geçersiz veya uygulanamaz bulunan hüküm, sözleşmenin diğer hükümlerini etkilemeksizin Sözleşmeden çıkarılmış sayılır. Sözleşmenin geri kalan geçerli kısımları, bilhassa sorumluluk sınırlaması ve garantilerin reddine ilişkin maddeler, tam olarak yürürlükte kalmaya devam eder.</p>
-
-            <h3>4.4 Yürürlükte Kalma (Beka)</h3>
-            <p>Sorumluluk sınırlaması, garantilerin reddi, uyuşmazlık çözümü, fikri mülkiyet ve zero-knowledge (sıfır bilgi) mimarisi ile veri güvenliğine ilişkin maddeler; uygulamanın kullanıcı tarafından cihazdan silinmesi veya işbu sözleşmenin herhangi bir nedenle feshedilmesinden sonra da süresiz olarak (ebediyen) geçerliliğini korumaya devam edecektir.</p>
-        </section>
-
-        <hr>
-
-        <section id="iletisim">
-            <p><strong>İletişim ve Şirket Bilgileri:</strong></p>
-            <p><strong>Ticari Unvan:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim<br>
-            <strong>Adres:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Türkiye<br>
-            <strong>Vergi No:</strong> 5670114825 (Çorlu Vergi Dairesi)<br>
-            <strong>E-posta:</strong> infocradlelog@gmail.com<br>
-            <strong>Web Sitesi:</strong> www.cebirproje.com</p>
-
-            <p><strong>Tüketici Şikâyet ve Başvuru Yolları (TKHK m.68):</strong></p>
-            <p>6502 sayılı Tüketicinin Korunması Hakkında Kanun m.68 uyarınca, uyuşmazlık tutarına göre aşağıdaki başvuru merciine başvurabilirsiniz:</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Uyuşmazlık Tutarı</th>
-                        <th>Başvuru Mercii</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>İlçe Hakem Heyeti alt eşiğine kadar</td>
-                        <td><strong>İlçe Tüketici Hakem Heyeti</strong></td>
-                    </tr>
-                    <tr>
-                        <td>Alt eşik ile üst eşik arasında kalan tutarlar</td>
-                        <td><strong>İl Tüketici Hakem Heyeti</strong> (büyükşehirlerde İl Tüketici Hakem Heyeti)</td>
-                    </tr>
-                    <tr>
-                        <td>Üst eşiğin üzerindeki tutarlar</td>
-                        <td><strong>Tüketici Mahkemesi</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p><strong>Not:</strong> Parasal eşikler her yıl Aralık ayında Ticaret Bakanlığı tarafından Resmî Gazete'de yayımlanan tebliğle güncellenmektedir. Güncel değerlere ve başvuru formlarına <strong>https://www.tuketicihakemheyeti.gov.tr</strong> adresinden ulaşabilirsiniz. Büyükşehir statüsündeki illerde ilçe veya il heyeti yetkisi farklılık gösterebilmektedir; başvurmadan önce bulunduğunuz yere göre yetkili merciyi doğrulayınız.</p>
-        </section>
-
-        <p class="highlight-text">Bu belge, 6698 sayılı Kişisel Verilerin Korunması Kanunu, 6502 sayılı Tüketicinin Korunması Hakkında Kanun, 6098 sayılı Türk Borçlar Kanunu ve ilgili mevzuat uyarınca hazırlanmıştır. Kullanıcı, uygulamayı kullanarak bu metinleri okuduğunu, anladığını ve kabul ettiğini beyan eder.</p>
-
-    </div>
-
-    <footer>
-        <p>Cradly &copy; 2026. Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim. Tüm hakları saklıdır.</p>
-    </footer>
+    <p><strong>KRİTİK UYARI: ŞİFRELEME ANAHTARI VE VERİ GÜVENLİĞİ</strong></p>
+
+    <p>Şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmaktadır. Cradly, bu anahtarı <strong>BİLMEMEKTE</strong> ve bu anahtara <strong>ERİŞEMEMEKTEDİR</strong>.</p>
+
+    <p><strong>Aşağıdaki durumlarda verileriniz KALICI OLARAK KAYBOLABİLİR:</strong></p>
+
+    <ul>
+        <li>Cihazınızı kaybetmeniz veya çalınması</li>
+        <li>Uygulamayı silip yeniden yüklemeniz</li>
+        <li>Cihazınızın formatlanması veya sıfırlanması</li>
+        <li>İşletim sistemi veya donanım arızası (bellek bozulması, depolama hatası)</li>
+        <li>Hafıza temizleme uygulamalarının kullanılması</li>
+    </ul>
+
+    <p><strong>Gelişmiş Veritabanı Kurtarma (Advanced Recovery) Özelliğimiz:</strong><br>
+    Uygulamamız, yerel veritabanı (SQLite) hasar gördüğünde veya kısmi bozulmalar yaşandığında cihaz içerisinde çalışan araçlarla bozuk veritabanlarını onarmayı dener. Ancak cihazın kaybolması, tamamen formatlanması veya donanımsal olarak çökmesi gibi durumlarda verileri kurtarmak teknik olarak İMKANSIZDIR.</p>
+
+    <p><strong>Cradly hiçbir şartta verilerinizi merkezden (sunucudan) KURTARAMAZ ve veri kaybı durumlarından SORUMLU DEĞİLDİR çünkü:</strong></p>
+
+    <ol>
+        <li>Uygulama verilerinizi MİMARİSİ GEREĞİ aslen sunucuya GÖNDERMEZ, telefonda tutar.</li>
+        <li>Şifreleme anahtarını BİLMEMEKTEDİR ve teknik olarak ERİŞEMEMEKTEDİR.</li>
+        <li>Sistemin teknik olarak hiçbir arka kapısı (backdoor) yoktur.</li>
+        <li>Veriler tamamen cihazınızın güvenliğine bağlıdır.</li>
+    </ol>
+
+    <p><strong>ZORUNLU KULLANICI SORUMLULUĞU:</strong></p>
+
+    <p>Kullanıcı, verilerinin güvenliğinden ve yedeğinden <strong>TAMAMEN SORUMLUDUR</strong>. Bu sorumluluk kapsamında:</p>
+
+    <ul>
+        <li>Düzenli olarak (haftada en az 1 kez) yedek almalıdır</li>
+        <li>Yedekleri güvenli bir yerde saklamalıdır</li>
+        <li>Cihaz değişikliği öncesi mutlaka yedek almalıdır</li>
+        <li>Uygulama güncellemesi öncesi mutlaka yedek almalıdır</li>
+        <li>Cihaz güvenliğini sağlamalıdır (ekran kilidi, güvenli şifre vb.)</li>
+    </ul>
+
+    <p>* Not: Uygulamamızın güvenlik ve Zero-Knowledge mimarisi<br>
+    * gereği; cihazlar arası veri aktarımı, bulut senkronizasyonu,<br>
+    * QR kod veya Bluetooth (BLE) tabanlı "Aile Paylaşımı"<br>
+    * ve muadili veri senkronizasyonu özellikleri<br>
+    * ŞU ANKİ SÜRÜMDE AKTİF DEĞİLDİR (hiçbir veri toplanmaz/aktarılmaz).<br>
+    * Verileriniz tamamen izole ve çevrimdışı (offline) olarak<br>
+    * yalnızca cihazınızda kalır. Gelecek sürümler için veritabanı<br>
+    * altyapısı hazır tutulsa da bu sistemler şu an kapalıdır.</p>
+
+    <p>Bu uyarıları dikkate almayan ve düzenli yedek almayan kullanıcının veri kaybı yaşaması durumunda Cradly hiçbir sorumluluk kabul etmez.</p>
+
+    <h3>1.2 Sunucu Tarafında Tutulan Veriler</h3>
+
+    <p>Cradly uygulamasında, <strong>Kullanım Koşulları (EULA) ve Gizlilik Politikası gibi uygulamaya giriş yapmak için ZORUNLU OLAN temel yasal sözleşmeler dosyalar halinde uygulamanın içine entegre edilmiştir (gömülü varlıklar/assets). Bu zorunlu onay bilgileri (imply consent) hiçbir şekilde sunucumuza GÖNDERİLMEZ</strong>, sadece %100 yerel, cihaz içinde (offline) tutulur ve doğrulanır.</p>
+
+    <p>Cradly tarafından merkezi sunucularda (Supabase) <strong>yalnızca</strong> opsiyonel rıza ispatı için gerekli teknik kayıtlar işlenir:</p>
+
+    <p><strong>A. Opsiyonel Rıza (Consent) Kayıtları:</strong></p>
+    <ul>
+        <li>Cihaz için üretilmiş <strong>Consent ID (UUIDv4)</strong> değerinin SHA-256 özeti (<code>local_uuid_hash</code>)</li>
+        <li>Her rıza olayı için tekil kayıt kimliği (<code>consent_id</code>)</li>
+        <li>Rıza olay türü (<code>consent_type</code> - ör. <code>AD_ALLOWED</code>, <code>CRASHLYTICS_ALLOWED</code>, <code>ANALYTICS_DISABLED</code>)</li>
+        <li>İlgili rıza metninin içerik özeti (<code>consent_text_hash</code>)</li>
+        <li>Uygulama sürüm bilgisi (<code>app_version</code>)</li>
+        <li>Sunucu kayıt zamanı (<code>created_at</code> timestamp)</li>
+    </ul>
+
+    <p><strong>Bu kayıtlar:</strong></p>
+    <ul>
+        <li>Doğrudan kimlik bilgisi içermez (kredi kartı, ad, soyad vb. taşımaz); tek başına ad, soyad, e-posta veya telefon gibi kimlik verilerini ifşa etmez</li>
+        <li>Geri dönüşümsüz (irreversible) hash algoritması ile türetilmiş teknik tanımlayıcılardır</li>
+        <li>Takma adlaştırılmış (pseudonymized) veri niteliğindedir ve ilgili mevzuat kapsamında genel bir hukuki koruma kalkanı amacıyla kişisel veri olarak değerlendirilir</li>
+        <li>Hash'leme tek başına anonimleştirme değildir; ilgili kayıtların ek bilgilerle bir kullanıcıya bağlanabilmesi mümkün olduğu sürece bu veriler anonim veri değil, kişisel veri olarak ele alınır</li>
+    </ul>
+
+    <h3>1.3 Veri Sorumluluğunun Hukuki Niteliği</h3>
+
+    <p>Cradly, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki şekilde veri sorumlusu sıfatını taşımaktadır:</p>
+
+    <p><strong>a) İsteğe Bağlı Rıza Kayıtları Bakımından (SINIRLI VERİ SORUMLUSU):</strong></p>
+
+    <ul>
+        <li>Opsiyonel rıza kayıtlarına ilişkin takma adlaştırılmış teknik loglar (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>)</li>
+        <li>(Zorunlu hizmet sözleşmelerinin onayı cihaz içinde kaldığından Cradly bu lokal eylemlerden ötürü veri toplayan taraf değildir.)</li>
+    </ul>
+
+    <p>Bu veriler bakımından Cradly <strong>sınırlı kapsamda veri sorumlusudur</strong>.</p>
+
+    <p><strong>b) Sağlık Verileri Bakımından:</strong></p>
+
+    <p>Kullanıcının cihazında şifrelenmiş sağlık verilerine hiçbir teknik erişimimiz bulunmadığından, bu verilerin içeriği bakımından fiili bir veri işleyen veya merkezi veri sorumlusu kapasitesinde hareket etmiyoruz. İşleme araçları yazılım tarafından sağlansa da veri kontrolü münhasıran kullanıcıdadır.</p>
+
+    <p><strong>Gerekçe:</strong></p>
+
+    <ol>
+        <li><strong>Teknik Erişim Yokluğu:</strong> Bu veriler kullanıcının cihazında AES-256 şifrelemesiyle saklanmakta olup, Cradly bu verilerin içeriğine teknik olarak ERİŞEMEZ.</li>
+        <li><strong>Şifreleme Anahtarı Kontrolü:</strong> 32 baytlık şifreleme anahtarı yalnızca kullanıcının cihazında üretilmekte ve saklanmakta olup, Cradly bu anahtarı BİLMEMEKTE ve bu anahtara hiçbir şekilde ERİŞEMEMEKTEDİR.</li>
+        <li><strong>Veri İşleme Amacı ve Vasıtasının Belirlenmesi:</strong> Bu veriler, kullanıcının belirlediği amaçlarla (bebek bakım takibi), kullanıcının kontrolünde işlenmektedir. Cradly, sadece teknik altyapıyı (uygulama yazılımı, şifreleme kütüphanesi) sağlamaktadır.</li>
+        <li><strong>Kullanıcının Veri Sorumlusu Sıfatı:</strong> Kullanıcı, kendi cihazında saklanan ve yalnızca kendisinin erişebildiği bu veriler bakımından <strong>"kişisel veri sorumlusu"</strong> sıfatını haizdir.</li>
+    </ol>
+
+    <p><strong>ANCAK Cradly, Teknik Altyapı Sağlayıcı Olarak:</strong></p>
+
+    <p>Cradly, bu verilerin işlenmesine olanak sağlayan teknik altyapıyı sağladığından, KVKK m.3 kapsamında <strong>teknik altyapı sağlayıcı</strong> sıfatıyla aşağıdaki yükümlülükleri taşır:</p>
+
+    <ul>
+        <li>Güvenli işleme ortamı sağlama (AES-256 şifreleme standardı, OWASP güvenlik standartları)</li>
+        <li>Kullanıcıyı aydınlatma (KVKK m.10)</li>
+        <li>Teknik düzeyde veri güvenliği önlemleri alma (KVKK m.12)</li>
+        <li>Kullanıcıyı veri kaybı riskleri konusunda uyarma</li>
+    </ul>
+
+    <p><strong>Veri İçeriği Üzerinde Tasarruf Hakkı:</strong></p>
+
+    <p>Cradly, sağlık verilerinin <strong>içeriğine erişemediğinden</strong>, bu veriler bakımından KVKK m.11 kapsamındaki bazı haklar (örneğin verilerin düzeltilmesi, silinmesi, üçüncü kişilere aktarıldıysa bilgilendirilme) doğrudan Cradly'a yöneltilemez.</p>
+
+    <p>Bu haklar, verilerin bulunduğu cihazın sahibi ve verilere tek başına erişim yetkisine sahip olan <strong>kullanıcı tarafından</strong> doğrudan kullanılabilir. Kullanıcı, uygulamayı kullanarak kendi verilerini görüntüleyebilir, düzeltebilir, silebilir veya dışa aktarabilir.</p>
+
+    <blockquote>
+        <strong>⚠️ KVKK Kurul Kararlarına İlişkin İhtiyat Beyanı:</strong><br><br>
+        Veri sorumlusu statüsüne ilişkin yukarıdaki değerlendirme, yerel şifreli yazılım araç sağlayıcıları bakımından henüz yerleşik bir KVKK Kurul kararının bulunmadığı ve aktif hukuki yoruma açık olan mevcut durumda Cradly'un benimsediği tutumu yansıtmaktadır. Söz konusu alan, KVKK Kurulu'nun kararları ve akademik görüşlerle gelişmeye devam etmektedir. Kişisel Verileri Koruma Kurulu'nun bu konuda farklı bir değerlendirme benimsemesi veya uygulamayı bağlayan bir karar vermesi halinde, Cradly gerekli uyum adımlarını derhal atmayı, uygulanabilir tüm yasal yükümlülükleri yerine getirmeyi ve kullanıcıları zamanında bilgilendirmeyi taahhüt eder.
+    </blockquote>
+
+    <h3>1.4 Veri Sorumluluğunun Sınırları</h3>
+
+    <p>Cradly, uygulama içerisinde kullanıcı tarafından girilen sağlık verilerinin içeriğine erişemez, bu verileri merkezi bir sunucuda depolamaz ve bu veriler üzerinde herhangi bir tasarrufta bulunmaz.</p>
+
+    <p>Bu nedenle Cradly'un veri sorumluluğu yalnızca aşağıdaki faaliyetlerle sınırlıdır:</p>
+
+    <ul>
+        <li>İsteğe bağlı (opsiyonel) rıza kayıtlarının KVKK uyum ispatı kapsamında tutulması (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>)</li>
+        <li>Reklam gösterimi için gerekli olan cihaz kimlik verilerinin işlenmesi, bu kapsamdaki muvafakatlerin GDPR ve benzeri yasal çerçevelerle Google UMP (veya karşılığı) üzerinden yönetimi (sadece ücretsiz kullanıcılar için).</li>
+    </ul>
+
+    <p><strong>(Kullanım Şartları ve Gizlilik Politikası gibi uygulamayı kullanmak için gerekli temel, zorunlu (hard-gate) metinlerin onay bilgisi sunucuya GÖNDERİLMEZ, uygulamanın içerisine gömülü (embedded assets) metinler üzerinden cihazda <code>%100 yerel (offline)</code> olarak tutulur.)</strong></p>
+
+    <p>Kullanıcının yerel cihazında saklanan sağlık verileri, bebek profilleri, fotoğraflar, notlar ve benzeri tüm içerikler bakımından Cradly, 6698 sayılı KVKK kapsamında <strong>veri sorumlusu veya veri işleyen sıfatına sahip değildir</strong>.</p>
+
+    <h3>1.5 Üçüncü Taraf Hizmetler</h3>
+
+    <h4>1.5.1 Supabase (Veri Depolama Altyapısı)</h4>
+
+    <p><strong>Amaç:</strong> Yalnızca isteğe bağlı (opsiyonel) rıza kayıtlarının (Analytics, Crashlytics vb.) onay seçimlerinin saklanması. Giriş için zorunlu (hard-gate) olan Gizlilik Politikası ve Kullanımı Koşulu beyanlarının onayları Supabase'e GÖNDERİLMEZ.</p>
+
+    <p><strong>Sunucu Lokasyonu:</strong> Supabase proje bölgesi Avrupa Birliği içinde <strong>eu-west-3 (Paris, Fransa)</strong> olarak yapılandırılmıştır. Bununla birlikte, hizmetin teknik işletimi kapsamında Supabase'in yetkili alt işleyenleri tarafından sınırlı veri işleme faaliyetleri farklı ülkelerde gerçekleşebilir. Bu nedenle yurt dışı veri aktarımı, KVKK'nın güncel 9. maddesi kapsamında uygun aktarım mekanizması ve sözleşmesel güvencelerle yürütülür.</p>
+
+    <p><strong>Aktarılan Veriler:</strong></p>
+    <ul>
+        <li><strong>Rıza işlemleri için:</strong> <code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code> (sunucu zaman damgası)</li>
+    </ul>
+
+    <p><strong>AKTARILMAYAN VERİLER:</strong></p>
+    <ul>
+        <li>Sağlık verileri</li>
+        <li>Bebek profil bilgileri</li>
+        <li>Kredi kartı bilgileri, İsim-Soyisim veya benzeri doğrudan kimlik bilgileri</li>
+        <li>Fotoğraflar, notlar, kayıtlar</li>
+    </ul>
+
+    <p><strong>Hukuki Dayanak:</strong></p>
+    <ul>
+        <li>Opsiyonel rıza kayıtlarının işlenmesi bakımından: <strong>Hukuki Yükümlülük</strong> (KVKK m.5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK m.5/2-f)</li>
+        <li>Yurt dışına aktarım bakımından: <strong>KVKK m.9 kapsamında Standart Veri Koruma Sözleşmesi (SDKK)</strong> — Supabase Inc. ile akdedilen ve Supabase'in AB veri merkezi (eu-west-3, Paris/Fransa) genelindeki veri işleme şartlarını kapsayan Veri İşleme Sözleşmesi (DPA), KVKK Kurulu tarafından öngörülen SDKK kapsamındaki güvenceleri içermektedir. Supabase'in yetkili alt işleyenlerinin AB dışında da sınırlı ölçüde veri işleyebileceği gözetilerek bu sözleşmesel güvenceler tüm aktarım zincirini kapsamaktadır.</li>
+        <li>Supabase ile yürürlükteki Veri İşleme Sözleşmesi (DPA) kapsamında teknik ve idari güvenlik tedbirleri uygulanır</li>
+        <li><strong>DPA imzalandı, tarih: 28.02.2026.</strong></li>
+        <li>Uyum arşiv kaydı: <code>assets/legal/compliance/Supabase_User_DPA.pdf</code></li>
+    </ul>
+
+    <h4>1.5.2 Reklam Hizmetleri (Google AdMob)</h4>
+
+    <p><strong>Kapsam:</strong> YALNIZCA ücretsiz sürüm kullanıcıları</p>
+
+    <p><strong>Reklam Türü ve İçeriği:</strong><br>
+    Uygulama, Google AdMob altyapısını kullanmaktadır. Uygulamanın hedef kitlesi yetişkinler (ebeveynler) olmakla birlikte, uygulamanın hassas doğası gereği reklam içerikleri "G" (General Audience - Genel İzleyici) seviyesinde filtrelenmektedir.<br>
+    Kullanıcıya gösterilecek reklamlar; kullanıcının cihazındaki reklam kimliği (IDFA/GAID) baz alınarak sunulabilir. Ancak kesinlikle uygulama içine girilen bebek sağlık verileri, isimler veya notlar reklam hedeflemesi amacıyla kullanılmaz ve reklam sağlayıcılarla paylaşılmaz.</p>
+
+    <p><strong>İşlenen Veriler:</strong></p>
+    <ul>
+        <li><strong>iOS cihazlarda:</strong> IDFA (Identifier for Advertisers) - Apple tarafından cihaza atanan reklam kimliği</li>
+        <li><strong>Android cihazlarda:</strong> GAID (Google Advertising ID) - Google tarafından cihaza atanan reklam kimliği</li>
+    </ul>
+
+    <p><strong>Veri Sorumlusu:</strong> Bu veriler bakımından veri sorumlusu <strong>Google LLC</strong>'dir. Cradly, sadece aracılık eden teknik platform sağlayıcısıdır.</p>
+
+    <p><strong>İşleme Amacı:</strong></p>
+    <ul>
+        <li>Bulunduğunuz bölgeye ve gizlilik tercihlerinize bağlı olarak kişiselleştirilmiş veya kişiselleştirilmemiş reklam gösterimi</li>
+        <li>Reklam frekans kontrolü (aynı reklamın tekrar gösterilmemesi)</li>
+        <li>Reklam performans ölçümü (anonim istatistikler)</li>
+    </ul>
+
+    <p><strong>Veri Aktarım Yeri ve Hukuki Dayanak (KVKK m.9):</strong><br>
+    1 Haziran 2024 tarihinde değişen KVKK Madde 9 hükümleri gereği, veriler uygun güvence niteliği taşıyan ve Kişisel Verileri Koruma Kurulu tarafından kabul edilen <strong>Standart Veri Koruma Sözleşmesi (SCC - Standard Contractual Clauses)</strong> doğrultusunda Amerika Birleşik Devletleri'ne (Google LLC sunucuları) aktarılmaktadır.</p>
+
+    <p><strong>Google AdMob DPA/Terimler Bilgilendirmesi:</strong><br>
+    Google AdMob bakımından veri işleme şartları ve yurt dışı aktarımı, Google'ın çevrimiçi hizmet şartları ve hesap kullanım sürecinde otomatik kabul modeliyle yürürlüğe giren Standart Veri Koruma Sözleşmesi (SCC) taahhütlerine dayanmaktadır; Supabase'deki gibi ayrı karşı-imzalı bir DPA akışı bulunmayabilir. Resmi Google metni: https://privacy.google.com/businesses/processorterms/ (güncel yönlendirme: https://business.safety.google/adsprocessorterms/)</p>
+
+    <p><strong>Kullanıcı Hakları:</strong></p>
+    <p>Kullanıcı, reklam kimliğini kontrol etme haklarına sahiptir:</p>
+    <ul>
+        <li><strong>iOS:</strong> Ayarlar > Gizlilik ve Güvenlik > Apple Advertising > Reklam Tanımlayıcısını Sıfırla</li>
+        <li><strong>Android:</strong> Ayarlar > Google > Reklamlar > Reklam Kimliğini Sıfırla</li>
+    </ul>
+
+    <p><strong>REKLAM GÖSTERİMİNİN HUKUKİ DAYANAĞI — İKİ AYRI KATMAN:</strong></p>
+
+    <p>Reklam gösterimine ilişkin hukuki çerçeve iki ayrı katmandan oluşmaktadır:</p>
+
+    <hr>
+
+    <p><strong>1. KATMAN — Reklam Gösterimi (Sözleşme Şartı)</strong></p>
+
+    <p>Ücretsiz sürümde reklam gösterimi, kullanıcının Kullanım Koşulları'nı (EULA) kabul etmesiyle birlikte yürürlüğe giren <strong>freemium hizmet modelinin ayrılmaz bir parçasıdır</strong>. Reklam desteği, uygulamanın kullanıcısından doğrudan ücret almaksızın sunulabilmesinin finansal dayanağıdır.</p>
+
+    <ul>
+        <li>Reklam gösterimi, açık rızaya değil, <strong>Kullanım Koşulları sözleşmesine</strong> (TBK m.26, KVKK m.5/2-e kapsamında sözleşmenin ifası) dayanır.</li>
+        <li>Bu uygulama, Spotify, YouTube ve diğer reklam destekli ücretsiz uygulamalarla aynı freemium modelini kullanmaktadır: ücretsiz erişim karşılığında reklam gösterimi sözleşme şartıdır.</li>
+        <li>Uygulamaya ilk girdiğiniz <strong>7 gün boyunca ve en az 8 kayıt girene kadar</strong> size "Sıfır Reklam" deneyimi sunularak uygulamayı test etme imkânı tanınır.</li>
+        <li>Reklam modülü yalnızca şu koşulların birlikte sağlanması halinde aktifleşir: 7 gün geçmiş olmalı, en az 8 timeline kaydı bulunmalı ve gece saati filtresi karşılanmış olmalıdır.</li>
+        <li><strong>Reklam gösterimini tamamen kaldırmak için</strong> Premium sürümü satın alabilirsiniz.</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>2. KATMAN — Reklam Kişiselleştirme ve Bölgesel Konum (NPA Modu)</strong></p>
+
+    <p>Gösterilen reklamların <em>kişiselleştirilmiş</em> olup olmayacağı, uygulamanın çalıştırıldığı coğrafi bölgeye göre farklılık gösterir:</p>
+
+    <p><strong>A. Türkiye ve Düzenlenmemiş Diğer Bölgeler (Varsayılan NPA):</strong><br>
+    Türkiye (ve Google UMP zorunluluğu bulunmayan benzeri bölgeler) kapsamındaki kullanıcılar için Cradly, reklam kimliğinizi (IDFA/GAID) işlemeyen <strong>Kişiselleştirilmemiş Reklam (NPA - Non-Personalized Ads)</strong> modunu varsayılan olarak uygular.</p>
+
+    <p><strong>iOS İstisnası:</strong> Apple App Store politikaları gereği, iOS cihazlarda bölgeden bağımsız olarak bir "Takip İzni" (App Tracking Transparency) onay penceresi gösterilebilir. Bu onayı vermeniz halinde (İzin Ver seçeneği ile), bu bölgelerde de kişiselleştirilmiş reklamlar görmeyi kabul etmiş sayılırsınız. Onay vermemeniz halinde NPA modu devam eder.</p>
+
+    <p>Android cihazlarda ise bu bölgelerde her zaman NPA modu uygulanır ve herhangi bir reklam rıza (Consent) ekranı <strong>GÖSTERİLMEZ</strong>. Bu özellik sözleşmesel bir freemium şartı olarak tamamen anonim ve bağlamsal çalışır.</p>
+
+    <p><strong>B. AEA (Avrupa Ekonomik Alanı), Birleşik Krallık ve Düzenlenmiş Diğer Bölgeler:</strong><br>
+    Kullanıcı tercih formlarının dayatıldığı bu bölgelerde, kişiselleştirme isteğinizi belirtmeniz için Google UMP onay ekranı gösterilir. Bu menüde verdiğiniz rıza kararı (kabul/ret), cihazınıza atanmış takma adlaştırılmış (pseudonymized) <strong>Consent ID (UUID)</strong> ile şifrelenerek kayıt altına alınır ve reddedilirse NPA olarak devam eder.</p>
+
+    <p><strong>Kişiselleştirme Rızasını Geri Çekme (Sadece Düzenlenmiş Bölgeler):</strong><br>
+    Eğer cihazınız rıza diyaloğunun kullanıldığı düzenlenmiş bir bölgedeyse ve kişiselleştirilmiş reklamlara izin verdiyseniz, rızanızı <strong>Ayarlar > Gizlilik Tercihleri</strong> altından her zaman geri çekebilirsiniz. Rızanızı geri çektiğinizde uygulama NPA moduna geçer. (Türkiye gibi NPA'nın standart olduğu bölgelerde reklamlar başından beri kişiselleştirilmemiş olarak gösterildiği için bu menü reklam çalışma yapısını etkilemez).</p>
+
+    <p><strong>Kullanıcı Seçenekleri Özeti:</strong></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Seçenek</th>
+                <th>Reklamlar</th>
+                <th>IDFA/GAID İşleme</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>(Avrupa/UMP vb) Kişiselleştirilmiş İzin</td>
+                <td>Gösterilir (kişiselleştirilmiş)</td>
+                <td>Evet</td>
+            </tr>
+            <tr>
+                <td>Türkiye/Diğer (Varsayılan NPA)</td>
+                <td>Gösterilir (anonim/bağlamsal)</td>
+                <td>Hayır</td>
+            </tr>
+            <tr>
+                <td>Premium Satın Al</td>
+                <td>Gösterilmez</td>
+                <td>Hayır</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Premium Kullanıcılar:</strong> Premium kullanıcılara hiçbir reklam gösterilmez ve reklam kimliği işlenmez.</p>
+
+    <h4>1.5.2.1 Ödüllü Reklamlar (İsteğe Bağlı, Kullanıcı Tarafından Başlatılan)</h4>
+
+    <p>Standart banner reklamlara ek olarak Cradly, ücretsiz sürüm kullanıcılarının uygulama içi belirli özelliklere karşılık olarak <strong>gönüllü olarak izleyebileceği ödüllü reklamlar (rewarded ads)</strong> sunmaktadır. Bu reklamlar tamamen isteğe bağlıdır ve hiçbir zaman otomatik olarak gösterilmez.</p>
+
+    <p><strong>Ödüllü Reklamların Kullanıldığı Özellikler:</strong></p>
+    <ul>
+        <li><strong>Ninni Arka Plan Oynatma:</strong> Ücretsiz kullanıcılar, uygulamanın dahili ninni oynatıcısında arka planda ses çalmayı geçici olarak açmak için bir ödüllü reklam izleyebilir (seans başına en fazla 60 dakika, biriktirilebilir).</li>
+        <li><strong>14 Günlük Rapor Dışa Aktarma:</strong> Ücretsiz kullanıcılar, 14 günlük detaylı istatistik raporunu tek seferlik dışa aktarmak için bir ödüllü reklam izleyebilir.</li>
+    </ul>
+
+    <p><strong>Aktivasyon Koşulları:</strong></p>
+    <p>Standart reklamların aksine, ödüllü reklamlar <strong>7 günlük bekleme süresine, 8 kayıt eşiğine ve gece saati filtresine tabi DEĞİLDİR.</strong> Yalnızca aşağıdaki iki koşulun karşılanması yeterlidir:</p>
+    <ol>
+        <li>Geçerli reklam rızasının (consent) mevcut olması</li>
+        <li>Aktif bir internet bağlantısının bulunması</li>
+    </ol>
+
+    <p><strong>Tamamen İsteğe Bağlı:</strong></p>
+    <p>Ödüllü reklam izlemek hiçbir zaman zorunlu değildir. Reklam izlemek istemeyen kullanıcılar bu özelliklere reklamsız erişmek için Premium sürümü satın alabilir ya da söz konusu özellikleri kullanmamayı tercih edebilirler.</p>
+
+    <p><strong>İşlenen Veriler ve Kişiselleştirme:</strong> Ödüllü reklamlar, standart banner reklamlarla <strong>aynı rıza kararını</strong> kullanır. Google UMP'nin uygulandığı bölgelerde (AEA, Birleşik Krallık, ABD'nin düzenlenmiş eyaletleri), kullanıcının UMP onay formunda verdiği tercihe göre reklamlar <strong>kişiselleştirilmiş veya kişiselleştirilmemiş</strong> olabilir — Google'ın SDK'sı, hedefleme karını IABTCF onay dizesine (consent string) göre verir. Bu düzenlenmiş bölgeler dışında ise uygulama, kullanıcının eylemine bakılmaksızın <strong>kişiselleştirilmemiş (NPA) modu zorunlu olarak</strong> uygular. Hiçbir durumda, <strong>bebeğe ait sağlık verileri reklam ağlarıyla paylaşılmaz</strong> ve herhangi bir reklam hedeflemesinde kullanılmaz.</p>
+
+    <h4>1.5.3 Telemetri, Çökme Raporları ve Kullanım Analitiği</h4>
+
+    <p>Cradly, uygulamanın kararlılığını ve performansını iyileştirmek amacıyla, yalnızca <strong>kullanıcının açık rızası</strong> ile anonim çökme raporları (Firebase Crashlytics) ve kullanım analitiği verileri (Firebase Analytics) toplar. Bu seçenekler <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir.</p>
+
+    <p><strong>Toplanan Veriler (Anonim ve Teknik Nitelikte):</strong></p>
+    <ul>
+        <li>Çökme Bilgileri: Çökme anındaki teknik detaylar (hatanın oluştuğu kod satırı, cihaz belleği durumu, iş parçacığı bilgisi vb.).</li>
+        <li>Cihaz Bilgileri (Anonim): Cihaz modeli, işletim sistemi versiyonu, dil ve bölge ayarları, pil seviyesi, boş depolama alanı gibi isimsizleştirilmiş teknik bilgiler.</li>
+        <li>Uygulama Bilgileri: Uygulamanın sürüm numarası ve kurulu olduğu paket adı.</li>
+        <li>Kullanım Analitiği: Uygulama açılışları, ekran görüntüleme sayıları ve temel etkileşim ölçümleri (ör. buton tıklamaları).</li>
+    </ul>
+
+    <p><strong>TOPLANMAYAN / İŞLENMEYEN VERİLER:</strong></p>
+    <ul>
+        <li>Kullanıcı kimliği (isim, e-posta, telefon).</li>
+        <li>Kullanıcı tarafından girilen herhangi bir içerik (bebek profilleri, sağlık kayıtları, notlar, fotoğraflar).</li>
+        <li>Konum verileri.</li>
+        <li>Cihaz reklam kimliği (IDFA/GAID) veya benzeri tanımlayıcılar.</li>
+    </ul>
+
+    <p><strong>Veri Sorumlusu ve İşleme Amacı:</strong></p>
+    <ul>
+        <li>Veri Sorumlusu: Toplanan bu anonim teknik veriler bakımından, veri işleme faaliyetinin asıl amacını ve vasıtasını belirleyen taraf Cradly'dur.</li>
+        <li>İşleme Amacı: Uygulamadaki hataları tespit etmek, önceliklendirmek ve düzeltmek; kararlılığı ve performansı artırmak; böylece tüm kullanıcılar için daha iyi bir deneyim sunmak.</li>
+        <li>Hukuki Dayanak: İşleme bakımından KVKK Md. 5/1 uyarınca <strong>açık rıza</strong>; yurt dışına aktarım bakımından KVKK Md. 9 kapsamında uygun aktarım mekanizması.</li>
+    </ul>
+
+    <p><strong>Veri İşleyen ve Aktarım:</strong></p>
+    <ul>
+        <li>Veri İşleyen: Crash raporlarının teknik altyapısı Google LLC tarafından sağlanmaktadır. Google, bu hizmet kapsamında Cradly adına veri işleyen sıfatıyla hareket etmektedir.</li>
+        <li>Veri Aktarımı: Toplanan anonim teknik veriler, işleme amacına uygun olarak Amerika Birleşik Devletleri'nde bulunan Google sunucularına aktarılabilir. Bu aktarım, KVKK m.9 kapsamında uygun aktarım mekanizması ve sözleşmesel güvenceler çerçevesinde yürütülür.</li>
+        <li>Güvenlik: Google, veri işleyen olarak endüstri standartlarında güvenlik önlemleri uygulamayı taahhüt etmektedir. Firebase/Google tarafında yürürlükteki veri işleme sözleşmeleri (DPA) esas alınır. Firebase hizmetlerinde DPA hükümleri, Google/Firebase sözleşme seti içinde hesap oluşturma/kullanım sürecinde otomatik kabul modeliyle yürürlüğe girebilir; Supabase'deki gibi ayrı karşı-imzalı DPA akışı bulunmayabilir. Resmi Firebase DPA metni: https://firebase.google.com/terms/data-processing-terms</li>
+    </ul>
+
+    <p><strong>Kullanıcı Kontrolü:</strong><br>
+    Kullanıcı, uygulamanın ayarlar bölümünden Crashlytics ve Analytics seçeneklerini dilediği zaman kapatabilir. Bu seçenekler kapalı olduğunda cihazdan hiçbir çökme raporu veya kullanım analitiği verisi toplanmaz ve gönderilmez.</p>
+
+    <h4>1.5.4 Premium Abonelik Yönetimi (RevenueCat)</h4>
+
+    <p><strong>Kapsam:</strong> YALNIZCA Premium sürüm kullanıcıları veya satın alma işlemini başlatanlar.</p>
+
+    <p><strong>Amaç:</strong> Uygulama içi satın alımların ve aboneliklerin güvenli bir şekilde yönetilmesi, uygulama mağazaları (Apple App Store ve Google Play Store) ile senkronize edilmesi.</p>
+
+    <p><strong>İşleyen Taraf:</strong> RevenueCat Inc.</p>
+
+    <p><strong>İşlenen Veriler:</strong> Satın alma işlemlerine ait anonim platform faturaları ve uygulama tarafından atanan anonim Kullanıcı ID'si (App User ID). Bu veriler arasında doğrudan adınız, e-posta adresiniz veya kredi kartı numaranız <strong>BULUNMAZ</strong>. Tüm ödeme işlemleri Apple veya Google tarafından kendi güvenli sistemlerinde yapılır; Cradly ve RevenueCat yalnızca bu işlemin başarılı olup olmadığı bilgisini anonim token'lar üzerinden doğrular.</p>
+
+    <p><strong>Hukuki Dayanak:</strong> Sözleşmenin İfası (KVKK m.5/2-c) ve sahteciliği önlemek adına Veri Sorumlusunun Meşru Menfaati (KVKK m.5/2-f) kapsamında işlenir. Yurt dışı aktarımı bakımından RevenueCat ile uygulanabilir standart veri koruma sözleşmeleri geçerlidir.</p>
+
+    <h3>1.6 Çocuk Verileri ve Yasal Temsilcilik</h3>
+
+    <h4>1.6.1 Hedef Kitle ve Kullanım Amacı (COPPA/GDPR-K Beyanı)</h4>
+
+    <p>Cradly, içerik olarak bebek bakımını konu almakla birlikte; hedef kitlesi ve fiili kullanıcıları bakımından "Çocuğa Yönelik (Child-Directed)" bir uygulama DEĞİLDİR. Uygulama, münhasıran 18 yaş ve üzeri ebeveynlerin/vasilerin kullanımı için tasarlanmış bir ebeveyn asistanı aracıdır.<br>
+    Uygulama, çocuklar tarafından kullanılmak üzere tasarlanmamıştır ve çocukların cihazla doğrudan etkileşime girmesi öngörülmemektedir. Bu nedenle reklam ve veri işleme politikaları "Genel İzleyici (Yetişkin)" standartlarına göre belirlenmiştir.</p>
+
+    <p><strong>Cihaz Güvenliği Uyarısı:</strong><br>
+    Uygulama, ebeveynlere yöneliktir ve hassas veriler içerir. Çocuğunuzun cihazı kullanması durumunda verilerin yanlışlıkla silinmesini veya değiştirilmesini önlemek amacıyla, cihazınızın ekran kilidi özelliklerini kullanmanız ve uygulamayı çocukların erişimine açık bırakmamanız önemle tavsiye edilir.</p>
+
+    <h4>1.6.2 Yasal Temsilcilik Beyanı</h4>
+
+    <p>Kullanıcı, uygulamayı kullanarak aşağıdaki hususları KABUL ve BEYAN eder:</p>
+    <ul>
+        <li>18 yaşından büyük olduğunu</li>
+        <li><strong>Uygulamada ekleyeceği bebek veya bebeklerin</strong> yasal temsilcisi (anne, baba veya yasal vasi) sıfatıyla hareket ettiğini</li>
+        <li>Çocuğa/çocuklara ait özel nitelikli kişisel verileri (sağlık verileri) işleme yetkisine sahip olduğunu</li>
+        <li>Bu verileri işlemek için gerekli yasal dayanağa sahip olduğunu</li>
+    </ul>
+
+    <h4>1.6.3 Reklam İçerik Güvenliği</h4>
+
+    <p>Uygulama yetişkinlere yönelik olsa da, bir bebek bakım aracı olması sebebiyle gösterilen reklamların "Aile Güvenliği" standartlarına uyması taahhüt edilir.<br>
+    Bu kapsamda Cradly:</p>
+    <ul>
+        <li>Reklam içerik derecelendirmesini teknik olarak "G" (General Audience) seviyesinde sınırlar.</li>
+        <li>Kumar, cinsellik, şiddet, alkol ve benzeri hassas kategorilerdeki reklamların gösterimini teknik filtrelerle engeller.</li>
+        <li>Uygulama içine girilen çocuk verilerini (sağlık, boy, kilo vb.) reklam hedeflemesi için ASLA kullanmaz. Hedefleme sadece yetişkin kullanıcının (ebeveynin) anonim reklam kimliği üzerinden, genel ilgi alanlarına göre yapılabilir</li>
+    </ul>
+
+    <hr>
+
+    <a id="terms"></a>
+    <h2>2. KULLANIM KOŞULLARI (EULA - SON KULLANICI LİSANS SÖZLEŞMESİ)</h2>
+
+    <h3>2.1 Tıbbi Feragatname ve Uygulamanın Niteliği</h3>
+
+    <h4>2.1.1 Ürün Tanımı</h4>
+
+    <p>Cradly, <strong>tıbbi cihaz, tanı aracı veya tedavi yöntemi DEĞİLDİR</strong>. Uygulama, ebeveynlerin bebek bakım süreçlerini organize etmelerine yardımcı olan bir <strong>kayıt tutma, organizasyon ve hatırlatma aracıdır</strong>.</p>
+
+    <p>Cradly:</p>
+    <ul>
+        <li>Tıbbi teşhis koymaz</li>
+        <li>Hastalık tanısı yapmaz</li>
+        <li>Tedavi önerisi sunmaz</li>
+        <li>Reçete veya ilaç önerisi vermez</li>
+        <li>Sağlık durumu değerlendirmesi yapmaz</li>
+        <li>Tıbbi acil durum tespiti yapmaz</li>
+    </ul>
+
+    <h4>2.1.2 Tıbbi Kararlar ve Profesyonel Destek</h4>
+
+    <p>Bebek sağlığına, gelişimine, beslenmesine ve bakımına ilişkin <strong>TÜM KARARLAR</strong> mutlaka <strong>lisanslı sağlık profesyonelleri</strong> (pediatrist, çocuk doktoru, diyetisyen, aile hekimi vb.) tarafından alınmalıdır.</p>
+
+    <p><strong>KULLANICI KABUL EDER Kİ:</strong></p>
+    <ul>
+        <li>Uygulamada yer alan bilgiler genel nitelikte bilgilendirme amaçlıdır</li>
+        <li>Bu bilgiler tıbbi tavsiye yerine geçmez</li>
+        <li>Sağlık ile ilgili her türlü karar öncesinde mutlaka hekim görüşü alınmalıdır</li>
+        <li>Acil durumlarda (yüksek ateş, solunum problemi, beslenme reddi vb.) uygulama kullanılmayacak, doğrudan sağlık kuruluşuna başvurulacaktır</li>
+    </ul>
+
+    <p><strong>KATI GIDA VE ALERJİ TAKİBİ - "BOŞ NOT DEFTERİ" NİTELİĞİ:</strong><br>
+    Uygulama içerisinde ek gıdaya geçiş, tarifler veya bebek alerjilerini takip etmeye yönelik modüller tamamen ve yalnızca <strong>"Boş Bir Dijital Not Defteri"</strong> olarak çalışmaktadır. Cradly; önceden tanımlanmış hiçbir menü, diyet tavsiyesi veya tıbbi çıkarım SUNMAZ veya DESTEKLEMEZ. Girilen tüm gıda isimleri ve reaksiyon kayıtları (kızarıklık, gaz, alerji vb.) %100 oranında kullanıcının kendi beyanıdır (User-Generated Content). Cradly, kullanıcının kendi yazdığı notların ve alarmların doğruluğunu garanti etmez. Diyet seçimlerinde doğrudan bir diyetisyen/pediatriste danışmak ve alerjik reflekslerde acil tıbbi destek almak, oran ve porsiyon belirlemek ebeveynlerin ve yasal vasilerin <strong>%100 mutlak şahsi sorumluluğundadır</strong>.</p>
+
+    <h3>2.2 Güncelleme, Veri Kaybı ve Uyumsuzluk Riskleri</h3>
+
+    <h4>2.2.1 Güncelleme Politikası</h4>
+
+    <p>Uygulama güncellemeleri, güvenlik, performans iyileştirmeleri ve işlevsel geliştirmeler amacıyla yayınlanmaktadır.</p>
+
+    <p>Cradly, güncellemelerin mevcut verilerle uyumlu şekilde çalışması için uygulamanın niteliği, teknik kapasitesi ve sunulduğu kullanım koşulları çerçevesinde <strong>makul ölçüde teknik özen</strong> göstermekle yükümlüdür.</p>
+
+    <h4>2.2.2 Güncelleme Öncesi ZORUNLU Yedekleme</h4>
+
+    <p><strong>KRİTİK UYARI - ZORUNLU İŞLEM:</strong></p>
+
+    <p>Kullanıcı, <strong>HER UYGULAMA GÜNCELLEMESİ ÖNCESİNDE MUTLAKA YEDEK ALMAKLA YÜKÜMLÜDÜR</strong>.</p>
+
+    <p><strong>Yedekleme Yapılmaması Durumunda:</strong></p>
+    <ul>
+        <li>Güncelleme sonrası veriler kaybolabilir</li>
+        <li>Veri tabanı uyumsuzluğu oluşabilir</li>
+        <li>Şifreleme anahtarı bozulabilir</li>
+        <li>Veriler kurtarılamaz hale gelebilir</li>
+    </ul>
+
+    <p><strong>Cradly, güncelleme öncesi yedek alınmaması nedeniyle oluşan veri kayıplarından SORUMLU DEĞİLDİR.</strong></p>
+
+    <p>Yerel cihazda tutulan verilerin; işletim sistemi kısıtları, cihaz donanımı, üçüncü taraf yazılımlar, kullanıcı tarafından yedek alınmaması veya öngörülemeyen teknik hatalar nedeniyle zarar görmesi veya kaybolması mümkündür.</p>
+
+    <p>Bu tür durumlarda Cradly, makul teknik özenin gösterilmiş olması kaydıyla, veri kaybından sorumlu tutulamaz.</p>
+
+    <p>Cradly'un kasıtlı davranışı veya ağır kusuru hâllerinde doğabilecek sorumluluklar bu hükmün kapsamı dışındadır.</p>
+
+    <h3>2.3 Veri Kaybı ve Yedekleme Sorumluluğu</h3>
+
+    <p>Tüm veriler yalnızca kullanıcının cihazında saklandığından, düzenli yedek alınması kullanıcının sorumluluğundadır.</p>
+
+    <p><strong>Uygulama içi yedekleme sistemi:</strong></p>
+    <ul>
+        <li>Ayarlar ilk kez açıldığında yedekleme bilgilendirme dialogu gösterilir</li>
+        <li>7 günde bir "Yedek Al" hatırlatma dialogu gösterilir</li>
+        <li>Dialog'dan tek tıkla yedek alma imkanı sunulur</li>
+    </ul>
+
+    <p>Kullanıcı bu hatırlatmalara rağmen yedek almaz ise, veri kaybı riski tamamen kullanıcının sorumluluğundadır.</p>
+
+    <h3>2.4 GARANTİLERİN REDDİ, SORUMLULUK SINIRLAMASI VE MADDİ TAZMİNAT TAVANI</h3>
+
+    <p><strong>GARANTİLERİN REDDİ (ZIMNİ GARANTİLERDEN MUAFİYET):</strong><br>
+    <strong>UYGULAMA "OLDUĞU GİBİ" VE "MEVCUT OLDUĞU ŞEKLİYLE" SUNULMAKTADIR. UYGULANABİLİR KANUNLARIN İZİN VERDİĞİ EN GENİŞ ÖLÇÜDE, CRADLY; TİCARİ ELVERİŞLİLİK (MERCHANTABILITY), BELİRLİ BİR AMACA UYGUNLUK (FITNESS FOR A PARTICULAR PURPOSE) VE İHLAL ETMEME GİBİ ZIMNİ GARANTİLER DAHİL OLMAK ÜZERE AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERMEMEMEKTEDİR. UYGULAMANIN KESİNTİSİZ ÇALIŞACAĞI, YAZILIM HATASI (BUG) İÇERMEYECEĞİ VEYA CİHAZ GÜVENİLİRLİĞİNİN VERİ KAYBINI KESİN OLARAK ENGELLEYECEĞİ GARANTİ EDİLMEZ.</strong></p>
+
+    <h4>2.4.1 ÜCRETSİZ SÜRÜM SORUMLULUĞU (Reklam Destekli Bedelsiz Hizmet Modeli)</h4>
+
+    <p><strong>Hukuki Nitelik:</strong></p>
+
+    <p>Ücretsiz sürüm, kullanıcıya doğrudan parasal bedel talep edilmeksizin sunulan bir yazılım hizmetidir. Hizmetin sürdürülebilirliği, yalnızca ücretsiz sürüm kullanıcılarına yönelik reklam gösterimi (Google AdMob) aracılığıyla sağlanmaktadır. Bu yapı itibarıyla söz konusu hizmet, <strong>reklam destekli bedelsiz (freemium) bir hizmet modeli</strong> niteliğindedir; kullanıcıdan doğrudan ücret alınmamakla birlikte dolaylı ticari bir ilişki mevcuttur.</p>
+
+    <p><strong>Sorumluluk Rejimi:</strong></p>
+
+    <p>Hizmetin doğrudan parasal bedel alınmaksızın "olduğu gibi" (as-is) sunulması ve kullanıcının bu hizmeti ücretsiz kullandığı gözetilerek, TBK m.26 (sözleşme özgürlüğü) ve m.115 (sorumluluktan önceden muafiyet sınırları) çerçevesinde aşağıdaki sorumluluk sınırlaması taraflarca karşılıklı olarak kabul edilmiştir:</p>
+
+    <p>Bu kapsamda Cradly:</p>
+    <ul>
+        <li>✓ <strong>Kasıt ve ağır kusur</strong> hallerinde her koşulda sorumludur</li>
+        <li>✗ <strong>Basit kusur (hafif ihmal)</strong> hallerinde, doğrudan ve öngörülebilir somut bir zarara yol açmadığı sürece sorumluluk kabul etmez</li>
+        <li>✗ Yazılım hataları, çökmeler veya üçüncü taraf altyapıdan kaynaklanan veri kayıpları nedeniyle tazminat ödemez</li>
+        <li>✗ Kullanıcının yedek almama ya da güncelleme öncesi yedek almama tercihinden doğan kayıplar için tazminat ödemez</li>
+    </ul>
+
+    <p><strong>TBK m.115 Saklı Tutulan Sorumluluklar:</strong> Bedensel bütünlük zararları ile kasıt veya ağır kusurdan doğan her türlü zarar için önceden sorumluluktan muafiyet beyanı geçersizdir; bu haller her koşulda sorumluluk kapsamındadır.</p>
+
+    <p>Kullanıcı, ücretsiz hizmetin doğrudan ücret alınmaksızın, reklam geliriyle sürdürülebilir kılınan bir model kapsamında "olduğu gibi" sunulduğunu ve bu nedenle sorumluluk kapsamının işbu şartlarla sınırlandırıldığını kabul eder.</p>
+
+    <h4>2.4.2 PREMIUM SÜRÜM SORUMLULUĞU (Sınırlı Sorumluluk)</h4>
+
+    <p>Cradly, premium kullanıcılar bakımından:</p>
+
+    <p><strong>SORUMLULUK TAVANI:</strong></p>
+    <p>Ödenen premium bedel (tek seferlik satın alma tutarı) sorumluluk tavanını oluşturur. Örnek: 299 TL ödenmiş ise, azami tazminat 299 TL'dir.</p>
+
+    <p><strong>SORUMLU OLDUĞUMUZ HALLER:</strong></p>
+    <ul>
+        <li>✓ Kasıt ve ağır kusur</li>
+        <li>✓ Öngörülebilir, doğrudan, maddi zararlar</li>
+    </ul>
+
+    <p><strong>SORUMLU OLMADIĞIMIZ HALLER:</strong></p>
+    <ul>
+        <li>✗ Dolaylı zararlar (iş kaybı, kar mahrumiyeti, manevi zarar)</li>
+        <li>✗ Kullanıcının yedek almaması nedeniyle veri kayb</li>
+        <li>✗ Cihaz kaybı, çalınma, bozulma nedeniyle veri kaybı</li>
+        <li>✗ Güncelleme öncesi yedek alınmaması nedeniyle veri kayıpları</li>
+        <li>✗ Sağlık kararlarının yanlışlığından doğan zararlar (uygulama tıbbi cihaz değildir, hekim tavsiyesi yerine geçmez)</li>
+        <li>✗ Üçüncü kişi hizmetlerindeki aksaklıklar (Google Play, App Store, AdMob vb.)</li>
+    </ul>
+
+    <p><strong>KULLANICI SORUMLULUKLARI:</strong></p>
+    <ul>
+        <li>Düzenli yedek almak</li>
+        <li>Güncelleme öncesi yedek almak</li>
+        <li>Cihaz güvenliğini sağlamak</li>
+    </ul>
+
+    <h4>2.4.3 Esaslı Sözleşme Yükümlülükleri (Cardinal Duties) İstisnası</h4>
+    <p>Bu sorumluluk sınırlaması, sözleşmenin esaslı yükümlülüklerinin (uygulamanın temel işlevleri) basit ihmal yoluyla ihlali durumunda, öngörülebilir ve tipik zararlar için geçerli değildir.</p>
+
+    <h4>2.4.4 Kayıpsız Medya ve Depolama Tüketimi (Sistem Çöküşü) İstisnası</h4>
+    <p>Ağır dijital varlıkların (örneğin, Sıkıştırılmamış Premium Video Günlüğü kayıtları) cihazınızın fiziksel depolama kapasitesini tamamen tüketmesi (Disk Full Exception) durumunda hiçbir sorumluluk kabul etmediğimizi açıkça beyan ederiz. Tamamen dolmuş bir sabit diskin, işletim sisteminizde ciddi çökmelere (bootloop) neden olabileceğini, arka plandaki yerel alarm görevlerini sessizce sonlandırabileceğini veya aktif okuma/yazma döngüleri sırasında şifrelenmiş yerel veritabanınızda (SQLite) geri döndürülemez bozulmalara (corruption) yol açabileceğini kabul edersiniz. Cihazınızda yeterli boş depolama alanını izlemek, yönetmek ve korumak münhasıran kullanıcının sorumluluğundadır. Uygulama, teknik imkanlar dahilinde (best-effort) cihazın hafızasını kontrol etmeye ve kayıt/işlem öncesi kritik doluluk uyarısı vermeye çalışsa dahi; cihazın işletim sisteminin (iOS/Android) anlık önbelleği veya diğer kilitli uygulamaların eşzamanlı alan tüketimi nedeniyle işletim sistemi tarafından bildirilen 'kalan boş alan' bilgisinin yanıltıcı olabileceğinden doğacak doğrudan/dolaylı hiçbir zarardan Cradly sorumlu tutulamaz.</p>
+
+    <h3>2.5 CAYMA HAKKI İSTİSNASI (Dijital İçerik)</h3>
+    <p><strong>ÖNEMLİ BİLGİLENDİRME:</strong><br>
+    Cradly Premium sürümü, elektronik ortamda anında ifa edilen gayrimaddi bir hizmettir.<br>
+    6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği'nin 15/ğ maddesi uyarınca; "Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallara ilişkin sözleşmeler" cayma hakkının istisnası kapsamındadır.<br>
+    Kullanıcı, Premium hizmeti satın alarak hizmetin ifasının anında başladığını ve bu nedenle 14 günlük cayma (iade) hakkını kaybettiğini peşinen kabul ve beyan eder. İade talepleri, satın alımın yapıldığı platformun (Apple App Store veya Google Play Store) kendi iade politikalarına tabidir ve Cradly'un bu platformların iade kararlarına müdahale yetkisi bulunmamaktadır.</p>
+
+    <h3>2.6 Cihaz Bildirimleri ve İşletim Sistemi Kısıtlamaları (Bildirim/Alarm Feragatnamesi)</h3>
+    <p>Cradly'un alarm ve hatırlatıcı işlevleri cihazın yerel İşletim Sistemi (Apple iOS veya Google Android) kısıtlamalarına tabidir. Cradly, anlık bildirim (push notification) için uzak bir sunucu kullanmaz (Offline/Local-First), bildirimlerin ve alarmların cihaz üzerinde zamanlanması (local notification scheduling) mantığıyla çalışır.<br>
+    Kullanıcı olarak şu teknik gerçekleri <strong>kabul ve beyan edersiniz</strong>:</p>
+    <ol>
+        <li>İşletim sisteminin pil tasarrufu (Doze Mode), odak odak modu (DND) veya kullanıcı tarafından <strong>uygulamanın arka plandan tamamen kapatılması (kill-state)</strong> halinde işletim sistemi alarmın çalmasını engelleyebilir veya kısıtlayabilir.</li>
+        <li>Bu tür teknik gecikmeler veya işletim sisteminin alarmı durdurması Cradly'un kontrolü veya sorumluluğu altında değildir.</li>
+        <li>Kritik hatırlatmaların (örneğin ilaç zamanı, ateş takibi, uyku takibi, anne sütü sağım zamanlayıcısı veya saklanan mamanın/sütün tüketim ömrü takibi) sadece elektronik bir alarma güvenilerek bırakılmaması esastır. İşletim sisteminden kaynaklı bir alarm gecikmesinin; saklanan sütün/gıdanın son kullanma ömrünün aşıldığı veya bozulduğu yanılgısına yahut beslenme saatinin kaçırılıp telafi edilememesine yol açması durumunda tüm risk ve sorumluluk ebeveyne/yasal vasiye aittir (Bkz. Madde 2.1 Tıbbi Feragatname).</li>
+    </ol>
+
+    <hr>
+
+    <h3>2.7 Veri Dışa Aktarımı ve Sosyal Medya Paylaşımı (Native Share)</h3>
+    <p>Cradly, bebeğinizin fotoğraflarını, günlüklerini veya istatistiklerini uygulama dışına (örneğin Instagram'a, WhatsApp'a veya cihaz galerisine) paylaşmanıza olanak tanıyan araçlar ("Native Share" veya "Dışa Aktar") sunar.</p>
+    <ul>
+        <li>İşletim sisteminin yerel paylaşım menüsü üzerinden bir içeriği dışa aktarmayı, paylaşmayı veya sıkıştırmayı açıkça seçtiğinizde, bu veri Cradly'nin "Zero-Knowledge (Sıfır Bilgi)" korumalı ortamından resmen çıkmış olur.</li>
+        <li>Verileri uygulamanın güvenli sınırları dışına ilettiğiniz anda; üçüncü taraf platformların (Meta/Instagram gibi), mesajlaşma uygulamalarının veya kendi yerel cihaz galerinizin gizlilik, güvenlik, veri toplama politikaları veya meta veri (metadata) işleme prosedürleri üzerinde Cradly <strong>hiçbir sorumluluk kabul etmez</strong>. Paylaşım eylemini bizzat gerçekleştirmeniz, söz konusu dosya için yerel izolasyonu atlama yönündeki açık talimatınız (açık rıza eylemi) olarak kabul edilir.</li>
+        <li><strong>Platform Kaynaklı Zorunlu Sıkıştırma (Compression):</strong> Cihazın donanım performansını ve üçüncü parti sosyal ağların (Instagram, WhatsApp vb.) teknik kotalarını korumak amacıyla; "Dışa Aktar/Paylaş" eylemine konu olan yüksek boyutlu medya (Fotoğraf/Video) dosyaları arka planda otomatik olarak optik sıkıştırmaya tabi tutulabilir. Yerel cihazınızdaki asıl dosya zarar görmese de paylaşılan çıktı dosyasının boyut/çözünürlük kalitesinin düşebileceğini Kullanıcı peşinen kabul eder.</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. KVKK AYDINLATMA METNİ VE AÇIK RIZA</h2>
+
+    <h3>3.1 Açık Rıza Metni (Özel Nitelikli Veriler)</h3>
+
+    <p>Kullanıcı, uygulamayı kullanmaya başlamadan önce aşağıdaki açık rızayı vermelidir:</p>
+
+    <p><strong>18 yaşından büyük olduğumu, uygulamada ekleyeceğim bebek veya bebeklerin yasal temsilcisi sıfatıyla hareket ettiğimi, bebeğime/bebeklerime ait sağlık verilerinin (beslenme, uyku, aşı, gelişim takibi vb.) ve diğer özel nitelikli kişisel verilerin, yalnızca kendi cihazımda AES-256 şifreleme standardıyla saklanmak üzere işlenmesini, Cradly'un bu verilere erişemeyeceğini bildiğimi ve açıkça kabul ediyorum.</strong></p>
+
+    <h3>3.2 Reklam Gösterimi ve Kişiselleştirme Süreçleri</h3>
+
+    <p>Ücretsiz sürümde Google AdMob aracılığıyla reklamlar gösterilmektedir. Türkiye ve Google UMP (User Messaging Platform) zorunluluğu bulunmayan diğer bölgelerdeki kullanıcılar için Cradly, reklam kimliklerinizi (IDFA/GAID) işlemeyen ve kişiselleştirme yapmayan "Kişiselleştirilmemiş Reklam (NPA)" modunu standart olarak uygular.</p>
+
+    <p><strong>Önemli (iOS):</strong> Apple politikaları uyarınca iOS cihazlarda, bölge fark etmeksizin teknik takip izni (ATT) talep edilebilir. Kullanıcının bu izni vermesi durumunda (İzin Ver seçeneği ile), Türkiye ve diğer NPA bölgelerinde de kişiselleştirilmiş reklam gösterimi mümkün hale gelir.</p>
+
+    <p>Bu nedenle, uygulamanın çalıştırıldığı bu bölgelerde (iOS ATT istisnası hariç) reklam gösterimi için herhangi bir açık rıza (consent) alınmaz veya talep edilmez. Reklam gösterimi işlemi, ücretsiz uygulamanın finansal sürdürülebilirliğini sağlamak amacıyla tamamen "Kullanım Koşulları (EULA) Sözleşmesinin İfası" kapsamında yürütülür (Bkz. Madde 1.5.2).</p>
+
+    <p><em>(Yalnızca Avrupa Ekonomik Alanı [EEA], Birleşik Krallık [UK] veya ilgili düzenlemeye tabi ABD eyaletleri gibi aktif onay toplanmasının dayatıldığı bölgelerdeki kullanıcılar için uygulamanın yerleşik Google UMP sistemi devreye girer. Bu kullanıcılardan IDFA/GAID işlenmesi suretiyle kişiselleştirilmiş reklam onayı talep edilebilir ve bu veriler Google LLC tarafından işlenebilir. Kullanıcı, dilediği zaman ayarlar üzerinden bu izni geri çekerek NPA moduna dönebilir.)</em></p>
+
+    <p>Ayrıca, uygulamanın kararlılığını artırmak amacıyla anonim çökme raporları (Google Firebase Crashlytics) <strong>yalnızca açık rıza verilirse</strong> toplanır. Bu seçenek <strong>opsiyoneldir</strong>; seçilmediğinde uygulama kullanılmaya devam edilebilir ve ayarlardan her zaman kapatılabilir.</p>
+
+    <p>Uygulamanın kullanımını ve performansını ölçmek için Google Firebase Analytics <strong>yalnızca açık rıza verilirse</strong> kullanılmaktadır. Bu kapsamda uygulama içi etkileşimler (ekran görüntüleme, oturum, uygulama açma gibi teknik olaylar), cihaz ve işletim sistemi bilgileri ve uygulama örnek kimliği (app-instance identifier) işlenebilir. Varsayılan SDK davranışları reklam kimliği (IDFA/GAID) toplamaya elverişli olsa da, Cradly uygulamasında Analytics için reklam kimliği toplama kapalıdır ve kişiselleştirilmiş reklam sinyalleri kullanılmaz. Kullanıcı, Ayarlar ekranından Analytics ve Crashlytics kullanımını devre dışı bırakabilir.</p>
+
+    <p>Crashlytics ve Analytics kapsamında kullanıcıdan isim, e-posta, telefon veya bebek/sağlık içerikleri talep edilmez; uygulama bu tür verilerin gönderilmesini engellemek üzere tasarlanmıştır.</p>
+
+    <h3>3.3 KVKK Kapsamında İşlenen Kişisel Veri</h3>
+
+    <p>Cradly tarafından merkezi sunucuda (Supabase) işlenen kişisel veri kategorileri, YALNIZCA KULLANICININ OPSİYONEL İZİNLERİNE AİT teknik tanımlayıcıların takma adlaştırılmış (pseudonymized) hallerinden ibarettir.</p>
+
+    <p>Bu kapsamda:</p>
+    <ul>
+        <li><strong>Zorunlu Onaylar Yereldir:</strong> Uygulamaya giriş yapmak için mecbur kılınan (hard-gate) yerel Gizlilik Politikası ve Kullanıcı Sözleşmesi onaylarından DOĞAN HİÇBİR VERİ SUNUCUYA İLETİLMEZ. Metinler uygulama içine (assets) güvenle gömülmüştür.</li>
+        <li><strong>Rıza Logları:</strong> Opsiyonel izinlerin ispatı amacıyla Supabase tarafında yalnızca şu teknik alanlar işlenir: <code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>.</li>
+        <li>Kullanıcının tercih yönü (izin/ret), ayrı kimlik verisi yerine <code>consent_type</code> olay türü üzerinden loglanır.</li>
+        <li>Kullanıcı, Ayarlar > Kimlik Bilgim bölümünden bu Consent ID değerini görüntüleyebilir.</li>
+        <li>Bu teknik tanımlayıcılar, ad-soyad gibi doğrudan kimlik bilgisi içermese dahi hukuken takma adlaştırılmış (pseudonymized) kişisel veri sayılır.</li>
+    </ul>
+
+    <p>Cradly’un kendi merkezi sunucularında bu kategoriler dışında hiçbir kişisel veri (ad, e-posta, telefon vb.) işlenmez veya saklanmaz.</p>
+
+    <p>Bununla birlikte, <strong>yalnızca açık rıza verilmesi halinde</strong> Firebase Analytics ve Firebase Crashlytics altyapıları kapsamında Google LLC’ye otomatik olarak aktarılabilen <strong>sınırlı teknik veri kategorileri</strong> aşağıdaki gibidir:</p>
+
+    <ul>
+        <li>Uygulama örnek kimliği (app-instance identifier)</li>
+        <li>Crashlytics installation UUID ve Firebase installations ID (FID)</li>
+        <li>Oturum sayısı/süresi, uygulama açılışları ve ekran görüntüleme gibi kullanım ölçümleri</li>
+        <li>Cihaz modeli, işletim sistemi adı ve sürümü, dil/bölge</li>
+        <li>Uygulama sürümü ve paket/bundle bilgisi</li>
+        <li>Çökme anına ilişkin stack trace ve ilgili uygulama durumu/cihaz meta verileri</li>
+        <li>Çökme zamanı (timestamp)</li>
+    </ul>
+
+    <p>Bu teknik veriler, Cradly tarafından kullanıcı kimliğiyle ilişkilendirilmez ve herhangi bir kullanıcı profili oluşturulmaz.</p>
+
+    <h3>3.4 KVKK Madde 11 Kapsamındaki Haklar</h3>
+
+    <p>Kullanıcı, KVKK m.11 kapsamındaki haklarını hem cihazındaki yerel veriler hem de Cradly tarafından sunucuda tutulan opsiyonel rıza logları bakımından kullanabilir. Sunucu tarafı başvuruları, aşağıdaki veri silme prosedürü kapsamında değerlendirilir.</p>
+
+    <h3>3.5 Kişisel Veri İşlemenin Hukuki Sebepleri</h3>
+    <p>Cradly, kişisel verilerinizi 6698 sayılı Kanun’un 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanarak işlemektedir:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Veri Kategorisi</th>
+                <th>İşleme Amacı</th>
+                <th>Hukuki Sebep (Dayanak)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sağlık ve Bebek Bilgileri</strong> (Cihazınızda Şifreli)</td>
+                <td>Bebek bakım takibinin yapılması</td>
+                <td><strong>Açık Rıza</strong> (KVKK Md. 6/2)</td>
+            </tr>
+            <tr>
+                <td><strong>Opsiyonel Rıza Logları</strong> (<code>local_uuid_hash</code>, <code>consent_id</code>, <code>consent_type</code>, <code>consent_text_hash</code>, <code>app_version</code>, <code>created_at</code>)</td>
+                <td>Opsiyonel onayların ispat yükümlülüğü</td>
+                <td><strong>Hukuki Yükümlülük</strong> (KVKK Md. 5/2-ç) ve <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
+            </tr>
+            <tr>
+                <td><strong>Premium Abonelik Yönetimi - RevenueCat</strong> (Anonim fatura ve App User ID)</td>
+                <td>Premium üyelik kaydının doğrulanması ve abonelik yönetimi</td>
+                <td><strong>Sözleşmenin İfası</strong> (KVKK Md. 5/2-c) ve sahteciliği önlemek adına <strong>Veri Sorumlusunun Meşru Menfaati</strong> (KVKK Md. 5/2-f)</td>
+            </tr>
+            <tr>
+                <td><strong>Reklam Gösterimi — NPA Modu</strong> (Reklam kimliği işlenmez; bağlamsal/anonim reklam)</td>
+                <td>Ücretsiz sürümde reklam destekli hizmet sunumu — freemium sözleşme edimi</td>
+                <td><strong>Sözleşmenin İfası</strong> (KVKK Md. 5/2-e) — IDFA/GAID işlenmediğinden açık rıza gerekmez</td>
+            </tr>
+            <tr>
+                <td><strong>Reklam Kimliği (IDFA/GAID) — Kişiselleştirilmiş Mod</strong> (Yalnızca kullanıcı onaylarsa)</td>
+                <td>Kişiselleştirilmiş reklam gösterimi ve frekans kontrolü</td>
+                <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması — rıza her zaman geri çekilebilir; geri çekilmesi halinde NPA moduna geçilir</td>
+            </tr>
+            <tr>
+                <td><strong>Kullanım Analitiği</strong> (Firebase Analytics)</td>
+                <td>Uygulama kullanımını ve performansı ölçme</td>
+                <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
+            </tr>
+            <tr>
+                <td><strong>Çökme Raporları</strong> (Firebase Crashlytics)</td>
+                <td>Uygulama iyileştirme ve hata analizi</td>
+                <td><strong>Açık Rıza</strong> (KVKK Md. 5/1) + yurt dışı aktarımda <strong>KVKK Md. 9</strong> kapsamında uygun aktarım mekanizması</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3.6 Veri Silme ve Unutulma Hakkı (Hesap Silme)</h3>
+    <p>Cradly, "Local-First" mimarisi nedeniyle verilerinizin %99'una sahip değildir.<br>
+    Yerel Verilerin Silinmesi: Uygulamayı cihazınızdan kaldırdığınızda, cihazınızda şifreli olarak tutulan tüm sağlık ve bebek verileri kalıcı olarak ve geri döndürülemez şekilde imha edilir.<br>
+    Sunucu Kayıtlarının Silinmesi/Anonimleştirilmesi: Sunucularımızda tutulan opsiyonel rıza loglarının silinmesini talep etmek için; uygulama içerisindeki "Ayarlar > Kimlik Bilgim" kısmındaki Consent ID numaranızı kopyalayarak infocradlelog@gmail.com adresine "Veri Silme Talebi" konulu bir e-posta atmanız yeterlidir.</p>
+
+    <p>Sunucu tarafı eşleştirme ve işlem adımları:</p>
+    <ol>
+        <li>Kullanıcının ilettiği Consent ID (UUID), sunucu kayıt formatıyla eşleştirmek için SHA-256 ile özetlenir (<code>local_uuid_hash</code>).</li>
+        <li>Yalnızca yetkili yönetici erişimiyle, bu hash değeri üzerinden ilgili kayıtlar bulunur.</li>
+        <li>Yasal saklama zorunluluğu bulunmayan kayıtlar silinir; saklama zorunluluğu bulunan kayıtlar erişimden izole edilerek anonimleştirilir ve süre sonunda imha edilir.</li>
+    </ol>
+
+    <p>Talebiniz en geç 30 gün içinde işleme alınır.</p>
+
+    <p>Önemli Not: Sunucu tarafında tutulan opsiyonel rıza logları için otomatik/döngüsel silme sistemi bulunmamaktadır. Silme veya anonimleştirme işlemi, kullanıcının <code>infocradlelog@gmail.com</code> adresine Consent ID bilgisini içeren talebi üzerine başlatılır. Yasal saklama zorunluluğu bulunan kayıtlar ise ilgili süre sonuna kadar saklanır ve süre sonunda imha edilir.</p>
+
+    <hr>
+
+    <h2>4. KAPANIŞ HÜKÜMLERİ</h2>
+
+    <h3>4.1 Uyuşmazlık Çözümü ve Yetkili Mahkeme</h3>
+
+    <p>İşbu Kullanım Koşulları ve Gizlilik Politikası, kanunlar ihtilafı kuralları dikkate alınmaksızın Türkiye Cumhuriyeti hukukuna tabi olacak ve bu hukuka göre yorumlanacaktır.</p>
+
+    <p>Tüketici hukukundan doğan emredici yetki kuralları saklı kalmak kaydıyla, bu belgeden doğan veya bununla bağlantılı tüm uyuşmazlıklarda İstanbul (Türkiye) mahkemeleri ve icra daireleri münhasıran yetkilidir.</p>
+
+    <h3>4.2 Yürürlük ve Değişiklik Hakkı</h3>
+
+    <p>Bu sözleşme, kullanıcının uygulama içi onay akışını tamamladığı anda yürürlüğe girer.</p>
+
+    <p><strong>Değişiklik Prosedürü:</strong></p>
+
+    <p>Cradly, işbu sözleşmede değişiklik yapma hakkını saklı tutar. Değişiklikler aşağıdaki usule göre kullanıcıya iletilir:</p>
+
+    <ol>
+        <li><strong>Güncelleme Aracılığıyla Bildirim:</strong> Sözleşme değişiklikleri, Apple App Store veya Google Play Store üzerinden yayımlanan uygulama güncellemesine eklenir ve ilgili sürüm notlarında belirtilir.</li>
+        <li><strong>Uygulama İçi Otomatik Kontrol ve Onay Mekanizması:</strong> Kullanıcı uygulamayı güncellediğinde veya bir sonraki açılışta, uygulama sözleşme sürümünü otomatik olarak kontrol eder. <strong>KVKK kapsamında açık rızayı etkileyen değişiklikler</strong> (örneğin yeni bir veri kategorisinin eklenmesi, işleme amacının genişletilmesi) söz konusu olduğunda, kullanıcıdan yeni bir onay alınmadan uygulamaya erişim sağlanamaz. Kullanıcı güncellenen koşulları kabul etmez ise uygulamayı cihazından kaldırabilir.</li>
+        <li><strong>Bölge veya Ülke Değişikliğinde Yeniden Onay (KVKK m.5/1):</strong> Uygulama her açılışta kullanıcının bulunduğu coğrafi bölgeyi ve cihaz dilini otomatik olarak tespit eder. Kullanıcının cihazı farklı bir hukuki bölgeye geçmişse (örneğin Türkiye'den Avrupa Ekonomik Alanı'na ya da başka bir ülkeye) veya bulunulan bölge için geçerli yasal metin güncellenmiş ve bu metin artık kullanıcının önceden onayladığı metinden farklılaşmışsa, uygulama ilgili bölgenin yürürlükteki yasal metnini ekrana getirir ve KVKK m.5/1 uyarınca <strong>yeni bir açık rıza</strong> alır. Kullanıcı, söz konusu yeni metin kapsamında onayını vermeden uygulamaya erişim sağlanamaz. Önceki onay kaydı geçerliliğini korur; her iki kayıt da cihazda şifreli biçimde saklanmaya devam eder.</li>
+        <li><strong>Teknik ve Redaksiyonel Değişiklikler:</strong> Kullanıcının haklarını esastan etkilemeyen teknik, idari veya redaksiyonel düzeltmeler için yeniden onay alınmaksızın bilgi ekranıyla duyuru yapılabilir.</li>
+    </ol>
+
+    <p><strong>Önemli Not:</strong> Uygulamada merkezi push-notification (anlık bildirim) altyapısı bulunmadığından tüm bildirimler, kullanıcının uygulamayı açması sırasında gerçekleştirilir. Uygulamayı uzun süre açmayan kullanıcılar, sözleşme değişikliklerinden bir sonraki uygulamayı açışlarında haberdar edilir.</p>
+
+    <h3>4.3 Bölünebilirlik (Kısmi Hükümsüzlük)</h3>
+    <p>İşbu Sözleşmenin herhangi bir hükmünün uygulanabilir yasalara göre geçersiz veya uygulanamaz bulunması halinde, bu durum Sözleşmenin tamamının geçersizliği sonucunu doğurmaz. Geçersiz veya uygulanamaz bulunan hüküm, sözleşmenin diğer hükümlerini etkilemeksizin Sözleşmeden çıkarılmış sayılır. Sözleşmenin geri kalan geçerli kısımları, bilhassa sorumluluk sınırlaması ve garantilerin reddine ilişkin maddeler, tam olarak yürürlükte kalmaya devam eder.</p>
+
+    <h3>4.4 Yürürlükte Kalma (Beka)</h3>
+    <p>Sorumluluk sınırlaması, garantilerin reddi, uyuşmazlık çözümü, fikri mülkiyet ve zero-knowledge (sıfır bilgi) mimarisi ile veri güvenliğine ilişkin maddeler; uygulamanın kullanıcı tarafından cihazdan silinmesi veya işbu sözleşmenin herhangi bir nedenle feshedilmesinden sonra da süresiz olarak (ebediyen) geçerliliğini korumaya devam edecektir.</p>
+
+    <hr>
+
+    <p><strong>İletişim ve Şirket Bilgileri:</strong></p>
+
+    <p><strong>Ticari Unvan:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim</p>
+    <p><strong>Adres:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Türkiye</p>
+    <p><strong>Vergi No:</strong> 5670114825 (Çorlu Vergi Dairesi)</p>
+    <p><strong>E-posta:</strong> infocradlelog@gmail.com</p>
+    <p><strong>Web Sitesi:</strong> <a href="http://www.cebirproje.com" target="_blank">www.cebirproje.com</a></p>
+
+    <p><strong>Tüketici Şikâyet ve Başvuru Yolları (TKHK m.68):</strong></p>
+
+    <p>6502 sayılı Tüketicinin Korunması Hakkında Kanun m.68 uyarınca, uyuşmazlık tutarına göre aşağıdaki başvuru merciine başvurabilirsiniz:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Uyuşmazlık Tutarı</th>
+                <th>Başvuru Mercii</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>İlçe Hakem Heyeti alt eşiğine kadar</td>
+                <td><strong>İlçe Tüketici Hakem Heyeti</strong></td>
+            </tr>
+            <tr>
+                <td>Alt eşik ile üst eşik arasında kalan tutarlar</td>
+                <td><strong>İl Tüketici Hakem Heyeti</strong> (büyükşehirlerde İl Tüketici Hakem Heyeti)</td>
+            </tr>
+            <tr>
+                <td>Üst eşiğin üzerindeki tutarlar</td>
+                <td><strong>Tüketici Mahkemesi</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Not:</strong> Parasal eşikler her yıl Aralık ayında Ticaret Bakanlığı tarafından Resmî Gazete'de yayımlanan tebliğle güncellenmektedir. Güncel değerlere ve başvuru formlarına <strong><a href="https://www.tuketicihakemheyeti.gov.tr" target="_blank">https://www.tuketicihakemheyeti.gov.tr</a></strong> adresinden ulaşabilirsiniz. Büyükşehir statüsündeki illerde ilçe veya il heyeti yetkisi farklılık gösterebilmektedir; başvurmadan önce bulunduğunuz yere göre yetkili merciyi doğrulayınız.</p>
+
+    <hr>
+
+    <p>© 2026 Cradly - Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim<br>
+    <strong>Tüm Hakları Saklıdır.</strong></p>
+
+    <p><strong>Bu belge, 6698 sayılı Kişisel Verilerin Korunması Kanunu, 6502 sayılı Tüketicinin Korunması Hakkında Kanun, 6098 sayılı Türk Borçlar Kanunu ve ilgili mevzuat uyarınca hazırlanmıştır.</strong></p>
+
+    <p><strong>Kullanıcı, uygulamayı kullanarak bu metinleri okuduğunu, anladığını ve kabul ettiğini beyan eder.</strong></p>
+
+</div>
 
 </body>
 </html>
