@@ -3,490 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cradly – Global Master Privacy Policy & Terms of Service (EULA)</title>
+    <title>Cradly Legal - Privacy Policy & Terms of Service</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Genel Sayfa ve Tipografi Ayarları */
+        /* Embedded CSS */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --white: #ffffff;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333333;
-            background-color: #f4f7f6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
             margin: 0;
-            padding: 40px 20px;
+            padding: 0;
         }
 
-        /* Döküman Konteyneri */
-        .document-container {
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content h1 {
+            color: var(--white) !important; /* H1 Başlık Beyaz */
+            margin: 0 0 15px 0;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--white);
+        }
+
+        .container {
             max-width: 900px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 50px 60px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 40px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             border-radius: 8px;
-            border-top: 5px solid #2c3e50;
-        }
-
-        /* Başlık Stilleri */
-        h1 {
-            font-size: 2.2em;
-            color: #1a252f;
-            text-align: center;
-            margin-bottom: 0.5em;
-            line-height: 1.3;
         }
 
         h2 {
-            font-size: 1.6em;
-            color: #2c3e50;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 8px;
-            margin-top: 1.8em;
-            margin-bottom: 0.8em;
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
         }
 
         h3 {
-            font-size: 1.3em;
-            color: #34495e;
-            margin-top: 1.5em;
-            margin-bottom: 0.6em;
+            color: var(--secondary-color);
+            margin-top: 25px;
         }
 
-        h4 {
-            font-size: 1.1em;
-            color: #455a64;
-            margin-top: 1.2em;
-            margin-bottom: 0.5em;
-        }
-
-        /* Paragraf ve Liste Stilleri */
-        p {
-            margin-bottom: 1.2em;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin-bottom: 1.2em;
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 0.4em;
-        }
-
-        /* Yatay Çizgi */
         hr {
-            border: none;
-            border-top: 1px solid #dcdde1;
+            border: 0;
+            border-top: 1px solid #eee;
             margin: 30px 0;
         }
 
-        /* Vurgular İçin CSS (Kullanıcı Talebi: Vurguları CSS olarak aktar) */
         strong {
-            font-weight: 700;
-            color: #000000; /* Vurguları belirginleştirmek için tam siyah */
-            background-color: rgba(241, 196, 15, 0.1); /* Hafif bir arkaplan vurgusu */
-            padding: 0 2px;
-            border-radius: 3px;
+            color: #000;
         }
 
-        /* Kritik Uyarılar için Özel Vurgu Sınıfı (Büyük harfli uyarılar için) */
-        .critical-warning {
-            color: #c0392b;
-            font-weight: 800;
+        ul {
+            padding-left: 20px;
         }
-        
-        /* İtalik yazılar */
-        em {
-            font-style: italic;
-            color: #555;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background-color: #fff5f5;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .legal-footer {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <h1>Cradly Legal</h1>
-        <nav>
-            <a href="global.html">🌐 Global/USA 🇺🇸</a>
-            <a href="tr.html">🇹🇷 TR</a>
-            <a class="active">🇪🇺 EU-EN</a>
-            <a href="id.html">🇮🇩 ID</a>
-            <a href="bt.html">🇧🇷 BR</a>
-        </nav>
-    </div>
-</header>
-    
-<div class="document-container">
+    <header>
+        <div class="header-content">
+            <h1>Cradly Legal</h1>
+            <nav>
+                <a href="#" class="active">🌐 Global/USA 🇺🇸</a>
+                <a href="tr.html">🇹🇷 TR</a>
+                <a href="eu.html">🇪🇺 EU-EN</a>
+                <a href="id.html">🇮🇩 ID</a>
+                <a href="bt.html">🇧🇷 BR</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Cradly – Global Master Privacy Policy & Terms of Service (EULA)</h1>
+    <div class="container">
+        <h1>Cradly – Global Master Privacy Policy & Terms of Service (EULA)</h1>
+        <p><strong>Last Updated:</strong> April 2026<br>
+        <strong>Version:</strong> 6.0.0 - Global Compliance & Privacy Shield</p>
 
-    <p><strong>Last Updated:</strong> April 2026<br>
-    <strong>Version:</strong> 6.0.0 - Global Compliance & Privacy Shield</p>
+        <hr>
 
-    <hr>
+        <h2>DOCUMENT PURPOSE AND SCOPE</h2>
+        <p>This document encompasses the <strong>Privacy Policy</strong>, <strong>End-User License Agreement (EULA)</strong>, and <strong>Global Privacy Notices</strong> for the provisioning of the Cradly application worldwide.</p>
 
-    <h2>DOCUMENT PURPOSE AND SCOPE</h2>
+        <p><strong>Legal Framework (The Global Shield):</strong></p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR - EU/UK)</li>
+            <li>California Consumer Privacy Act (CCPA) & California Privacy Rights Act (CPRA)</li>
+            <li>U.S. Federal Trade Commission (FTC) Act Section 5 standards (Truth-in-Advertising & Privacy)</li>
+            <li>Children's Online Privacy Protection Act (COPPA - USA)</li>
+            <li>Health Insurance Portability and Accountability Act (HIPAA - USA) (Disclaimer)</li>
+            <li>6698 numbered Personal Data Protection Law (KVKK - Turkey)</li>
+        </ul>
 
-    <p>This document encompasses the <strong>Privacy Policy</strong>, <strong>End-User License Agreement (EULA)</strong>, and <strong>Global Privacy Notices</strong> for the provisioning of the Cradly application worldwide.</p>
+        <p><strong>Binding Nature of the Document:</strong><br>
+        By downloading, installing, or beginning to use the application, you declare and undertake that you have read, understood, and accepted all provisions in this document.</p>
 
-    <p><strong>Legal Framework (The Global Shield):</strong></p>
-    <ul>
-        <li>General Data Protection Regulation (GDPR - EU/UK)</li>
-        <li>California Consumer Privacy Act (CCPA) & California Privacy Rights Act (CPRA)</li>
-        <li>U.S. Federal Trade Commission (FTC) Act Section 5 standards (Truth-in-Advertising & Privacy)</li>
-        <li>Children's Online Privacy Protection Act (COPPA - USA)</li>
-        <li>Health Insurance Portability and Accountability Act (HIPAA - USA) (Disclaimer)</li>
-        <li>6698 numbered Personal Data Protection Law (KVKK - Turkey)</li>
-    </ul>
+        <p><strong>Language of the Agreement & Comprehension:</strong><br>
+        The application and its comprehensive legal terms are provided primarily in English. By choosing to use the application and accepting these terms, you explicitly declare and warrant that you possess a sufficient understanding of the English language to comprehend the basic operation of the application, the provided legal summaries, and the associated legal risks. Users who do not possess sufficient language proficiency to understand these terms must not accept this agreement and should refrain from using the application.</p>
 
-    <p><strong>Binding Nature of the Document:</strong><br>
-    By downloading, installing, or beginning to use the application, you declare and undertake that you have read, understood, and accepted all provisions in this document.</p>
+        <hr>
 
-    <p><strong>Language of the Agreement & Comprehension:</strong><br>
-    The application and its comprehensive legal terms are provided primarily in English. By choosing to use the application and accepting these terms, you explicitly declare and warrant that you possess a sufficient understanding of the English language to comprehend the basic operation of the application, the provided legal summaries, and the associated legal risks. Users who do not possess sufficient language proficiency to understand these terms must not accept this agreement and should refrain from using the application.</p>
+        <h2 id="privacy">1. GLOBAL PRIVACY POLICY</h2>
 
-    <hr>
+        <h3>1.1 Architectural Approach: Local-First & Zero-Knowledge (FTC Act Compliance)</h3>
+        <p>Cradly is a <strong>local-first</strong> application built on the principles of privacy by design and data minimization. In accordance with Section 5 of the FTC Act prohibiting deceptive privacy practices, we explicitly declare how our architecture operates:</p>
 
-    <a id="privacy"></a>
-    <h2>1. GLOBAL PRIVACY POLICY</h2>
+        <ul>
+            <li><strong>Dual-Layer Local Storage Architecture:</strong> To ensure optimum device performance while maintaining strict local privacy, your data is partitioned into two secure local layers:
+                <ol>
+                    <li><strong>Textual & Health Data (AES-256):</strong> All structured data (baby profiles, sleep/feeding logs, allergy notes, journals) is encrypted locally inside a SQLite database using the <strong>AES-256</strong> algorithm. The 32-byte encryption key is generated and safely stored exclusively within your device's secure keystore (Zero-Knowledge).</li>
+                    <li><strong>Media Files (App Sandbox):</strong> Because encrypting large media files inside a database causes severe device performance degradation and battery drain, your photos and videos are stored <strong>outside</strong> the database, strictly within the Operating System's isolated "App Sandbox." These media files are NEVER saved to your public phone gallery and rely directly on your device's native Full Disk Encryption (FDE).</li>
+                    <li><strong>On-Device Media Processing & Editing:</strong> All advanced photo and video editing features provided within the application (e.g., aspect ratio cropping, rotation, background blurring, adding stickers) are performed <strong>100% locally on your device's processor (On-Device Processing)</strong>. Cradly DOES NOT upload your private media files to any external AI or cloud servers for editing purposes.</li>
+                    <li><strong>OS-Level Cloud Backup Disclaimer:</strong> While Cradly isolates your media files within the local App Sandbox, your device's Operating System (e.g., Apple iCloud or Google Drive) may attempt to automatically backup this sandbox to their cloud servers based on your device's global backup settings. Cradly has no control over, and no liability for, your data privacy if your device uploads your Sandbox files to platforms like iCloud or Google Drive.</li>
+                    <li><strong>Device Storage Capacity and Uncompressed Media Protocol:</strong> As a strict Local-First application, all media, including high-fidelity photos and "uncompressed" or lossless video recordings offered as Premium features, are written directly to your device's physical storage (inside the secure App Sandbox). Cradly operates without cloud servers and therefore intentionally does not impose artificial, server-side data quotas. The user explicitly acknowledges that generating high-resolution, uncompressed media files requires significant disk space and may rapidly deplete the device's remaining local memory.</li>
+                </ol>
+            </li>
+        </ul>
 
-    <h3>1.1 Architectural Approach: Local-First & Zero-Knowledge (FTC Act Compliance)</h3>
-
-    <p>Cradly is a <strong>local-first</strong> application built on the principles of privacy by design and data minimization. In accordance with Section 5 of the FTC Act prohibiting deceptive privacy practices, we explicitly declare how our architecture operates:</p>
-
-    <ul>
-        <li><strong>Dual-Layer Local Storage Architecture:</strong> To ensure optimum device performance while maintaining strict local privacy, your data is partitioned into two secure local layers:
+        <div class="warning-box">
+            <strong>CRITICAL WARNING: ENCRYPTION KEY AND DATA SECURITY</strong>
+            <p>Because the encryption key is generated and stored solely on your device, Cradly <strong>DOES NOT KNOW</strong> and <strong>TECHNICALLY CANNOT ACCESS</strong> this key.</p>
+            <p><strong>Your data MAY BE PERMANENTLY LOST in the following situations:</strong></p>
+            <ul>
+                <li>Losing or having your device stolen.</li>
+                <li>Deleting and reinstalling the application without a backup.</li>
+                <li>Formatting or factory-resetting your device.</li>
+                <li>Operating system or hardware failure (memory corruption, storage error).</li>
+                <li>Using aggressive memory cleaning applications.</li>
+            </ul>
+            <p><strong>Advanced Recovery Feature:</strong> Our application attempts to repair corrupted local databases (SQLite) using built-in on-device tools. However, in cases of device loss, permanent formatting, or severe hardware crashes, data recovery is technically IMPOSSIBLE.</p>
+            <p><strong>Cradly CANNOT recover your data from a central server under any circumstances and is NOT LIABLE for data loss because:</strong></p>
             <ol>
-                <li><strong>Textual & Health Data (AES-256):</strong> All structured data (baby profiles, sleep/feeding logs, allergy notes, journals) is encrypted locally inside a SQLite database using the <strong>AES-256</strong> algorithm. The 32-byte encryption key is generated and safely stored exclusively within your device's secure keystore (Zero-Knowledge).</li>
-                <li><strong>Media Files (App Sandbox):</strong> Because encrypting large media files inside a database causes severe device performance degradation and battery drain, your photos and videos are stored <strong>outside</strong> the database, strictly within the Operating System's isolated "App Sandbox." These media files are NEVER saved to your public phone gallery and rely directly on your device's native Full Disk Encryption (FDE).</li>
-                <li><strong>On-Device Media Processing & Editing:</strong> All advanced photo and video editing features provided within the application (e.g., aspect ratio cropping, rotation, background blurring, adding stickers) are performed <strong>100% locally on your device's processor (On-Device Processing)</strong>. Cradly DOES NOT upload your private media files to any external AI or cloud servers for editing purposes.</li>
-                <li><strong>OS-Level Cloud Backup Disclaimer:</strong> While Cradly isolates your media files within the local App Sandbox, your device's Operating System (e.g., Apple iCloud or Google Drive) may attempt to automatically backup this sandbox to their cloud servers based on your device's global backup settings. Cradly has no control over, and no liability for, your data privacy if your device uploads your Sandbox files to platforms like iCloud or Google Drive.</li>
-                <li><strong>Device Storage Capacity and Uncompressed Media Protocol:</strong> As a strict Local-First application, all media, including high-fidelity photos and "uncompressed" or lossless video recordings offered as Premium features, are written directly to your device's physical storage (inside the secure App Sandbox). Cradly operates without cloud servers and therefore intentionally does not impose artificial, server-side data quotas. The user explicitly acknowledges that generating high-resolution, uncompressed media files requires significant disk space and may rapidly deplete the device's remaining local memory.</li>
+                <li>By design, the application DOES NOT send your health data to a server; it keeps it on the phone.</li>
+                <li>We DO NOT KNOW and are technically UNABLE to access the encryption key.</li>
+                <li>There is absolutely NO backdoor to the system.</li>
+                <li>Your data relies entirely on the security of your device.</li>
             </ol>
-        </li>
-    </ul>
-
-    <p><strong class="critical-warning">CRITICAL WARNING: ENCRYPTION KEY AND DATA SECURITY</strong></p>
-
-    <p>Because the encryption key is generated and stored solely on your device, Cradly <strong>DOES NOT KNOW</strong> and <strong>TECHNICALLY CANNOT ACCESS</strong> this key.</p>
-
-    <p><strong>Your data MAY BE PERMANENTLY LOST in the following situations:</strong></p>
-    <ul>
-        <li>Losing or having your device stolen.</li>
-        <li>Deleting and reinstalling the application without a backup.</li>
-        <li>Formatting or factory-resetting your device.</li>
-        <li>Operating system or hardware failure (memory corruption, storage error).</li>
-        <li>Using aggressive memory cleaning applications.</li>
-    </ul>
-
-    <p><strong>Advanced Recovery Feature:</strong><br>
-    Our application attempts to repair corrupted local databases (SQLite) using built-in on-device tools. However, in cases of device loss, permanent formatting, or severe hardware crashes, data recovery is technically IMPOSSIBLE.</p>
-
-    <p><strong>Cradly CANNOT recover your data from a central server under any circumstances and is NOT LIABLE for data loss because:</strong></p>
-    <ol>
-        <li>By design, the application DOES NOT send your health data to a server; it keeps it on the phone.</li>
-        <li>We DO NOT KNOW and are technically UNABLE to access the encryption key.</li>
-        <li>There is absolutely NO backdoor to the system.</li>
-        <li>Your data relies entirely on the security of your device.</li>
-    </ol>
-
-    <p><strong>MANDATORY USER RESPONSIBILITY FOR BACKUPS:</strong><br>
-    The User is <strong>ENTIRELY RESPONSIBLE</strong> for the security and backup of their data. As a user, you must:</p>
-    <ul>
-        <li>Make regular backups (at least once a week).</li>
-        <li>Store backups in a secure location.</li>
-        <li>Always take a backup before changing devices.</li>
-        <li>Always take a backup before updating the application.</li>
-        <li>Ensure device security (screen lock, secure password, etc.).</li>
-    </ul>
-
-    <p><em>(Note: Features like cross-device syncing, cloud backups, or family sharing are currently disabled. Your data remains completely isolated and offline.)</em></p>
-
-    <p>Cradly accepts no liability for data loss experienced by users who ignore these warnings and fail to take regular backups.</p>
-
-    <h3>1.2 Data Processed on the Server-Side</h3>
-
-    <p>In Cradly, the foundational legal agreements <strong>MANDATORY for accessing the app (e.g., EULA, Privacy Policy) are embedded as internal files (assets)</strong>. Your consent to these foundational agreements is <strong>NEVER SENT to our servers</strong>; it is verified and stored 100% locally (offline) on your device.</p>
-
-    <p>Cradly <strong>only</strong> processes technical records on centralized servers (Supabase) for optional consent proof:</p>
-
-    <p><strong>A. Optional Consent Records:</strong></p>
-    <ul>
-        <li>SHA-256 hash of a Device Consent ID (`local_uuid_hash`)</li>
-        <li>Unique record ID for each consent event (`consent_id`)</li>
-        <li>Consent event type (`consent_type` - e.g., `AD_ALLOWED`, `CRASHLYTICS_ALLOWED`)</li>
-        <li>Content hash of the related consent text (`consent_text_hash`)</li>
-        <li>Application version (`app_version`)</li>
-        <li>Server timestamp (`created_at`)</li>
-    </ul>
-
-    <p>These cryptographic or pseudonymous tokens do not reveal individual identities. However, for maximum compliance, they are treated conceptually as personal data under global frameworks.</p>
-
-    <h3>1.3 Legal Status of Data Processing (Controller vs. Provider)</h3>
-
-    <p>Cradly operates under the following legal roles regarding the processing of data:</p>
-
-    <p><strong>A. Regarding Health Data (WE ARE NOT A DATA CONTROLLER OR BUSINESS):</strong></p>
-
-    <p>Cradly acts strictly as a "Technical Infrastructure Provider" and is <strong>NOT</strong> a "Data Controller" (under GDPR/KVKK) or a "Business" (under CCPA) concerning the health data stored locally on the user's device.</p>
-
-    <p><strong>Justification for This Legal Stance:</strong></p>
-    <ol>
-        <li><strong>No Technical Access:</strong> This data is stored on the user's device with AES-256 encryption. Cradly CANNOT technically access the contents of this data.</li>
-        <li><strong>Encryption Key Control:</strong> The 32-byte encryption key is generated and stored exclusively on the user's device. Cradly DOES NOT know this key and has NO access to it whatsoever.</li>
-        <li><strong>Determination of Purpose and Means:</strong> This data is processed for purposes determined entirely by the user (baby care tracking) and under the user's explicit control. Cradly merely provides the technical infrastructure (the application software and the encryption library) facilitating this processing.</li>
-        <li><strong>User as the Data Controller:</strong> The User, who possesses the device and holds the exclusive capability to access and decrypt the data, acts as the sole "Data Controller" of the health data stored within their own device.</li>
-    </ol>
-
-    <p><strong>Our Responsibilities as a Technical Infrastructure Provider:</strong><br>
-    While we are not a Data Controller for your health information, we are obligated to provide a secure processing environment (acting effectively in a service-provisioning capacity). This includes employing AES-256 encryption standards, warning users about data loss risks (the need for backups), and complying with application-level security best practices.</p>
-
-    <p><strong>Rights Regarding Your Encrypted Data:</strong><br>
-    Because Cradly has absolute <strong>Zero-Knowledge</strong> and zero access to the encrypted contents, legal rights (such as the Right to Rectification or the Right to Erasure) concerning health data cannot be addressed to Cradly. These rights remain inherently under the control of you, the device owner. You may exercise these rights directly within the application by modifying or deleting the entries yourself.</p>
-
-    <p><strong>B. Regarding Optional Consent Data (LIMITED DATA CONTROLLER):</strong></p>
-
-    <p>Cradly acts as a limited Data Controller exclusively concerning the pseudonymous consent logs (e.g., whether you accepted crash analytics). We determine the purpose (consent proof) and the means for this specific, highly limited processing.</p>
-
-    <h3>1.4 Third-Party Services & International Data Transfers</h3>
-
-    <h4>1.4.1 Supabase (Data Storage Infrastructure)</h4>
-    <p><strong>Purpose:</strong> Storing optional consent records.<br>
-    <strong>Server Location:</strong> EU-West-3 (Paris, France).<br>
-    <strong>Transferred Data:</strong> Cryptographic hashes for consent logs. <strong>NO HEALTH DATA, NO CREDIT CARD INFO, NO NAMES are transferred.</strong><br>
-    <strong>Legal Basis & DPA:</strong> Processed based on Legal Obligation and Legitimate Interest. International transfers are governed by a Data Processing Agreement (DPA) incorporating Standard Contractual Clauses (SCCs) signed with Supabase Inc. (Executed Feb 28, 2026).</p>
-
-    <h4>1.4.2 Advertising Services (Google AdMob)</h4>
-    <p><strong>Scope:</strong> ONLY for users of the Free Version.<br>
-    <strong>Advertiser Identifiers:</strong> Apple IDFA or Google GAID.<br>
-    <strong>Data Controller for Ads:</strong> Google LLC operates as an independent Data Controller for the processing of advertising identifiers where applicable.</p>
-
-    <p><strong>THE TWO-LAYER ADVERTISING FRAMEWORK:</strong></p>
-
-    <p>The legal framework for displaying advertisements consists of two distinct layers:</p>
-
-    <p><strong>1. Layer One: Ad Display (Contractual Condition)</strong><br>
-    Showing ads in the free version is an inseparable part of the Free Version EULA—the foundation of our freemium service model. It allows the app to be offered without charging a direct monetary fee. Therefore, the simple <em>display</em> of an ad relies on the performance of a contract (Terms of Service), not explicitly on user consent. To remove all ads entirely, you may purchase the Premium version.</p>
-
-    <p><strong>2. Layer Two: Regional Personalization (NPA vs. Explicit Consent)</strong><br>
-    Whether the ads shown to you are <em>personalized</em> (using your IDFA/GAID) depends strictly on the geographical region in which the application is operated:</p>
-
-    <ul>
-        <li><strong>Unregulated Regions (Default NPA):</strong> For users in regions where specific consent dialogues are not mandated by Google's global policies (e.g., Turkey, Indonesia, and various other jurisdictions globally), Cradly enforces <strong>Non-Personalized Ads (NPA)</strong> as the default standard.
-            <br><br>
-            <strong>iOS Exception:</strong> Due to Apple App Store policies, a "Tracking Permission" (App Tracking Transparency) prompt may be displayed on iOS devices regardless of the region. If you grant this permission (by selecting "Allow"), you agree to see personalized ads even in these regions. If you do not grant permission, NPA mode continues. On Android devices, NPA mode is always enforced in these unregulated regions and no ad consent dialog is ever shown. Ad display operates purely as an anonymous, contextual condition of the freemium contract.</li>
-        <li><strong>Regulated Regions (EEA, UK, US Regulated States):</strong> If your IP address dictates you are in a heavily regulated jurisdiction requiring active user choice, Google UMP (User Messaging Platform) will present a consent screen asking if you allow <em>personalized</em> ads. If you deny this consent, or later withdraw it via your privacy settings, the application defaults to Non-Personalized Ads (NPA).</li>
-    </ul>
-
-    <p><em>Note: The baby health data entered into the app is NEVER shared with advertising networks under any circumstances.</em></p>
-
-    <h4>1.4.2.1 Rewarded Ads (Optional, User-Initiated)</h4>
-
-    <p>In addition to standard banner ads, Cradly offers <strong>rewarded ads</strong> that Free Version users can voluntarily watch in exchange for specific in-app features. These ads are completely optional and are never shown automatically.</p>
-
-    <p><strong>Features Utilizing Rewarded Ads:</strong></p>
-    <ul>
-        <li><strong>Lullaby Background Playback:</strong> Free users may watch a rewarded ad to temporarily enable background audio playback within the app's built-in lullaby player (maximum 60 minutes per session, stackable).</li>
-        <li><strong>14-Day Report Export:</strong> Free users may watch a single rewarded ad to export their detailed 14-day statistics report once.</li>
-    </ul>
-
-    <p><strong>Activation Conditions:</strong><br>
-    Unlike standard ads, rewarded ads are <strong>NOT subject to the 7-day waiting period, the 8-record threshold, or the nighttime filter.</strong> Only the following two conditions must be met:</p>
-    <ol>
-        <li>Presence of a valid advertising consent (where applicable).</li>
-        <li>An active internet connection.</li>
-    </ol>
-
-    <p><strong>Completely Optional:</strong><br>
-    Watching a rewarded ad is never mandatory. Users who do not wish to view ads can purchase the Premium version to access these features ad-free or simply choose not to use the features.</p>
-
-    <p><strong>Processed Data and Personalization:</strong><br>
-    Rewarded ads rely on the <strong>same consent decision</strong> as standard banner ads. In regions where Google UMP applies (EEA, UK, US regulated states), ads may be <strong>personalized or non-personalized</strong> based on your choice in the UMP consent form—Google's SDK makes the targeting decision based on the IAB TCF consent string. Outside these regulated regions, the application <strong>mandatorily applies the Non-Personalized (NPA) mode</strong> regardless of user action. Under no circumstances are <strong>baby health data shared with advertising networks</strong> or used for any ad targeting.</p>
-
-    <h4>1.4.3 Telemetry, Crash Reports, and Analytics</h4>
-    <p>Cradly collects anonymous crash reports (Firebase Crashlytics) and usage analytics (Firebase Analytics) strictly based on <strong>explicit, optional user consent</strong>.</p>
-    <ul>
-        <li><strong>Transferred Data:</strong> Device model, OS version, app version, anonymous installation UUID, and crash stack traces. NO personal identifiers, no health data, no tracking IDs (IDFA/GAID tracking is disabled for Analytics).</li>
-        <li><strong>Data Processor:</strong> Google LLC. Transfers to the USA are safeguarded by Standard Contractual Clauses (SCCs) via Firebase Data Processing Terms.</li>
-    </ul>
-
-    <h4>1.4.4 Premium Subscription Management (RevenueCat)</h4>
-    <p><strong>Purpose:</strong> Managing in-app purchases and subscriptions securely, and syncing them with app stores.<br>
-    <strong>Data Processor:</strong> RevenueCat Inc.<br>
-    <strong>Processed Data:</strong> Anonymous platform receipts and anonymous App User IDs. This data does NOT contain your name, email, or credit card. All payments are handled securely by Apple or Google; RevenueCat only verifies the transaction's success.<br>
-    <strong>Legal Basis:</strong> Performance of a Contract and Legitimate Interest (Fraud Prevention). International transfers are safeguarded under SCCs.</p>
-
-    <hr>
-
-    <h2>2. SPECIFIC REGIONAL DISCLOSURES & RIGHTS (THE GLOBAL SHIELD)</h2>
-
-    <h3>2.1 U.S. Healthcare Disclaimer (HIPAA & FDA)</h3>
-
-    <p><strong>HIPAA (Health Insurance Portability and Accountability Act):</strong><br>
-    <strong class="critical-warning">CRADLY IS NOT A COVERED ENTITY OR A BUSINESS ASSOCIATE UNDER HIPAA.</strong><br>
-    This application is strictly a personal, consumer-facing record-keeping software tool. Because we do not collect, transmit, or process your health data on our servers, and we do not share it with healthcare providers, doctors, or health insurance companies, the data you enter is <strong>NOT protected by HIPAA regulations</strong>. Your data security relies entirely on the local device encryption and your device's security practices.</p>
-
-    <p><strong>FDA (Food and Drug Administration):</strong><br>
-    This application is <strong>NOT a medical device</strong>, has not been evaluated by the FDA or any equivalent international medical authority, and does not provide medical diagnoses, treatment advice, or emergency alerts. (See EULA Section 3.1 for more details).</p>
-
-    <h3>2.2 Children's Privacy (COPPA & GDPR-K Disclaimer)</h3>
-
-    <p><strong>COPPA (Children's Online Privacy Protection Act - USA) & Global Equivalents:</strong><br>
-    While the subject matter of Cradly involves babies and children, the application is <strong>strictly designed for, and targeted at, parents and legal guardians aged 18 and older.</strong><br>
-    Cradly is <strong>NOT</strong> a "Child-Directed" application. We do not knowingly collect personal information from children under the age of 13 (or 16 under GDPR).</p>
-
-    <p>By using the application, you declare that you are the parent or legal guardian of the child(ren) whose data you enter, and you possess the legal authority to process such sensitive data on your own device. <strong>Device Security Warning:</strong> We strongly advise keeping your device locked to prevent accidental data deletion or modification by a child.</p>
-
-    <h3>2.3 U.S. State Privacy Laws (CCPA / CPRA / VCDPA)</h3>
-
-    <p>If you are a resident of California, Virginia, Colorado, or a state with a similar comprehensive privacy law, the following rights apply to the limited technical data we process:</p>
-    <ul>
-        <li><strong>Right to Know & Access:</strong> We collect minimal technical data (consent hashes). We DO NOT hold your health data.</li>
-        <li><strong>Right to Delete:</strong> See Section 2.5 on how to delete server-side consent logs. Local health data is deleted immediately upon uninstalling the app.</li>
-        <li><strong>"DO NOT SELL OR SHARE MY PERSONAL INFORMATION":</strong> Cradly <strong>DOES NOT sell or share your personal information</strong> for cross-context behavioral advertising. Because we do not collect your health, name, or contact data, we have no such data to sell. Our Free Version utilizes Google AdMob; if you reside in a state requiring it (e.g., California), we utilize Google UMP to respect your right to opt-out of personalized advertising. You may also disable personalized advertising entirely via your device's global privacy settings.</li>
-    </ul>
-
-    <h3>2.4 European Economic Area (EEA) & UK Residents (GDPR)</h3>
-
-    <p>If you are located in the EEA or the UK, your technical data (consent logs) is processed under the following legal bases (GDPR Art. 6):</p>
-    <ul>
-        <li><strong>Consent (Art. 6(1)(a)):</strong> For processing personalized ads (via Google UMP) and Firebase Crashlytics/Analytics.</li>
-        <li><strong>Performance of a Contract (Art. 6(1)(b)):</strong> Processing Premium subscription status via RevenueCat, and displaying anonymous ads for the Freemium service.</li>
-        <li><strong>Legitimate Interests (Art. 6(1)(f)):</strong> Fraud prevention and maintaining the security of consent logs.</li>
-    </ul>
-
-    <p><strong>Your GDPR Rights:</strong><br>
-    Because we do not have technical access to your locally encrypted health data (Zero-Knowledge), rights regarding access, rectification, and erasure of the health data itself <strong>must be exercised directly by you on your own device</strong>. For the deletion of technical consent logs on our servers, see Section 2.5.</p>
-
-    <h3>2.5 Data Deletion and the Right to be Forgotten</h3>
-
-    <p>Because of our "Local-First" architecture, we do not possess 99% of your data.</p>
-    <ul>
-        <li><strong>Deleting Local Data:</strong> Uninstalling the app permanently and irreversibly destroys the encrypted health data stored on your device.</li>
-        <li><strong>Deleting Server Records:</strong> To delete optional consent logs held on our Supabase servers, go to "Settings &gt; My Identity" in the app, copy your "Consent ID", and email it to `infocradlelog@gmail.com` with the subject "Data Deletion Request". We will hash this ID, locate your records, and permanently anonymize or delete them within 30 days (unless required to be retained by law).</li>
-    </ul>
-
-    <hr>
-
-    <a id="terms"></a>
-    <h2>3. END-USER LICENSE AGREEMENT (EULA)</h2>
-
-    <h3>3.1 Medical Disclaimer</h3>
-
-    <p><strong>NOT A MEDICAL DEVICE.</strong><br>
-    Cradly is an administrative tool designed to help parents record and organize baby care information. It is <strong>NOT</strong> a medical device, diagnostic tool, or a substitute for professional medical care.</p>
-
-    <p><strong>USER AGREES THAT:</strong></p>
-    <ul>
-        <li>Information in the app is general and not medical advice.</li>
-        <li>All decisions relating to baby health, feeding, and medical care must be consulted with a licensed healthcare professional (e.g., pediatrician).</li>
-        <li>The application must NEVER be relied upon in medical emergencies.</li>
-    </ul>
-
-    <p><strong>CRITICAL ALLERGY & DIETARY TRACKING DISCLAIMER:</strong><br>
-    Features tracking solid food introduction, recipes, or baby allergies function exclusively as a "Blank Digital Notepad." Cradly DOES NOT provide, endorse, or supply any pre-defined recipes, dietary recommendations, or medical advice. All food inputs and reaction records (e.g., rash, gas, allergies) are purely user-generated content. Cradly cannot guarantee the accuracy of your own notes or alerts. Parents and guardians maintain 100% absolute responsibility to consult a pediatrician for dietary choices and must seek immediate emergency medical attention if an allergic reaction occurs.</p>
-
-    <h3>3.2 Update, Compatibility, and Mandatory Backup Risks</h3>
-
-    <p>Cradly provides updates for security and new features. While we exercise reasonable technical care to ensure backward compatibility, local device environments are highly variable.</p>
-
-    <p><strong>MANDATORY OPERATION - BACKUPS PRIOR TO UPDATES:</strong><br>
-    The User is <strong>OBLIGATED TO TAKE A BACKUP BEFORE INSTALLING ANY APPLICATION UPDATE.</strong></p>
-
-    <p>Failure to do so may result in:</p>
-    <ul>
-        <li>Irreversible data loss.</li>
-        <li>Database corruption or encryption key failure.</li>
-    </ul>
-
-    <p><strong>Cradly is NOT LIABLE for data loss resulting from the user's failure to create a backup before an update.</strong> Local devices may suffer data damage due to OS restrictions, hardware constraints, third-party software interruptions, or unforeseen technical errors, none of which Cradly controls.</p>
-
-    <h3>3.3 Disclaimer of Warranties and Limitation of Liability</h3>
-
-    <p><strong>DISCLAIMER OF WARRANTIES (COMMON LAW COMPLIANCE):</strong><br>
-    <strong class="critical-warning">THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE". TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, CRADLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE BUG-FREE OR THAT THE DEVICE RELIABILITY WILL PREVENT DATA LOSS.</strong></p>
-
-    <p><strong>A. FREE VERSION LIABILITY (Freemium Model):</strong><br>
-    The free version is provided strictly on an "as-is" basis. Despite extensive technical safeguards designed by us (such as pre-update dynamic backups, schema auto-fixes, memory snapshots, and CSV export capabilities), device-level hardware/OS failures can occur. By using the Free Version, the user explicitly agrees that Cradly:<br>
-    ✓ Remains liable for intentional misconduct or gross negligence.<br>
-    ✗ Bears no liability for data loss beyond our technical control, as we provide all reasonable technical recovery safeguards locally.</p>
-
-    <p><strong>B. PREMIUM VERSION LIABILITY (Capped Liability):</strong><br>
-    For users purchasing the Premium Version, Cradly's total, cumulative liability for all claims arising out of or related to this Agreement or the App shall not exceed the <strong>total Premium price paid by the user</strong> (e.g., $9.99). Liability is strictly limited to direct, foreseeable financial damages stemming from gross negligence or intentional misconduct. We do not compensate for indirect or consequential damages, emotional distress, lost time, or data loss resulting from missing backups or hardware issues.</p>
-
-    <p><strong>C. STORAGE EXHAUSTION & EXTREME SYSTEM FAILURE:</strong><br>
-    We explicitly accept no liability if your creation of heavy digital assets (e.g., Uncompressed Video Journal entries) exhausts your physical storage capacity (Disk Full Exception). You acknowledge that a fully depleted hard drive may trigger severe Operating System crashes, silently terminate background alarm tasks, or result in irreversible corruption of your encrypted local database during active read/write cycles. Actively monitoring and maintaining sufficient free storage space on your device is strictly your responsibility. Although the application attempts to monitor available storage as a best-effort technical measure, Cradly cannot be held liable for any damages resulting from the operating system (iOS/Android) reporting inaccurate or fake available storage due to background cache processes or other apps consuming space simultaneously.</p>
-
-    <h3>3.4 Exception to the Right of Withdrawal (Digital Content)</h3>
-
-    <p><strong>IMPORTANT NOTICE FOR PREMIUM SUBSCRIPTIONS:</strong><br>
-    The Premium version of Cradly is classified as digital content supplied instantly in a non-tangible medium. Under applicable global consumer protection laws (including the EU Consumer Rights Directive), you explicitly consent to perform the contract immediately upon purchase and acknowledge that <strong>you will lose your 14-day right of withdrawal (refund right) once the download or access begins.</strong> Refund requests are governed strictly by the policies of the platform where you purchased it (Apple App Store or Google Play Store). Cradly cannot override these platform policies.</p>
-
-    <h3>3.5 Device Notifications and Operating System (OS) Limitations</h3>
-    <p>The alarm and reminder functions of Cradly are subject to the restrictions of your device's local Operating System (Apple iOS or Google Android). The application does not use remote servers for push notifications (Offline/Local-First functionality); instead, it relies on local notification scheduling running directly on the device.<br>
-    As a User, you explicitly understand and <strong>agree to the following technical facts</strong>:</p>
-    <ol>
-        <li>OS battery management features (such as Doze Mode or Low Power Mode), Focus Modes (Do Not Disturb), or the user's action of <strong>force-closing the application from the background (kill-state/swipe-up)</strong> may block or delay the OS from triggering the alarms.</li>
-        <li>Any such technical delays or blocking of alerts by the OS are entirely beyond the control or liability of Cradly.</li>
-        <li>It is absolute that critical reminders (such as medication schedules, fever measurements, sleep tracking, breast pumping timers, or stored milk/food expiration tracking) must not solely rely on the reliability of an electronic application instrument. If an iOS/Android system-induced delay causes a missed feeding, or leads to the erroneous consumption of spoiled milk or expired food, all associated health risks and liabilities rest entirely with the parent or legal guardian (Refer back to Section 3.1 Medical Disclaimer).</li>
-    </ol>
-
-    <hr>
-
-    <h3>3.6 Exporting Data and Social Media Sharing</h3>
-    <p>Cradly provides tools (such as "Native Share" or "Export") allowing you to share your baby's photos, journals, or related statistics outside the application (e.g., to Instagram, WhatsApp, or saving natively).</p>
-    <ul>
-        <li>Once you explicitly choose to export, share, or compress content via the OS native sharing menu, that exported data officially leaves Cradly's "Zero-Knowledge" protected environment.</li>
-        <li>Cradly holds <strong>no liability or responsibility</strong> for the privacy, security, data harvesting policies, or metadata handling of third-party platforms (like Meta/Instagram), messaging apps, or your own local device gallery once you transmit the data outside the app's secure bounds. Your deliberate action of sharing constitutes your explicit instruction to bypass local isolation for that specific file.</li>
-        <li><strong>Platform-Mandated Compression Mitigation:</strong> To protect your device's hardware performance and comply with the technical quotas of third-party social networks (e.g., Instagram, WhatsApp), high-resolution media (Photo/Video) subjected to the "Export/Share" action may be automatically and optically compressed in the background. The User explicitly accepts that while the original local file remains unaffected, the exported or shared output may inherently suffer a reduction in resolution or visual quality.</li>
-    </ul>
-
-    <hr>
-
-    <h2>4. CLOSING PROVISIONS</h2>
-
-    <h3>4.1 Governing Law, Arbitration, and Class Action Waiver</h3>
-
-    <p>Subject to any mandatory overriding consumer protection laws of the jurisdiction in which you reside, these Terms and Privacy Policy shall be governed by and construed in accordance with the laws of the <strong>Republic of Turkey</strong>.</p>
-
-    <p><strong>BINDING ARBITRATION AND CLASS ACTION WAIVER (FOR US AND NON-EU USERS):</strong><br>
-    Any dispute, claim, or controversy arising out of or relating to this Agreement shall be determined by binding arbitration rather than in court. You and Cradly agree to waive the right to a trial by jury or to participate in a class action. For claims under $10,000, the arbitration will be conducted based solely on written submissions (Online Dispute Resolution) to minimize legal costs for both parties. By agreeing to this, you understand that your remedies are limited to individual arbitration and you cannot force Cradly into a foreign courtroom.</p>
-
-    <h3>4.2 Entry into Force and Amendments</h3>
-
-    <p>This agreement enters into force the moment the user completes the in-app consent flow.<br>
-    Cradly reserves the right to amend these terms. Significant changes (e.g., broader data processing scopes) will be pushed via an application update, triggering a new mandatory required consent screen to ensure compliance. Refusal to accept updated terms may prevent further use of the application.</p>
-
-    <p><strong>Jurisdiction Change and Re-Consent:</strong> Upon each launch, the application automatically detects the user's legal jurisdiction based on their IP address and device locale. If the device enters a different legal jurisdiction (e.g., moving from an unregulated region to the U.S. regulated states covered by CCPA/CPRA, or vice versa), or if the applicable legal text has been updated for the user's current region, the application will present the applicable regional legal document and require a new affirmative acceptance. Access to the application is conditioned upon acceptance of the terms applicable to the user's current jurisdiction. Prior consent records are not invalidated; all records are retained in encrypted form on the device.</p>
-
-    <h3>4.3 Severability</h3>
-    <p>If any provision of this Agreement is found to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render this Agreement unenforceable or invalid as a whole, and such provisions shall be deleted without affecting the remaining provisions herein. The valid portions of the agreement, especially the limitations of liability, shall remain in full force and effect.</p>
-
-    <h3>4.4 Survivability</h3>
-    <p>Sections relating to limitation of liability, disclaimer of warranties, arbitration, and data zero-knowledge architecture shall survive any termination of this agreement or deletion of the Application by the user.</p>
-
-    <hr>
-
-    <p><strong>Contact Information:</strong></p>
-
-    <p><strong>Company Name:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim<br>
-    <strong>Address:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Turkey<br>
-    <strong>Tax Identification:</strong> 5670114825 (Çorlu Tax Office)<br>
-    <strong>Email:</strong> infocradlelog@gmail.com<br>
-    <strong>Website:</strong> www.cebirproje.com</p>
-
-    <hr>
-
-    <p>© 2026 Cradly - Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim.<br>
-    <strong>All Rights Reserved.</strong></p>
-
-    <p>This document has been prepared in compliance with the GDPR, CCPA, FTC Act, COPPA, and the framework of the Personal Data Protection Law of Turkey (KVKK).</p>
-
-    <p><strong>By utilizing the application, the User declares that they have read, understood, and accepted these texts in their entirety.</strong></p>
-
-</div>
+        </div>
+
+        <p><strong>MANDATORY USER RESPONSIBILITY FOR BACKUPS:</strong><br>
+        The User is <strong>ENTIRELY RESPONSIBLE</strong> for the security and backup of their data. As a user, you must:</p>
+        <ul>
+            <li>Make regular backups (at least once a week).</li>
+            <li>Store backups in a secure location.</li>
+            <li>Always take a backup before changing devices.</li>
+            <li>Always take a backup before updating the application.</li>
+            <li>Ensure device security (screen lock, secure password, etc.).</li>
+        </ul>
+        <p><em>(Note: Features like cross-device syncing, cloud backups, or family sharing are currently disabled. Your data remains completely isolated and offline.)</em></p>
+        <p>Cradly accepts no liability for data loss experienced by users who ignore these warnings and fail to take regular backups.</p>
+
+        <h3>1.2 Data Processed on the Server-Side</h3>
+        <p>In Cradly, the foundational legal agreements <strong>MANDATORY for accessing the app (e.g., EULA, Privacy Policy) are embedded as internal files (assets)</strong>. Your consent to these foundational agreements is <strong>NEVER SENT to our servers</strong>; it is verified and stored 100% locally (offline) on your device.</p>
+        <p>Cradly <strong>only</strong> processes technical records on centralized servers (Supabase) for optional consent proof:</p>
+        <p><strong>A. Optional Consent Records:</strong></p>
+        <ul>
+            <li>SHA-256 hash of a Device Consent ID (<code>local_uuid_hash</code>)</li>
+            <li>Unique record ID for each consent event (<code>consent_id</code>)</li>
+            <li>Consent event type (<code>consent_type</code> - e.g., <code>AD_ALLOWED</code>, <code>CRASHLYTICS_ALLOWED</code>)</li>
+            <li>Content hash of the related consent text (<code>consent_text_hash</code>)</li>
+            <li>Application version (<code>app_version</code>)</li>
+            <li>Server timestamp (<code>created_at</code>)</li>
+        </ul>
+
+        <h3>1.3 Legal Status of Data Processing (Controller vs. Provider)</h3>
+        <p>Cradly operates under the following legal roles regarding the processing of data:</p>
+        <p><strong>A. Regarding Health Data (WE ARE NOT A DATA CONTROLLER OR BUSINESS):</strong></p>
+        <p>Cradly acts strictly as a "Technical Infrastructure Provider" and is <strong>NOT</strong> a "Data Controller" (under GDPR/KVKK) or a "Business" (under CCPA) concerning the health data stored locally on the user's device.</p>
+        <p><strong>Justification for This Legal Stance:</strong></p>
+        <ol>
+            <li><strong>No Technical Access:</strong> This data is stored on the user's device with AES-256 encryption. Cradly CANNOT technically access the contents of this data.</li>
+            <li><strong>Encryption Key Control:</strong> The 32-byte encryption key is generated and stored exclusively on the user's device. Cradly DOES NOT know this key and has NO access to it whatsoever.</li>
+            <li><strong>Determination of Purpose and Means:</strong> This data is processed for purposes determined entirely by the user (baby care tracking) and under the user's explicit control. Cradly merely provides the technical infrastructure (the application software and the encryption library) facilitating this processing.</li>
+            <li><strong>User as the Data Controller:</strong> The User, who possesses the device and holds the exclusive capability to access and decrypt the data, acts as the sole "Data Controller" of the health data stored within their own device.</li>
+        </ol>
+
+        <h3>1.4 Third-Party Services & International Data Transfers</h3>
+        <h4>1.4.1 Supabase (Data Storage Infrastructure)</h4>
+        <p><strong>Purpose:</strong> Storing optional consent records.<br>
+        <strong>Server Location:</strong> EU-West-3 (Paris, France).<br>
+        <strong>Transferred Data:</strong> Cryptographic hashes for consent logs. <strong>NO HEALTH DATA, NO CREDIT CARD INFO, NO NAMES are transferred.</strong><br>
+        <strong>Legal Basis & DPA:</strong> Processed based on Legal Obligation and Legitimate Interest. International transfers are governed by a Data Processing Agreement (DPA) incorporating Standard Contractual Clauses (SCCs) signed with Supabase Inc. (Executed Feb 28, 2026).</p>
+
+        <h4>1.4.2 Advertising Services (Google AdMob)</h4>
+        <p><strong>Scope:</strong> ONLY for users of the Free Version.<br>
+        <strong>Advertiser Identifiers:</strong> Apple IDFA or Google GAID.<br>
+        <strong>Data Controller for Ads:</strong> Google LLC operates as an independent Data Controller for the processing of advertising identifiers where applicable.</p>
+        <p><strong>THE TWO-LAYER ADVERTISING FRAMEWORK:</strong></p>
+        <p><strong>1. Layer One: Ad Display (Contractual Condition)</strong><br>
+        Showing ads in the free version is an inseparable part of the Free Version EULA—the foundation of our freemium service model. It allows the app to be offered without charging a direct monetary fee. Therefore, the simple <em>display</em> of an ad relies on the performance of a contract (Terms of Service), not explicitly on user consent. To remove all ads entirely, you may purchase the Premium version.</p>
+        <p><strong>2. Layer Two: Regional Personalization (NPA vs. Explicit Consent)</strong><br>
+        Whether the ads shown to you are <em>personalized</em> (using your IDFA/GAID) depends strictly on the geographical region in which the application is operated:</p>
+        <ul>
+            <li><strong>Unregulated Regions (Default NPA):</strong> For users in regions where specific consent dialogues are not mandated by Google's global policies (e.g., Turkey, Indonesia, and various other jurisdictions globally), Cradly enforces <strong>Non-Personalized Ads (NPA)</strong> as the default standard.</li>
+            <li><strong>Regulated Regions (EEA, UK, US Regulated States):</strong> If your IP address dictates you are in a heavily regulated jurisdiction requiring active user choice, Google UMP (User Messaging Platform) will present a consent screen asking if you allow <em>personalized</em> ads.</li>
+        </ul>
+
+        <h4>1.4.2.1 Rewarded Ads (Optional, User-Initiated)</h4>
+        <p>In addition to standard banner ads, Cradly offers <strong>rewarded ads</strong> that Free Version users can voluntarily watch in exchange for specific in-app features.</p>
+        <p><strong>Features Utilizing Rewarded Ads:</strong></p>
+        <ul>
+            <li><strong>Lullaby Background Playback:</strong> Free users may watch a rewarded ad to temporarily enable background audio playback.</li>
+            <li><strong>14-Day Report Export:</strong> Free users may watch a single rewarded ad to export their detailed 14-day statistics report once.</li>
+        </ul>
+
+        <h4>1.4.3 Telemetry, Crash Reports, and Analytics</h4>
+        <p>Cradly collects anonymous crash reports (Firebase Crashlytics) and usage analytics (Firebase Analytics) strictly based on <strong>explicit, optional user consent</strong>.</p>
+
+        <h4>1.4.4 Premium Subscription Management (RevenueCat)</h4>
+        <p><strong>Purpose:</strong> Managing in-app purchases and subscriptions securely.<br>
+        <strong>Data Processor:</strong> RevenueCat Inc.<br>
+        <strong>Processed Data:</strong> Anonymous platform receipts and anonymous App User IDs.</p>
+
+        <hr>
+
+        <h2>2. SPECIFIC REGIONAL DISCLOSURES & RIGHTS (THE GLOBAL SHIELD)</h2>
+        <h3>2.1 U.S. Healthcare Disclaimer (HIPAA & FDA)</h3>
+        <p><strong>HIPAA: CRADLY IS NOT A COVERED ENTITY OR A BUSINESS ASSOCIATE UNDER HIPAA.</strong><br>
+        This application is strictly a personal, consumer-facing record-keeping software tool. Your data is <strong>NOT protected by HIPAA regulations</strong>.</p>
+        <p><strong>FDA:</strong> This application is <strong>NOT a medical device</strong>, has not been evaluated by the FDA or any equivalent international medical authority.</p>
+
+        <h3>2.2 Children's Privacy (COPPA & GDPR-K Disclaimer)</h3>
+        <p>Cradly is <strong>strictly designed for, and targeted at, parents and legal guardians aged 18 and older.</strong> Cradly is <strong>NOT</strong> a "Child-Directed" application.</p>
+
+        <h3>2.3 U.S. State Privacy Laws (CCPA / CPRA / VCDPA)</h3>
+        <p>Cradly <strong>DOES NOT sell or share your personal information</strong> for cross-context behavioral advertising.</p>
+
+        <h3>2.5 Data Deletion and the Right to be Forgotten</h3>
+        <ul>
+            <li><strong>Deleting Local Data:</strong> Uninstalling the app permanently and irreversibly destroys the encrypted health data.</li>
+            <li><strong>Deleting Server Records:</strong> Email your "Consent ID" to <code>infocradlelog@gmail.com</code> with the subject "Data Deletion Request".</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="terms">3. END-USER LICENSE AGREEMENT (EULA)</h2>
+        <h3>3.1 Medical Disclaimer</h3>
+        <p><strong>NOT A MEDICAL DEVICE.</strong> Cradly is an administrative tool. It is <strong>NOT</strong> a medical device, diagnostic tool, or a substitute for professional medical care.</p>
+
+        <h3>3.2 Update, Compatibility, and Mandatory Backup Risks</h3>
+        <p><strong>MANDATORY OPERATION - BACKUPS PRIOR TO UPDATES:</strong> The User is <strong>OBLIGATED TO TAKE A BACKUP BEFORE INSTALLING ANY APPLICATION UPDATE.</strong></p>
+
+        <h3>3.3 Disclaimer of Warranties and Limitation of Liability</h3>
+        <p><strong>THE APPLICATION IS PROVIDED "AS IS".</strong><br>
+        <strong>A. FREE VERSION LIABILITY:</strong> No liability for data loss beyond our technical control.<br>
+        <strong>B. PREMIUM VERSION LIABILITY:</strong> Total liability shall not exceed the <strong>total Premium price paid by the user</strong>.</p>
+
+        <h3>3.5 Device Notifications and Operating System (OS) Limitations</h3>
+        <p>The alarm and reminder functions rely on the local OS. Cradly is not liable for delays caused by battery optimization, Do Not Disturb, or force-closing the app.</p>
+
+        <hr>
+
+        <h2>4. CLOSING PROVISIONS</h2>
+        <h3>4.1 Governing Law, Arbitration, and Class Action Waiver</h3>
+        <p>These Terms shall be governed by the laws of the <strong>Republic of Turkey</strong>. Disputes shall be determined by binding arbitration.</p>
+
+        <h3>4.2 Entry into Force and Amendments</h3>
+        <p>This agreement enters into force the moment the user completes the in-app consent flow.</p>
+
+        <div class="legal-footer">
+            <p><strong>Contact Information:</strong></p>
+            <p><strong>Company Name:</strong> Nuran Kocaoğlu – Cebir Mühendislik Proje ve Bilişim<br>
+            <strong>Address:</strong> Kazımiye Mahallesi, Salih Omurtak Cad. No:16 İç Kapı No:17, 59850 Çorlu / Tekirdağ / Turkey<br>
+            <strong>Tax Identification:</strong> 5670114825 (Çorlu Tax Office)<br>
+            <strong>Email:</strong> infocradlelog@gmail.com<br>
+            <strong>Website:</strong> www.cebirproje.com</p>
+
+            <p>© 2026 Cradly - Nuran Kocaoğlu / Cebir Mühendislik Proje ve Bilişim. <strong>All Rights Reserved.</strong></p>
+        </div>
+    </div>
 
 </body>
 </html>
